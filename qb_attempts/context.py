@@ -17,7 +17,17 @@ import requests
 
 from .odds_sources import NFL_TEAMS, normalize_team
 
-BASE_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams"
+BASE_URL = "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams"
+FALLBACK_BASE_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams"
+# Verified against team.id in the 32 current 2026 ESPN depth-chart responses.
+# The public web API with numeric IDs also works on GitHub hosted runners,
+# where site.api currently returns 403. Neither endpoint needs credentials.
+ESPN_TEAM_IDS = {
+    "ARI": "22", "ATL": "1", "BAL": "33", "BUF": "2", "CAR": "29", "CHI": "3", "CIN": "4", "CLE": "5",
+    "DAL": "6", "DEN": "7", "DET": "8", "GB": "9", "HOU": "34", "IND": "11", "JAX": "30", "KC": "12",
+    "LA": "14", "LAC": "24", "LV": "13", "MIA": "15", "MIN": "16", "NE": "17", "NO": "18", "NYG": "19",
+    "NYJ": "20", "PHI": "21", "PIT": "23", "SEA": "26", "SF": "25", "TB": "27", "TEN": "10", "WAS": "28",
+}
 HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 
 
@@ -108,25 +118,37 @@ def parse_depthchart(payload: dict, team: str, *, observed_at: str, source_url: 
 
 
 def _fetch_team(team: str, directory: Path) -> dict:
-    espn_team = {"LA": "LAR", "WAS": "WSH"}.get(team, team)
-    url = f"{BASE_URL}/{espn_team}/depthcharts"
-    last_error = None
-    for attempt in range(2):
-        try:
-            response = requests.get(url, headers=HEADERS, timeout=30)
-            observed = datetime.now(timezone.utc).isoformat()
-            with (directory / f"{team}.{attempt}.body.json").open("xb") as handle:
-                handle.write(response.content)
-            with (directory / f"{team}.{attempt}.meta.json").open("x") as handle:
-                json.dump({"url": response.url, "observed_at": observed, "status_code": response.status_code}, handle, indent=2)
-            response.raise_for_status()
-            payload = response.json()
-            if not isinstance(payload, dict):
-                raise ValueError("unexpected depth-chart schema")
-            return parse_depthchart(payload, team, observed_at=observed, source_url=url)
-        except (requests.RequestException, ValueError) as exc:
-            last_error = exc
-    raise RuntimeError(str(last_error))
+    failures, last_context = [], None
+    for endpoint_index, base in enumerate((BASE_URL, FALLBACK_BASE_URL)):
+        url = f"{base}/{ESPN_TEAM_IDS[team]}/depthcharts"
+        for attempt in range(2):
+            try:
+                response = requests.get(url, headers=HEADERS, timeout=30)
+                observed = datetime.now(timezone.utc).isoformat()
+                name = f"{team}.{endpoint_index}.{attempt}"
+                with (directory / f"{name}.body.json").open("xb") as handle:
+                    handle.write(response.content)
+                with (directory / f"{name}.meta.json").open("x") as handle:
+                    json.dump({"url": response.url, "observed_at": observed, "status_code": response.status_code}, handle, indent=2)
+                response.raise_for_status()
+                payload = response.json()
+                if not isinstance(payload, dict):
+                    raise ValueError("unexpected depth-chart schema")
+                context = parse_depthchart(payload, team, observed_at=observed, source_url=response.url)
+                if context["available"]:
+                    return context
+                last_context = context
+                failures.append(f"{url}: " + "; ".join(context["issues"]))
+                break  # A stale or invalid payload deserves a different source.
+            except requests.HTTPError as exc:
+                failures.append(str(exc))
+                if response.status_code in (400, 401, 403, 404):
+                    break  # Repeating a deterministic client rejection adds no evidence.
+            except (requests.RequestException, ValueError) as exc:
+                failures.append(str(exc))
+    if last_context is not None:
+        return last_context
+    raise RuntimeError("; ".join(failures))
 
 
 def fetch_context(teams: list[str], output_dir: Path) -> tuple[dict[str, dict], list[str]]:
@@ -152,7 +174,7 @@ def fetch_context(teams: list[str], output_dir: Path) -> tuple[dict[str, dict], 
                 contexts[team] = {"starter": None, "espn_id": None, "injuries": [], "offense_injuries": [],
                                   "available": False, "source_updated_at": None,
                                   "observed_at": datetime.now(timezone.utc).isoformat(),
-                                  "source_url": f"{BASE_URL}/{ {'LA': 'LAR', 'WAS': 'WSH'}.get(team, team) }/depthcharts",
+                                  "source_url": f"{BASE_URL}/{ESPN_TEAM_IDS[team]}/depthcharts",
                                   "issues": ["Context fetch failed"]}
     with (snapshot / "context.json").open("x") as handle:
         json.dump(contexts, handle, indent=2)

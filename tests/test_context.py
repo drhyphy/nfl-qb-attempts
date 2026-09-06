@@ -1,7 +1,15 @@
 import copy
+import json
+import tempfile
 import unittest
+from datetime import datetime, timezone
+from pathlib import Path
+from unittest.mock import patch
 
-from qb_attempts.context import parse_depthchart
+import requests
+
+from qb_attempts.context import BASE_URL, FALLBACK_BASE_URL, ESPN_TEAM_IDS, _fetch_team, parse_depthchart
+from qb_attempts.odds_sources import NFL_TEAMS
 
 
 class ContextTests(unittest.TestCase):
@@ -62,6 +70,47 @@ class ContextTests(unittest.TestCase):
     def test_unknown_injury_is_not_clean_health(self):
         self.payload["depthchart"][0]["positions"]["qb"]["athletes"][0]["injuries"] = [{}]
         self.assertEqual(self.parse()["injuries"], ["Unspecified injury"])
+
+    def response(self, url, status=200):
+        now = datetime.now(timezone.utc)
+        payload = copy.deepcopy(self.payload)
+        payload.update(timestamp=now.isoformat(), season={"year": now.year - (now.month <= 2)})
+        response = requests.Response()
+        response.status_code, response.url = status, url
+        response._content = json.dumps(payload).encode() if status == 200 else b"Forbidden"
+        return response
+
+    def test_web_primary_uses_verified_numeric_id_and_no_unnecessary_fallback(self):
+        url = f"{BASE_URL}/14/depthcharts"
+        with tempfile.TemporaryDirectory() as directory, patch("qb_attempts.context.requests.get", return_value=self.response(url)) as get:
+            result = _fetch_team("LA", Path(directory))
+            self.assertTrue(result["available"])
+            self.assertEqual(result["source_url"], url)
+            self.assertEqual(get.call_count, 1)
+            self.assertEqual(get.call_args.args[0], url)
+            self.assertEqual(len(list(Path(directory).iterdir())), 2)
+
+    def test_403_moves_to_public_fallback_and_preserves_failed_body(self):
+        web, fallback = f"{BASE_URL}/14/depthcharts", f"{FALLBACK_BASE_URL}/14/depthcharts"
+        responses = [self.response(web, 403), self.response(fallback)]
+        with tempfile.TemporaryDirectory() as directory, patch("qb_attempts.context.requests.get", side_effect=responses) as get:
+            result = _fetch_team("LA", Path(directory))
+            self.assertTrue(result["available"])
+            self.assertEqual(result["source_url"], fallback)
+            self.assertEqual(get.call_count, 2)
+            self.assertEqual((Path(directory) / "LA.0.0.body.json").read_bytes(), b"Forbidden")
+            self.assertEqual(len(list(Path(directory).iterdir())), 4)
+
+    def test_both_endpoints_fail_closed(self):
+        web, fallback = f"{BASE_URL}/14/depthcharts", f"{FALLBACK_BASE_URL}/14/depthcharts"
+        with tempfile.TemporaryDirectory() as directory, patch("qb_attempts.context.requests.get", side_effect=[self.response(web, 403), self.response(fallback, 403)]) as get:
+            with self.assertRaises(RuntimeError):
+                _fetch_team("LA", Path(directory))
+            self.assertEqual(get.call_count, 2)
+
+    def test_verified_mapping_covers_all_32_distinct_teams(self):
+        self.assertEqual(set(ESPN_TEAM_IDS), NFL_TEAMS)
+        self.assertEqual(len(set(ESPN_TEAM_IDS.values())), 32)
 
 
 if __name__ == "__main__":

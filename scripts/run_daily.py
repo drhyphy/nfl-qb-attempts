@@ -40,7 +40,7 @@ def main():
  closings=[]
  for p in (ROOT/'data/published/closing').glob('*.json'):closings.extend(json.loads(p.read_text()).get('quotes',[]))
  performance=grade_history(history,s,g,closings)
- board={'generated_at':now.isoformat(),'run_id':run_id,'status':'ok' if resolved else 'no_odds','slate':f"{season} · WEEK {min([q['week'] for q in resolved],default=1)}",'quotes':len(resolved),'players':len({q['player_id'] for q in resolved}),'model_version':artifact['version'],'model_sha256':hashlib.sha256((ROOT/'data/model/model.pkl').read_bytes()).hexdigest(),'policy':POLICY,'recommendations':recommendations,'watchlist':watch,'source_errors':sorted(set(errors)),'validation':artifact['metrics'],'performance':performance,'source_timestamp_note':'observed_at is feed retrieval, not sportsbook tick time; source_updated_at is null unless independently supplied for that book.'}
+ board={'generated_at':now.isoformat(),'run_id':run_id,'status':('source_failure' if resolved and not any(c.get('available') for c in context.values()) else 'ok' if resolved else 'no_odds'),'slate':f"{season} · WEEK {min([q['week'] for q in resolved],default=1)}",'quotes':len(resolved),'players':len({q['player_id'] for q in resolved}),'context_coverage':{'verified':sum(bool(c.get('available')) for c in context.values()),'requested':len({q['team'] for q in resolved})},'model_version':artifact['version'],'model_sha256':hashlib.sha256((ROOT/'data/model/model.pkl').read_bytes()).hexdigest(),'policy':POLICY,'recommendations':recommendations,'watchlist':watch,'source_errors':sorted(set(errors)),'validation':artifact['metrics'],'performance':performance,'source_timestamp_note':'observed_at is feed retrieval, not sportsbook tick time; source_updated_at is null unless independently supplied for that book.'}
  # Store the exact first decision before updating the mutable current board.
  dest=history/f'{run_id}.json';dest.parent.mkdir(parents=True,exist_ok=True)
  with dest.open('x') as f:json.dump(board,f,indent=2,default=json_default,allow_nan=False)
@@ -48,6 +48,7 @@ def main():
  write(ROOT/'data/published/evaluated_quotes.json',candidates)
  write(ROOT/'site/public/board.json',board)
  print(json.dumps({'run_id':run_id,'quotes':len(resolved),'players':board['players'],'recommended':[{k:r[k] for k in ['player','side','line','odds','book','mean','ev','robust_ev']} for r in recommendations],'top_held':[{k:r[k] for k in ['player','side','line','odds','book','ev','reasons']} for r in watch[:8]],'source_errors':errors},indent=2))
+ if board['status']=='source_failure':sys.exit(2)
 if __name__=='__main__':
  try:main()
  except Exception as exc:
