@@ -43,9 +43,14 @@ jobs:
       - uses: actions/cache@v4
         if: steps.clock.outputs.run == 'true'
         with:
-          path: data/raw/*.parquet
-          key: qb-history-v1-${{ github.run_id }}
-          restore-keys: qb-history-v1-
+          path: |
+            data/raw/*.parquet
+            data/pbp_cache/team_games_*.parquet
+            data/pbp_cache/team_games_*.json
+          key: qb-history-v2-${{ github.run_id }}
+          restore-keys: |
+            qb-history-v2-
+            qb-history-v1-
       - name: Install and test
         if: steps.clock.outputs.run == 'true'
         run: |
@@ -61,7 +66,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/published data/model/validation.json data/model/oof_predictions.csv site/public/board.json
+          git add data/published data/tendencies data/model site/public/board.json
           if ! git diff --cached --quiet; then
             git commit -m "Record immutable NFL board $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
@@ -74,6 +79,8 @@ jobs:
             data/raw/manifest.json
             data/raw/odds
             data/raw/context
+            data/raw/game_markets
+            data/tendencies
             data/model
             data/published/latest.json
           retention-days: 90

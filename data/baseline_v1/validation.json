@@ -1,0 +1,105 @@
+{
+  "version": "attempts-v1.0",
+  "chosen": "ridge",
+  "selection_rule": "Lowest development 2022\u20132024 CRPS; 2025 reserved untouched for final evaluation. No historical prop prices available.",
+  "candidates": {
+    "recent_mean": {
+      "development_2022_2024": {
+        "n": 1630,
+        "mae": 7.454091024006668,
+        "rmse": 9.765770543437142,
+        "bias": 0.8621178142324615,
+        "crps": 5.365121451620347
+      }
+    },
+    "ridge": {
+      "development_2022_2024": {
+        "n": 1630,
+        "mae": 7.320946841989128,
+        "rmse": 9.737548796816128,
+        "bias": 1.2057815196708728,
+        "crps": 5.287192851714908
+      }
+    },
+    "boosting": {
+      "development_2022_2024": {
+        "n": 1630,
+        "mae": 7.355136260883908,
+        "rmse": 9.857837305428083,
+        "bias": 1.197628908142093,
+        "crps": 5.32867724116598
+      }
+    },
+    "opportunity": {
+      "development_2022_2024": {
+        "n": 1630,
+        "mae": 7.316877827904222,
+        "rmse": 9.732349998562395,
+        "bias": 1.133689098619198,
+        "crps": 5.288805368269809
+      }
+    }
+  },
+  "holdout_2025": {
+    "n": 544,
+    "mae": 6.98274778617476,
+    "rmse": 9.034465911762991,
+    "bias": 0.6536641947472086,
+    "crps": 4.999682253556117,
+    "fixed_threshold_brier": 0.16317199414683234,
+    "fixed_threshold_log_loss": 0.4975695021361587,
+    "coverage_80": 0.8088235294117647,
+    "week1": {
+      "n": 32,
+      "mae": 6.325520624981345,
+      "rmse": 7.842390681514141,
+      "bias": 0.5337597262351048
+    }
+  },
+  "baseline_2025": {
+    "n": 544,
+    "mae": 7.3598451200300925,
+    "rmse": 9.471674171481686,
+    "bias": 0.5871699379052321,
+    "crps": 5.256521378033049
+  },
+  "mae_difference_95ci": [
+    -0.5687624167670008,
+    -0.19204367563882727
+  ],
+  "historical_market_roi": null,
+  "market_edge_validated": false,
+  "training_rows": 4766,
+  "feature_names": [
+    "qb_mean5",
+    "qb_mean12",
+    "qb_sd12",
+    "qb_carries5",
+    "qb_games",
+    "team_attempts5",
+    "team_attempts12",
+    "team_plays5",
+    "team_plays12",
+    "team_rate5",
+    "team_sack5",
+    "opp_attempts5",
+    "opp_attempts12",
+    "opp_plays5",
+    "opp_sack5",
+    "home",
+    "rest",
+    "week",
+    "dome",
+    "coach_change",
+    "qb_team_change",
+    "season_games",
+    "team_coach_games"
+  ],
+  "excluded_information": [
+    "same-game results",
+    "final game weather",
+    "historical closing spread/total",
+    "current-game pass volume",
+    "realized starting-QB attempt threshold"
+  ]
+}
