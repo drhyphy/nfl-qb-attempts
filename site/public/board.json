@@ -1,12 +1,16 @@
 {
-  "generated_at": "2026-09-06T13:24:08.882521+00:00",
-  "run_id": "20260906T132408882521Z",
+  "generated_at": "2026-09-06T13:31:37.278731+00:00",
+  "run_id": "20260906T133137278731Z",
   "status": "ok",
   "slate": "2026 \u00b7 WEEK 1",
   "quotes": 145,
   "players": 31,
+  "context_coverage": {
+    "verified": 31,
+    "requested": 31
+  },
   "model_version": "attempts-v1.0",
-  "model_sha256": "f0eda083b9cf7c2cb29dc1fd05f1eed1fe3ea4ee04b82b44ad109ad1d457fa1c",
+  "model_sha256": "5a12eb1554a90baf8d4908834b07a326e73b465fbc18a7432685ab65a684115b",
   "policy": {
     "version": "market-anchor-v1",
     "min_ev": 0.025,
@@ -33,7 +37,7 @@
       "line": 31.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.987661+00:00",
+      "observed_at": "2026-09-06T13:31:35.737465+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
@@ -60,22 +64,55 @@
       ],
       "status": "held",
       "reasons": [
-        "Large model\u2013market disagreement",
-        "Starting role not independently verified",
-        "Starting context stale or unverified"
+        "Large model\u2013market disagreement"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Aaron Rodgers",
+        "espn_id": "8439",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.832857+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/PIT/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "DK Metcalf",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-31T19:13:00+00:00"
+          },
+          {
+            "player": "Cole Burgess",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Michael Pittman Jr.",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-31T19:17:00+00:00"
+          },
+          {
+            "player": "Ben Skowronek",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-31T22:18:00+00:00"
+          },
+          {
+            "player": "Jack Driscoll",
+            "position": "LT",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T00:04:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.222994+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/23/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 1,
@@ -93,26 +130,26 @@
       "line": 30.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.376450+00:00",
+      "observed_at": "2026-09-06T13:31:36.320901+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
       "odds": -102,
-      "mean": 29.9373413541243,
+      "mean": 29.937341354124303,
       "interval80": [
-        18.300888038128235,
-        40.28993754834023
+        18.300888038128242,
+        40.289937548340234
       ],
-      "p_model": 0.556436218465608,
+      "p_model": 0.5564362184656078,
       "p_market": 0.5146373416481651,
-      "p_final": 0.5172481135785134,
+      "p_final": 0.5172481135785133,
       "p_push": 0.0,
-      "ev": 0.024354107282938298,
+      "ev": 0.024354107282938076,
       "robust_ev": -0.010522127324222086,
       "market_only_ev": 0.01918375502871905,
       "fair_odds": -107,
       "bet_to": -102,
-      "model_weight": 0.06246033695476712,
+      "model_weight": 0.06246033695476719,
       "other_books": 4,
       "reference_books": [
         "bet365",
@@ -122,23 +159,56 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Geno Smith",
+        "espn_id": "15864",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.727403+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NYJ/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Anez Cooper",
+            "position": "LG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T01:38:00+00:00"
+          },
+          {
+            "player": "Kenyon Sadiq",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-31T18:56:00+00:00"
+          },
+          {
+            "player": "Breece Hall",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-03T20:06:00+00:00"
+          },
+          {
+            "player": "Isaiah Davis",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-09-02T23:36:00+00:00"
+          },
+          {
+            "player": "Chip Trayanum",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T18:44:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.216123+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/20/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -156,17 +226,17 @@
       "line": 28.5,
       "book": "fanatics",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.954835+00:00",
+      "observed_at": "2026-09-06T13:31:36.135718+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Under",
       "odds": 100,
-      "mean": 30.503616867809043,
+      "mean": 30.50361686780904,
       "interval80": [
         18.86716355181298,
-        40.85621306202497
+        40.85621306202496
       ],
-      "p_model": 0.4356268715738359,
+      "p_model": 0.435626871573836,
       "p_market": 0.5203045685279188,
       "p_final": 0.5119051014016749,
       "p_push": 0.0,
@@ -175,7 +245,7 @@
       "market_only_ev": 0.040609137055837685,
       "fair_odds": -105,
       "bet_to": -100,
-      "model_weight": 0.09919338182755023,
+      "model_weight": 0.09919338182755036,
       "other_books": 1,
       "reference_books": [
         "bet365"
@@ -183,23 +253,84 @@
       "status": "held",
       "reasons": [
         "Fewer than 2 other books at this line",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Justin Herbert",
+        "espn_id": "4038941",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.623317+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/LAC/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Brenen Thompson",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-23T18:46:00+00:00"
+          },
+          {
+            "player": "Dalevon Campbell",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T02:29:00+00:00"
+          },
+          {
+            "player": "Tre' Harris",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-28T23:40:00+00:00"
+          },
+          {
+            "player": "Rashawn Slater",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-22T16:20:00+00:00"
+          },
+          {
+            "player": "Branson Taylor",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-30T22:49:00+00:00"
+          },
+          {
+            "player": "Isaiah World",
+            "position": "LT",
+            "depth": 5,
+            "status": "Out",
+            "date": "2026-08-31T23:24:00+00:00"
+          },
+          {
+            "player": "Tyler Biadasz",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-23T16:55:00+00:00"
+          },
+          {
+            "player": "Keaton Mitchell",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-03T18:56:00+00:00"
+          },
+          {
+            "player": "Scott Matlock",
+            "position": "FB",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:56:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.177948+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/24/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -217,17 +348,17 @@
       "line": 32.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.528404+00:00",
+      "observed_at": "2026-09-06T13:31:35.458469+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
       "odds": -102,
-      "mean": 32.058268893817115,
+      "mean": 32.05826889381711,
       "interval80": [
-        20.42181557782105,
-        42.41086508803304
+        20.421815577821043,
+        42.410865088033034
       ],
-      "p_model": 0.5511012152631501,
+      "p_model": 0.5511012152631504,
       "p_market": 0.5101214574898785,
       "p_final": 0.5152608168275756,
       "p_push": 0.0,
@@ -236,7 +367,7 @@
       "market_only_ev": 0.01024053346034759,
       "fair_odds": -106,
       "bet_to": -102,
-      "model_weight": 0.12541214533603698,
+      "model_weight": 0.12541214533603687,
       "other_books": 3,
       "reference_books": [
         "caesars",
@@ -245,23 +376,63 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Daniel Jones",
+        "espn_id": "3917792",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.640050+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/IND/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Coleman Owen",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:19:00+00:00"
+          },
+          {
+            "player": "Josh Downs",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T14:19:00+00:00"
+          },
+          {
+            "player": "D.J. Montgomery",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:16:00+00:00"
+          },
+          {
+            "player": "Tyler Warren",
+            "position": "TE",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T14:26:00+00:00"
+          },
+          {
+            "player": "Will Mallory",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:12:00+00:00"
+          },
+          {
+            "player": "Carson Towt",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.067450+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/11/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -279,7 +450,7 @@
       "line": 34.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.572332+00:00",
+      "observed_at": "2026-09-06T13:31:35.915623+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-11T00:35:00+00:00",
       "side": "Under",
@@ -289,7 +460,7 @@
         24.613531371796462,
         46.60258088200845
       ],
-      "p_model": 0.4476511816291258,
+      "p_model": 0.44765118162912576,
       "p_market": 0.5191395702574091,
       "p_final": 0.5114826657883677,
       "p_push": 0.0,
@@ -306,23 +477,63 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Matthew Stafford",
+        "espn_id": "12483",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.640036+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/LAR/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Puka Nacua",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-05T15:52:00+00:00"
+          },
+          {
+            "player": "Alaric Jackson",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-07-30T23:15:00+00:00"
+          },
+          {
+            "player": "Justin Dedich",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:42:00+00:00"
+          },
+          {
+            "player": "Keagen Trost",
+            "position": "RT",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:31:00+00:00"
+          },
+          {
+            "player": "Terrance Ferguson",
+            "position": "TE",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-25T19:13:00+00:00"
+          },
+          {
+            "player": "Davis Allen",
+            "position": "TE",
+            "depth": 5,
+            "status": "Questionable",
+            "date": "2026-08-24T23:23:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.102351+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/14/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -340,7 +551,7 @@
       "line": 30.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.355208+00:00",
+      "observed_at": "2026-09-06T13:31:36.030492+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
@@ -369,23 +580,84 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Bryce Young",
+        "espn_id": "4685720",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.339534+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CAR/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Chris Brazzell II",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-07-31T18:57:00+00:00"
+          },
+          {
+            "player": "Xavier Legette",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-24T16:42:00+00:00"
+          },
+          {
+            "player": "Ikem Ekwonu",
+            "position": "LT",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-08-31T22:52:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Taylor Moton",
+            "position": "RT",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-08-31T23:00:00+00:00"
+          },
+          {
+            "player": "Chuba Hubbard",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T15:56:00+00:00"
+          },
+          {
+            "player": "Jonathon Brooks",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-02T17:23:00+00:00"
+          },
+          {
+            "player": "Trevor Etienne",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-30T23:58:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.021992+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:23+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -403,17 +675,17 @@
       "line": 34.5,
       "book": "draftkings",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.390469+00:00",
+      "observed_at": "2026-09-06T13:31:35.231684+00:00",
       "source_updated_at": "2026-09-05T17:33:58+00:00",
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Under",
       "odds": -106,
-      "mean": 36.33024240575885,
+      "mean": 36.330242405758845,
       "interval80": [
-        24.693789089762788,
-        46.68283859997478
+        24.69378908976278,
+        46.68283859997477
       ],
-      "p_model": 0.4438339127969959,
+      "p_model": 0.4438339127969962,
       "p_market": 0.5249341737812175,
       "p_final": 0.5167154860326096,
       "p_push": 0.0,
@@ -422,7 +694,7 @@
       "market_only_ev": 0.02015509244274355,
       "fair_odds": -107,
       "bet_to": -102,
-      "model_weight": 0.10133984340946701,
+      "model_weight": 0.10133984340946715,
       "other_books": 3,
       "reference_books": [
         "caesars",
@@ -431,23 +703,63 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Jacoby Brissett",
+        "espn_id": "2578570",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.324866+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ARI/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Chase Bisontis",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Tip Reiman",
+            "position": "TE",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-08-31T03:56:00+00:00"
+          },
+          {
+            "player": "Jameson Geers",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Jeremiyah Love",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-03T17:49:00+00:00"
+          },
+          {
+            "player": "James Conner",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-30T21:50:00+00:00"
+          },
+          {
+            "player": "Trey Benson",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T23:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.006593+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/22/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -465,7 +777,7 @@
       "line": 32.5,
       "book": "draftkings",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.794913+00:00",
+      "observed_at": "2026-09-06T13:31:35.711416+00:00",
       "source_updated_at": "2026-09-06T11:00:07+00:00",
       "kickoff": "2026-09-15T00:15:00+00:00",
       "side": "Over",
@@ -492,23 +804,66 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
+        "QB injury designation needs review",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
-        "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.635731+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/KC/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "starter": "Patrick Mahomes",
+        "espn_id": "3139477",
+        "injuries": [
+          "Questionable"
+        ],
+        "offense_injuries": [
+          {
+            "player": "Jeff Caldwell",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T23:12:00+00:00"
+          },
+          {
+            "player": "Jimmy Holiday",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:40:00+00:00"
+          },
+          {
+            "player": "Josh Simmons",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-03T00:27:00+00:00"
+          },
+          {
+            "player": "Trey Smith",
+            "position": "RG",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Matt Waletzko",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-22T00:32:00+00:00"
+          },
+          {
+            "player": "John Michael Gyllenborg",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-07-28T21:54:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.098995+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/12/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -526,7 +881,7 @@
       "line": 33.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.325271+00:00",
+      "observed_at": "2026-09-06T13:31:35.236840+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Over",
@@ -553,23 +908,63 @@
       "status": "held",
       "reasons": [
         "Fewer than 2 other books at this line",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Jared Goff",
+        "espn_id": "3046779",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.480465+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/DET/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Kendrick Law",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-06-17T20:34:00+00:00"
+          },
+          {
+            "player": "Giovanni Manu",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T23:13:00+00:00"
+          },
+          {
+            "player": "Cade Mays",
+            "position": "C",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T02:24:00+00:00"
+          },
+          {
+            "player": "Michael Niese",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T01:01:00+00:00"
+          },
+          {
+            "player": "Sam LaPorta",
+            "position": "TE",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-04T22:59:00+00:00"
+          },
+          {
+            "player": "Isiah Pacheco",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-02T15:10:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.067277+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/8/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:19+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -587,17 +982,17 @@
       "line": 29.5,
       "book": "fanatics",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.597107+00:00",
+      "observed_at": "2026-09-06T13:31:36.286916+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Over",
       "odds": -110,
-      "mean": 33.23821288791649,
+      "mean": 33.238212887916504,
       "interval80": [
-        21.601759571920425,
-        43.59080908213242
+        21.60175957192044,
+        43.59080908213243
       ],
-      "p_model": 0.6438216703458775,
+      "p_model": 0.6438216703458781,
       "p_market": 0.5105917021962667,
       "p_final": 0.5152588824835436,
       "p_push": 0.0,
@@ -606,7 +1001,7 @@
       "market_only_ev": -0.025234023079854506,
       "fair_odds": -106,
       "bet_to": -102,
-      "model_weight": 0.035031009555116774,
+      "model_weight": 0.03503100955511657,
       "other_books": 4,
       "reference_books": [
         "bet365",
@@ -616,23 +1011,70 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Kirk Cousins",
+        "espn_id": "14880",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.632291+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/LV/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Justin Shorter",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-05-04T23:28:00+00:00"
+          },
+          {
+            "player": "Corey Rucker",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-06-10T20:52:00+00:00"
+          },
+          {
+            "player": "Dont'e Thornton Jr.",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:29:00+00:00"
+          },
+          {
+            "player": "Justin Pickett",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Carter Runyon",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:52:00+00:00"
+          },
+          {
+            "player": "Ashton Jeanty",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T16:45:00+00:00"
+          },
+          {
+            "player": "Chris Collier",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-02T23:52:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.185580+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/13/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 1,
@@ -650,7 +1092,7 @@
       "line": 33.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.551657+00:00",
+      "observed_at": "2026-09-06T13:31:35.255094+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-11T00:35:00+00:00",
       "side": "Under",
@@ -660,7 +1102,7 @@
         21.639331471554414,
         43.628380981766405
       ],
-      "p_model": 0.5413691631340536,
+      "p_model": 0.5413691631340535,
       "p_market": 0.4898785425101214,
       "p_final": 0.49601136519636857,
       "p_push": 0.0,
@@ -669,7 +1111,7 @@
       "market_only_ev": -0.0298483765976027,
       "fair_odds": 102,
       "bet_to": 106,
-      "model_weight": 0.1191056276256407,
+      "model_weight": 0.11910562762564075,
       "other_books": 3,
       "reference_books": [
         "bet365",
@@ -678,23 +1120,126 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Brock Purdy",
+        "espn_id": "4361741",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.852778+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/SF/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Mike Evans",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T18:54:00+00:00"
+          },
+          {
+            "player": "Christian Kirk",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T03:27:00+00:00"
+          },
+          {
+            "player": "Brandon Aiyuk",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-07-25T18:38:00+00:00"
+          },
+          {
+            "player": "De'Zhaun Stribling",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-27T23:37:00+00:00"
+          },
+          {
+            "player": "Jacob Cowing",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-25T23:10:00+00:00"
+          },
+          {
+            "player": "Ricky Pearsall",
+            "position": "WR3",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-13T15:11:00+00:00"
+          },
+          {
+            "player": "Vederian Lowe",
+            "position": "LT",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-07-28T00:19:00+00:00"
+          },
+          {
+            "player": "Austen Pleasants",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T00:01:00+00:00"
+          },
+          {
+            "player": "Nick Zakelj",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T00:10:00+00:00"
+          },
+          {
+            "player": "Brett Toth",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T00:06:00+00:00"
+          },
+          {
+            "player": "Dominick Puni",
+            "position": "RG",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "George Kittle",
+            "position": "TE",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T12:52:00+00:00"
+          },
+          {
+            "player": "Christian McCaffrey",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T19:59:00+00:00"
+          },
+          {
+            "player": "Isaac Guerendo",
+            "position": "RB",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-08-30T21:10:00+00:00"
+          },
+          {
+            "player": "Kyle Juszczyk",
+            "position": "FB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T23:41:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.233089+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/25/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -712,17 +1257,17 @@
       "line": 30.5,
       "book": "caesars",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.353680+00:00",
+      "observed_at": "2026-09-06T13:31:36.116340+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-10T00:20:00+00:00",
       "side": "Over",
       "odds": 101,
-      "mean": 30.217162001616668,
+      "mean": 30.217162001616664,
       "interval80": [
-        18.580708685620607,
+        18.5807086856206,
         40.56975819583259
       ],
-      "p_model": 0.45599017933751895,
+      "p_model": 0.45599017933751873,
       "p_market": 0.49337049615465917,
       "p_final": 0.488601821483298,
       "p_push": 0.0,
@@ -731,7 +1276,7 @@
       "market_only_ev": -0.008325302729135009,
       "fair_odds": 105,
       "bet_to": 109,
-      "model_weight": 0.12757180990971587,
+      "model_weight": 0.12757180990971573,
       "other_books": 2,
       "reference_books": [
         "draftkings",
@@ -739,23 +1284,70 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Sam Darnold",
+        "espn_id": "3912547",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.830642+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/SEA/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Tory Horton",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-27T23:27:00+00:00"
+          },
+          {
+            "player": "Jake Bobo",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-22T17:45:00+00:00"
+          },
+          {
+            "player": "Irv Charles",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T21:39:00+00:00"
+          },
+          {
+            "player": "Mason Richman",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-26T00:13:00+00:00"
+          },
+          {
+            "player": "Emanuel Wilson",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Zach Charbonnet",
+            "position": "RB",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-08-30T23:06:00+00:00"
+          },
+          {
+            "player": "Robbie Ouzts",
+            "position": "FB",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.223489+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/26/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -773,7 +1365,7 @@
       "line": 27.5,
       "book": "fanatics",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.807653+00:00",
+      "observed_at": "2026-09-06T13:31:36.595923+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Over",
@@ -800,23 +1392,42 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Lamar Jackson",
+        "espn_id": "3916387",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.326330+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/BAL/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Zay Flowers",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-03T16:28:00+00:00"
+          },
+          {
+            "player": "Danny Pinter",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-26T23:36:00+00:00"
+          },
+          {
+            "player": "Adam Randall",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T03:52:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.013760+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/33/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:23+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 1,
@@ -834,26 +1445,26 @@
       "line": 31.5,
       "book": "caesars",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.364635+00:00",
+      "observed_at": "2026-09-06T13:31:36.394510+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Over",
       "odds": 101,
-      "mean": 31.037158467470928,
+      "mean": 31.03715846747094,
       "interval80": [
-        19.400705151474867,
-        41.38975466168685
+        19.40070515147488,
+        41.389754661686865
       ],
-      "p_model": 0.44796369798225055,
+      "p_model": 0.4479636979822511,
       "p_market": 0.48987854251012153,
-      "p_final": 0.48726198542806987,
+      "p_final": 0.4872619854280699,
       "p_push": 0.0,
-      "ev": -0.020603409289579544,
-      "robust_ev": -0.05075340928957961,
+      "ev": -0.020603409289579377,
+      "robust_ev": -0.050753409289579554,
       "market_only_ev": -0.01534412955465575,
       "fair_odds": 105,
       "bet_to": 110,
-      "model_weight": 0.062425546641638706,
+      "model_weight": 0.06242554664163887,
       "other_books": 2,
       "reference_books": [
         "bet365",
@@ -861,23 +1472,49 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Kyler Murray",
+        "espn_id": "3917315",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.705341+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/MIN/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Jeshaun Jones",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Suspension",
+            "date": "2026-08-26T01:45:00+00:00"
+          },
+          {
+            "player": "Michael Jurgens",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:36:00+00:00"
+          },
+          {
+            "player": "Caleb Tiernan",
+            "position": "RT",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Jermar Jefferson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T02:45:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.165076+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/16/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -895,15 +1532,15 @@
       "line": 31.5,
       "book": "draftkings",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.030858+00:00",
+      "observed_at": "2026-09-06T13:31:35.696957+00:00",
       "source_updated_at": "2026-09-06T07:05:23+00:00",
       "kickoff": "2026-09-10T00:20:00+00:00",
       "side": "Under",
       "odds": -101,
-      "mean": 29.96979776994863,
+      "mean": 29.969797769948627,
       "interval80": [
-        18.33334445395257,
-        40.32239396416456
+        18.333344453952563,
+        40.322393964164554
       ],
       "p_model": 0.5978122589966189,
       "p_market": 0.47969543147208116,
@@ -922,23 +1559,56 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Drake Maye",
+        "espn_id": "4431452",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.685176+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NE/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Jeremiah Webb",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-07-26T21:31:00+00:00"
+          },
+          {
+            "player": "Marcus Bryant",
+            "position": "RT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:41:00+00:00"
+          },
+          {
+            "player": "Julian Hill",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-06-01T21:13:00+00:00"
+          },
+          {
+            "player": "TreVeyon Henderson",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-05T18:01:00+00:00"
+          },
+          {
+            "player": "Myles Montgomery",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.176912+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/17/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -956,15 +1626,15 @@
       "line": 30.5,
       "book": "fanatics",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.092218+00:00",
+      "observed_at": "2026-09-06T13:31:35.915964+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Over",
       "odds": -110,
-      "mean": 31.734696324856248,
+      "mean": 31.734696324856245,
       "interval80": [
-        20.098243008860187,
-        42.08729251907218
+        20.09824300886018,
+        42.08729251907217
       ],
       "p_model": 0.5276240719180971,
       "p_market": 0.5070833006473704,
@@ -983,23 +1653,56 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Deshaun Watson",
+        "espn_id": "3122840",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.478257+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CLE/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Isaiah Bond",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-31T19:35:00+00:00"
+          },
+          {
+            "player": "Jamari Thrash",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Kendrick Green",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Parker Brailsford",
+            "position": "C",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Joe Royer",
+            "position": "TE",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-08-30T21:32:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.041932+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 1,
@@ -1017,17 +1720,17 @@
       "line": 29.5,
       "book": "caesars",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.591002+00:00",
+      "observed_at": "2026-09-06T13:31:36.386646+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
       "odds": -114,
-      "mean": 28.80134901955026,
+      "mean": 28.801349019550255,
       "interval80": [
         17.164895703554194,
-        39.153945213766185
+        39.15394521376618
       ],
-      "p_model": 0.5623768764088396,
+      "p_model": 0.5623768764088397,
       "p_market": 0.5101214574898785,
       "p_final": 0.516321393043885,
       "p_push": 0.0,
@@ -1036,7 +1739,7 @@
       "market_only_ev": -0.04240357979970183,
       "fair_odds": -107,
       "bet_to": -102,
-      "model_weight": 0.11864674864862332,
+      "model_weight": 0.11864674864862325,
       "other_books": 3,
       "reference_books": [
         "bet365",
@@ -1045,23 +1748,56 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Josh Allen",
+        "espn_id": "3918298",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.321003+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/BUF/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Khalil Shakir",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T20:34:00+00:00"
+          },
+          {
+            "player": "Keon Coleman",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T19:23:00+00:00"
+          },
+          {
+            "player": "Tyrell Shavers",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T04:04:00+00:00"
+          },
+          {
+            "player": "Jude Bowry",
+            "position": "LT",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-25T02:33:00+00:00"
+          },
+          {
+            "player": "Ty Johnson",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-09-01T19:10:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.017417+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/2/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:23+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1079,17 +1815,17 @@
       "line": 32.5,
       "book": "caesars",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.610890+00:00",
+      "observed_at": "2026-09-06T13:31:35.453733+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Over",
       "odds": -105,
-      "mean": 32.2450393508229,
+      "mean": 32.24503935082291,
       "interval80": [
-        20.608586034826835,
-        42.59763554503883
+        20.608586034826843,
+        42.597635545038834
       ],
-      "p_model": 0.45724425498042365,
+      "p_model": 0.45724425498042387,
       "p_market": 0.5,
       "p_final": 0.4960126028647782,
       "p_push": 0.0,
@@ -1098,7 +1834,7 @@
       "market_only_ev": -0.023809523809523836,
       "fair_odds": 102,
       "bet_to": 106,
-      "model_weight": 0.09325991474119064,
+      "model_weight": 0.09325991474119073,
       "other_books": 1,
       "reference_books": [
         "hardrock"
@@ -1106,23 +1842,84 @@
       "status": "held",
       "reasons": [
         "Fewer than 2 other books at this line",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Tyler Shough",
+        "espn_id": "4360689",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.827846+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NO/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Jordyn Tyson",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-30T22:30:00+00:00"
+          },
+          {
+            "player": "Mason Tipton",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T18:40:00+00:00"
+          },
+          {
+            "player": "Dillon Radunz",
+            "position": "LG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Nick Saldiveri",
+            "position": "LG",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-05-14T00:10:00+00:00"
+          },
+          {
+            "player": "Oscar Delp",
+            "position": "TE",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-24T23:26:00+00:00"
+          },
+          {
+            "player": "Moliki Matavao",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:41:00+00:00"
+          },
+          {
+            "player": "Alvin Kamara",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-03T18:38:00+00:00"
+          },
+          {
+            "player": "Kendre Miller",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-09-02T02:58:00+00:00"
+          },
+          {
+            "player": "Ty Chandler",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:39:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.187598+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1140,17 +1937,17 @@
       "line": 28.5,
       "book": "fanatics",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.767040+00:00",
+      "observed_at": "2026-09-06T13:31:36.459599+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Over",
       "odds": -105,
-      "mean": 30.570077003724943,
+      "mean": 30.57007700372494,
       "interval80": [
-        18.933623687728883,
+        18.933623687728875,
         40.92267319794087
       ],
-      "p_model": 0.5675043770606434,
+      "p_model": 0.5675043770606432,
       "p_market": 0.48581617766250607,
       "p_final": 0.49406563041968077,
       "p_push": 0.0,
@@ -1159,7 +1956,7 @@
       "market_only_ev": -0.05150174837320248,
       "fair_odds": 102,
       "bet_to": 107,
-      "model_weight": 0.1009870803611176,
+      "model_weight": 0.10098708036111774,
       "other_books": 3,
       "reference_books": [
         "bet365",
@@ -1168,23 +1965,63 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Jalen Hurts",
+        "espn_id": "4040715",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.832458+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/PHI/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Johnny Wilson",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-22T21:59:00+00:00"
+          },
+          {
+            "player": "Markel Bell",
+            "position": "LT",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-25T01:22:00+00:00"
+          },
+          {
+            "player": "Micah Morris",
+            "position": "LG",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Markel Bell",
+            "position": "RT",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-25T01:22:00+00:00"
+          },
+          {
+            "player": "Eli Stowers",
+            "position": "TE",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-26T19:23:00+00:00"
+          },
+          {
+            "player": "Grant Calcaterra",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T18:50:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.222635+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1202,7 +2039,7 @@
       "line": 32.5,
       "book": "fanatics",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.547129+00:00",
+      "observed_at": "2026-09-06T13:31:35.460254+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-14T00:20:00+00:00",
       "side": "Under",
@@ -1230,23 +2067,49 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Dak Prescott",
+        "espn_id": "2577417",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.473827+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/DAL/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Tyler Guyton",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Matt Hennessy",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-06-18T21:45:00+00:00"
+          },
+          {
+            "player": "Princeton Fant",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "DJ Rogers",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:59:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.038658+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/6/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1264,17 +2127,17 @@
       "line": 32.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.852597+00:00",
+      "observed_at": "2026-09-06T13:31:35.771427+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
       "odds": -114,
-      "mean": 34.19173030792139,
+      "mean": 34.19173030792138,
       "interval80": [
-        22.555276991925325,
-        44.54432650213732
+        22.555276991925318,
+        44.54432650213731
       ],
-      "p_model": 0.45042865837681584,
+      "p_model": 0.45042865837681617,
       "p_market": 0.5203045685279188,
       "p_final": 0.5127527676969204,
       "p_push": 0.0,
@@ -1283,7 +2146,7 @@
       "market_only_ev": -0.023287915219520783,
       "fair_odds": -105,
       "bet_to": -101,
-      "model_weight": 0.10807445390933819,
+      "model_weight": 0.10807445390933847,
       "other_books": 4,
       "reference_books": [
         "bet365",
@@ -1293,23 +2156,70 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Caleb Williams",
+        "espn_id": "4431611",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.327608+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CHI/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Rome Odunze",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-03T22:57:00+00:00"
+          },
+          {
+            "player": "Luther Burden III",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T18:45:00+00:00"
+          },
+          {
+            "player": "Nikola Kalinic",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Hayden Large",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:40:00+00:00"
+          },
+          {
+            "player": "D'Andre Swift",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-04T00:32:00+00:00"
+          },
+          {
+            "player": "Kyle Monangai",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-02T20:37:00+00:00"
+          },
+          {
+            "player": "Brittain Brown",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T16:21:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.024697+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1327,17 +2237,17 @@
       "line": 27.5,
       "book": "draftkings",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.802976+00:00",
+      "observed_at": "2026-09-06T13:31:36.532186+00:00",
       "source_updated_at": "2026-09-05T17:16:04+00:00",
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Under",
       "odds": -101,
-      "mean": 26.71805219812326,
+      "mean": 26.718052198123267,
       "interval80": [
-        15.081598882127198,
-        37.07064839233919
+        15.081598882127205,
+        37.070648392339194
       ],
-      "p_model": 0.5659876121689446,
+      "p_model": 0.5659876121689441,
       "p_market": 0.47969543147208116,
       "p_final": 0.4818144371808005,
       "p_push": 0.0,
@@ -1346,7 +2256,7 @@
       "market_only_ev": -0.04535859677338305,
       "fair_odds": 108,
       "bet_to": 112,
-      "model_weight": 0.02455617289547049,
+      "model_weight": 0.024556172895470556,
       "other_books": 4,
       "reference_books": [
         "bet365",
@@ -1356,23 +2266,49 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Malik Willis",
+        "espn_id": "4242512",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.697008+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/MIA/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Will Kacmarek",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-29T17:11:00+00:00"
+          },
+          {
+            "player": "Cole Turner",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T23:35:00+00:00"
+          },
+          {
+            "player": "Ben Sims",
+            "position": "TE",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:44:00+00:00"
+          },
+          {
+            "player": "Ollie Gordon II",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-09-02T16:06:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.188147+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/15/depthcharts",
+        "source_updated_at": "2026-09-06T13:29:26+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 1,
@@ -1390,7 +2326,7 @@
       "line": 31.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.970733+00:00",
+      "observed_at": "2026-09-06T13:31:35.704739+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Over",
@@ -1418,23 +2354,42 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Cam Ward",
+        "espn_id": "4688380",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.881593+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/TEN/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Carnell Tate",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T20:09:00+00:00"
+          },
+          {
+            "player": "Wan'Dale Robinson",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-28T18:26:00+00:00"
+          },
+          {
+            "player": "Jaren Kanak",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.274927+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/10/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 1,
@@ -1452,26 +2407,26 @@
       "line": 34.5,
       "book": "caesars",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.591702+00:00",
+      "observed_at": "2026-09-06T13:31:35.206867+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Over",
       "odds": -104,
-      "mean": 35.25044892378915,
+      "mean": 35.25044892378916,
       "interval80": [
-        23.613995607793086,
-        45.60304511800508
+        23.613995607793093,
+        45.603045118005085
       ],
-      "p_model": 0.5042722249478504,
+      "p_model": 0.5042722249478506,
       "p_market": 0.48478698699110134,
-      "p_final": 0.487481967985675,
+      "p_final": 0.48748196798567506,
       "p_push": 0.0,
-      "ev": -0.04378537048963749,
+      "ev": -0.04378537048963743,
       "robust_ev": -0.07849475628668584,
       "market_only_ev": -0.0490716793636089,
       "fair_odds": 105,
       "bet_to": 110,
-      "model_weight": 0.13830885722595057,
+      "model_weight": 0.13830885722595043,
       "other_books": 2,
       "reference_books": [
         "bet365",
@@ -1479,23 +2434,42 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Joe Burrow",
+        "espn_id": "3915511",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.324853+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CIN/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Ja'Marr Chase",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T22:12:00+00:00"
+          },
+          {
+            "player": "Tee Higgins",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T22:02:00+00:00"
+          },
+          {
+            "player": "Brian Parker II",
+            "position": "LG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:55:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.014865+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/4/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:23+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1513,14 +2487,14 @@
       "line": 31.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.775489+00:00",
+      "observed_at": "2026-09-06T13:31:35.468075+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Under",
       "odds": -114,
-      "mean": 28.77414675102647,
+      "mean": 28.774146751026475,
       "interval80": [
-        17.137693435030407,
+        17.137693435030414,
         39.1267429452424
       ],
       "p_model": 0.6482131012669308,
@@ -1538,23 +2512,56 @@
       "status": "held",
       "reasons": [
         "Fewer than 2 other books at this line",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Jordan Love",
+        "espn_id": "4036378",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.494978+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/GB/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Savion Williams",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T15:51:00+00:00"
+          },
+          {
+            "player": "Tucker Kraft",
+            "position": "TE",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-03T20:31:00+00:00"
+          },
+          {
+            "player": "Luke Musgrave",
+            "position": "TE",
+            "depth": 5,
+            "status": "Out",
+            "date": "2026-09-01T15:24:00+00:00"
+          },
+          {
+            "player": "Thomas Yassmin",
+            "position": "TE",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:12:00+00:00"
+          },
+          {
+            "player": "Josh Jacobs",
+            "position": "RB",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-09-04T18:34:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.076745+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/9/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1572,7 +2579,7 @@
       "line": 32.5,
       "book": "fanatics",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.745998+00:00",
+      "observed_at": "2026-09-06T13:31:35.437061+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
@@ -1582,16 +2589,16 @@
         20.733600713148803,
         42.722650223360795
       ],
-      "p_model": 0.5370948775011971,
+      "p_model": 0.537094877501197,
       "p_market": 0.5281576830249397,
-      "p_final": 0.5294503381293145,
+      "p_final": 0.5294503381293144,
       "p_push": 0.0,
-      "ev": -0.046989391367233846,
+      "ev": -0.04698939136723401,
       "robust_ev": -0.07631617055510853,
       "market_only_ev": -0.04931617055510851,
       "fair_odds": -113,
       "bet_to": -107,
-      "model_weight": 0.14463768331424556,
+      "model_weight": 0.14463768331424562,
       "other_books": 3,
       "reference_books": [
         "bet365",
@@ -1600,23 +2607,70 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Trevor Lawrence",
+        "espn_id": "4360310",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.673466+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/JAX/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Jakobi Meyers",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T13:41:00+00:00"
+          },
+          {
+            "player": "Garrett DiGiorgio",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Sam Mustipher",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:25:00+00:00"
+          },
+          {
+            "player": "Wyatt Milum",
+            "position": "RG",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Patrick Mekari",
+            "position": "RG",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:21:00+00:00"
+          },
+          {
+            "player": "Bhayshul Tuten",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T15:07:00+00:00"
+          },
+          {
+            "player": "LeQuint Allen Jr.",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-09-02T15:14:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.075856+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/30/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1634,7 +2688,7 @@
       "line": 31.5,
       "book": "caesars",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.111527+00:00",
+      "observed_at": "2026-09-06T13:31:35.879503+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
@@ -1661,23 +2715,49 @@
       ],
       "status": "held",
       "reasons": [
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Baker Mayfield",
+        "espn_id": "3052587",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.853730+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/TB/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Emeka Egbuka",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T15:21:00+00:00"
+          },
+          {
+            "player": "David Sills V",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T21:46:00+00:00"
+          },
+          {
+            "player": "Jalen McMillan",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-01T16:08:00+00:00"
+          },
+          {
+            "player": "Sean Tucker",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-09-02T16:28:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.246180+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/27/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1695,7 +2775,7 @@
       "line": 32.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.387097+00:00",
+      "observed_at": "2026-09-06T13:31:36.099431+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T17:00:00+00:00",
       "side": "Under",
@@ -1720,23 +2800,70 @@
       "status": "held",
       "reasons": [
         "Fewer than 2 other books at this line",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "C.J. Stroud",
+        "espn_id": "4432577",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.479743+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/HOU/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Jayden Higgins",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-21T18:31:00+00:00"
+          },
+          {
+            "player": "Jaylin Noel",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-19T17:46:00+00:00"
+          },
+          {
+            "player": "Tank Dell",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-04T15:55:00+00:00"
+          },
+          {
+            "player": "Braden Smith",
+            "position": "RT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-02T00:10:00+00:00"
+          },
+          {
+            "player": "Sam Hagen",
+            "position": "RT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-02T00:13:00+00:00"
+          },
+          {
+            "player": "Brevin Jordan",
+            "position": "TE",
+            "depth": 5,
+            "status": "Questionable",
+            "date": "2026-09-01T23:36:00+00:00"
+          },
+          {
+            "player": "British Brooks",
+            "position": "RB",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-24T23:53:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.076124+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/34/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1754,17 +2881,17 @@
       "line": 35.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:06.276519+00:00",
+      "observed_at": "2026-09-06T13:31:35.193761+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-15T00:15:00+00:00",
       "side": "Under",
       "odds": -130,
-      "mean": 33.23244197914948,
+      "mean": 33.23244197914947,
       "interval80": [
-        21.595988663153413,
-        43.585038173365405
+        21.595988663153406,
+        43.5850381733654
       ],
-      "p_model": 0.6288931361523586,
+      "p_model": 0.6288931361523588,
       "p_market": 0.5281576830249397,
       "p_final": 0.5371794220839807,
       "p_push": 0.0,
@@ -1773,29 +2900,69 @@
       "market_only_ev": -0.0655671761866451,
       "fair_odds": -116,
       "bet_to": -111,
-      "model_weight": 0.08955872812354863,
+      "model_weight": 0.08955872812354856,
       "other_books": 0,
       "reference_books": [],
       "status": "held",
       "reasons": [
         "Fewer than 2 other books at this line",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Bo Nix",
+        "espn_id": "4426338",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.476380+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/DEN/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Marvin Mims Jr.",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-31T22:10:00+00:00"
+          },
+          {
+            "player": "Frank Crum",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:20:00+00:00"
+          },
+          {
+            "player": "Nick Gargiulo",
+            "position": "LG",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T23:24:00+00:00"
+          },
+          {
+            "player": "Luke Wattenberg",
+            "position": "C",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Michael Deiter",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Caleb Lohner",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T16:50:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.076516+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/7/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1813,7 +2980,7 @@
       "line": 29.5,
       "book": "caesars",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:08.024594+00:00",
+      "observed_at": "2026-09-06T13:31:36.377496+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-13T20:25:00+00:00",
       "side": "Over",
@@ -1841,23 +3008,84 @@
       "reasons": [
         "Fewer than 2 other books at this line",
         "Large model\u2013market disagreement",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Jayden Daniels",
+        "espn_id": "4426348",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.881503+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/WSH/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Jacoby Jones",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T02:55:00+00:00"
+          },
+          {
+            "player": "Laremy Tunsil",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:24:00+00:00"
+          },
+          {
+            "player": "Nick Allegretti",
+            "position": "C",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-21T01:30:00+00:00"
+          },
+          {
+            "player": "John Bates",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-16T20:37:00+00:00"
+          },
+          {
+            "player": "Ben Sinnott",
+            "position": "TE",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-08-25T13:58:00+00:00"
+          },
+          {
+            "player": "Quentin Moore",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T02:59:00+00:00"
+          },
+          {
+            "player": "Jacory Croskey-Merritt",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-31T21:11:00+00:00"
+          },
+          {
+            "player": "Rachaad White",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-28T21:47:00+00:00"
+          },
+          {
+            "player": "Jeremy McNichols",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T14:31:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.271559+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 0,
@@ -1875,17 +3103,17 @@
       "line": 29.5,
       "book": "fanduel",
       "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-      "observed_at": "2026-09-06T13:24:07.715252+00:00",
+      "observed_at": "2026-09-06T13:31:36.416087+00:00",
       "source_updated_at": null,
       "kickoff": "2026-09-14T00:20:00+00:00",
       "side": "Over",
       "odds": -122,
-      "mean": 30.72580202384796,
+      "mean": 30.725802023847965,
       "interval80": [
-        19.089348707851897,
-        41.07839821806389
+        19.089348707851904,
+        41.078398218063896
       ],
-      "p_model": 0.5271950300652586,
+      "p_model": 0.5271950300652588,
       "p_market": 0.5141838223374939,
       "p_final": 0.5151088754591158,
       "p_push": 0.0,
@@ -1894,29 +3122,76 @@
       "market_only_ev": -0.06435402820554381,
       "fair_odds": -106,
       "bet_to": -102,
-      "model_weight": 0.0710966376816706,
+      "model_weight": 0.07109663768167053,
       "other_books": 0,
       "reference_books": [],
       "status": "held",
       "reasons": [
         "Fewer than 2 other books at this line",
-        "Starting role not independently verified",
-        "Starting context stale or unverified",
         "Estimated EV below 2.5%",
         "Edge fails probability stress test"
       ],
       "starting_status": {
-        "starter": null,
-        "espn_id": null,
+        "starter": "Jaxson Dart",
+        "espn_id": "4689114",
         "injuries": [],
-        "offense_injuries": [],
-        "available": false,
-        "source_updated_at": null,
-        "observed_at": "2026-09-06T13:24:08.697021+00:00",
-        "source_url": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NYG/depthcharts",
-        "issues": [
-          "Context fetch failed"
-        ]
+        "offense_injuries": [
+          {
+            "player": "Malik Nabers",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T19:14:00+00:00"
+          },
+          {
+            "player": "Gunner Olszewski",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-06-02T00:10:00+00:00"
+          },
+          {
+            "player": "Calvin Austin III",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T22:48:00+00:00"
+          },
+          {
+            "player": "John Michael Schmitz Jr.",
+            "position": "C",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Francis Mauigoa",
+            "position": "RG",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-21T02:03:00+00:00"
+          },
+          {
+            "player": "Theo Johnson",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-31T19:45:00+00:00"
+          },
+          {
+            "player": "Tyrone Tracy Jr.",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-01T19:54:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-06T13:31:37.223310+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "source_updated_at": "2026-09-06T13:30:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
       },
       "feature_flags": {
         "coach_change": 1,
@@ -1937,37 +3212,6 @@
     "Cam Ward: source update outside 24-hour age policy or in future",
     "Dak Prescott: source update outside 24-hour age policy or in future",
     "Deshaun Watson: source update outside 24-hour age policy or in future",
-    "ESPN ARI: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/ARI/depthcharts",
-    "ESPN BAL: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/BAL/depthcharts",
-    "ESPN BUF: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/BUF/depthcharts",
-    "ESPN CAR: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CAR/depthcharts",
-    "ESPN CHI: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CHI/depthcharts",
-    "ESPN CIN: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CIN/depthcharts",
-    "ESPN CLE: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/CLE/depthcharts",
-    "ESPN DAL: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/DAL/depthcharts",
-    "ESPN DEN: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/DEN/depthcharts",
-    "ESPN DET: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/DET/depthcharts",
-    "ESPN GB: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/GB/depthcharts",
-    "ESPN HOU: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/HOU/depthcharts",
-    "ESPN IND: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/IND/depthcharts",
-    "ESPN JAX: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/JAX/depthcharts",
-    "ESPN KC: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/KC/depthcharts",
-    "ESPN LA: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/LAR/depthcharts",
-    "ESPN LAC: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/LAC/depthcharts",
-    "ESPN LV: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/LV/depthcharts",
-    "ESPN MIA: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/MIA/depthcharts",
-    "ESPN MIN: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/MIN/depthcharts",
-    "ESPN NE: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NE/depthcharts",
-    "ESPN NO: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NO/depthcharts",
-    "ESPN NYG: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NYG/depthcharts",
-    "ESPN NYJ: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/NYJ/depthcharts",
-    "ESPN PHI: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/PHI/depthcharts",
-    "ESPN PIT: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/PIT/depthcharts",
-    "ESPN SEA: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/SEA/depthcharts",
-    "ESPN SF: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/SF/depthcharts",
-    "ESPN TB: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/TB/depthcharts",
-    "ESPN TEN: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/TEN/depthcharts",
-    "ESPN WAS: 403 Client Error: Forbidden for url: https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/WSH/depthcharts",
     "Geno Smith: source update outside 24-hour age policy or in future",
     "Jalen Hurts: source update outside 24-hour age policy or in future",
     "Jared Goff: source update outside 24-hour age policy or in future",
@@ -2000,7 +3244,7 @@
           "n": 1630,
           "mae": 7.320946841989128,
           "rmse": 9.737548796816128,
-          "bias": 1.2057815196708732,
+          "bias": 1.2057815196708728,
           "crps": 5.287192851714908
         }
       },
@@ -2018,7 +3262,7 @@
           "n": 1630,
           "mae": 7.316877827904222,
           "rmse": 9.732349998562395,
-          "bias": 1.1336890986191983,
+          "bias": 1.133689098619198,
           "crps": 5.288805368269809
         }
       }
@@ -2027,16 +3271,16 @@
       "n": 544,
       "mae": 6.98274778617476,
       "rmse": 9.034465911762991,
-      "bias": 0.6536641947472089,
+      "bias": 0.6536641947472086,
       "crps": 4.999682253556117,
-      "fixed_threshold_brier": 0.16317199414683237,
+      "fixed_threshold_brier": 0.16317199414683234,
       "fixed_threshold_log_loss": 0.4975695021361587,
       "coverage_80": 0.8088235294117647,
       "week1": {
         "n": 32,
-        "mae": 6.325520624981344,
-        "rmse": 7.84239068151414,
-        "bias": 0.5337597262351054
+        "mae": 6.325520624981345,
+        "rmse": 7.842390681514141,
+        "bias": 0.5337597262351048
       }
     },
     "baseline_2025": {
@@ -2048,7 +3292,7 @@
     },
     "mae_difference_95ci": [
       -0.5687624167670008,
-      -0.1920436756388271
+      -0.19204367563882727
     ],
     "historical_market_roi": null,
     "market_edge_validated": false,
