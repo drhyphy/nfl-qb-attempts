@@ -43,7 +43,7 @@ jobs:
       - uses: actions/cache@v4
         if: steps.clock.outputs.run == 'true'
         with:
-          path: data/raw
+          path: data/raw/*.parquet
           key: qb-history-v1-${{ github.run_id }}
           restore-keys: qb-history-v1-
       - name: Install and test
