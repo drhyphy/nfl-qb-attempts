@@ -1,0 +1,16 @@
+{
+  "version": "market-center-v1",
+  "candidate": "ridge_eb",
+  "lam": 0.35,
+  "dead_zone": 1.5,
+  "min_ev": 0.03,
+  "max_ev": 0.15,
+  "min_books": 3,
+  "min_odds": -250,
+  "max_quote_age_h": 36,
+  "max_center_gap": 6.0,
+  "ny_only": true,
+  "frozen_at": "2026-09-06",
+  "basis": "output/market_backtest_summary.json + output/policy_analysis.json (BettingPros closing archive 2022wk10-2025). lam: dev log-loss best 0.20, dev MAE best 0.55, chosen 0.35 as the compromise (2025 log-loss best was also 0.35 - chosen with 2025 visible, so treat as mildly optimistic). dead_zone 1.5 attempts: dev per-|gap| bins showed no model information below 1.5; held on 2025. Side rule rejected: overs won in dev, unders in 2025.",
+  "review_after": "100 settled ledger decisions or 2026 week 8, whichever first"
+}

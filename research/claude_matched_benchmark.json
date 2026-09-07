@@ -1,0 +1,35 @@
+{
+  "evaluation": "2025 exposed historical benchmark; saved expanding-season OOF, common game_id/player_id intersection; neither model retrained for this comparison",
+  "n": 537,
+  "games": 272,
+  "actual_label_mismatches": 0,
+  "astra": {
+    "candidate": "market_ridge",
+    "mae": 6.723834796005859,
+    "rmse": 8.574957041773512
+  },
+  "claude": {
+    "candidate": "ridge_eb",
+    "mae": 6.682606599132875,
+    "rmse": 8.490384611445306
+  },
+  "claude_minus_astra_mae": -0.041228196872984214,
+  "claude_minus_astra_mae_95ci": [
+    -0.18978717051004235,
+    0.10888719227737494
+  ],
+  "bootstrap": {
+    "unit": "game",
+    "replicates": 5000,
+    "seed": 493,
+    "method": "resample game blocks; weight every matched QB equally within each resample"
+  },
+  "excluded_astra_rows": 7,
+  "excluded_astra_rows_all_zero_attempts": true,
+  "limitations": [
+    "Saved forecasts have different training populations and feature sets.",
+    "2025 was exposed during policy evaluation; no untouched holdout or betting ROI superiority claim.",
+    "MAE interval includes zero.",
+    "Conditional-distribution CRPS not recomputed; original CRPS figures have different samples."
+  ]
+}

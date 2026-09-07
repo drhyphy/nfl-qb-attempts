@@ -1,0 +1,405 @@
+{
+  "version": "qbatt-v1.0",
+  "chosen": "ridge_eb",
+  "use_scale_model": false,
+  "selection_rule": "lowest 2022-2024 expanding-season CRPS; 2025 untouched holdout",
+  "candidates": {
+    "recent": {
+      "development": {
+        "n": 1593,
+        "mae": 7.002192228654271,
+        "rmse": 9.052618066884419,
+        "bias": 1.2594615029196898,
+        "crps": 4.973736634723092,
+        "coverage_80": 0.8091650973006905,
+        "fixed_threshold_brier": 0.16504947116566468,
+        "fixed_threshold_log_loss": 0.5003291719529446
+      },
+      "development_no_scale": {
+        "n": 1593,
+        "mae": 7.002192228654271,
+        "rmse": 9.052618066884419,
+        "bias": 1.2594615029196898,
+        "crps": 4.9825070104778995,
+        "coverage_80": 0.8173258003766478,
+        "fixed_threshold_brier": 0.16509133759026806,
+        "fixed_threshold_log_loss": 0.499197163038254
+      },
+      "by_year": {
+        "2022": {
+          "n": 538,
+          "mae": 7.147967489018688,
+          "rmse": 9.295580383826966,
+          "bias": 1.4882204873727356,
+          "crps": 5.087058375412287,
+          "coverage_80": 0.8197026022304833,
+          "fixed_threshold_brier": 0.16138412151509388,
+          "fixed_threshold_log_loss": 0.49069095031616694
+        },
+        "2023": {
+          "n": 544,
+          "mae": 6.967578230898109,
+          "rmse": 9.00546190946737,
+          "bias": 1.281492937431113,
+          "crps": 4.9370948755951325,
+          "coverage_80": 0.8161764705882353,
+          "fixed_threshold_brier": 0.17079455886687686,
+          "fixed_threshold_log_loss": 0.5172823602268097
+        },
+        "2024": {
+          "n": 511,
+          "mae": 6.88556390126346,
+          "rmse": 8.840982380126874,
+          "bias": 0.9951612406692935,
+          "crps": 4.893435304928221,
+          "coverage_80": 0.7906066536203522,
+          "fixed_threshold_brier": 0.16279238780470123,
+          "fixed_threshold_log_loss": 0.4924286412672375
+        },
+        "2025": {
+          "n": 537,
+          "mae": 7.075020554325814,
+          "rmse": 8.995875448636204,
+          "bias": 1.4659922791531619,
+          "crps": 4.960679899905791,
+          "coverage_80": 0.7914338919925512,
+          "fixed_threshold_brier": 0.16948493422607327,
+          "fixed_threshold_log_loss": 0.5167445039096222
+        }
+      }
+    },
+    "ridge": {
+      "development": {
+        "n": 1593,
+        "mae": 6.696496361282998,
+        "rmse": 8.6559493919321,
+        "bias": 0.0571635222144369,
+        "crps": 4.814693515773599,
+        "coverage_80": 0.8060263653483992,
+        "fixed_threshold_brier": 0.1588860155222479,
+        "fixed_threshold_log_loss": 0.48365055650391703
+      },
+      "development_no_scale": {
+        "n": 1593,
+        "mae": 6.696496361282998,
+        "rmse": 8.6559493919321,
+        "bias": 0.0571635222144369,
+        "crps": 4.814440966426897,
+        "coverage_80": 0.8210922787193974,
+        "fixed_threshold_brier": 0.1587885747541539,
+        "fixed_threshold_log_loss": 0.48357981149164697
+      },
+      "by_year": {
+        "2022": {
+          "n": 538,
+          "mae": 6.821207694831246,
+          "rmse": 8.973633950766441,
+          "bias": -0.2891634098376583,
+          "crps": 4.959615101929493,
+          "coverage_80": 0.8215613382899628,
+          "fixed_threshold_brier": 0.15636628328434596,
+          "fixed_threshold_log_loss": 0.47483803978872524
+        },
+        "2023": {
+          "n": 544,
+          "mae": 6.568838921110476,
+          "rmse": 8.422871756934766,
+          "bias": -0.15464554628946617,
+          "crps": 4.70454115401765,
+          "coverage_80": 0.8143382352941176,
+          "fixed_threshold_brier": 0.16142139781620643,
+          "fixed_threshold_log_loss": 0.4925682758501998
+        },
+        "2024": {
+          "n": 511,
+          "mae": 6.701097046224085,
+          "rmse": 8.559594045609625,
+          "bias": 0.6472770695924224,
+          "crps": 4.7793805440385,
+          "coverage_80": 0.7808219178082192,
+          "fixed_threshold_brier": 0.15883976890009097,
+          "fixed_threshold_log_loss": 0.4834350861876651
+        },
+        "2025": {
+          "n": 537,
+          "mae": 6.723372601423521,
+          "rmse": 8.512409390354906,
+          "bias": 1.0734264441233652,
+          "crps": 4.738591416627523,
+          "coverage_80": 0.7988826815642458,
+          "fixed_threshold_brier": 0.16140282347875384,
+          "fixed_threshold_log_loss": 0.489473869705573
+        }
+      }
+    },
+    "lgbm": {
+      "development": {
+        "n": 1593,
+        "mae": 6.775510036932083,
+        "rmse": 8.72505248603904,
+        "bias": -0.10728080104644978,
+        "crps": 4.880574958260819,
+        "coverage_80": 0.8148148148148148,
+        "fixed_threshold_brier": 0.1613340432849091,
+        "fixed_threshold_log_loss": 0.4901282899880887
+      },
+      "development_no_scale": {
+        "n": 1593,
+        "mae": 6.775510036932083,
+        "rmse": 8.72505248603904,
+        "bias": -0.10728080104644978,
+        "crps": 4.873211926919641,
+        "coverage_80": 0.8204645323289391,
+        "fixed_threshold_brier": 0.16106337642172547,
+        "fixed_threshold_log_loss": 0.4889044407493604
+      },
+      "by_year": {
+        "2022": {
+          "n": 538,
+          "mae": 6.966267270255509,
+          "rmse": 9.07699711963365,
+          "bias": -0.09331086208170306,
+          "crps": 5.070794836831342,
+          "coverage_80": 0.8215613382899628,
+          "fixed_threshold_brier": 0.16070103368173322,
+          "fixed_threshold_log_loss": 0.48752550527930794
+        },
+        "2023": {
+          "n": 544,
+          "mae": 6.641438461892498,
+          "rmse": 8.452513715894993,
+          "bias": -0.4205452579780405,
+          "crps": 4.7560448127395345,
+          "coverage_80": 0.8198529411764706,
+          "fixed_threshold_brier": 0.16325992683192989,
+          "fixed_threshold_log_loss": 0.4954551033846448
+        },
+        "2024": {
+          "n": 511,
+          "mae": 6.717403471948777,
+          "rmse": 8.632151752604262,
+          "bias": 0.2115059649178387,
+          "crps": 4.812876532610406,
+          "coverage_80": 0.8023483365949119,
+          "fixed_threshold_brier": 0.15995024390512297,
+          "fixed_threshold_log_loss": 0.48719778448045176
+        },
+        "2025": {
+          "n": 537,
+          "mae": 6.708506777015454,
+          "rmse": 8.51769680209996,
+          "bias": 0.7076590344310909,
+          "crps": 4.747830652341908,
+          "coverage_80": 0.8100558659217877,
+          "fixed_threshold_brier": 0.16131613789658403,
+          "fixed_threshold_log_loss": 0.48990612767787584
+        }
+      }
+    },
+    "ridge_lgbm": {
+      "development": {
+        "n": 1593,
+        "mae": 6.691875881028519,
+        "rmse": 8.645340544106682,
+        "bias": -0.025058639416006452,
+        "crps": 4.820503771908866,
+        "coverage_80": 0.8066541117388575,
+        "fixed_threshold_brier": 0.1591559215589612,
+        "fixed_threshold_log_loss": 0.484372007217299
+      },
+      "development_no_scale": {
+        "n": 1593,
+        "mae": 6.691875881028519,
+        "rmse": 8.645340544106682,
+        "bias": -0.025058639416006452,
+        "crps": 4.816514989680475,
+        "coverage_80": 0.8192090395480226,
+        "fixed_threshold_brier": 0.15898208861084062,
+        "fixed_threshold_log_loss": 0.4837771836133718
+      },
+      "by_year": {
+        "2022": {
+          "n": 538,
+          "mae": 6.827696297487602,
+          "rmse": 8.965408305471966,
+          "bias": -0.19123713595968064,
+          "crps": 4.981826684070224,
+          "coverage_80": 0.8197026022304833,
+          "fixed_threshold_brier": 0.15732384848138095,
+          "fixed_threshold_log_loss": 0.4779671101310024
+        },
+        "2023": {
+          "n": 544,
+          "mae": 6.568359776541009,
+          "rmse": 8.400365913308026,
+          "bias": -0.2875954021337534,
+          "crps": 4.705831030287502,
+          "coverage_80": 0.8088235294117647,
+          "fixed_threshold_brier": 0.16155578424205785,
+          "fixed_threshold_log_loss": 0.4919194548929438
+        },
+        "2024": {
+          "n": 511,
+          "mae": 6.680371726011335,
+          "rmse": 8.558790080490729,
+          "bias": 0.42939151725513064,
+          "crps": 4.772735170537461,
+          "coverage_80": 0.7906066536203522,
+          "fixed_threshold_brier": 0.15852995290168834,
+          "fixed_threshold_log_loss": 0.48308046728946497
+        },
+        "2025": {
+          "n": 537,
+          "mae": 6.6918108055680126,
+          "rmse": 8.484690136078402,
+          "bias": 0.890542739277228,
+          "crps": 4.726575971039124,
+          "coverage_80": 0.7932960893854749,
+          "fixed_threshold_brier": 0.16074196361353504,
+          "fixed_threshold_log_loss": 0.48803863615763776
+        }
+      }
+    },
+    "ridge_eb": {
+      "development": {
+        "n": 1593,
+        "mae": 6.68578421112077,
+        "rmse": 8.647966368491888,
+        "bias": 0.04947206356300162,
+        "crps": 4.811511457767992,
+        "coverage_80": 0.8022598870056498,
+        "fixed_threshold_brier": 0.15890161144598308,
+        "fixed_threshold_log_loss": 0.48386704861979113
+      },
+      "development_no_scale": {
+        "n": 1593,
+        "mae": 6.68578421112077,
+        "rmse": 8.647966368491888,
+        "bias": 0.04947206356300162,
+        "crps": 4.8088922568256205,
+        "coverage_80": 0.815442561205273,
+        "fixed_threshold_brier": 0.15867801007208304,
+        "fixed_threshold_log_loss": 0.48324848190619457
+      },
+      "by_year": {
+        "2022": {
+          "n": 538,
+          "mae": 6.782011241797012,
+          "rmse": 8.935542484929048,
+          "bias": -0.31640480736315246,
+          "crps": 4.942925198292668,
+          "coverage_80": 0.8122676579925651,
+          "fixed_threshold_brier": 0.1558426835762529,
+          "fixed_threshold_log_loss": 0.47386071227011517
+        },
+        "2023": {
+          "n": 544,
+          "mae": 6.583735681515537,
+          "rmse": 8.441708497393838,
+          "bias": 0.010106772972707775,
+          "crps": 4.7083749515039806,
+          "coverage_80": 0.8125,
+          "fixed_threshold_brier": 0.16179612197486748,
+          "fixed_threshold_log_loss": 0.4936307448922484
+        },
+        "2024": {
+          "n": 511,
+          "mae": 6.693111525409276,
+          "rmse": 8.556638409911436,
+          "bias": 0.47658845228979363,
+          "crps": 4.782951119226596,
+          "coverage_80": 0.7808219178082192,
+          "fixed_threshold_brier": 0.1590407297751449,
+          "fixed_threshold_log_loss": 0.4840078669836052
+        },
+        "2025": {
+          "n": 537,
+          "mae": 6.682606599132875,
+          "rmse": 8.490384611445307,
+          "bias": 0.9306570107608602,
+          "crps": 4.722298550690175,
+          "coverage_80": 0.7970204841713222,
+          "fixed_threshold_brier": 0.1608305711986601,
+          "fixed_threshold_log_loss": 0.48837174464005884
+        }
+      }
+    }
+  },
+  "holdout": {
+    "n": 537,
+    "mae": 6.682606599132875,
+    "rmse": 8.490384611445307,
+    "bias": 0.9306570107608602,
+    "crps": 4.723699064847356,
+    "coverage_80": 0.8156424581005587,
+    "fixed_threshold_brier": 0.16091677046785333,
+    "fixed_threshold_log_loss": 0.48869346485439485
+  },
+  "holdout_baseline": {
+    "n": 537,
+    "mae": 7.075020554325814,
+    "rmse": 8.995875448636204,
+    "bias": 1.4659922791531619,
+    "crps": 4.956046653261475,
+    "coverage_80": 0.8044692737430168,
+    "fixed_threshold_brier": 0.16890439551673336,
+    "fixed_threshold_log_loss": 0.5110582578665022
+  },
+  "holdout_mae_diff_95ci": [
+    -0.572871640256158,
+    -0.19776439822873482
+  ],
+  "features": [
+    "qb_att_d3",
+    "qb_att_d8",
+    "qb_att_mean",
+    "qb_att_sd",
+    "qb_games",
+    "qb_season_games",
+    "qb_share_d8",
+    "qb_carries_d8",
+    "qb_scr_rate",
+    "qb_sack_rate",
+    "qb_att_per_db",
+    "qb_exit_rate",
+    "tm_att_d3",
+    "tm_att_d8",
+    "tm_plays_d3",
+    "tm_plays_d8",
+    "tm_db_rate_d8",
+    "tm_neutral_db_rate_d8",
+    "tm_db_oe_d8",
+    "tm_neutral_db_oe_d8",
+    "tm_lead_db_rate",
+    "tm_trail_db_rate",
+    "tm_nohuddle_rate",
+    "tm_drives_d8",
+    "tm_first_downs_d8",
+    "tm_sack_rate_d8",
+    "tm_scr_rate_d8",
+    "opp_att_allowed_d8",
+    "opp_plays_allowed_d8",
+    "opp_db_rate_allowed_d8",
+    "opp_db_oe_allowed_d8",
+    "opp_drives_allowed_d8",
+    "opp_first_downs_allowed_d8",
+    "opp_sack_rate_d8",
+    "opp_off_plays_d8",
+    "opp_off_db_rate_d8",
+    "exp_margin",
+    "abs_exp_margin",
+    "total_line",
+    "implied_team_pts",
+    "implied_opp_pts",
+    "home",
+    "rest",
+    "week",
+    "dome",
+    "div_game",
+    "coach_change",
+    "qb_team_change",
+    "team_coach_games",
+    "season_frac"
+  ],
+  "training_rows": 3698
+}

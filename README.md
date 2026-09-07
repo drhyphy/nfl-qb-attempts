@@ -46,3 +46,17 @@ Grading takes the earliest pregame recommendation per game/player. Later runs ca
 Recommendations use the New York book universe carried over from the earlier projects. Other real sportsbooks can inform consensus. No wagers are placed. Context is current public depth-chart information, not an official medical clearance. Read the model card for availability and historical timing limitations.
 
 Data sources: [nflverse](https://github.com/nflverse/nflverse-data) (CC BY 4.0; transformed), [ScoresAndOdds](https://www.scoresandodds.com/nfl/props/pass-attempts), and [ESPN depth charts](https://www.espn.com/nfl/depth).
+
+## Claude Fable challenger
+
+The dashboard now includes Claude Fable's model and a [source-linked comparison](research/CLAUDE_REVIEW.md). Both run on the same current quotes, canonical events, game odds and starting/health checks each morning. Claude's model and native policy are preserved in a portable, provenance-checked snapshot under `challenger/`; see its adapter notes for explicit operational differences.
+
+The head-to-head record begins when both models run together. Separate first-decision ledgers prevent either model's picks from overwriting the other's. Paired forecasts use the first common pregame snapshot and one deterministic common book/line per QB, including held offers. MAE, probability calibration, flat-unit ROI and exact-line CLV are reported separately; past solo champion picks remain in their original history.
+
+- `data/published/challengers/claude/history/`: immutable challenger cards.
+- `data/published/comparison/champion/`: champion cards from the common evaluation period.
+- `data/published/history/`: combined boards with the frozen paired forecasts.
+- `data/published/evaluations/`: every model's evaluated offers and shared source snapshot.
+- `research/claude_matched_benchmark.json`: 537 matched 2025 forecasts; exposed benchmark, no established winner.
+
+Challenger update failures do not replace the valid champion card. They show an unavailable challenger and fail the job after the current status is published. The selected base model refits with new completed games; the launch residual pool and saved QB corrections stay frozen to avoid Claude's original incremental-residual bug. No policy retuning occurs automatically.

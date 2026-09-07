@@ -23,6 +23,7 @@ from qb_attempts.scoring import resolve_quotes
 from qb_attempts.context import fetch_context
 from qb_attempts.game_odds import fetch_game_markets
 from qb_attempts.tracking import grade_history
+from qb_attempts.comparison import paired_forecasts, grade_comparison
 
 
 def json_default(value):
@@ -56,6 +57,7 @@ def main():
     future = games[games.kickoff > now].sort_values('kickoff')
     season = int(future.iloc[0].season) if not future.empty else now.year - (now.month <= 2)
     roster = pd.read_parquet(ROOT / f'data/raw/roster_weekly_{season}.parquet')
+    challenger_refresh_error = None
     if not args.capture_only:
         from qb_attempts.scoring_v2 import POLICY, score
         tendencies_path = ROOT / 'data/tendencies/team_games.parquet'
@@ -72,6 +74,11 @@ def main():
                 artifact = pickle.load(handle)
         if artifact.get('version') != VERSION:
             raise ValueError('Trained artifact version does not match the V2 pipeline')
+        if args.refresh_data or args.train:
+            try:
+                subprocess.run([sys.executable, str(ROOT / 'scripts/refresh_challenger.py'), '--refresh-data'], check=True)
+            except Exception as exc:
+                challenger_refresh_error = f'Challenger refresh failed: {type(exc).__name__}: {exc}'
 
     if args.quotes_file:
         quotes, errors = json.loads(args.quotes_file.read_text()), []
@@ -132,9 +139,38 @@ def main():
     for path in (ROOT / 'data/published/closing').glob('*.json'):
         closings.extend(json.loads(path.read_text()).get('quotes', []))
     performance = grade_history(history, stats, games, closings)
+    # Separate first-decision records; the challenger cannot replace a champion pick.
+    challenger_history = ROOT / 'data/published/challengers/claude/history'
+    aligned_history = ROOT / 'data/published/comparison/champion'
+    try:
+        if challenger_refresh_error:
+            raise RuntimeError(challenger_refresh_error)
+        from qb_attempts.challenger import load_challenger, score_challenger
+        challenger = score_challenger(resolved, games, game_markets, context, now,
+                                      bundle=load_challenger(ROOT / 'challenger'))
+        challenger['model_version'] = challenger.get('model_version', challenger.get('version', 'claude-fable-v1'))
+    except Exception as exc:
+        challenger = {'status':'source_failure', 'model_version':'claude-fable-v1',
+                      'recommendations':[], 'watchlist':[], 'evaluated_quotes':[],
+                      'source_errors':[f'{type(exc).__name__}: {exc}']}
+    challenger['generated_at'] = now.isoformat()
+    challenger['run_id'] = run_id
+    challenger['performance'] = grade_history(challenger_history, stats, games, closings)
+    comparison = {'protocol':'shared_snapshot_v1',
+                  'paired_forecasts': paired_forecasts(candidates, challenger.get('evaluated_quotes', []))
+                      if challenger.get('status') == 'ok' else [],
+                  'performance': {'champion':grade_history(aligned_history, stats, games, closings),
+                                  'challenger':challenger['performance']},
+                  'forecast_metrics':grade_comparison(history, stats, games),
+                  'note':'Both models use the same resolved offers, decision time, game odds, and common starting/health checks. ROI uses separate first decisions since challenger launch. Forecast scores include held offers and one deterministic common book/line per QB.'}
+    benchmark_path = ROOT / 'research/claude_matched_benchmark.json'
+    if benchmark_path.exists():
+        comparison['historical_benchmark'] = json.loads(benchmark_path.read_text())
     verified_contexts = sum(bool(c.get('available')) for c in context.values())
     verified_markets = len(requested_games & set(game_markets))
     source_failure = bool(resolved) and (not verified_contexts or not verified_markets)
+    if source_failure or not resolved:
+        comparison['paired_forecasts'] = []
     board = {
         'generated_at': now.isoformat(), 'run_id': run_id,
         'status': 'source_failure' if source_failure else 'ok' if resolved else 'no_odds',
@@ -146,6 +182,7 @@ def main():
         'game_markets': game_markets,
         'model_version': artifact['version'], 'model_sha256': hashlib.sha256(model_path.read_bytes()).hexdigest(),
         'policy': POLICY, 'recommendations': recommendations, 'watchlist': watch,
+        'challenger':{k:v for k,v in challenger.items() if k != 'evaluated_quotes'}, 'comparison':comparison,
         'source_errors': sorted(set(errors)), 'validation': artifact['metrics'], 'performance': performance,
         'source_timestamp_note': 'observed_at is feed retrieval, not sportsbook tick time; source_updated_at is null unless independently supplied for that book.',
     }
@@ -154,6 +191,12 @@ def main():
     destination.parent.mkdir(parents=True, exist_ok=True)
     with destination.open('x') as handle:
         json.dump(board, handle, indent=2, default=json_default, allow_nan=False)
+    if board['status'] == 'ok' and challenger.get('status') == 'ok':
+        for target, payload in ((challenger_history, {k:v for k,v in challenger.items() if k != 'evaluated_quotes'}),
+                                (aligned_history, {k:board[k] for k in ('generated_at','run_id','model_version','recommendations')})):
+            target.mkdir(parents=True, exist_ok=True)
+            with (target / f'{run_id}.json').open('x') as handle:
+                json.dump(payload, handle, indent=2, default=json_default, allow_nan=False)
     # All contemporaneous evaluated offers remain auditable separately from the
     # recommendation history used by first-decision grading.
     evaluations_path = ROOT / f'data/published/evaluations/{run_id}.json'
@@ -161,8 +204,16 @@ def main():
     with evaluations_path.open('x') as handle:
         json.dump({'generated_at': now.isoformat(), 'run_id': run_id, 'model_version': artifact['version'],
                    'model_sha256': board['model_sha256'], 'policy': POLICY, 'game_markets': game_markets,
-                   'quotes': resolved, 'evaluated_quotes': candidates, 'source_errors': board['source_errors']},
+                   'quotes': resolved, 'evaluated_quotes': candidates, 'challenger':challenger, 'source_errors': board['source_errors']},
                   handle, indent=2, default=json_default, allow_nan=False)
+    # Current aggregate totals include the just-frozen decisions. Immutable
+    # snapshots retain the exact forecasts and the pre-publication summary.
+    board['performance'] = grade_history(history, stats, games, closings)
+    board['comparison']['performance'] = {'champion':grade_history(aligned_history, stats, games, closings),
+                                         'challenger':grade_history(challenger_history, stats, games, closings)}
+    board['comparison']['forecast_metrics'] = grade_comparison(history, stats, games)
+    board['challenger']['performance'] = board['comparison']['performance']['challenger']
+    performance = board['performance']
     write(ROOT / 'data/published/latest.json', board)
     write(ROOT / 'data/published/performance.json', performance)
     write(ROOT / 'data/published/evaluated_quotes.json', candidates)
@@ -171,8 +222,9 @@ def main():
                       'game_market_coverage': board['game_market_coverage'],
                       'recommended': [{key: row.get(key) for key in ['player', 'side', 'line', 'odds', 'book', 'mean', 'ev', 'robust_ev']} for row in recommendations],
                       'top_held': [{key: row.get(key) for key in ['player', 'side', 'line', 'odds', 'book', 'ev', 'reasons']} for row in watch[:8]],
+                      'challenger':{'status':challenger.get('status'),'recommendations':[{key:r.get(key) for key in ('player','side','line','odds','book','mean','ev')} for r in challenger.get('recommendations',[])],'errors':challenger.get('source_errors',[])},
                       'source_errors': errors}, indent=2))
-    if source_failure:
+    if source_failure or challenger.get('status') in ('source_failure','error','unavailable','stale','stale_history'):
         sys.exit(2)
 
 
