@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useState} from 'react';
+import {fetchLatestBoard} from '@/lib/board-source.mjs';
 import {Table,TableBody,TableCell,TableHead,TableHeader,TableRow} from '@/components/ui/table';
 import {Tabs,TabsContent,TabsList,TabsTrigger} from '@/components/ui/tabs';
 
@@ -44,7 +45,7 @@ function ComparisonPanel({board}:{board:Board|null}){
 
 export default function Home(){
  const [board,setBoard]=useState<Board|null>(null);const [error,setError]=useState(false);const [now,setNow]=useState(Date.now());
- useEffect(()=>{const load=()=>{setNow(Date.now());fetch(`https://raw.githubusercontent.com/drhyphy/nfl-qb-attempts/main/data/published/latest.json?t=${Date.now()}`,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).catch(()=>fetch('./board.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()})).then(x=>{setBoard(x);setError(false)}).catch(()=>setError(true));};load();const id=setInterval(load,60000);return()=>clearInterval(id);},[]);
+ useEffect(()=>{const load=()=>{setNow(Date.now());fetchLatestBoard().then(x=>{setBoard(x as Board);setError(false)}).catch(()=>setError(true));};load();const id=setInterval(load,60000);return()=>clearInterval(id);},[]);
  const stale=!!board&&now-new Date(board.generated_at).getTime()>26*3600000;
  const failed=error||board?.status==='source_failure';
  const count=(rows:Bet[])=>rows.filter(b=>new Date(b.kickoff).getTime()>now).length;

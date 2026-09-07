@@ -98,6 +98,7 @@ jobs:
         working-directory: site
         run: |
           npm ci
+          node --test scripts/board-source.test.mjs
           npm run build
       - uses: actions/configure-pages@v5
         if: steps.clock.outputs.run == 'true'
