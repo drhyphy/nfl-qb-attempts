@@ -1,10 +1,10 @@
 {
-  "bets": 6,
+  "bets": 7,
   "settled": 0,
   "wins": 0,
   "losses": 0,
   "pushes": 0,
-  "unresolved": 6,
+  "unresolved": 7,
   "units": 0,
   "roi": null,
   "clv_bets": 0,
@@ -1116,6 +1116,196 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_01_DAL_NYG",
+      "player_id": "00-0040691",
+      "player": "Jaxson Dart",
+      "team": "NYG",
+      "opponent": "DAL",
+      "line": 29.5,
+      "book": "caesars",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-07T15:58:24.034418+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-14T00:20:00+00:00",
+      "side": "over",
+      "odds": 105.0,
+      "mean": 32.030994797884155,
+      "interval80": [
+        20.644467139005606,
+        42.52563415318053
+      ],
+      "p_model": 0.5959063934780873,
+      "p_market": 0.5141838223374939,
+      "p_final": 0.5427867222367015,
+      "p_push": 0.0,
+      "ev": 0.11271278058523815,
+      "robust_ev": 0.07171278058523811,
+      "market_only_ev": 0.05407683579186262,
+      "fair_odds": -119,
+      "bet_to": -111,
+      "independent_model_ev": 0.2216081066300789,
+      "expected_margin": -3.0,
+      "game_total": 48.5,
+      "implied_team_points": 22.75,
+      "game_market": {
+        "game_id": "2026_01_DAL_NYG",
+        "event_id": "401872930",
+        "home_team": "NYG",
+        "away_team": "DAL",
+        "kickoff": "2026-09-14T00:20:00+00:00",
+        "home_expected_margin": -3.0,
+        "total_line": 48.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.0,
+            "total_line": 48.5,
+            "home_spread_odds": -112,
+            "away_spread_odds": -108,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-07T15:58:25.584373+00:00",
+        "total_observed_at": "2026-09-07T15:58:25.584373+00:00",
+        "observed_at": "2026-09-07T15:58:25.584373+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260907-20260916&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.10371277450952171,
+        "close": 0.622793760095399,
+        "trailing": 0.27349346539507935
+      },
+      "scenario_means": {
+        "underdog_7": 31.52278946618453,
+        "pickem": 32.412148796658876,
+        "favorite_7": 32.3406249502693
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4857142857142857,
+        "neutral_pass12": 0.5557553956834532,
+        "trail_pass12": 0.6761245674740484
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5141838223374939,
+          "ev": 0.05407683579186262
+        },
+        "0.35": {
+          "p_win": 0.5427867222367015,
+          "ev": 0.11271278058523815
+        },
+        "0.5": {
+          "p_win": 0.5550451079077906,
+          "ev": 0.1378424712109707
+        },
+        "0.65": {
+          "p_win": 0.5673034935788797,
+          "ev": 0.16297216183670338
+        },
+        "1.0": {
+          "p_win": 0.5959063934780873,
+          "ev": 0.2216081066300789
+        }
+      },
+      "model_weight": 0.35,
+      "other_books": 1,
+      "reference_books": [
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jaxson Dart",
+        "espn_id": "4689114",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Malik Nabers",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T19:14:00+00:00"
+          },
+          {
+            "player": "Gunner Olszewski",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-06-02T00:10:00+00:00"
+          },
+          {
+            "player": "Calvin Austin III",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T22:48:00+00:00"
+          },
+          {
+            "player": "John Michael Schmitz Jr.",
+            "position": "C",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Francis Mauigoa",
+            "position": "RG",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-08-21T02:03:00+00:00"
+          },
+          {
+            "player": "Theo Johnson",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-08-31T19:45:00+00:00"
+          },
+          {
+            "player": "Tyrone Tracy Jr.",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-01T19:54:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-07T15:58:25.100270+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "source_updated_at": "2026-09-07T15:57:24+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 1,
+        "qb_team_change": 0,
+        "qb_games": 12,
+        "season_games": 0
+      },
+      "generated_at": "2026-09-07T15:58:25.758979+00:00",
+      "snapshot": "20260907T155825758979Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -1124,12 +1314,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 6,
+      "bets": 7,
       "settled": 0,
       "wins": 0,
       "losses": 0,
       "pushes": 0,
-      "unresolved": 6,
+      "unresolved": 7,
       "units": 0,
       "roi": null,
       "clv_bets": 0,
