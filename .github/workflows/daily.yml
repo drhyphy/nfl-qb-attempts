@@ -1,9 +1,17 @@
 name: Daily 6-30 Eastern board
 on:
   schedule:
-    - cron: '30 10 * * *'
-    - cron: '30 11 * * *'
+    # 6:30 Eastern candidates plus recovery opportunities away from the hour.
+    # The live-publication gate handles DST and skips already completed mornings.
+    - cron: '30 10,11 * * *'
+    - cron: '47 10,11,12 * * *'
+    - cron: '17 11,12,13 * * *'
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Refresh even if both models are already published today'
+        type: boolean
+        default: true
 permissions:
   contents: write
   pages: write
@@ -20,21 +28,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Eastern daylight-saving gate
+        with:
+          # A delayed/queued run must see the latest branch, including fixes.
+          ref: ${{ github.ref_name }}
+      - name: Eastern morning and live-publication gate
         id: clock
         env:
           EVENT: ${{ github.event_name }}
-          CRON: ${{ github.event.schedule }}
+          FORCE: ${{ inputs.force }}
         run: |
-          python - <<'PY'
-          import os
-          from datetime import datetime
-          from zoneinfo import ZoneInfo
-          offset=datetime.now(ZoneInfo('America/New_York')).utcoffset().total_seconds()
-          expected='30 10 * * *' if offset==-14400 else '30 11 * * *'
-          accepted=os.environ['EVENT']!='schedule' or os.environ['CRON']==expected
-          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write(f'run={str(accepted).lower()}\n')
-          PY
+          if [ "$FORCE" = 'true' ]; then
+            python scripts/morning_gate.py --force
+          else
+            python scripts/morning_gate.py
+          fi
       - uses: actions/setup-python@v5
         if: steps.clock.outputs.run == 'true'
         with:
