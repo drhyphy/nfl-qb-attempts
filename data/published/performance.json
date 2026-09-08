@@ -1,10 +1,10 @@
 {
-  "bets": 7,
+  "bets": 8,
   "settled": 0,
   "wins": 0,
   "losses": 0,
   "pushes": 0,
-  "unresolved": 7,
+  "unresolved": 8,
   "units": 0,
   "roi": null,
   "clv_bets": 0,
@@ -1306,6 +1306,199 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_01_MIA_LV",
+      "player_id": "00-0029604",
+      "player": "Kirk Cousins",
+      "team": "LV",
+      "opponent": "MIA",
+      "line": 29.5,
+      "book": "draftkings",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-08T11:24:26.034394+00:00",
+      "source_updated_at": "2026-09-07T21:32:18+00:00",
+      "kickoff": "2026-09-13T20:25:00+00:00",
+      "side": "over",
+      "odds": -113.0,
+      "mean": 33.6580406259448,
+      "interval80": [
+        22.271512967066247,
+        44.15267998124118
+      ],
+      "p_model": 0.6718193723077535,
+      "p_market": 0.5101214574898786,
+      "p_final": 0.5667157276761348,
+      "p_push": 0.0,
+      "ev": 0.06823407075236021,
+      "robust_ev": 0.030534955708112432,
+      "market_only_ev": -0.0384436243774855,
+      "fair_odds": -131,
+      "bet_to": -122,
+      "independent_model_ev": 0.2663497902792167,
+      "expected_margin": 3.5,
+      "game_total": 41.5,
+      "implied_team_points": 22.5,
+      "game_market": {
+        "game_id": "2026_01_MIA_LV",
+        "event_id": "401872928",
+        "home_team": "LV",
+        "away_team": "MIA",
+        "kickoff": "2026-09-13T20:25:00+00:00",
+        "home_expected_margin": 3.5,
+        "total_line": 41.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.5,
+            "total_line": 41.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -115,
+            "over_odds": -102,
+            "under_odds": -118,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-08T11:24:28.431424+00:00",
+        "total_observed_at": "2026-09-08T11:24:28.431424+00:00",
+        "observed_at": "2026-09-08T11:24:28.431424+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260908-20260917&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1729331945173564,
+        "close": 0.6708666856878748,
+        "trailing": 0.1562001197947688
+      },
+      "scenario_means": {
+        "underdog_7": 32.53715347104126,
+        "pickem": 33.60470596659826,
+        "favorite_7": 33.71137528529134
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4900662251655629,
+        "neutral_pass12": 0.6012396694214877,
+        "trail_pass12": 0.7375358166189111
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5101214574898786,
+          "ev": -0.0384436243774855
+        },
+        "0.35": {
+          "p_win": 0.5667157276761348,
+          "ev": 0.06823407075236021
+        },
+        "0.5": {
+          "p_win": 0.590970414898816,
+          "ev": 0.11395308295086548
+        },
+        "0.65": {
+          "p_win": 0.6152251021214973,
+          "ev": 0.15967209514937097
+        },
+        "1.0": {
+          "p_win": 0.6718193723077535,
+          "ev": 0.2663497902792167
+        }
+      },
+      "model_weight": 0.35,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "caesars",
+        "fanatics",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Kirk Cousins",
+        "espn_id": "14880",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Justin Shorter",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-05-04T23:28:00+00:00"
+          },
+          {
+            "player": "Corey Rucker",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-06-10T20:52:00+00:00"
+          },
+          {
+            "player": "Dont'e Thornton Jr.",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:29:00+00:00"
+          },
+          {
+            "player": "Justin Pickett",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Carter Runyon",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:52:00+00:00"
+          },
+          {
+            "player": "Ashton Jeanty",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-02T16:45:00+00:00"
+          },
+          {
+            "player": "Chris Collier",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-02T23:52:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-08T11:24:27.567023+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/13/depthcharts",
+        "source_updated_at": "2026-09-08T11:24:17+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 1,
+        "qb_team_change": 1,
+        "qb_games": 32,
+        "season_games": 0
+      },
+      "generated_at": "2026-09-08T11:24:28.568450+00:00",
+      "snapshot": "20260908T112428568450Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -1314,12 +1507,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 7,
+      "bets": 8,
       "settled": 0,
       "wins": 0,
       "losses": 0,
       "pushes": 0,
-      "unresolved": 7,
+      "unresolved": 8,
       "units": 0,
       "roi": null,
       "clv_bets": 0,
