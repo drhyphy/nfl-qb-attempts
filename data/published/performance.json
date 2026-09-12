@@ -1,10 +1,10 @@
 {
-  "bets": 8,
+  "bets": 9,
   "settled": 1,
   "wins": 0,
   "losses": 1,
   "pushes": 0,
-  "unresolved": 7,
+  "unresolved": 8,
   "units": -1.0,
   "roi": -1.0,
   "clv_bets": 1,
@@ -1499,6 +1499,181 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_01_DEN_KC",
+      "player_id": "00-0033873",
+      "player": "Patrick Mahomes",
+      "team": "KC",
+      "opponent": "DEN",
+      "line": 32.5,
+      "book": "caesars",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-12T10:38:43.973288+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-15T00:15:00+00:00",
+      "side": "over",
+      "odds": -109.0,
+      "mean": 35.41678942853808,
+      "interval80": [
+        24.030261769659532,
+        45.91142878383447
+      ],
+      "p_model": 0.6144175329967438,
+      "p_market": 0.5050607287449393,
+      "p_final": 0.5597391308708416,
+      "p_push": 0.0,
+      "ev": 0.07326126928445775,
+      "robust_ev": 0.034912645431246725,
+      "market_only_ev": -0.03158080451658418,
+      "fair_odds": -127,
+      "bet_to": -119,
+      "independent_model_ev": 0.1781033430854997,
+      "expected_margin": 2.5,
+      "game_total": 43.5,
+      "implied_team_points": 23.0,
+      "game_market": {
+        "game_id": "2026_01_DEN_KC",
+        "event_id": "401872931",
+        "home_team": "KC",
+        "away_team": "DEN",
+        "kickoff": "2026-09-15T00:15:00+00:00",
+        "home_expected_margin": 2.5,
+        "total_line": 43.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 2.5,
+            "total_line": 43.5,
+            "home_spread_odds": -118,
+            "away_spread_odds": -102,
+            "over_odds": -115,
+            "under_odds": -105,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-12T10:38:45.754092+00:00",
+        "total_observed_at": "2026-09-12T10:38:45.754092+00:00",
+        "observed_at": "2026-09-12T10:38:45.754092+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260912-20260921&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1618386905904095,
+        "close": 0.664872908706716,
+        "trailing": 0.17328840070287443
+      },
+      "scenario_means": {
+        "underdog_7": 34.32838824878755,
+        "pickem": 35.3806332573778,
+        "favorite_7": 35.48187053662657
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5,
+        "neutral_pass12": 0.6365079365079365,
+        "trail_pass12": 0.7196581196581195
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5050607287449393,
+          "ev": -0.03158080451658418
+        },
+        "0.35": {
+          "p_win": 0.5433356102330709,
+          "ev": 0.04180864714414506
+        },
+        "0.5": {
+          "p_win": 0.5597391308708416,
+          "ev": 0.07326126928445775
+        },
+        "0.65": {
+          "p_win": 0.5761426515086123,
+          "ev": 0.1047138914247705
+        },
+        "1.0": {
+          "p_win": 0.6144175329967438,
+          "ev": 0.1781033430854997
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 2,
+      "reference_books": [
+        "fanatics",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Patrick Mahomes",
+        "espn_id": "3139477",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jeff Caldwell",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T23:12:00+00:00"
+          },
+          {
+            "player": "Jimmy Holiday",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:40:00+00:00"
+          },
+          {
+            "player": "Josh Simmons",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-09T00:44:00+00:00"
+          },
+          {
+            "player": "Matt Waletzko",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-22T00:32:00+00:00"
+          },
+          {
+            "player": "John Michael Gyllenborg",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-07-28T21:54:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-12T10:38:45.407101+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/12/depthcharts",
+        "source_updated_at": "2026-09-12T10:38:38+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 0
+      },
+      "generated_at": "2026-09-12T10:38:45.924991+00:00",
+      "snapshot": "20260912T103845924991Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -1507,12 +1682,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 8,
+      "bets": 9,
       "settled": 1,
       "wins": 0,
       "losses": 1,
       "pushes": 0,
-      "unresolved": 7,
+      "unresolved": 8,
       "units": -1.0,
       "roi": -1.0,
       "clv_bets": 1,
