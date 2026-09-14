@@ -1,10 +1,10 @@
 {
-  "bets": 10,
+  "bets": 11,
   "settled": 9,
   "wins": 3,
   "losses": 6,
   "pushes": 0,
-  "unresolved": 1,
+  "unresolved": 2,
   "units": -3.1346520909248654,
   "roi": -0.3482946767694295,
   "clv_bets": 5,
@@ -1858,6 +1858,177 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_01_DEN_KC",
+      "player_id": "00-0039732",
+      "player": "Bo Nix",
+      "team": "DEN",
+      "opponent": "KC",
+      "line": 34.5,
+      "book": "caesars",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-14T10:38:38.653904+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-15T00:15:00+00:00",
+      "side": "under",
+      "odds": -115.0,
+      "mean": 32.4170821182872,
+      "interval80": [
+        21.03055445940865,
+        42.91172147358358
+      ],
+      "p_model": 0.6162124092132897,
+      "p_market": 0.5101214574898785,
+      "p_final": 0.5631669333515841,
+      "p_push": 0.0,
+      "ev": 0.05287731017904845,
+      "robust_ev": 0.015486005831222338,
+      "market_only_ev": -0.046294666431966336,
+      "fair_odds": -129,
+      "bet_to": -120,
+      "independent_model_ev": 0.15204928679006335,
+      "expected_margin": -2.5,
+      "game_total": 43.5,
+      "implied_team_points": 20.5,
+      "game_market": {
+        "game_id": "2026_01_DEN_KC",
+        "event_id": "401872931",
+        "home_team": "KC",
+        "away_team": "DEN",
+        "kickoff": "2026-09-15T00:15:00+00:00",
+        "home_expected_margin": 2.5,
+        "total_line": 43.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 2.5,
+            "total_line": 43.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-14T10:38:39.965877+00:00",
+        "total_observed_at": "2026-09-14T10:38:39.965877+00:00",
+        "observed_at": "2026-09-14T10:38:39.965877+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260914-20260923&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1018113021729449,
+        "close": 0.6442474623169437,
+        "trailing": 0.25394123551011144
+      },
+      "scenario_means": {
+        "underdog_7": 31.751870752505077,
+        "pickem": 32.786643988166155,
+        "favorite_7": 32.891487832351444
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.527027027027027,
+        "neutral_pass12": 0.6263399693721287,
+        "trail_pass12": 0.7212669683257917
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5101214574898785,
+          "ev": -0.046294666431966336
+        },
+        "0.35": {
+          "p_win": 0.5472532905930724,
+          "ev": 0.023125717195743967
+        },
+        "0.5": {
+          "p_win": 0.5631669333515841,
+          "ev": 0.05287731017904845
+        },
+        "0.65": {
+          "p_win": 0.5790805761100957,
+          "ev": 0.08262890316235272
+        },
+        "1.0": {
+          "p_win": 0.6162124092132897,
+          "ev": 0.15204928679006335
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 5,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "fanatics",
+        "fanduel",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Bo Nix",
+        "espn_id": "4426338",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Frank Crum",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:20:00+00:00"
+          },
+          {
+            "player": "Nick Gargiulo",
+            "position": "LG",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-08-31T23:24:00+00:00"
+          },
+          {
+            "player": "Michael Deiter",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Caleb Lohner",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T16:50:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-14T10:38:39.747868+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/7/depthcharts",
+        "source_updated_at": "2026-09-14T10:38:02+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 0
+      },
+      "generated_at": "2026-09-14T10:38:40.152218+00:00",
+      "snapshot": "20260914T103840152218Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -1866,12 +2037,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 10,
+      "bets": 11,
       "settled": 9,
       "wins": 3,
       "losses": 6,
       "pushes": 0,
-      "unresolved": 1,
+      "unresolved": 2,
       "units": -3.1346520909248654,
       "roi": -0.3482946767694295,
       "clv_bets": 5,
