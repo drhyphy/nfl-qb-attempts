@@ -6,6 +6,8 @@ on:
     - cron: '30 10,11 * * *'
     - cron: '47 10,11,12 * * *'
     - cron: '17 11,12,13 * * *'
+    # Intraday prices, role news and final results; early entries stay eligible.
+    - cron: '5 1,4,14,18,22 * * *'
   workflow_dispatch:
     inputs:
       force:
@@ -36,8 +38,11 @@ jobs:
         env:
           EVENT: ${{ github.event_name }}
           FORCE: ${{ inputs.force }}
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
-          if [ "$FORCE" = 'true' ]; then
+          if [ "$SCHEDULE" = '5 1,4,14,18,22 * * *' ]; then
+            python scripts/morning_gate.py --intraday
+          elif [ "$FORCE" = 'true' ]; then
             python scripts/morning_gate.py --force
           else
             python scripts/morning_gate.py
@@ -51,6 +56,8 @@ jobs:
         if: steps.clock.outputs.run == 'true'
         with:
           path: |
+            data/model/model.pkl
+            challenger/runtime
             data/raw/*.parquet
             data/pbp_cache/team_games_*.parquet
             data/pbp_cache/team_games_*.json
@@ -67,7 +74,14 @@ jobs:
         if: steps.clock.outputs.run == 'true'
         id: scoring
         continue-on-error: true
-        run: python scripts/run_daily.py --refresh-data --train
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [ "$SCHEDULE" = '5 1,4,14,18,22 * * *' ]; then
+            python scripts/run_daily.py --refresh-data
+          else
+            python scripts/run_daily.py --refresh-data --train
+          fi
       - name: Preserve daily decisions and source status
         if: steps.clock.outputs.run == 'true' && always()
         run: |
@@ -87,6 +101,8 @@ jobs:
             data/raw/odds
             data/raw/context
             data/raw/game_markets
+            data/raw/verification
+            data/raw/settlement
             data/tendencies
             data/model
             challenger

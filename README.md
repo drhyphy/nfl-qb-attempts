@@ -14,6 +14,46 @@ At launch, the model has **no verified historical sportsbook ROI or market-calib
 
 ## Run
 
+### September 14: verified early entry and frozen research
+
+The website's offer cards now read `verified_recommendations`. The existing
+`recommendations`, history and performance fields remain the original research
+cohort and must not be interpreted as executable prices. `entry_watchlist`
+explains current holds while preserving model probabilities and numeric rules.
+Expected starters can qualify days before kickoff: **final role confirmation is
+not required**. Unknown/questionable roles warn; fresh explicit unavailability
+withdraws current suggestions without erasing previous paper entries.
+
+`qb_attempts/quote_verification.py` checks an exact two-sided offer against public
+FanDuel New York event markets, retaining market/selection IDs, availability,
+retrieval timestamps and raw evidence. Other books currently remain unverified.
+The generic timestamped-comparison verifier has tests but no unvalidated live
+adapter is enabled. A missing sportsbook update timestamp remains missing; a
+direct available market observation is distinct evidence. Cards expire after
+30 minutes, even when the rest of the research board remains current.
+
+`data/published/verified_ledger.json` starts a separate one-unit paper cohort,
+with immutable first prices, one QB per game per model, and at most five pending
+entries per model across refreshes. No wagers are executed. Final ESPN evidence
+can reconcile pending results; missing statistics never imply zero attempts.
+Evidence-backed DNPs are provisional paper voids, not assumed sportsbook rulings.
+Closing CLV for this cohort requires the same verified paired-market evidence;
+legacy feed CLV remains labeled as incomplete research evidence.
+
+The morning schedule remains 6:30 Eastern with recovery checks. Intraday runs
+at 01:05, 04:05, 14:05, 18:05 and 22:05 UTC update prices, role news and results.
+GitHub can delay these jobs. Late refreshes never create another stake for an
+existing game entry. Raw verification and settlement responses are retained in
+workflow artifacts for 90 days.
+
+The [shadow protocol](research/SHADOW_PROTOCOL.md) freezes a 14.51% independent /
+85.49% market probability blend and a conditional residual experiment. Neither
+beat market-only in the historical development check. Both remain research-only
+and cannot promote themselves. See `data/shadow` for the exact event-join audit,
+source hashes and causal fitting/evaluation records. No 2026 outcomes enter fitting.
+
+### Commands
+
 Python 3.11 and Node 22:
 
 ```sh

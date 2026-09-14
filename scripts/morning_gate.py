@@ -35,7 +35,9 @@ def healthy_today(board, now):
     return True
 
 
-def should_run(event, force, board, now):
+def should_run(event, force, board, now, intraday=False):
+    if intraday:
+        return True, 'Scheduled intraday price and result refresh'
     if event == 'workflow_dispatch' and force:
         return True, 'Explicit manual refresh'
     if now.astimezone(EASTERN).time() < time(6, 30):
@@ -49,11 +51,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--event', default=os.getenv('EVENT', 'schedule'))
     parser.add_argument('--force', action='store_true')
+    parser.add_argument('--intraday', action='store_true')
     args = parser.parse_args()
     now = datetime.now(EASTERN)
     board = None
     # A forced refresh and an early UTC candidate need no network lookup.
-    if not (args.event == 'workflow_dispatch' and args.force) and now.time() >= time(6, 30):
+    if not args.intraday and not (args.event == 'workflow_dispatch' and args.force) and now.time() >= time(6, 30):
         try:
             request = Request(f'{BOARD_URL}?morning_check={int(now.timestamp())}',
                               headers={'Cache-Control': 'no-cache', 'User-Agent': 'qb-board-morning-check'})
@@ -61,7 +64,7 @@ def main():
                 board = json.load(response)
         except Exception as error:
             print(f'Could not verify published board ({type(error).__name__}); allow recovery')
-    accepted, reason = should_run(args.event, args.force, board, now)
+    accepted, reason = should_run(args.event, args.force, board, now, intraday=args.intraday)
     print(f'run={str(accepted).lower()}: {reason}')
     if os.getenv('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as output:

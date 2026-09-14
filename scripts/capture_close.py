@@ -6,6 +6,9 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from qb_attempts.features import kickoff_utc,team_key
 from qb_attempts.odds_sources import fetch_quotes
 from qb_attempts.scoring import resolve_quotes
+from qb_attempts.quote_verification import verify_quotes
+from qb_attempts.context import fetch_context
+from qb_attempts.early_entry import role_evidence
 BASE='https://github.com/nflverse/nflverse-data/releases/download/'
 def main():
  now=pd.Timestamp.now(tz='UTC');g=pd.read_parquet(BASE+'schedules/games.parquet')
@@ -17,6 +20,10 @@ def main():
  q,e=fetch_quotes(ROOT/'data/raw/closing');now=pd.Timestamp.now(tz='UTC')
  q,er=resolve_quotes(q,r,g,now);e+=er
  q=[x for x in q if x['game_id'] in set(due.game_id)]
+ q,ve=verify_quotes(q,now,ROOT/'data/raw/closing/verification');e+=ve
+ contexts,ce=fetch_context(sorted({x['team'] for x in q}),ROOT/'data/raw/closing/context');e+=ce
+ now=pd.Timestamp.now(tz='UTC')
+ for x in q:x['role_evidence']=role_evidence(x,contexts,now)
  p=ROOT/'data/published/closing'/f"{now.strftime('%Y%m%dT%H%M%S%fZ')}.json";p.parent.mkdir(parents=True,exist_ok=True)
  def default(x):
   if hasattr(x,'isoformat'):return x.isoformat()

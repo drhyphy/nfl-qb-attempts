@@ -15,6 +15,12 @@ def board_at(timestamp, status='ok'):
     return dict(model, challenger=copy.deepcopy(model))
 
 
+@pytest.mark.parametrize('clock', ['2026-09-08T04:05:00+00:00', '2026-09-08T18:05:00+00:00'])
+def test_intraday_refresh_bypasses_morning_completion_gate(clock):
+    now = datetime.fromisoformat(clock)
+    assert gate.should_run('schedule', False, board_at('2026-09-08T10:35:00Z'), now, intraday=True)[0]
+
+
 @pytest.mark.parametrize('day,utc_hour', [('2026-09-08', 10), ('2026-12-08', 11)])
 def test_dst_boundary(day, utc_hour):
     before = datetime.fromisoformat(f'{day}T{utc_hour:02}:29:59+00:00')

@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-09-14T05:18:04.139316+00:00",
+  "run_id": "20260914T051804139316Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_01_DEN_KC",
+      "player_id": "00-0033873",
+      "player": "Patrick Mahomes",
+      "team": "KC",
+      "opponent": "DEN",
+      "line": 32.5,
+      "book": "betmgm",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-14T05:18:03.242341+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-15T00:15:00+00:00",
+      "side": "Over",
+      "odds": -105,
+      "mean": 35.4460199521358,
+      "interval80": [
+        24.059492293257254,
+        45.94065930743217
+      ],
+      "p_model": 0.6158110433501305,
+      "p_market": 0.5010179153094463,
+      "p_final": 0.5584144793297884,
+      "p_push": 0.0,
+      "ev": 0.09023779297720591,
+      "robust_ev": 0.0511901739295868,
+      "market_only_ev": -0.021822165348223954,
+      "fair_odds": -126,
+      "bet_to": -118,
+      "independent_model_ev": 0.20229775130263572,
+      "expected_margin": 2.5,
+      "game_total": 43.5,
+      "implied_team_points": 23.0,
+      "game_market": {
+        "game_id": "2026_01_DEN_KC",
+        "event_id": "401872931",
+        "home_team": "KC",
+        "away_team": "DEN",
+        "kickoff": "2026-09-15T00:15:00+00:00",
+        "home_expected_margin": 2.5,
+        "total_line": 43.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 2.5,
+            "total_line": 43.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-14T05:18:04.039205+00:00",
+        "total_observed_at": "2026-09-14T05:18:04.039205+00:00",
+        "observed_at": "2026-09-14T05:18:04.039205+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260914-20260923&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.16191404621054337,
+        "close": 0.6648504572400734,
+        "trailing": 0.17323549654938328
+      },
+      "scenario_means": {
+        "underdog_7": 34.35467947767334,
+        "pickem": 35.41168908434671,
+        "favorite_7": 35.50781551415616
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5,
+        "neutral_pass12": 0.6365079365079365,
+        "trail_pass12": 0.7196581196581195
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5010179153094463,
+          "ev": -0.021822165348223954
+        },
+        "0.35": {
+          "p_win": 0.5411955101236857,
+          "ev": 0.0566198054795769
+        },
+        "0.5": {
+          "p_win": 0.5584144793297884,
+          "ev": 0.09023779297720591
+        },
+        "0.65": {
+          "p_win": 0.575633448535891,
+          "ev": 0.12385578047483492
+        },
+        "1.0": {
+          "p_win": 0.6158110433501305,
+          "ev": 0.20229775130263572
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 3,
+      "reference_books": [
+        "caesars",
+        "fanatics",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Patrick Mahomes",
+        "espn_id": "3139477",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jeff Caldwell",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T23:12:00+00:00"
+          },
+          {
+            "player": "Jimmy Holiday",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:40:00+00:00"
+          },
+          {
+            "player": "Josh Simmons",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-09-12T18:14:00+00:00"
+          },
+          {
+            "player": "Matt Waletzko",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-22T00:32:00+00:00"
+          },
+          {
+            "player": "John Michael Gyllenborg",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-07-28T21:54:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-14T05:18:03.802750+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/12/depthcharts",
+        "source_updated_at": "2026-09-14T05:17:59+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 0
+      }
+    }
+  ]
+}

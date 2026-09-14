@@ -24,6 +24,11 @@ from qb_attempts.context import fetch_context
 from qb_attempts.game_odds import fetch_game_markets
 from qb_attempts.tracking import grade_history
 from qb_attempts.comparison import paired_forecasts, grade_comparison
+from qb_attempts.quote_verification import verify_quotes
+from qb_attempts.early_entry import select_early_entries, role_evidence
+from qb_attempts.decision_ledger import update_ledger, reconcile_ledger, attach_verified_clv
+from qb_attempts.settlement import augment_results, fetch_espn_evidence
+from qb_attempts.shadow import score_shadow
 
 
 def json_default(value):
@@ -87,6 +92,9 @@ def main():
     now = pd.Timestamp.now(tz='UTC')
     resolved, resolution_errors = resolve_quotes(quotes, roster, games, now)
     errors += resolution_errors
+    resolved, verification_errors = verify_quotes(resolved, now, ROOT / 'data/raw/verification')
+    errors += verification_errors
+    verification_by_key = {(q['game_id'], q['player_id'], q['book'], q['line']): q.get('quote_verification') for q in resolved}
     run_id = now.strftime('%Y%m%dT%H%M%S%fZ')
     if args.capture_only:
         # Closing collection never depends on model training or other feeds.
@@ -113,6 +121,9 @@ def main():
     now = pd.Timestamp.now(tz='UTC')
     run_id = now.strftime('%Y%m%dT%H%M%S%fZ')
     resolved, final_errors = resolve_quotes(quotes, roster, games, now)
+    for q in resolved:
+        q['quote_verification'] = verification_by_key.get((q['game_id'], q['player_id'], q['book'], q['line']))
+        q['role_evidence'] = role_evidence(q, context, now)
     errors += final_errors
     requested_games = {q['game_id'] for q in resolved}
     valid_markets = {}
@@ -168,7 +179,8 @@ def main():
         comparison['historical_benchmark'] = json.loads(benchmark_path.read_text())
     verified_contexts = sum(bool(c.get('available')) for c in context.values())
     verified_markets = len(requested_games & set(game_markets))
-    source_failure = bool(resolved) and (not verified_contexts or not verified_markets)
+    # Context gaps warn early entrants; final role confirmation is not a gate.
+    source_failure = bool(resolved) and not verified_markets
     if source_failure or not resolved:
         comparison['paired_forecasts'] = []
     board = {
@@ -213,6 +225,55 @@ def main():
                                          'challenger':grade_history(challenger_history, stats, games, closings)}
     board['comparison']['forecast_metrics'] = grade_comparison(history, stats, games)
     board['challenger']['performance'] = board['comparison']['performance']['challenger']
+    # Legacy research histories above remain frozen under their original policies.
+    # New source-verified paper entries have a separate, prospectively started ledger.
+    ledger_path = ROOT / 'data/published/verified_ledger.json'
+    ledger = json.loads(ledger_path.read_text()) if ledger_path.exists() else None
+    evidence_path = ROOT / 'data/published/settlement_evidence.json'
+    evidence = json.loads(evidence_path.read_text()) if evidence_path.exists() else {}
+    pending_ids = {r['game_id'] for p in (board['performance'], *board['comparison']['performance'].values())
+                   for r in p.get('results', []) if r.get('result') in ('pending', 'unresolved')}
+    pending_ids |= {r['game_id'] for r in (ledger or {}).get('entries', []) if r.get('settlement', {}).get('result') == 'pending'}
+    for game in games[games.game_id.isin(pending_ids)].to_dict('records'):
+        if game['kickoff'] + pd.Timedelta(hours=3) > now or not game.get('espn') or pd.isna(game.get('espn')):
+            continue
+        if evidence.get(game['game_id'], {}).get('final'):
+            continue
+        try:
+            evidence[game['game_id']] = fetch_espn_evidence(str(int(game['espn'])), game['game_id'], ROOT / 'data/raw/settlement')
+        except Exception as exc:
+            errors.append(f"Settlement {game['game_id']}: {type(exc).__name__}: {exc}")
+    settlement_now = pd.Timestamp.now(tz='UTC').isoformat()
+    if ledger is not None:
+        ledger = reconcile_ledger(ledger, evidence, settlement_now)
+    board['verified_recommendations'], board['entry_watchlist'] = select_early_entries(candidates, resolved, context, now, ledger=ledger)
+    board['challenger']['verified_recommendations'], board['challenger']['entry_watchlist'] = select_early_entries(
+        challenger.get('evaluated_quotes', []), resolved, context, now, model='claude', ledger=ledger)
+    if board['status'] != 'ok':
+        board['verified_recommendations'] = []
+    ledger = update_ledger(ledger, {'champion': board, 'claude': board['challenger']}, settlement_now)
+    ledger = reconcile_ledger(ledger, evidence, settlement_now)
+    ledger = attach_verified_clv(ledger, closings, settlement_now)
+    board['verified_performance'] = ledger.get('performance', {})
+    board['verified_entries'] = ledger['entries']
+    board['research_performance'] = augment_results(board['performance'], evidence, as_of=settlement_now)
+    board['comparison']['research_performance'] = {k: augment_results(v, evidence, as_of=settlement_now)
+                                                 for k, v in board['comparison']['performance'].items()}
+    board['shadow'] = score_shadow([{**r, 'quote_verification': verification_by_key.get(
+        (r['game_id'], r['player_id'], r['book'], r['line']))} for r in candidates], now, ROOT / 'data/shadow/artifact.json')
+    board['entry_policy'] = {'version': 'verified_early_entry_v1', 'final_role_confirmation_required': False,
+        'max_open_per_model': 5, 'cohort': 'Paper signals only; no wagers executed',
+        'note': 'Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged.'}
+    board['recommendations_kind'] = 'legacy_research_policy; actionable offers are in verified_recommendations'
+    board['challenger']['recommendations_kind'] = board['recommendations_kind']
+    board['source_errors'] = sorted(set(errors))
+    board['verification_coverage'] = {'verified': sum((q.get('quote_verification') or {}).get('status') == 'verified' for q in resolved), 'total': len(resolved)}
+    # Every actionable publication and shadow evaluation has its own immutable record.
+    write(ROOT / f'data/published/verified_history/{run_id}.json',
+          {k: board[k] for k in ('generated_at', 'run_id', 'entry_policy', 'verified_recommendations', 'verified_performance', 'shadow')}
+          | {'claude': board['challenger']['verified_recommendations']})
+    write(ledger_path, ledger)
+    write(evidence_path, evidence)
     performance = board['performance']
     write(ROOT / 'data/published/latest.json', board)
     write(ROOT / 'data/published/performance.json', performance)
