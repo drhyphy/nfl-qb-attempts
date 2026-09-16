@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-16T15:27:49.530974+00:00",
-  "run_id": "20260916T152749530974Z",
+  "generated_at": "2026-09-16T18:07:40.612109+00:00",
+  "run_id": "20260916T180740612109Z",
   "status": "source_failure",
   "slate": "2026 \u00b7 WEEK 2",
-  "quotes": 81,
-  "players": 28,
+  "quotes": 88,
+  "players": 29,
   "context_coverage": {
-    "verified": 28,
-    "requested": 28
+    "verified": 29,
+    "requested": 29
   },
   "game_market_coverage": {
     "verified": 0,
@@ -32,7 +32,7 @@
   },
   "game_markets": {},
   "model_version": "attempts-v2.0",
-  "model_sha256": "a638d059b1896a9dca028f7c64db92a517df648b0af6a3bd9cca26d16af838e1",
+  "model_sha256": "ddf358942f22ec8e9f5a0e3fb3c3e34c0528f53fd5830fa61a0f3d79dc87f8ad",
   "policy": {
     "version": "independent-blend-v2",
     "min_ev": 0.03,
@@ -53,7 +53,7 @@
     "status": "source_failure",
     "version": "claude-qbatt-v1.0-adapter1",
     "source_model_version": "qbatt-v1.0",
-    "model_sha256": "8e8f56b074b7a1271b4475f282bb08a815fcf4282e89bfa291709573cddd6d65",
+    "model_sha256": "325182063405286f99e253db146124694f3dd7a2844128ae99364d3c183c69c8",
     "policy": {
       "version": "market-center-v1",
       "candidate": "ridge_eb",
@@ -492,9 +492,9 @@
       "calibration": "Frozen original residual pool and saved EB corrections",
       "historical_records": 4754,
       "trained_through": 2026,
-      "refit_at": "2026-09-16T15:27:42.134302+00:00",
+      "refit_at": "2026-09-16T18:07:33.229023+00:00",
       "refresh": {
-        "refreshed_at": "2026-09-16T15:27:42.134302+00:00",
+        "refreshed_at": "2026-09-16T18:07:33.229023+00:00",
         "historical_frozen_through": 2025,
         "records": 4754,
         "processed_game_ids": [
@@ -521,22 +521,22 @@
             "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet",
             "raw_sha256": "e7567f9931b02ddafca608ff91ca8f6443a864a1a0d18aef4abe3f4fc49562bc",
             "raw_bytes": 1355784,
-            "observed_at": "2026-09-16T15:26:32.690635681+00:00"
+            "observed_at": "2026-09-16T18:07:31.698457003+00:00"
           }
         ],
-        "model_sha256": "8e8f56b074b7a1271b4475f282bb08a815fcf4282e89bfa291709573cddd6d65",
+        "model_sha256": "325182063405286f99e253db146124694f3dd7a2844128ae99364d3c183c69c8",
         "records_sha256": "c5d5086f07a0c622e47c00a752bc2e8f625e7c698bc1e6d1c4216e81a5db3c23",
         "calibration_policy": "Frozen original residual pool and saved EB corrections; base-only refit, no source fit_only residual update.",
         "base_refitted": true
       },
       "missing_history_games": [],
-      "shared_input_quotes": 81,
+      "shared_input_quotes": 88,
       "market_center_includes_target_book": true,
       "mean_blend_weight": 0.35,
       "eligible_quotes": 0,
       "excluded_quotes": [
         {
-          "player": "Jacoby Brissett",
+          "player": "Aaron Rodgers",
           "book": "bet365",
           "reason": "missing/stale game market"
         },
@@ -591,23 +591,13 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Tyler Shough",
+          "player": "Jacoby Brissett",
           "book": "bet365",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Tyler Shough",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Tyler Shough",
+          "player": "Jacoby Brissett",
           "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Tyler Shough",
-          "book": "hardrock",
           "reason": "missing/stale game market"
         },
         {
@@ -622,6 +612,11 @@
         },
         {
           "player": "Bo Nix",
+          "book": "caesars",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Bo Nix",
           "book": "draftkings",
           "reason": "missing/stale game market"
         },
@@ -633,11 +628,6 @@
         {
           "player": "Bo Nix",
           "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Cam Ward",
-          "book": "fanduel",
           "reason": "missing/stale game market"
         },
         {
@@ -657,6 +647,71 @@
         },
         {
           "player": "Dak Prescott",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Tyler Shough",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Tyler Shough",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Tyler Shough",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Tyler Shough",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Daniel Jones",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Daniel Jones",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Daniel Jones",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "book": "betmgm",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "book": "caesars",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Trevor Lawrence",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Trevor Lawrence",
           "book": "hardrock",
           "reason": "missing/stale game market"
         },
@@ -666,78 +721,8 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Daniel Jones",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Daniel Jones",
+          "player": "Cam Ward",
           "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Daniel Jones",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Matthew Stafford",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Matthew Stafford",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Matthew Stafford",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Trevor Lawrence",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Trevor Lawrence",
-          "book": "betmgm",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Trevor Lawrence",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Trevor Lawrence",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Trevor Lawrence",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jaxson Dart",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jaxson Dart",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jaxson Dart",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jaxson Dart",
-          "book": "hardrock",
           "reason": "missing/stale game market"
         },
         {
@@ -751,13 +736,38 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Carson Wentz",
+          "player": "Jaxson Dart",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jaxson Dart",
           "book": "draftkings",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Carson Wentz",
+          "player": "Jaxson Dart",
           "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jaxson Dart",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Matthew Stafford",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Matthew Stafford",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Matthew Stafford",
+          "book": "hardrock",
           "reason": "missing/stale game market"
         },
         {
@@ -796,6 +806,36 @@
           "reason": "missing/stale game market"
         },
         {
+          "player": "Carson Wentz",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Carson Wentz",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
           "player": "Patrick Mahomes",
           "book": "draftkings",
           "reason": "missing/stale game market"
@@ -808,6 +848,11 @@
         {
           "player": "Patrick Mahomes",
           "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Drew Lock",
+          "book": "fanduel",
           "reason": "missing/stale game market"
         },
         {
@@ -831,23 +876,33 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Caleb Williams",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Caleb Williams",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Caleb Williams",
+          "player": "Geno Smith",
           "book": "fanduel",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Caleb Williams",
+          "player": "Lamar Jackson",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Lamar Jackson",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Lamar Jackson",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Lamar Jackson",
           "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Deshaun Watson",
+          "book": "bet365",
           "reason": "missing/stale game market"
         },
         {
@@ -881,42 +936,12 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Lamar Jackson",
+          "player": "Malik Willis",
           "book": "bet365",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Lamar Jackson",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Lamar Jackson",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Lamar Jackson",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Geno Smith",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Deshaun Watson",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jalen Hurts",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jalen Hurts",
+          "player": "Malik Willis",
           "book": "fanduel",
           "reason": "missing/stale game market"
         },
@@ -926,25 +951,35 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Baker Mayfield",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Malik Willis",
+          "player": "Brock Purdy",
           "book": "bet365",
           "reason": "missing/stale game market"
         },
         {
           "player": "Brock Purdy",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Baker Mayfield",
           "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jalen Hurts",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jalen Hurts",
+          "book": "fanduel",
           "reason": "missing/stale game market"
         }
       ]
     },
     "model_version": "claude-qbatt-v1.0-adapter1",
-    "generated_at": "2026-09-16T15:27:49.530974+00:00",
-    "run_id": "20260916T152749530974Z",
+    "generated_at": "2026-09-16T18:07:40.612109+00:00",
+    "run_id": "20260916T180740612109Z",
     "performance": {
       "bets": 19,
       "settled": 18,
@@ -15534,15 +15569,15 @@
           "rmse": 9.737548796816128,
           "crps": 5.287192851714908,
           "fixed_threshold_brier": 0.16085996011857967,
-          "fixed_threshold_log_loss": 0.4885821361115093,
+          "fixed_threshold_log_loss": 0.48858213611150925,
           "coverage_80": 0.7932515337423313,
           "n": 1630
         }
       },
       "market_ridge": {
         "development_2022_2024": {
-          "mae": 7.265799138485349,
-          "rmse": 9.68469380725182,
+          "mae": 7.265799138485348,
+          "rmse": 9.684693807251822,
           "crps": 5.2671878131282215,
           "fixed_threshold_brier": 0.15991236818062154,
           "fixed_threshold_log_loss": 0.48592859851547054,
@@ -15575,9 +15610,9 @@
       "script_opportunity": {
         "development_2022_2024": {
           "mae": 7.325039408657006,
-          "rmse": 9.83403621513496,
+          "rmse": 9.834036215134962,
           "crps": 5.320488285722412,
-          "fixed_threshold_brier": 0.1616282055831427,
+          "fixed_threshold_brier": 0.16162820558314273,
           "fixed_threshold_log_loss": 0.49061523617089875,
           "coverage_80": 0.8030674846625767,
           "n": 1630
@@ -15588,32 +15623,32 @@
       "v1_ridge": {
         "2022": {
           "n": 542,
-          "mae": 7.166206354291608,
+          "mae": 7.1662063542916075,
           "rmse": 9.46005059740936,
-          "bias": 1.0335615373985612,
-          "crps": 5.152922343686069,
+          "bias": 1.0335615373985603,
+          "crps": 5.15292234368607,
           "coverage_80": 0.8007380073800738,
           "fixed_threshold_brier": 0.15870664957922911,
           "fixed_threshold_log_loss": 0.4826927284552622
         },
         "2023": {
           "n": 544,
-          "mae": 6.5891796889043786,
-          "rmse": 8.411095755001975,
-          "bias": 0.28714416149677613,
-          "crps": 4.689378204649881,
+          "mae": 6.589179688904378,
+          "rmse": 8.411095755001977,
+          "bias": 0.2871441614967747,
+          "crps": 4.6893782046498815,
           "coverage_80": 0.8327205882352942,
           "fixed_threshold_brier": 0.16153087730594218,
-          "fixed_threshold_log_loss": 0.4918594344628293
+          "fixed_threshold_log_loss": 0.49185943446282926
         },
         "2024": {
           "n": 544,
           "mae": 8.206885583919567,
-          "rmse": 11.14454552445753,
-          "bias": 2.2960056984177526,
+          "rmse": 11.144545524457532,
+          "bias": 2.296005698417753,
           "crps": 6.018784365235137,
           "coverage_80": 0.7463235294117647,
-          "fixed_threshold_brier": 0.16233443688770244,
+          "fixed_threshold_brier": 0.1623344368877024,
           "fixed_threshold_log_loss": 0.49117259318240597
         }
       },
@@ -15621,32 +15656,32 @@
         "2022": {
           "n": 542,
           "mae": 7.093710816148576,
-          "rmse": 9.376056444600005,
-          "bias": 0.649181029680987,
+          "rmse": 9.376056444600007,
+          "bias": 0.6491810296809881,
           "crps": 5.119203259898709,
           "coverage_80": 0.8173431734317343,
-          "fixed_threshold_brier": 0.1574314149960289,
+          "fixed_threshold_brier": 0.15743141499602892,
           "fixed_threshold_log_loss": 0.4789026802247901
         },
         "2023": {
           "n": 544,
           "mae": 6.5209954193006885,
           "rmse": 8.350868491003007,
-          "bias": -0.2804501631064788,
-          "crps": 4.668098368103378,
+          "bias": -0.28045016310647913,
+          "crps": 4.6680983681033785,
           "coverage_80": 0.8492647058823529,
           "fixed_threshold_brier": 0.16060979466859418,
           "fixed_threshold_log_loss": 0.4894378115656891
         },
         "2024": {
           "n": 544,
-          "mae": 8.182058502351131,
+          "mae": 8.18205850235113,
           "rmse": 11.122536367829772,
-          "bias": 2.2034121093330103,
+          "bias": 2.203412109333011,
           "crps": 6.0137177505251165,
           "coverage_80": 0.7518382352941176,
-          "fixed_threshold_brier": 0.16168677372582765,
-          "fixed_threshold_log_loss": 0.48941947317398116
+          "fixed_threshold_brier": 0.16168677372582763,
+          "fixed_threshold_log_loss": 0.48941947317398127
         }
       },
       "tendency_ridge": {
@@ -15654,27 +15689,27 @@
           "n": 542,
           "mae": 7.060222188267221,
           "rmse": 9.358669897054678,
-          "bias": 0.5733845266275931,
+          "bias": 0.5733845266275939,
           "crps": 5.110137633103724,
           "coverage_80": 0.8154981549815498,
           "fixed_threshold_brier": 0.15698586445909618,
-          "fixed_threshold_log_loss": 0.47791400464625927
+          "fixed_threshold_log_loss": 0.4779140046462593
         },
         "2023": {
           "n": 544,
-          "mae": 6.489839079645484,
+          "mae": 6.489839079645485,
           "rmse": 8.329624487685678,
-          "bias": -0.203910736249763,
+          "bias": -0.2039107362497637,
           "crps": 4.647510973998588,
           "coverage_80": 0.8511029411764706,
-          "fixed_threshold_brier": 0.1596596285940183,
+          "fixed_threshold_brier": 0.15965962859401833,
           "fixed_threshold_log_loss": 0.48681598628212275
         },
         "2024": {
           "n": 544,
           "mae": 8.211686369173226,
           "rmse": 11.177038590735988,
-          "bias": 2.3589251987636364,
+          "bias": 2.3589251987636373,
           "crps": 6.033193880283532,
           "coverage_80": 0.7536764705882353,
           "fixed_threshold_brier": 0.16210048512181924,
@@ -15717,21 +15752,21 @@
         "2022": {
           "n": 542,
           "mae": 7.171455774377709,
-          "rmse": 9.502675638314452,
-          "bias": 0.8950159583295451,
+          "rmse": 9.502675638314454,
+          "bias": 0.8950159583295458,
           "crps": 5.187661461425207,
           "coverage_80": 0.8099630996309963,
-          "fixed_threshold_brier": 0.15980295153483529,
+          "fixed_threshold_brier": 0.1598029515348353,
           "fixed_threshold_log_loss": 0.4854018352853026
         },
         "2023": {
           "n": 544,
-          "mae": 6.596375273531147,
+          "mae": 6.596375273531148,
           "rmse": 8.425225053228607,
-          "bias": 0.14515756303168542,
-          "crps": 4.688589119591166,
+          "bias": 0.1451575630316853,
+          "crps": 4.6885891195911675,
           "coverage_80": 0.8382352941176471,
-          "fixed_threshold_brier": 0.16150336040290983,
+          "fixed_threshold_brier": 0.16150336040290986,
           "fixed_threshold_log_loss": 0.4919412282455975
         },
         "2024": {
@@ -15739,7 +15774,7 @@
           "mae": 8.2067225323479,
           "rmse": 11.349713064713713,
           "bias": 2.364962808858776,
-          "crps": 6.084725942238005,
+          "crps": 6.084725942238006,
           "coverage_80": 0.7610294117647058,
           "fixed_threshold_brier": 0.16357159431885837,
           "fixed_threshold_log_loss": 0.49448347806677556
@@ -15751,27 +15786,27 @@
         "n": 544,
         "mae": 6.98274778617476,
         "rmse": 9.034465911762991,
-        "bias": 0.6536641947472089,
+        "bias": 0.6536641947472086,
         "crps": 4.999682253556117,
         "coverage_80": 0.8088235294117647,
-        "fixed_threshold_brier": 0.16317199414683237,
+        "fixed_threshold_brier": 0.16317199414683234,
         "fixed_threshold_log_loss": 0.4975695021361587
       },
       "market_ridge": {
         "n": 544,
         "mae": 6.971490996013893,
         "rmse": 9.02219789373984,
-        "bias": 0.6448727238387716,
+        "bias": 0.6448727238387709,
         "crps": 4.989570254229972,
         "coverage_80": 0.8033088235294118,
-        "fixed_threshold_brier": 0.16286022615531714,
+        "fixed_threshold_brier": 0.16286022615531717,
         "fixed_threshold_log_loss": 0.49656466099138535
       },
       "tendency_ridge": {
         "n": 544,
         "mae": 6.955192743197569,
         "rmse": 8.979487929249732,
-        "bias": 0.760958369838563,
+        "bias": 0.760958369838562,
         "crps": 4.96439445231243,
         "coverage_80": 0.8069852941176471,
         "fixed_threshold_brier": 0.1618653209925654,
@@ -15789,10 +15824,10 @@
       },
       "script_opportunity": {
         "n": 544,
-        "mae": 7.0200847852108135,
+        "mae": 7.020084785210813,
         "rmse": 9.127649325213698,
-        "bias": 0.9521742700435482,
-        "crps": 5.027445822637212,
+        "bias": 0.9521742700435446,
+        "crps": 5.027445822637211,
         "coverage_80": 0.7977941176470589,
         "fixed_threshold_brier": 0.16293287730190723,
         "fixed_threshold_log_loss": 0.4945263429078682
@@ -15802,49 +15837,49 @@
       "n": 544,
       "mae": 6.971490996013893,
       "rmse": 9.02219789373984,
-      "bias": 0.6448727238387716,
+      "bias": 0.6448727238387709,
       "crps": 4.989570254229972,
       "coverage_80": 0.8033088235294118,
-      "fixed_threshold_brier": 0.16286022615531714,
+      "fixed_threshold_brier": 0.16286022615531717,
       "fixed_threshold_log_loss": 0.49656466099138535
     },
     "baseline_2025": {
       "n": 544,
       "mae": 6.98274778617476,
       "rmse": 9.034465911762991,
-      "bias": 0.6536641947472089,
+      "bias": 0.6536641947472086,
       "crps": 4.999682253556117,
       "coverage_80": 0.8088235294117647,
-      "fixed_threshold_brier": 0.16317199414683237,
+      "fixed_threshold_brier": 0.16317199414683234,
       "fixed_threshold_log_loss": 0.4975695021361587
     },
     "baseline_label": "Frozen V1 ridge on matched rows",
     "paired_game_bootstrap_95ci": {
       "mae_difference": [
-        -0.08447032232528555,
-        0.06254136064273533
+        -0.08447032232528566,
+        0.06254136064273556
       ],
       "crps_difference": [
         -0.05126233654966053,
-        0.030476643278403978
+        0.030476643278403805
       ]
     },
     "segments_2025": {
       "favored_7_plus": {
         "n": 83,
         "mae": 5.472006925366828,
-        "rmse": 7.057359157837127,
-        "bias": 1.115896784038154,
-        "crps": 3.976025275172841,
+        "rmse": 7.057359157837128,
+        "bias": 1.1158967840381542,
+        "crps": 3.9760252751728404,
         "coverage_80": 0.891566265060241,
-        "fixed_threshold_brier": 0.14094471512249923,
+        "fixed_threshold_brier": 0.1409447151224992,
         "fixed_threshold_log_loss": 0.43686620760109945
       },
       "close_spread": {
         "n": 378,
         "mae": 6.986315036347564,
         "rmse": 8.95908717841307,
-        "bias": 0.2906713136769674,
+        "bias": 0.2906713136769669,
         "crps": 4.992927589793809,
         "coverage_80": 0.7936507936507936,
         "fixed_threshold_brier": 0.16692297325320976,
@@ -15852,22 +15887,22 @@
       },
       "underdog_7_plus": {
         "n": 83,
-        "mae": 8.403463172129301,
-        "rmse": 10.870233220091034,
-        "bias": 1.786958700279895,
-        "crps": 5.987825199032522,
+        "mae": 8.4034631721293,
+        "rmse": 10.870233220091032,
+        "bias": 1.786958700279893,
+        "crps": 5.987825199032521,
         "coverage_80": 0.7590361445783133,
-        "fixed_threshold_brier": 0.1662731058266484,
+        "fixed_threshold_brier": 0.16627310582664837,
         "fixed_threshold_log_loss": 0.5006255404535155
       },
       "week1": {
         "n": 32,
-        "mae": 6.177333304252941,
-        "rmse": 7.772055620112949,
-        "bias": 0.4873637409662581,
+        "mae": 6.177333304252942,
+        "rmse": 7.77205562011295,
+        "bias": 0.48736374096625845,
         "crps": 4.4290281927027255,
         "coverage_80": 0.8125,
-        "fixed_threshold_brier": 0.18336158350805506,
+        "fixed_threshold_brier": 0.1833615835080551,
         "fixed_threshold_log_loss": 0.555976347076
       }
     },
@@ -20029,7 +20064,7 @@
   },
   "shadow": {
     "version": "shadow-protocol-2026-09-14",
-    "generated_at": "2026-09-16T15:27:49.530974+00:00",
+    "generated_at": "2026-09-16T18:07:40.612109+00:00",
     "status": "no_odds",
     "shadow_only": true,
     "promotion_allowed": false,
@@ -20161,6 +20196,6 @@
   "recommendations_kind": "legacy_research_policy; actionable offers are in verified_recommendations",
   "verification_coverage": {
     "verified": 0,
-    "total": 81
+    "total": 88
   }
 }
