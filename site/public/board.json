@@ -1,21 +1,22 @@
 {
-  "generated_at": "2026-09-16T10:42:12.792287+00:00",
-  "run_id": "20260916T104212792287Z",
+  "generated_at": "2026-09-16T15:09:22.559790+00:00",
+  "run_id": "20260916T150922559790Z",
   "status": "source_failure",
   "slate": "2026 \u00b7 WEEK 2",
-  "quotes": 76,
-  "players": 25,
+  "quotes": 81,
+  "players": 28,
   "context_coverage": {
-    "verified": 25,
-    "requested": 25
+    "verified": 28,
+    "requested": 28
   },
   "game_market_coverage": {
     "verified": 0,
-    "requested": 14,
+    "requested": 15,
     "missing_game_ids": [
       "2026_02_CAR_ATL",
       "2026_02_CLE_TB",
       "2026_02_DET_BUF",
+      "2026_02_GB_NYJ",
       "2026_02_IND_KC",
       "2026_02_JAX_DEN",
       "2026_02_LV_LAC",
@@ -52,7 +53,7 @@
     "status": "source_failure",
     "version": "claude-qbatt-v1.0-adapter1",
     "source_model_version": "qbatt-v1.0",
-    "model_sha256": "ea675633d00c3dbed88bdb5b89617e62833b66b11c00dd7aedb5d75bf5b9a423",
+    "model_sha256": "5042f324464c504649987bb8819103a82c58f4ed73b1a364761347d4fb9080ec",
     "policy": {
       "version": "market-center-v1",
       "candidate": "ridge_eb",
@@ -491,9 +492,9 @@
       "calibration": "Frozen original residual pool and saved EB corrections",
       "historical_records": 4754,
       "trained_through": 2026,
-      "refit_at": "2026-09-16T10:42:05.415304+00:00",
+      "refit_at": "2026-09-16T15:09:15.552952+00:00",
       "refresh": {
-        "refreshed_at": "2026-09-16T10:42:05.415304+00:00",
+        "refreshed_at": "2026-09-16T15:09:15.552952+00:00",
         "historical_frozen_through": 2025,
         "records": 4754,
         "processed_game_ids": [
@@ -518,34 +519,39 @@
           {
             "season": 2026,
             "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet",
-            "raw_sha256": "afbfcb3ac43b8f21e840c7fd339ba5cb40c1f786d2c5939a13aad769f2ee6761",
-            "raw_bytes": 1355713,
-            "observed_at": "2026-09-16T10:40:35.499755144+00:00"
+            "raw_sha256": "e7567f9931b02ddafca608ff91ca8f6443a864a1a0d18aef4abe3f4fc49562bc",
+            "raw_bytes": 1355784,
+            "observed_at": "2026-09-16T15:07:45.423323870+00:00"
           }
         ],
-        "model_sha256": "ea675633d00c3dbed88bdb5b89617e62833b66b11c00dd7aedb5d75bf5b9a423",
+        "model_sha256": "5042f324464c504649987bb8819103a82c58f4ed73b1a364761347d4fb9080ec",
         "records_sha256": "c5d5086f07a0c622e47c00a752bc2e8f625e7c698bc1e6d1c4216e81a5db3c23",
         "calibration_policy": "Frozen original residual pool and saved EB corrections; base-only refit, no source fit_only residual update.",
         "base_refitted": true
       },
       "missing_history_games": [],
-      "shared_input_quotes": 76,
+      "shared_input_quotes": 81,
       "market_center_includes_target_book": true,
       "mean_blend_weight": 0.35,
       "eligible_quotes": 0,
       "excluded_quotes": [
         {
-          "player": "Aaron Rodgers",
+          "player": "Tyler Shough",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Tyler Shough",
           "book": "draftkings",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Aaron Rodgers",
+          "player": "Tyler Shough",
           "book": "fanduel",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Aaron Rodgers",
+          "player": "Tyler Shough",
           "book": "hardrock",
           "reason": "missing/stale game market"
         },
@@ -555,6 +561,21 @@
           "reason": "missing/stale game market"
         },
         {
+          "player": "Aaron Rodgers",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Aaron Rodgers",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Aaron Rodgers",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
           "player": "Bo Nix",
           "book": "bet365",
           "reason": "missing/stale game market"
@@ -576,26 +597,6 @@
         },
         {
           "player": "Bo Nix",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Tyler Shough",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Tyler Shough",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Tyler Shough",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Tyler Shough",
           "book": "hardrock",
           "reason": "missing/stale game market"
         },
@@ -652,21 +653,46 @@
         {
           "player": "Dak Prescott",
           "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jordan Love",
+          "book": "fanduel",
           "reason": "missing/stale game market"
         },
         {
           "player": "Cam Ward",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Bryce Young",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Bryce Young",
           "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Matthew Stafford",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Matthew Stafford",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Matthew Stafford",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Daniel Jones",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Daniel Jones",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Daniel Jones",
+          "book": "hardrock",
           "reason": "missing/stale game market"
         },
         {
@@ -695,32 +721,32 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Matthew Stafford",
-          "book": "draftkings",
+          "player": "Bryce Young",
+          "book": "bet365",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Matthew Stafford",
+          "player": "Bryce Young",
           "book": "fanduel",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Matthew Stafford",
-          "book": "hardrock",
+          "player": "Drake Maye",
+          "book": "bet365",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Daniel Jones",
+          "player": "Drake Maye",
           "book": "draftkings",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Daniel Jones",
+          "player": "Drake Maye",
           "book": "fanduel",
           "reason": "missing/stale game market"
         },
         {
-          "player": "Daniel Jones",
+          "player": "Drake Maye",
           "book": "hardrock",
           "reason": "missing/stale game market"
         },
@@ -741,6 +767,26 @@
         },
         {
           "player": "Jaxson Dart",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Caleb Williams",
           "book": "hardrock",
           "reason": "missing/stale game market"
         },
@@ -780,56 +826,6 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Drake Maye",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Drake Maye",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Drake Maye",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Drake Maye",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Carson Wentz",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Carson Wentz",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Caleb Williams",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Caleb Williams",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Caleb Williams",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Caleb Williams",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
           "player": "Patrick Mahomes",
           "book": "draftkings",
           "reason": "missing/stale game market"
@@ -845,58 +841,8 @@
           "reason": "missing/stale game market"
         },
         {
-          "player": "Jayden Daniels",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jayden Daniels",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jayden Daniels",
+          "player": "Geno Smith",
           "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Jayden Daniels",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Lamar Jackson",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Lamar Jackson",
-          "book": "draftkings",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Lamar Jackson",
-          "book": "fanduel",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Lamar Jackson",
-          "book": "hardrock",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Justin Herbert",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Deshaun Watson",
-          "book": "bet365",
-          "reason": "missing/stale game market"
-        },
-        {
-          "player": "Malik Willis",
-          "book": "bet365",
           "reason": "missing/stale game market"
         },
         {
@@ -905,7 +851,87 @@
           "reason": "missing/stale game market"
         },
         {
+          "player": "Lamar Jackson",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Lamar Jackson",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Lamar Jackson",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Lamar Jackson",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Carson Wentz",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Carson Wentz",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Justin Herbert",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jalen Hurts",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jalen Hurts",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
           "player": "Baker Mayfield",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jayden Daniels",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jayden Daniels",
+          "book": "betmgm",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jayden Daniels",
+          "book": "draftkings",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jayden Daniels",
+          "book": "fanduel",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Jayden Daniels",
+          "book": "hardrock",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Malik Willis",
+          "book": "bet365",
+          "reason": "missing/stale game market"
+        },
+        {
+          "player": "Deshaun Watson",
           "book": "bet365",
           "reason": "missing/stale game market"
         },
@@ -917,8 +943,8 @@
       ]
     },
     "model_version": "claude-qbatt-v1.0-adapter1",
-    "generated_at": "2026-09-16T10:42:12.792287+00:00",
-    "run_id": "20260916T104212792287Z",
+    "generated_at": "2026-09-16T15:09:22.559790+00:00",
+    "run_id": "20260916T150922559790Z",
     "performance": {
       "bets": 19,
       "settled": 18,
@@ -15476,10 +15502,12 @@
     }
   },
   "source_errors": [
+    "Cam Ward: source update outside 24-hour age policy or in future",
     "ESPN game markets fetch failed: 400 Client Error: Bad Request for url: https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260916-20260925&limit=100",
     "Game market 2026_02_CAR_ATL: missing current paired spread and total; no V2 evaluation",
     "Game market 2026_02_CLE_TB: missing current paired spread and total; no V2 evaluation",
     "Game market 2026_02_DET_BUF: missing current paired spread and total; no V2 evaluation",
+    "Game market 2026_02_GB_NYJ: missing current paired spread and total; no V2 evaluation",
     "Game market 2026_02_IND_KC: missing current paired spread and total; no V2 evaluation",
     "Game market 2026_02_JAX_DEN: missing current paired spread and total; no V2 evaluation",
     "Game market 2026_02_LV_LAC: missing current paired spread and total; no V2 evaluation",
@@ -15492,7 +15520,6 @@
     "Game market 2026_02_SEA_ARI: missing current paired spread and total; no V2 evaluation",
     "Game market 2026_02_WAS_DAL: missing current paired spread and total; no V2 evaluation",
     "Geno Smith: source update outside 24-hour age policy or in future",
-    "Jalen Hurts: source update outside 24-hour age policy or in future",
     "Jordan Love: source update outside 24-hour age policy or in future"
   ],
   "validation": {
@@ -20002,7 +20029,7 @@
   },
   "shadow": {
     "version": "shadow-protocol-2026-09-14",
-    "generated_at": "2026-09-16T10:42:12.792287+00:00",
+    "generated_at": "2026-09-16T15:09:22.559790+00:00",
     "status": "no_odds",
     "shadow_only": true,
     "promotion_allowed": false,
@@ -20134,6 +20161,6 @@
   "recommendations_kind": "legacy_research_policy; actionable offers are in verified_recommendations",
   "verification_coverage": {
     "verified": 0,
-    "total": 76
+    "total": 81
   }
 }
