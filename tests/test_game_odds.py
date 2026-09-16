@@ -9,7 +9,7 @@ from unittest.mock import patch
 import pandas as pd
 import requests
 
-from qb_attempts.game_odds import fetch_game_markets, parse_scoreboard
+from qb_attempts.game_odds import fetch_game_markets, parse_scoreboard, SCOREBOARD_URL, FALLBACK_SCOREBOARD_URL
 
 
 class GameMarketTests(unittest.TestCase):
@@ -185,6 +185,62 @@ class GameMarketTests(unittest.TestCase):
         with TemporaryDirectory() as directory, patch("qb_attempts.game_odds.requests.get") as get:
             self.assertEqual(fetch_game_markets(self.games, Path(directory), now=self.now), ({}, []))
             get.assert_not_called()
+
+    def response(self, payload, url, status=200):
+        response = requests.Response()
+        response.status_code = status
+        response.url = url
+        response._content = json.dumps(payload).encode()
+        return response
+
+    def test_single_day_requests_use_eastern_date_for_evening_games(self):
+        # Tomorrow at 00:15 UTC is still this evening in New York.
+        kickoff = (self.now + pd.Timedelta(days=2)).normalize() + pd.Timedelta(minutes=15)
+        self.games.loc[0, 'kickoff'] = kickoff
+        self.competition['date'] = kickoff.isoformat()
+        day = kickoff.tz_convert('America/New_York').strftime('%Y%m%d')
+        response = self.response(self.payload, SCOREBOARD_URL)
+        with TemporaryDirectory() as directory, patch('qb_attempts.game_odds.requests.get', return_value=response) as get:
+            markets, errors = fetch_game_markets(self.games, Path(directory), now=self.now)
+            self.assertEqual(errors, [])
+            self.assertEqual(set(markets), {'2026_01_WAS_LA'})
+            self.assertEqual(get.call_count, 1)
+            self.assertEqual(get.call_args.kwargs['params'], {'dates': day, 'limit': 100})
+
+    def test_rejected_endpoint_falls_back_and_preserves_failure_evidence(self):
+        rejected = self.response({'code':400}, SCOREBOARD_URL, 400)
+        success = self.response(self.payload, FALLBACK_SCOREBOARD_URL)
+        with TemporaryDirectory() as directory, patch('qb_attempts.game_odds.requests.get', side_effect=[rejected, success]) as get:
+            markets, errors = fetch_game_markets(self.games, Path(directory), now=self.now)
+            self.assertTrue(markets)
+            self.assertEqual(errors, [])
+            self.assertEqual([c.args[0] for c in get.call_args_list], [SCOREBOARD_URL, FALLBACK_SCOREBOARD_URL])
+            self.assertEqual(markets['2026_01_WAS_LA']['source_url'], FALLBACK_SCOREBOARD_URL)
+            self.assertEqual(len(list(Path(directory).glob('*/scoreboard.*.body.json'))), 2)
+            self.assertEqual(len(list(Path(directory).glob('*/scoreboard.*.error.json'))), 1)
+
+    def test_one_failed_day_does_not_erase_other_days_or_invent_missing_odds(self):
+        later = dict(self.games.iloc[0], game_id='later', espn='456', kickoff=self.kickoff + pd.Timedelta(days=1))
+        games = pd.concat([self.games, pd.DataFrame([later])], ignore_index=True)
+        day = self.kickoff.tz_convert('America/New_York').strftime('%Y%m%d')
+        def get(url, *, params, **kwargs):
+            self.assertNotIn('-', params['dates'])
+            return self.response(self.payload if params['dates'] == day else {'code':400}, url,
+                                 200 if params['dates'] == day else 400)
+        with TemporaryDirectory() as directory, patch('qb_attempts.game_odds.requests.get', side_effect=get):
+            markets, errors = fetch_game_markets(games, Path(directory), now=self.now)
+            self.assertEqual(set(markets), {'2026_01_WAS_LA'})
+            self.assertTrue(any('fetch failed' in error for error in errors))
+
+    def test_duplicate_schedule_dates_are_requested_once(self):
+        other = dict(self.games.iloc[0], game_id='other', espn='456', home_team='KC', away_team='DEN')
+        games = pd.concat([self.games, pd.DataFrame([other])], ignore_index=True)
+        with TemporaryDirectory() as directory, patch('qb_attempts.game_odds.requests.get',
+                return_value=self.response(self.payload, SCOREBOARD_URL)) as get:
+            markets, errors = fetch_game_markets(games, Path(directory), now=self.now)
+            self.assertEqual(get.call_count, 1)
+            self.assertEqual(set(markets), {'2026_01_WAS_LA'})
+            self.assertTrue(any('other' in error for error in errors))
 
 
 if __name__ == "__main__":

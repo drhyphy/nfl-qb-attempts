@@ -22,6 +22,7 @@ import requests
 from .odds_sources import NFL_TEAMS, NON_SPORTSBOOKS, _odds, _timestamp, canonical_book, normalize_team
 
 SCOREBOARD_URL = "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
+FALLBACK_SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
 HEADERS = {"User-Agent": "Mozilla/5.0", "Accept": "application/json"}
 HORIZON = pd.Timedelta(days=9)
 
@@ -194,32 +195,62 @@ def parse_scoreboard(payload: dict, games: pd.DataFrame, *, observed_at: str,
 
 
 def fetch_game_markets(games: pd.DataFrame, output_dir: Path, now: pd.Timestamp | None = None) -> tuple[dict[str, dict], list[str]]:
-    """Fetch the next nine days, retaining immutable source bodies and metadata."""
+    """Fetch scheduled game days individually, retaining every response.
+
+    ESPN can reject a date range while serving its individual days normally.
+    Query only eligible schedule dates in Eastern time (including evening games
+    whose UTC date is tomorrow). A failed date cannot erase another day's odds.
+    """
     current = _stamp(now) if now is not None else pd.Timestamp.now(tz="UTC")
     if current is None:
         return {}, ["ESPN game markets: now must include a timezone"]
-    if not _eligible_games(games, current):
+    eligible = _eligible_games(games, current)
+    if not eligible:
         return {}, []
     snapshot = Path(output_dir) / (datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ") + "_" + uuid4().hex[:8])
     snapshot.mkdir(parents=True, exist_ok=False)
-    params = {"dates": f"{current:%Y%m%d}-{current + HORIZON:%Y%m%d}", "limit": 100}
     contexts, errors = {}, []
-    for attempt in range(2):
-        try:
-            response = requests.get(SCOREBOARD_URL, params=params, headers=HEADERS, timeout=30)
-            observed = datetime.now(timezone.utc).isoformat()
-            with (snapshot / f"scoreboard.{attempt}.body.json").open("xb") as handle:
-                handle.write(response.content)
-            with (snapshot / f"scoreboard.{attempt}.meta.json").open("x") as handle:
-                json.dump({"url": response.url, "observed_at": observed, "status_code": response.status_code,
-                           "http_date": response.headers.get("Date"), "content_type": response.headers.get("Content-Type")}, handle, indent=2)
-            response.raise_for_status()
-            contexts, errors = parse_scoreboard(response.json(), games, observed_at=observed, source_url=response.url, now=current)
-            break
-        except (requests.RequestException, ValueError, TypeError) as exc:
-            errors = [f"ESPN game markets fetch failed: {exc}"]
-            if isinstance(exc, requests.HTTPError) and response.status_code in (400, 401, 403, 404):
+    days = {}
+    for game in eligible:
+        day = game['kickoff'].tz_convert('America/New_York').strftime('%Y%m%d')
+        days.setdefault(day, []).append(game)
+    request_index = 0
+    for day, day_games in sorted(days.items()):
+        failures, parsed = [], False
+        for endpoint in (SCOREBOARD_URL, FALLBACK_SCOREBOARD_URL):
+            for attempt in range(2):
+                index = request_index
+                request_index += 1
+                try:
+                    response = requests.get(endpoint, params={'dates': day, 'limit': 100}, headers=HEADERS, timeout=30)
+                    observed = datetime.now(timezone.utc).isoformat()
+                    with (snapshot / f"scoreboard.{index}.body.json").open("xb") as handle:
+                        handle.write(response.content)
+                    with (snapshot / f"scoreboard.{index}.meta.json").open("x") as handle:
+                        json.dump({"url": response.url, "requested_date": day, "observed_at": observed,
+                                   "status_code": response.status_code, "http_date": response.headers.get("Date"),
+                                   "content_type": response.headers.get("Content-Type")}, handle, indent=2)
+                    response.raise_for_status()
+                    payload = response.json()
+                    if not isinstance(payload, dict) or not isinstance(payload.get('events'), list):
+                        raise ValueError('unexpected scoreboard schema')
+                    day_contexts, day_errors = parse_scoreboard(payload, pd.DataFrame(day_games),
+                        observed_at=observed, source_url=response.url, now=current)
+                    contexts.update(day_contexts)
+                    errors.extend(day_errors)
+                    parsed = True
+                    break
+                except (requests.RequestException, ValueError, TypeError) as exc:
+                    failure = f'ESPN game markets {day} fetch failed: {exc}'
+                    failures.append(failure)
+                    (snapshot / f'scoreboard.{index}.error.json').write_text(json.dumps(
+                        {'endpoint': endpoint, 'requested_date': day, 'error': failure}, indent=2))
+                    if isinstance(exc, requests.HTTPError) and response.status_code in (400, 401, 403, 404):
+                        break
+            if parsed:
                 break
+        if not parsed:
+            errors.extend(sorted(set(failures)))
     with (snapshot / "game_markets.json").open("x") as handle:
         json.dump(contexts, handle, indent=2)
     with (snapshot / "errors.json").open("x") as handle:
