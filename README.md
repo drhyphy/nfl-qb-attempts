@@ -25,11 +25,14 @@ not required**. Unknown/questionable roles warn; fresh explicit unavailability
 withdraws current suggestions without erasing previous paper entries.
 
 `qb_attempts/quote_verification.py` checks an exact two-sided offer against public
-FanDuel New York event markets, retaining market/selection IDs, availability,
-retrieval timestamps and raw evidence. Other books currently remain unverified.
-The generic timestamped-comparison verifier has tests but no unvalidated live
-adapter is enabled. A missing sportsbook update timestamp remains missing; a
-direct available market observation is distinct evidence. Cards expire after
+FanDuel New York event markets and book-specific BettingPros New York offers,
+retaining identifiers, availability, retrieval timestamps and raw evidence.
+BettingPros evidence requires active matching two-sided markets and a fresh
+update timestamp for each side; it is labeled timestamped comparison evidence,
+distinct from a direct sportsbook observation. Its identifiers are provider IDs.
+Current verified offers replace older comparison quotes before either model is
+scored, with one main line per book. Model decisions and price collection status
+are displayed separately. Missing timestamps remain missing. Cards expire after
 30 minutes, even when the rest of the research board remains current.
 
 `data/published/verified_ledger.json` starts a separate one-unit paper cohort,

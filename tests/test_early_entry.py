@@ -50,3 +50,32 @@ def test_stale_context_out_does_not_become_new_unavailability():
     context = {'DEN':dict(available=True, starter='QB', season=2026, observed_at=NOW.isoformat(),
                           source_updated_at='2026-09-01T12:00Z', injuries=['Out'])}
     assert len(select_early_entries([row], [q], context, NOW)[0]) == 1
+
+
+def test_source_gap_is_not_a_model_rejection_and_reason_is_preserved():
+    q, row = fixtures()
+    q['quote_verification'] = {'status':'unverified','reason':'matching_paired_market_not_found'}
+    selected, watch = select_early_entries([row], [q], {}, NOW)
+    assert not selected
+    assert watch[0]['model_status'] == 'qualifies'
+    assert watch[0]['model_reasons'] == []
+    assert watch[0]['price_status'] == 'unverified'
+    assert 'matching_paired_market_not_found' in watch[0]['reasons'][0]
+
+
+def test_verified_alternative_is_shown_ahead_of_an_unverified_high_ev_quote():
+    q, row = fixtures()
+    row['reasons'] = ['Estimated EV below 3%']
+    row['ev'] = .01
+    other_q = {**q, 'book':'draftkings', 'quote_verification':{'status':'unverified','reason':'no feed'}}
+    other_row = {**row, 'book':'draftkings', 'ev':.2, 'robust_ev':.18, 'reasons':[]}
+    _, watch = select_early_entries([row, other_row], [q, other_q], {}, NOW)
+    assert watch[0]['book'] == 'fanduel'
+    assert watch[0]['model_status'] == 'held'
+    assert watch[0]['price_status'] == 'verified'
+
+
+def test_comparison_update_must_still_be_fresh_at_final_decision_time():
+    q, row = fixtures()
+    q['quote_verification'].update(evidence_level='timestamped_comparison', source_updated_at='2026-09-14T11:29Z')
+    assert not select_early_entries([row], [q], {}, NOW)[0]

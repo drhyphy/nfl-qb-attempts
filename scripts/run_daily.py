@@ -25,6 +25,8 @@ from qb_attempts.game_odds import fetch_game_markets
 from qb_attempts.tracking import grade_history
 from qb_attempts.comparison import paired_forecasts, grade_comparison
 from qb_attempts.quote_verification import verify_quotes
+from qb_attempts.bettingpros import fetch_bettingpros_quotes
+from qb_attempts.quote_selection import select_current_quotes
 from qb_attempts.early_entry import select_early_entries, role_evidence
 from qb_attempts.decision_ledger import update_ledger, reconcile_ledger, attach_verified_clv
 from qb_attempts.settlement import augment_results, fetch_espn_evidence
@@ -85,15 +87,24 @@ def main():
             except Exception as exc:
                 challenger_refresh_error = f'Challenger refresh failed: {type(exc).__name__}: {exc}'
 
+    evidence_offers = []
     if args.quotes_file:
         quotes, errors = json.loads(args.quotes_file.read_text()), []
     else:
         quotes, errors = fetch_quotes(ROOT / 'data/raw/odds')
+        bp_quotes, evidence_offers, bp_errors = fetch_bettingpros_quotes(games, ROOT / 'data/raw/bettingpros')
+        quotes += bp_quotes
+        errors += bp_errors
+    source_quotes = list(quotes)
     now = pd.Timestamp.now(tz='UTC')
     resolved, resolution_errors = resolve_quotes(quotes, roster, games, now)
     errors += resolution_errors
-    resolved, verification_errors = verify_quotes(resolved, now, ROOT / 'data/raw/verification')
+    resolved, verification_errors = verify_quotes(resolved, now, ROOT / 'data/raw/verification', evidence_offers=evidence_offers)
     errors += verification_errors
+    resolved = select_current_quotes(resolved)
+    # Score the selected current pair, including its actual line and both prices.
+    # Do not attach a new verification to an older/different comparison quote.
+    quotes = resolved
     verification_by_key = {(q['game_id'], q['player_id'], q['book'], q['line']): q.get('quote_verification') for q in resolved}
     run_id = now.strftime('%Y%m%dT%H%M%S%fZ')
     if args.capture_only:
@@ -216,7 +227,7 @@ def main():
     with evaluations_path.open('x') as handle:
         json.dump({'generated_at': now.isoformat(), 'run_id': run_id, 'model_version': artifact['version'],
                    'model_sha256': board['model_sha256'], 'policy': POLICY, 'game_markets': game_markets,
-                   'quotes': resolved, 'evaluated_quotes': candidates, 'challenger':challenger, 'source_errors': board['source_errors']},
+                   'quotes': resolved, 'source_quotes': source_quotes, 'evaluated_quotes': candidates, 'challenger':challenger, 'source_errors': board['source_errors']},
                   handle, indent=2, default=json_default, allow_nan=False)
     # Current aggregate totals include the just-frozen decisions. Immutable
     # snapshots retain the exact forecasts and the pre-publication summary.

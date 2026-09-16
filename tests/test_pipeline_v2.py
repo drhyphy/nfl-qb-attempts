@@ -65,6 +65,7 @@ class PipelineTests(unittest.TestCase):
             stack.enter_context(patch.object(pipeline, 'load_inputs', return_value=(pd.DataFrame(), games)))
             stack.enter_context(patch.object(pipeline.pd, 'read_parquet', return_value=pd.DataFrame()))
             stack.enter_context(patch.object(pipeline, 'fetch_quotes', return_value=([quote], [])))
+            stack.enter_context(patch.object(pipeline, 'fetch_bettingpros_quotes', return_value=([], [], [])))
             stack.enter_context(patch.object(pipeline, 'resolve_quotes', return_value=([quote], [])))
             context = stack.enter_context(patch.object(pipeline, 'fetch_context', return_value=({'NE': {'available': True}}, [])))
             market = stack.enter_context(patch.object(pipeline, 'fetch_game_markets', return_value=(markets, [])))

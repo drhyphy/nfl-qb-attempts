@@ -59,13 +59,21 @@ def select_early_entries(candidates, quotes, context, now, *, model='champion', 
         evidence = deepcopy(q.get('quote_verification') or {'status': 'unverified', 'reason': 'No price verification'})
         role = role_evidence(q, context, now)
         reasons = [r for r in row.get('reasons', []) if r not in ROLE_REASONS and r != 'one QB per game']
-        try:
-            verified_at = pd.Timestamp(evidence['observed_at'])
-            if verified_at.tzinfo is None or not now - pd.Timedelta(minutes=30) <= verified_at <= now:
-                raise ValueError('stale verification')
-        except (KeyError, ValueError, TypeError):
-            evidence['status'] = 'unverified'
-            evidence['reason'] = 'Verification timestamp missing, stale or future'
+        model_reasons = reasons.copy()
+        # Keep a useful source failure reason rather than overwriting every
+        # unsupported/missing market with an absent-timestamp message.
+        if evidence.get('status') == 'verified':
+            try:
+                verified_at = pd.Timestamp(evidence['observed_at'])
+                if verified_at.tzinfo is None or not now - pd.Timedelta(minutes=30) <= verified_at <= now:
+                    raise ValueError('stale verification')
+                if evidence.get('evidence_level') == 'timestamped_comparison':
+                    updated = pd.Timestamp(evidence.get('source_updated_at'))
+                    if pd.isna(updated) or updated.tzinfo is None or not now - pd.Timedelta(minutes=30) <= updated <= now:
+                        raise ValueError('stale source update')
+            except (KeyError, ValueError, TypeError):
+                evidence['status'] = 'unverified'
+                evidence['reason'] = 'Verification or book update is missing, stale or future'
         # Numeric model probabilities, native EV thresholds and other holds stay intact.
         if evidence.get('status') != 'verified':
             reasons.append('Price not verified: ' + str(evidence.get('reason', evidence.get('status'))))
@@ -77,14 +85,19 @@ def select_early_entries(candidates, quotes, context, now, *, model='champion', 
         except (KeyError, ValueError, TypeError):
             reasons.append('Invalid kickoff')
         row.update(quote_verification=evidence, role_evidence=role, reasons=reasons,
+                   model_reasons=model_reasons, model_status='held' if model_reasons else 'qualifies',
+                   price_status=evidence.get('status', 'unverified'),
                    warnings=list(row.get('warnings') or []) + role['warnings'],
                    status='held' if reasons else 'qualified', research_status=original.get('status'))
+        row['source'] = q.get('source')
+        row['bet_url'] = (q.get('sportsbook_urls') or {}).get(str(row.get('side', '')).lower())
         if any(other.get('game_id') == row.get('game_id') and other.get('player_id') == row.get('player_id')
                and other.get('book') != row.get('book') and other.get('line') == row.get('line')
                and (other.get('quote_verification') or {}).get('status') != 'verified' for other in quotes):
             row['warnings'].append('Market consensus includes unverified comparison-feed prices')
         rows.append(row)
-    rank = lambda r: (r['status'] == 'qualified', r.get('robust_ev') if r.get('robust_ev') is not None else r.get('ev', -1), r.get('ev', -1))
+    rank = lambda r: (r['status'] == 'qualified', r['price_status'] == 'verified',
+                     r.get('robust_ev') if r.get('robust_ev') is not None else r.get('ev', -1), r.get('ev', -1))
     best = {}
     for row in sorted(rows, key=rank, reverse=True):
         best.setdefault((row.get('game_id'), row.get('player_id')), row)

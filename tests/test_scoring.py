@@ -38,6 +38,24 @@ def resolved(slate):
     return scoring.resolve_quotes(slate["quotes"], slate["roster"], slate["games"], slate["now"])
 
 
+def test_provider_generational_suffix_resolves_unique_team_qb(slate):
+    for quote in slate['quotes']:
+        quote['player'] = 'Test Quarterback II'
+    quotes, errors = resolved(slate)
+    assert not errors
+    assert len(quotes) == 3
+    assert {q['player_id'] for q in quotes} == {'qb'}
+
+
+def test_suffix_alias_does_not_resolve_ambiguous_team_qbs(slate):
+    duplicate = slate['roster'].iloc[0].to_dict()
+    duplicate.update(full_name='Test Quarterback II', gsis_id='other-qb')
+    slate['roster'] = pd.concat([slate['roster'], pd.DataFrame([duplicate])])
+    quotes, errors = resolved(slate)
+    assert not quotes
+    assert errors
+
+
 def run(slate):
     quotes, errors = resolved(slate)
     assert not errors

@@ -1,12 +1,12 @@
 {
-  "bets": 16,
+  "bets": 17,
   "settled": 11,
   "wins": 4,
   "losses": 7,
   "pushes": 0,
-  "unresolved": 5,
-  "units": -3.2650868735335608,
-  "roi": -0.2968260794121419,
+  "unresolved": 6,
+  "units": -3.265086873533561,
+  "roi": -0.29682607941214195,
   "clv_bets": 7,
   "mean_clv": -0.020310220309435172,
   "results": [
@@ -2943,6 +2943,155 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_02_PHI_TEN",
+      "player_id": "00-0040676",
+      "player": "Cam Ward",
+      "team": "TEN",
+      "opponent": "PHI",
+      "line": 33.5,
+      "book": "betrivers",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21985&location=NY&live=false&page=1",
+      "observed_at": "2026-09-16T21:31:35.629520+00:00",
+      "source_updated_at": "2026-09-16T21:25:45+00:00",
+      "kickoff": "2026-09-20T17:00:00+00:00",
+      "side": "under",
+      "odds": -122.0,
+      "mean": 27.94222313358932,
+      "interval80": [
+        16.555695474710774,
+        38.43686248888569
+      ],
+      "p_model": 0.75239473667773,
+      "p_market": 0.5322580645161291,
+      "p_final": 0.6423264005969296,
+      "p_push": 0.0,
+      "ev": 0.168823450266544,
+      "robust_ev": 0.13243000764359314,
+      "market_only_ev": -0.03146483342146994,
+      "fair_odds": -180,
+      "bet_to": -165,
+      "independent_model_ev": 0.369111733954558,
+      "expected_margin": -7.0,
+      "game_total": 39.5,
+      "implied_team_points": 16.25,
+      "game_market": {
+        "game_id": "2026_02_PHI_TEN",
+        "event_id": "401872939",
+        "home_team": "TEN",
+        "away_team": "PHI",
+        "kickoff": "2026-09-20T17:00:00+00:00",
+        "home_expected_margin": -7.0,
+        "total_line": 39.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -7.0,
+            "total_line": 39.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-16T21:31:38.148676+00:00",
+        "total_observed_at": "2026-09-16T21:31:38.148676+00:00",
+        "observed_at": "2026-09-16T21:31:38.148676+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260920&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.06709630436967395,
+        "close": 0.6123802211890653,
+        "trailing": 0.3205234744412608
+      },
+      "scenario_means": {
+        "underdog_7": 27.94222313358932,
+        "pickem": 29.05303864568835,
+        "favorite_7": 29.20297098092346
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4589041095890411,
+        "neutral_pass12": 0.5983772819472617,
+        "trail_pass12": 0.740632603406326
+      },
+      "warnings": [
+        "Large model\u2013market disagreement",
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5322580645161291,
+          "ev": -0.03146483342146994
+        },
+        "0.35": {
+          "p_win": 0.6093058997726895,
+          "ev": 0.10873696516013981
+        },
+        "0.5": {
+          "p_win": 0.6423264005969296,
+          "ev": 0.168823450266544
+        },
+        "0.65": {
+          "p_win": 0.6753469014211697,
+          "ev": 0.22890993537294813
+        },
+        "1.0": {
+          "p_win": 0.75239473667773,
+          "ev": 0.369111733954558
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Cam Ward",
+        "espn_id": "4688380",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jaren Kanak",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-16T21:31:37.741185+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/10/depthcharts",
+        "source_updated_at": "2026-09-16T21:31:29+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 18,
+        "season_games": 1
+      },
+      "generated_at": "2026-09-16T21:31:38.374828+00:00",
+      "snapshot": "20260916T213138374828Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -2951,14 +3100,14 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 16,
+      "bets": 17,
       "settled": 11,
       "wins": 4,
       "losses": 7,
       "pushes": 0,
-      "unresolved": 5,
-      "units": -3.2650868735335608,
-      "roi": -0.2968260794121419,
+      "unresolved": 6,
+      "units": -3.265086873533561,
+      "roi": -0.29682607941214195,
       "clv_bets": 7,
       "mean_clv": -0.020310220309435172
     }

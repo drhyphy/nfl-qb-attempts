@@ -1,6 +1,7 @@
 """Exact-price evidence for early NFL attempts offers, independent of QB roles.
 
-Currently the only live adapter is FanDuel's public New York sportsbook feed.
+The built-in live adapter is FanDuel's public New York sportsbook feed.
+Validated collectors may supply timestamped comparison evidence explicitly.
 A fresh comparison-page retrieval is deliberately not evidence of availability.
 Missing markets, IDs, statuses, or contradictory prices never verify a quote.
 Original quotes/prices are immutable; evidence is added in quote_verification.
@@ -221,12 +222,14 @@ def _fetch(url, params, directory, label):
         raise
 
 
-def verify_quotes(quotes, now, output_dir):
+def verify_quotes(quotes, now, output_dir, evidence_offers=None):
     """Enrich resolved paired quotes without changing policy, roles, or prices.
 
     Deduplicates event requests, bounds threads/timeouts, and saves raw proofs in
-    a unique subdirectory. Other books remain unverified until a public adapter
-    can supply exact, timestamped, explicitly available evidence for that book.
+    a unique subdirectory. Additional evidence_offers must use the same exact
+    side-level schema as parse_fanduel; timestamped comparison rows require their
+    own current source_updated_at and explicit availability. Their source and
+    jurisdiction remain distinct from FanDuel direct evidence.
     """
     quotes = list(quotes)
     if not quotes:
@@ -235,7 +238,7 @@ def verify_quotes(quotes, now, output_dir):
         raise ValueError('now must be timezone-aware')
     directory = Path(output_dir) / ('quote-verification-' + uuid4().hex)
     directory.mkdir(parents=True, exist_ok=True)
-    errors, offers = [], []
+    errors, offers = [], list(evidence_offers or [])
     fd_quotes = [q for q in quotes if canonical_book(q.get('book')) == 'fanduel']
     if fd_quotes:
         try:
@@ -266,5 +269,8 @@ def verify_quotes(quotes, now, output_dir):
     directory.joinpath('verification-summary.json').write_text(json.dumps({
         'checked_at': checked_at.isoformat(), 'quotes': len(quotes), 'offers': len(offers),
         'verified': sum(q['quote_verification']['status']=='verified' for q in result),
-        'errors': errors, 'unsupported_books': sorted({canonical_book(q.get('book')) for q in quotes if canonical_book(q.get('book'))!='fanduel'})}, indent=2))
+        'errors': errors,
+        'evidence_sources': sorted({str(o.get('source')) for o in offers}),
+        'unsupported_books': sorted({canonical_book(q.get('book')) for q in quotes}
+                                    - {'fanduel'} - {canonical_book(o.get('book')) for o in offers})}, indent=2))
     return result, errors

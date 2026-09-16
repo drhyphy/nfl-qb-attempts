@@ -9,7 +9,11 @@ from .model import predict,probabilities
 # Frozen launch policy, selected from prior-model failure modes, not today's bets.
 POLICY={'version':'market-anchor-v1','min_ev':.025,'min_robust_ev':0.,'min_other_books':2,'max_disagreement':.15,'max_peer_range':.10,'max_offer_outlier':.10,'min_qb_starts':4,'model_weight_week1':.15,'model_weight_inseason':.25,'probability_stress':.015,'max_ev':.15,'max_observation_age_minutes':30}
 NY_BOOKS={'draftkings','fanduel','caesars','fanatics','betmgm','betrivers','ballybet','thescorebet'}
-def name_key(x):return re.sub(r'[^a-z0-9]','',unicodedata.normalize('NFKD',str(x)).encode('ascii','ignore').decode().lower())
+def name_key(x):
+    # Providers differ on terminal generational suffixes (e.g. Mahomes II).
+    # The resolver still requires a unique QB on the exact scheduled team.
+    text = re.sub(r'\s+(?:ii|iii|iv|jr\.?|sr\.?)$', '', str(x).strip(), flags=re.I)
+    return re.sub(r'[^a-z0-9]','',unicodedata.normalize('NFKD',text).encode('ascii','ignore').decode().lower())
 def payout(odds):
     if not math.isfinite(float(odds)) or abs(odds)<100:raise ValueError('Invalid American odds')
     return odds/100 if odds>0 else 100/(-odds)

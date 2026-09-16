@@ -133,3 +133,40 @@ def test_event_requests_are_deduplicated(monkeypatch,tmp_path):
     monkeypatch.setattr('qb_attempts.quote_verification._fetch',fake_fetch)
     verify_quotes([Q,dict(Q,line=34.5)],NOW,tmp_path)
     assert len(calls)==2  # one NFL discovery and one event, not one call per quote
+
+
+def test_supplementary_comparison_verifies_other_book_without_fanduel_request(monkeypatch,tmp_path):
+    now=datetime.now(timezone.utc)
+    from datetime import timedelta
+    import json
+    q=dict(Q,book='draftkings',kickoff=(now+timedelta(days=1)).isoformat())
+    rows=[dict(o,book='draftkings',kickoff=q['kickoff'],observed_at=now.isoformat(),
+               source_updated_at=now.isoformat(),source='bettingpros',evidence_level='timestamped_comparison') for o in offers()]
+    def fail(*args,**kwargs):
+        pytest.fail('Other-book supplementary evidence needs no FanDuel request')
+    monkeypatch.setattr('qb_attempts.quote_verification.requests.get',fail)
+    enriched,errors=verify_quotes([q],now,tmp_path,evidence_offers=rows)
+    assert not errors
+    assert enriched[0]['quote_verification']['status']=='verified'
+    assert enriched[0]['quote_verification']['source']=='bettingpros'
+    summary=json.loads(next(tmp_path.glob('*/verification-summary.json')).read_text())
+    assert summary['unsupported_books']==[]
+    assert summary['evidence_sources']==['bettingpros']
+
+
+def test_supplementary_offer_must_still_be_timestamped_available_and_exact(monkeypatch,tmp_path):
+    now=datetime.now(timezone.utc)
+    from datetime import timedelta
+    q=dict(Q,book='draftkings',kickoff=(now+timedelta(days=1)).isoformat())
+    rows=[dict(o,book='draftkings',kickoff=q['kickoff'],observed_at=now.isoformat(),
+               source='bettingpros',evidence_level='timestamped_comparison') for o in offers()]
+    enriched,_=verify_quotes([q],now,tmp_path,evidence_offers=rows)
+    assert enriched[0]['quote_verification']['status']=='unverified'
+    for row in rows:row['source_updated_at']=now.isoformat()
+    rows[0]['available']=False
+    enriched,_=verify_quotes([q],now,tmp_path,evidence_offers=rows)
+    assert enriched[0]['quote_verification']['status']=='unverified'
+    rows[0]['available']=True;rows[0]['odds']=-120
+    enriched,_=verify_quotes([q],now,tmp_path,evidence_offers=rows)
+    assert enriched[0]['quote_verification']['status']=='unverified'
+    assert enriched[0]['over_odds']==q['over_odds']
