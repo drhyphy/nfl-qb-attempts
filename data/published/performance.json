@@ -1,10 +1,10 @@
 {
-  "bets": 19,
+  "bets": 20,
   "settled": 11,
   "wins": 4,
   "losses": 7,
   "pushes": 0,
-  "unresolved": 8,
+  "unresolved": 9,
   "units": -3.2650868735335608,
   "roi": -0.2968260794121419,
   "clv_bets": 7,
@@ -3447,6 +3447,155 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_02_MIA_SF",
+      "player_id": "00-0038128",
+      "player": "Malik Willis",
+      "team": "MIA",
+      "opponent": "SF",
+      "line": 27.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-19T10:39:39.160397+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-20T20:25:00+00:00",
+      "side": "under",
+      "odds": -106.0,
+      "mean": 24.48096051088018,
+      "interval80": [
+        13.09443285200163,
+        34.975599866176566
+      ],
+      "p_model": 0.6544185506611354,
+      "p_market": 0.5210344665042379,
+      "p_final": 0.567718895959152,
+      "p_push": 0.0,
+      "ev": 0.10330276007155959,
+      "robust_ev": 0.06443483554325768,
+      "market_only_ev": 0.012576416036537807,
+      "fair_odds": -131,
+      "bet_to": -122,
+      "independent_model_ev": 0.2717945418508858,
+      "expected_margin": -13.5,
+      "game_total": 44.5,
+      "implied_team_points": 15.5,
+      "game_market": {
+        "game_id": "2026_02_MIA_SF",
+        "event_id": "401872942",
+        "home_team": "SF",
+        "away_team": "MIA",
+        "kickoff": "2026-09-20T20:25:00+00:00",
+        "home_expected_margin": 13.5,
+        "total_line": 44.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 13.5,
+            "total_line": 44.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -115,
+            "over_odds": -115,
+            "under_odds": -105,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-19T10:39:45.236606+00:00",
+        "total_observed_at": "2026-09-19T10:39:45.236606+00:00",
+        "observed_at": "2026-09-19T10:39:45.236606+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260920&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.0326989657352938,
+        "close": 0.4908193949869161,
+        "trailing": 0.47648163927779025
+      },
+      "scenario_means": {
+        "underdog_7": 25.342614791051886,
+        "pickem": 26.27055016969834,
+        "favorite_7": 26.274308499010328
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.43537414965986393,
+        "neutral_pass12": 0.5229591836734694,
+        "trail_pass12": 0.7103857566765578
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5210344665042379,
+          "ev": 0.012576416036537807
+        },
+        "0.35": {
+          "p_win": 0.567718895959152,
+          "ev": 0.10330276007155959
+        },
+        "0.5": {
+          "p_win": 0.5877265085826866,
+          "ev": 0.1421854789437117
+        },
+        "0.65": {
+          "p_win": 0.6077341212062213,
+          "ev": 0.18106819781586403
+        },
+        "1.0": {
+          "p_win": 0.6544185506611354,
+          "ev": 0.2717945418508858
+        }
+      },
+      "model_weight": 0.35,
+      "other_books": 4,
+      "reference_books": [
+        "betmgm",
+        "caesars",
+        "draftkings",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Malik Willis",
+        "espn_id": "4242512",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Cole Turner",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T23:35:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-19T10:39:44.529334+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/15/depthcharts",
+        "source_updated_at": "2026-09-19T10:39:25+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 7,
+        "season_games": 1
+      },
+      "generated_at": "2026-09-19T10:39:45.773307+00:00",
+      "snapshot": "20260919T103945773307Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -3455,12 +3604,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 19,
+      "bets": 20,
       "settled": 11,
       "wins": 4,
       "losses": 7,
       "pushes": 0,
-      "unresolved": 8,
+      "unresolved": 9,
       "units": -3.2650868735335608,
       "roi": -0.2968260794121419,
       "clv_bets": 7,
