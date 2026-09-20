@@ -1,0 +1,714 @@
+{
+  "generated_at": "2026-09-20T20:42:24.332000+00:00",
+  "run_id": "20260920T204224332000Z",
+  "entry_policy": {
+    "version": "verified_early_entry_v1",
+    "final_role_confirmation_required": false,
+    "max_open_per_model": 5,
+    "cohort": "Paper signals only; no wagers executed",
+    "note": "Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged."
+  },
+  "verified_recommendations": [
+    {
+      "game_id": "2026_02_NYG_LA",
+      "player_id": "00-0040691",
+      "player": "Jaxson Dart",
+      "team": "NYG",
+      "opponent": "LA",
+      "line": 30.5,
+      "book": "fanatics",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+      "observed_at": "2026-09-20T20:42:23.242258+00:00",
+      "source_updated_at": "2026-09-20T20:31:57+00:00",
+      "kickoff": "2026-09-22T00:15:00+00:00",
+      "side": "Under",
+      "odds": 100,
+      "mean": 29.476803548801467,
+      "interval80": [
+        18.090275889922914,
+        39.97144290409784
+      ],
+      "p_model": 0.5701984109925552,
+      "p_market": 0.4898785425101214,
+      "p_final": 0.5300384767513383,
+      "p_push": 0.0,
+      "ev": 0.06007695350267661,
+      "robust_ev": 0.020076953502676576,
+      "market_only_ev": -0.020242914979757165,
+      "fair_odds": -113,
+      "bet_to": -106,
+      "independent_model_ev": 0.1403968219851104,
+      "expected_margin": -6.5,
+      "game_total": 47.5,
+      "implied_team_points": 20.5,
+      "game_market": {
+        "game_id": "2026_02_NYG_LA",
+        "event_id": "401872947",
+        "home_team": "LA",
+        "away_team": "NYG",
+        "kickoff": "2026-09-22T00:15:00+00:00",
+        "home_expected_margin": 6.5,
+        "total_line": 47.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 6.5,
+            "total_line": 47.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-20T20:42:24.221566+00:00",
+        "total_observed_at": "2026-09-20T20:42:24.221566+00:00",
+        "observed_at": "2026-09-20T20:42:24.221566+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260921&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.07075855948100776,
+        "close": 0.5876970459171418,
+        "trailing": 0.3415443946018504
+      },
+      "scenario_means": {
+        "underdog_7": 29.41860100267591,
+        "pickem": 30.233436648433724,
+        "favorite_7": 30.124095244857077
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4826086956521739,
+        "neutral_pass12": 0.5541958041958042,
+        "trail_pass12": 0.6761245674740484
+      },
+      "warnings": [
+        "Market consensus includes unverified comparison-feed prices"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.4898785425101214,
+          "ev": -0.020242914979757165
+        },
+        "0.35": {
+          "p_win": 0.5179904964789732,
+          "ev": 0.035980992957946434
+        },
+        "0.5": {
+          "p_win": 0.5300384767513383,
+          "ev": 0.06007695350267661
+        },
+        "0.65": {
+          "p_win": 0.5420864570237034,
+          "ev": 0.08417291404740679
+        },
+        "1.0": {
+          "p_win": 0.5701984109925552,
+          "ev": 0.1403968219851104
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 3,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jaxson Dart",
+        "espn_id": "4689114",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Calvin Austin III",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T22:48:00+00:00"
+          },
+          {
+            "player": "Gunner Olszewski",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-06-02T00:10:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-20T20:42:23.942012+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "source_updated_at": "2026-09-20T20:42:04+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 13,
+        "season_games": 1
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-09-20T20:42:23.812985+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-09-20T20:31:57+00:00",
+        "observed_at": "2026-09-20T20:42:23.242258+00:00",
+        "market_id": "2ca5474c7d3746fe65cf8b7b3ee90756",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Jaxson Dart",
+            "team": "NYG",
+            "opponent": "LA",
+            "home_team": "LA",
+            "away_team": "NYG",
+            "kickoff": "2026-09-22T00:15:00+00:00",
+            "game_id": "2026_02_NYG_LA",
+            "event_id": "21998",
+            "provider_event_id": "21998",
+            "provider_player_id": "23160",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+            "observed_at": "2026-09-20T20:42:23.242258+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-569fc25172904a709bd5139fd6287814/offers-21998-1.json",
+            "proof_sha256": "04c3e07aa483f17a1901cd75dc0531238b8367ec137031f983682e45e81c7fc2",
+            "market_id": "2ca5474c7d3746fe65cf8b7b3ee90756",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanatics",
+            "line": 30.5,
+            "side": "over",
+            "odds": -135,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "14_cb2abb8037b057505994ca829b3337b2",
+            "provider_selection_id": "cb2abb8037b057505994ca829b3337b2",
+            "book_line_id": "14_cb2abb8037b057505994ca829b3337b2",
+            "sportsbook_url": "https://betfanatics.com/sportsbook?af_force_deeplink=true&deep_link_value=consume-betslip&deep_link_sub1=%7B%22legs%22%3A%5B%7B%22eventId%22%3A%225335794%22%2C%22marketId%22%3A%22706826588_333_5335794%22%2C%22selectionId%22%3A%221743428100%22%7D%5D%7D&pid=inteliticstech_int&af_siteid=Raketech&c=bettingpros.com-US-SPO-Fanatics-A186782C&af_click_lookback=7d&source_caller=sdk",
+            "source_updated_at": "2026-09-20T20:31:57+00:00",
+            "source_updated_at_raw": "2026-09-20 20:31:57",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Jaxson Dart",
+            "team": "NYG",
+            "opponent": "LA",
+            "home_team": "LA",
+            "away_team": "NYG",
+            "kickoff": "2026-09-22T00:15:00+00:00",
+            "game_id": "2026_02_NYG_LA",
+            "event_id": "21998",
+            "provider_event_id": "21998",
+            "provider_player_id": "23160",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+            "observed_at": "2026-09-20T20:42:23.242258+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-569fc25172904a709bd5139fd6287814/offers-21998-1.json",
+            "proof_sha256": "04c3e07aa483f17a1901cd75dc0531238b8367ec137031f983682e45e81c7fc2",
+            "market_id": "2ca5474c7d3746fe65cf8b7b3ee90756",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanatics",
+            "line": 30.5,
+            "side": "under",
+            "odds": 100,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "14_0dfd3598f06e4a1ddc156c570338dbfe",
+            "provider_selection_id": "0dfd3598f06e4a1ddc156c570338dbfe",
+            "book_line_id": "14_0dfd3598f06e4a1ddc156c570338dbfe",
+            "sportsbook_url": "https://betfanatics.com/sportsbook?af_force_deeplink=true&deep_link_value=consume-betslip&deep_link_sub1=%7B%22legs%22%3A%5B%7B%22eventId%22%3A%225335794%22%2C%22marketId%22%3A%22706826588_333_5335794%22%2C%22selectionId%22%3A%221743428114%22%7D%5D%7D&pid=inteliticstech_int&af_siteid=Raketech&c=bettingpros.com-US-SPO-Fanatics-A186782C&af_click_lookback=7d&source_caller=sdk",
+            "source_updated_at": "2026-09-20T20:31:57+00:00",
+            "source_updated_at_raw": "2026-09-20 20:31:57",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+          "observed_at": "2026-09-20T20:42:23.242258+00:00",
+          "source_updated_at": "2026-09-20T20:31:57+00:00",
+          "provider_event_id": "21998",
+          "event_id": "21998"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "observed_at": "2026-09-20T20:42:23.942012+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://betfanatics.com/sportsbook?af_force_deeplink=true&deep_link_value=consume-betslip&deep_link_sub1=%7B%22legs%22%3A%5B%7B%22eventId%22%3A%225335794%22%2C%22marketId%22%3A%22706826588_333_5335794%22%2C%22selectionId%22%3A%221743428114%22%7D%5D%7D&pid=inteliticstech_int&af_siteid=Raketech&c=bettingpros.com-US-SPO-Fanatics-A186782C&af_click_lookback=7d&source_caller=sdk",
+      "paper_entry_status": "new_entry"
+    }
+  ],
+  "verified_performance": {
+    "champion": {
+      "bets": 6,
+      "settled": 3,
+      "wins": 1,
+      "losses": 2,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 3,
+      "units": -1.180327868852459,
+      "roi": -0.39344262295081966
+    },
+    "claude": {
+      "bets": 5,
+      "settled": 2,
+      "wins": 1,
+      "losses": 1,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 3,
+      "units": -0.180327868852459,
+      "roi": -0.0901639344262295
+    }
+  },
+  "shadow": {
+    "version": "shadow-protocol-2026-09-14",
+    "generated_at": "2026-09-20T20:42:24.332000+00:00",
+    "status": "ok",
+    "shadow_only": true,
+    "promotion_allowed": false,
+    "predictions": [
+      {
+        "game_id": "2026_02_IND_KC",
+        "player_id": "00-0033873",
+        "player": "Patrick Mahomes",
+        "book": "betmgm",
+        "line": 30.5,
+        "kickoff": "2026-09-21T00:20:00+00:00",
+        "market_only_p_over": 0.5197288971671852,
+        "independent_p_over": 0.6489192877822242,
+        "calibrated_p_over": 0.538477761408098,
+        "conditional_p_over": 0.6557388631063472,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 34.15262086986243,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-09-20T20:42:23.812985+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-09-20T20:42:22.629146+00:00",
+            "source_updated_at": null,
+            "provider_event_id": "nfl/35985460",
+            "event_id": "nfl/35985460"
+          }
+        },
+        "observed_at": "2026-09-20T20:42:22.629146+00:00",
+        "source_updated_at": null
+      },
+      {
+        "game_id": "2026_02_IND_KC",
+        "player_id": "00-0035710",
+        "player": "Daniel Jones",
+        "book": "betmgm",
+        "line": 32.5,
+        "kickoff": "2026-09-21T00:20:00+00:00",
+        "market_only_p_over": 0.4796954314720812,
+        "independent_p_over": 0.35841862494128585,
+        "calibrated_p_over": 0.46209503278613867,
+        "conditional_p_over": 0.36884658490944233,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 29.801299045253117,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-09-20T20:42:23.812985+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-09-20T20:42:22.699276+00:00",
+            "source_updated_at": null,
+            "provider_event_id": "nfl/35985460",
+            "event_id": "nfl/35985460"
+          }
+        },
+        "observed_at": "2026-09-20T20:42:22.699276+00:00",
+        "source_updated_at": null
+      },
+      {
+        "game_id": "2026_02_NYG_LA",
+        "player_id": "00-0026498",
+        "player": "Matthew Stafford",
+        "book": "betmgm",
+        "line": 32.5,
+        "kickoff": "2026-09-22T00:15:00+00:00",
+        "market_only_p_over": 0.5,
+        "independent_p_over": 0.5775605374824749,
+        "calibrated_p_over": 0.5112560383228834,
+        "conditional_p_over": 0.5840263608870424,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 34.651193479084625,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-20T20:42:23.812985+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-20T20:36:08+00:00",
+          "observed_at": "2026-09-20T20:42:23.242258+00:00",
+          "market_id": "becb1f00375f94d7a1f5713a44b36667",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Matthew Stafford",
+              "team": "LA",
+              "opponent": "NYG",
+              "home_team": "LA",
+              "away_team": "NYG",
+              "kickoff": "2026-09-22T00:15:00+00:00",
+              "game_id": "2026_02_NYG_LA",
+              "event_id": "21998",
+              "provider_event_id": "21998",
+              "provider_player_id": "9451",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+              "observed_at": "2026-09-20T20:42:23.242258+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-569fc25172904a709bd5139fd6287814/offers-21998-1.json",
+              "proof_sha256": "04c3e07aa483f17a1901cd75dc0531238b8367ec137031f983682e45e81c7fc2",
+              "market_id": "becb1f00375f94d7a1f5713a44b36667",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 32.5,
+              "side": "over",
+              "odds": -105,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_abe80d7b8077e9dadb1134e04f640fb9",
+              "provider_selection_id": "abe80d7b8077e9dadb1134e04f640fb9",
+              "book_line_id": "19_abe80d7b8077e9dadb1134e04f640fb9",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43394-3631357-5758600",
+              "source_updated_at": "2026-09-20T20:36:08+00:00",
+              "source_updated_at_raw": "2026-09-20 20:36:08",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Matthew Stafford",
+              "team": "LA",
+              "opponent": "NYG",
+              "home_team": "LA",
+              "away_team": "NYG",
+              "kickoff": "2026-09-22T00:15:00+00:00",
+              "game_id": "2026_02_NYG_LA",
+              "event_id": "21998",
+              "provider_event_id": "21998",
+              "provider_player_id": "9451",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+              "observed_at": "2026-09-20T20:42:23.242258+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-569fc25172904a709bd5139fd6287814/offers-21998-1.json",
+              "proof_sha256": "04c3e07aa483f17a1901cd75dc0531238b8367ec137031f983682e45e81c7fc2",
+              "market_id": "becb1f00375f94d7a1f5713a44b36667",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 32.5,
+              "side": "under",
+              "odds": -125,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_79b4f2b280cc906a3534d5c2017cb262",
+              "provider_selection_id": "79b4f2b280cc906a3534d5c2017cb262",
+              "book_line_id": "19_79b4f2b280cc906a3534d5c2017cb262",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43394-3631357-5758601",
+              "source_updated_at": "2026-09-20T20:36:08+00:00",
+              "source_updated_at_raw": "2026-09-20 20:36:08",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+            "observed_at": "2026-09-20T20:42:23.242258+00:00",
+            "source_updated_at": "2026-09-20T20:36:08+00:00",
+            "provider_event_id": "21998",
+            "event_id": "21998"
+          }
+        },
+        "observed_at": "2026-09-20T20:42:23.242258+00:00",
+        "source_updated_at": "2026-09-20T20:36:08+00:00"
+      },
+      {
+        "game_id": "2026_02_NYG_LA",
+        "player_id": "00-0040691",
+        "player": "Jaxson Dart",
+        "book": "betmgm",
+        "line": 31.5,
+        "kickoff": "2026-09-22T00:15:00+00:00",
+        "market_only_p_over": 0.4812406203101551,
+        "independent_p_over": 0.3863038669338349,
+        "calibrated_p_over": 0.4674628440215954,
+        "conditional_p_over": 0.39739334246051805,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 29.476803548801467,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-20T20:42:23.812985+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-20T20:36:07+00:00",
+          "observed_at": "2026-09-20T20:42:23.242258+00:00",
+          "market_id": "2ca5474c7d3746fe65cf8b7b3ee90756",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Jaxson Dart",
+              "team": "NYG",
+              "opponent": "LA",
+              "home_team": "LA",
+              "away_team": "NYG",
+              "kickoff": "2026-09-22T00:15:00+00:00",
+              "game_id": "2026_02_NYG_LA",
+              "event_id": "21998",
+              "provider_event_id": "21998",
+              "provider_player_id": "23160",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+              "observed_at": "2026-09-20T20:42:23.242258+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-569fc25172904a709bd5139fd6287814/offers-21998-1.json",
+              "proof_sha256": "04c3e07aa483f17a1901cd75dc0531238b8367ec137031f983682e45e81c7fc2",
+              "market_id": "2ca5474c7d3746fe65cf8b7b3ee90756",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 31.5,
+              "side": "over",
+              "odds": -105,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_cb2abb8037b057505994ca829b3337b2",
+              "provider_selection_id": "cb2abb8037b057505994ca829b3337b2",
+              "book_line_id": "19_cb2abb8037b057505994ca829b3337b2",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43394-3623153-5746150",
+              "source_updated_at": "2026-09-20T20:36:07+00:00",
+              "source_updated_at_raw": "2026-09-20 20:36:07",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Jaxson Dart",
+              "team": "NYG",
+              "opponent": "LA",
+              "home_team": "LA",
+              "away_team": "NYG",
+              "kickoff": "2026-09-22T00:15:00+00:00",
+              "game_id": "2026_02_NYG_LA",
+              "event_id": "21998",
+              "provider_event_id": "21998",
+              "provider_player_id": "23160",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+              "observed_at": "2026-09-20T20:42:23.242258+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-569fc25172904a709bd5139fd6287814/offers-21998-1.json",
+              "proof_sha256": "04c3e07aa483f17a1901cd75dc0531238b8367ec137031f983682e45e81c7fc2",
+              "market_id": "2ca5474c7d3746fe65cf8b7b3ee90756",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 31.5,
+              "side": "under",
+              "odds": -125,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_0dfd3598f06e4a1ddc156c570338dbfe",
+              "provider_selection_id": "0dfd3598f06e4a1ddc156c570338dbfe",
+              "book_line_id": "19_0dfd3598f06e4a1ddc156c570338dbfe",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43394-3623153-5746151",
+              "source_updated_at": "2026-09-20T20:36:07+00:00",
+              "source_updated_at_raw": "2026-09-20 20:36:07",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21998&location=NY&live=false&page=1",
+            "observed_at": "2026-09-20T20:42:23.242258+00:00",
+            "source_updated_at": "2026-09-20T20:36:07+00:00",
+            "provider_event_id": "21998",
+            "event_id": "21998"
+          }
+        },
+        "observed_at": "2026-09-20T20:42:23.242258+00:00",
+        "source_updated_at": "2026-09-20T20:36:07+00:00"
+      }
+    ],
+    "metrics": {
+      "fit_2022_2023": {
+        "market_only": {
+          "n": 485,
+          "brier": 0.2501658547828248,
+          "log_loss": 0.6934812310044569
+        },
+        "independent_model": {
+          "n": 485,
+          "brier": 0.2547173092689647,
+          "log_loss": 0.7030769690719386
+        },
+        "calibrated_blend": {
+          "n": 485,
+          "brier": 0.2500307921100574,
+          "log_loss": 0.6932177298383735
+        },
+        "conditional_distribution": {
+          "n": 485,
+          "brier": 0.2545453903673218,
+          "log_loss": 0.702699135779097
+        }
+      },
+      "validation_2024": {
+        "market_only": {
+          "n": 425,
+          "brier": 0.2491945254987633,
+          "log_loss": 0.6915349601900602
+        },
+        "independent_model": {
+          "n": 425,
+          "brier": 0.2558756223871351,
+          "log_loss": 0.7055782033030993
+        },
+        "calibrated_blend": {
+          "n": 425,
+          "brier": 0.2494428229483191,
+          "log_loss": 0.692037041748151
+        },
+        "conditional_distribution": {
+          "n": 425,
+          "brier": 0.2562233104932801,
+          "log_loss": 0.7063020896710854
+        }
+      },
+      "exposed_benchmark_2025": {
+        "market_only": {
+          "n": 1,
+          "brier": 0.260223901391598,
+          "log_loss": 0.7135977910312362
+        },
+        "independent_model": {
+          "n": 1,
+          "brier": 0.28450880673019097,
+          "log_loss": 0.7622693523271509
+        },
+        "calibrated_blend": {
+          "n": 1,
+          "brier": 0.26368107600337237,
+          "log_loss": 0.7205160276500313
+        },
+        "conditional_distribution": {
+          "n": 1,
+          "brier": 0.28982360855814177,
+          "log_loss": 0.7729540570398563
+        }
+      }
+    },
+    "diagnostics": {
+      "invalid_candidates": 0,
+      "training": {
+        "raw_offer_rows": 29632,
+        "timestamp_and_book_eligible_sides": 8101,
+        "paired_offers": 3916,
+        "exact_event_joined_offers": 3312,
+        "selected_qb_games": 911,
+        "excluded_unmatched_pairs": 604,
+        "join_policy": "exact_utc_scheduled_time_opponent_pair_normalized_player",
+        "quote_policy": "real_book_paired_sides_updated_strictly_before_kickoff_within_24h_other_book_same_line",
+        "raw_sides_by_season": {
+          "2022": 1736,
+          "2023": 7290,
+          "2024": 8748,
+          "2025": 11858
+        },
+        "eligible_sides_by_season": {
+          "2022": 986,
+          "2023": 3004,
+          "2024": 4088,
+          "2025": 23
+        },
+        "sources": {
+          "offers": {
+            "file": "offers.parquet",
+            "sha256": "9484249efb989c829552c06395cf9309772c912150b6d2e52345399fe9ee8d36"
+          },
+          "features": {
+            "file": "features.parquet",
+            "sha256": "10f7eb5e9b70e94887bce3e1309c8c8edb2ce1bd151de1ac6a43bb8330d0e938"
+          },
+          "oof": {
+            "file": "oof_predictions.csv",
+            "sha256": "6d7c019852c29bf318c5b7506bf578085cbd79d82311c830e16d35e9af3d8381"
+          }
+        },
+        "fit_rows": 485,
+        "validation_rows": 425,
+        "limitations": [
+          "Retrospectively downloaded closing-reference quotes; no verified executable morning archive",
+          "2024 and 2025 have previously been inspected; neither is an untouched holdout",
+          "Game spread/total features use historical closing references",
+          "Conditional tails include observed exits but do not estimate a separate exit hazard",
+          "One fixed kernel experiment; not a full within-game play-volume simulator"
+        ]
+      }
+    }
+  },
+  "claude": []
+}
