@@ -1,10 +1,10 @@
 {
-  "bets": 20,
+  "bets": 21,
   "settled": 11,
   "wins": 4,
   "losses": 7,
   "pushes": 0,
-  "unresolved": 9,
+  "unresolved": 10,
   "units": -3.2650868735335608,
   "roi": -0.2968260794121419,
   "clv_bets": 7,
@@ -3596,6 +3596,182 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_02_GB_NYJ",
+      "player_id": "00-0030565",
+      "player": "Geno Smith",
+      "team": "NYJ",
+      "opponent": "GB",
+      "line": 30.5,
+      "book": "betmgm",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-20T10:38:21.639851+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-20T17:00:00+00:00",
+      "side": "under",
+      "odds": -105.0,
+      "mean": 28.510690122003936,
+      "interval80": [
+        17.124162463125383,
+        39.00532947730031
+      ],
+      "p_model": 0.6122638471033867,
+      "p_market": 0.5191532258064516,
+      "p_final": 0.5657085364549191,
+      "p_push": 0.0,
+      "ev": 0.1044785711738897,
+      "robust_ev": 0.06543095212627059,
+      "market_only_ev": 0.01358486943164361,
+      "fair_odds": -130,
+      "bet_to": -121,
+      "independent_model_ev": 0.1953722729161358,
+      "expected_margin": -3.5,
+      "game_total": 44.5,
+      "implied_team_points": 20.5,
+      "game_market": {
+        "game_id": "2026_02_GB_NYJ",
+        "event_id": "401872936",
+        "home_team": "NYJ",
+        "away_team": "GB",
+        "kickoff": "2026-09-20T17:00:00+00:00",
+        "home_expected_margin": -3.5,
+        "total_line": 44.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.5,
+            "total_line": 44.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-20T10:38:27.069088+00:00",
+        "total_observed_at": "2026-09-20T10:38:27.069088+00:00",
+        "observed_at": "2026-09-20T10:38:27.069088+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260920&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.09669973801954924,
+        "close": 0.632232788710327,
+        "trailing": 0.2710674732701237
+      },
+      "scenario_means": {
+        "underdog_7": 28.031380510121416,
+        "pickem": 28.989999733886457,
+        "favorite_7": 29.02444190831704
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4782608695652174,
+        "neutral_pass12": 0.5296912114014252,
+        "trail_pass12": 0.6769857433808554
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5191532258064516,
+          "ev": 0.01358486943164361
+        },
+        "0.35": {
+          "p_win": 0.5517419432603788,
+          "ev": 0.07721046065121584
+        },
+        "0.5": {
+          "p_win": 0.5657085364549191,
+          "ev": 0.1044785711738897
+        },
+        "0.65": {
+          "p_win": 0.5796751296494593,
+          "ev": 0.13174668169656345
+        },
+        "1.0": {
+          "p_win": 0.6122638471033867,
+          "ev": 0.1953722729161358
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 3,
+      "reference_books": [
+        "caesars",
+        "fanatics",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Geno Smith",
+        "espn_id": "15864",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Tim Patrick",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-12T18:56:00+00:00"
+          },
+          {
+            "player": "Omar Cooper Jr.",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-19T16:24:00+00:00"
+          },
+          {
+            "player": "Anez Cooper",
+            "position": "LG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T01:38:00+00:00"
+          },
+          {
+            "player": "Kene Nwangwu",
+            "position": "RB",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-09-18T21:27:00+00:00"
+          },
+          {
+            "player": "Chip Trayanum",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T18:44:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-20T10:38:26.597280+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/20/depthcharts",
+        "source_updated_at": "2026-09-20T10:35:08+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 1
+      },
+      "generated_at": "2026-09-20T10:38:27.725692+00:00",
+      "snapshot": "20260920T103827725692Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -3604,12 +3780,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 20,
+      "bets": 21,
       "settled": 11,
       "wins": 4,
       "losses": 7,
       "pushes": 0,
-      "unresolved": 9,
+      "unresolved": 10,
       "units": -3.2650868735335608,
       "roi": -0.2968260794121419,
       "clv_bets": 7,
