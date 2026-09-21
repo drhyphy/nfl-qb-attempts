@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-09-21T06:07:19.452051+00:00",
+  "run_id": "20260921T060719452051Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_02_NYG_LA",
+      "player_id": "00-0040691",
+      "player": "Jaxson Dart",
+      "team": "NYG",
+      "opponent": "LA",
+      "line": 31.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-21T06:07:16.171305+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-22T00:15:00+00:00",
+      "side": "Under",
+      "odds": -118,
+      "mean": 29.41860100267591,
+      "interval80": [
+        18.032073343797357,
+        39.913240357972285
+      ],
+      "p_model": 0.6161485395059303,
+      "p_market": 0.5203045685279188,
+      "p_final": 0.5682265540169246,
+      "p_push": 0.0,
+      "ev": 0.049774481149911454,
+      "robust_ev": 0.012825328607538544,
+      "market_only_ev": -0.038759356448421156,
+      "fair_odds": -132,
+      "bet_to": -123,
+      "independent_model_ev": 0.13830831874824412,
+      "expected_margin": -7.0,
+      "game_total": 47.5,
+      "implied_team_points": 20.25,
+      "game_market": {
+        "game_id": "2026_02_NYG_LA",
+        "event_id": "401872947",
+        "home_team": "LA",
+        "away_team": "NYG",
+        "kickoff": "2026-09-22T00:15:00+00:00",
+        "home_expected_margin": 7.0,
+        "total_line": 47.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 7.0,
+            "total_line": 47.5,
+            "home_spread_odds": 100,
+            "away_spread_odds": -120,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-21T06:07:18.885050+00:00",
+        "total_observed_at": "2026-09-21T06:07:18.885050+00:00",
+        "observed_at": "2026-09-21T06:07:18.885050+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260921&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.06724548718615823,
+        "close": 0.5811637794859268,
+        "trailing": 0.35159073332791496
+      },
+      "scenario_means": {
+        "underdog_7": 29.41860100267591,
+        "pickem": 30.233436648433724,
+        "favorite_7": 30.124095244857077
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4826086956521739,
+        "neutral_pass12": 0.5541958041958042,
+        "trail_pass12": 0.6761245674740484
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5203045685279188,
+          "ev": -0.038759356448421156
+        },
+        "0.35": {
+          "p_win": 0.5538499583702228,
+          "ev": 0.023214329870411554
+        },
+        "0.5": {
+          "p_win": 0.5682265540169246,
+          "ev": 0.049774481149911454
+        },
+        "0.65": {
+          "p_win": 0.5826031496636263,
+          "ev": 0.07633463242941119
+        },
+        "1.0": {
+          "p_win": 0.6161485395059303,
+          "ev": 0.13830831874824412
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 3,
+      "reference_books": [
+        "betmgm",
+        "caesars",
+        "draftkings"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jaxson Dart",
+        "espn_id": "4689114",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Calvin Austin III",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T22:48:00+00:00"
+          },
+          {
+            "player": "Gunner Olszewski",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-06-02T00:10:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-21T06:07:18.609399+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "source_updated_at": "2026-09-21T06:05:02+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 13,
+        "season_games": 1
+      }
+    }
+  ]
+}
