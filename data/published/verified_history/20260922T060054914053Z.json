@@ -1,0 +1,655 @@
+{
+  "generated_at": "2026-09-22T06:00:54.914053+00:00",
+  "run_id": "20260922T060054914053Z",
+  "entry_policy": {
+    "version": "verified_early_entry_v1",
+    "final_role_confirmation_required": false,
+    "max_open_per_model": 5,
+    "cohort": "Paper signals only; no wagers executed",
+    "note": "Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged."
+  },
+  "verified_recommendations": [],
+  "verified_performance": {
+    "champion": {
+      "bets": 6,
+      "settled": 5,
+      "wins": 2,
+      "losses": 3,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 1,
+      "units": -1.180327868852459,
+      "roi": -0.2360655737704918
+    },
+    "claude": {
+      "bets": 6,
+      "settled": 5,
+      "wins": 4,
+      "losses": 1,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 1,
+      "units": 2.4507758100773067,
+      "roi": 0.49015516201546133
+    }
+  },
+  "shadow": {
+    "version": "shadow-protocol-2026-09-14",
+    "generated_at": "2026-09-22T06:00:54.914053+00:00",
+    "status": "ok",
+    "shadow_only": true,
+    "promotion_allowed": false,
+    "predictions": [
+      {
+        "game_id": "2026_03_ATL_GB",
+        "player_id": "00-0036264",
+        "player": "Jordan Love",
+        "book": "betrivers",
+        "line": 30.5,
+        "kickoff": "2026-09-25T00:15:00+00:00",
+        "market_only_p_over": 0.5079872204472844,
+        "independent_p_over": 0.575895580785114,
+        "calibrated_p_over": 0.5178424784330803,
+        "conditional_p_over": 0.5819003709725514,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 32.616753479231164,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-22T06:00:53.897831+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-22T05:57:44+00:00",
+          "observed_at": "2026-09-22T06:00:53.355893+00:00",
+          "market_id": "469cdd226307d54942eb01168c9a3708",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Jordan Love",
+              "team": "GB",
+              "opponent": "ATL",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "19246",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T06:00:53.355893+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a51847d57fc9440daa14493fde0e30a9/offers-22038-1.json",
+              "proof_sha256": "91459a1723ed0b9901d8cde0b77e5fc0fcdf56a11a0a9c44666a4beab4398c83",
+              "market_id": "469cdd226307d54942eb01168c9a3708",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 30.5,
+              "side": "over",
+              "odds": -120,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_4d17677bf5759d7ad4cd607c88fad137",
+              "provider_selection_id": "4d17677bf5759d7ad4cd607c88fad137",
+              "book_line_id": "18_4d17677bf5759d7ad4cd607c88fad137",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4345164944|0|append",
+              "source_updated_at": "2026-09-22T05:57:44+00:00",
+              "source_updated_at_raw": "2026-09-22 05:57:44",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Jordan Love",
+              "team": "GB",
+              "opponent": "ATL",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "19246",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T06:00:53.355893+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a51847d57fc9440daa14493fde0e30a9/offers-22038-1.json",
+              "proof_sha256": "91459a1723ed0b9901d8cde0b77e5fc0fcdf56a11a0a9c44666a4beab4398c83",
+              "market_id": "469cdd226307d54942eb01168c9a3708",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 30.5,
+              "side": "under",
+              "odds": -112,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_f74eb0b68e1560a1786942420c49d195",
+              "provider_selection_id": "f74eb0b68e1560a1786942420c49d195",
+              "book_line_id": "18_f74eb0b68e1560a1786942420c49d195",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4345164945|0|append",
+              "source_updated_at": "2026-09-22T05:57:44+00:00",
+              "source_updated_at_raw": "2026-09-22 05:57:44",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+            "observed_at": "2026-09-22T06:00:53.355893+00:00",
+            "source_updated_at": "2026-09-22T05:57:44+00:00",
+            "provider_event_id": "22038",
+            "event_id": "22038"
+          }
+        },
+        "observed_at": "2026-09-22T06:00:53.355893+00:00",
+        "source_updated_at": "2026-09-22T05:57:44+00:00"
+      },
+      {
+        "game_id": "2026_03_ATL_GB",
+        "player_id": "00-0039917",
+        "player": "Michael Penix Jr.",
+        "book": "betrivers",
+        "line": 30.5,
+        "kickoff": "2026-09-25T00:15:00+00:00",
+        "market_only_p_over": 0.5203045685279188,
+        "independent_p_over": 0.49182185308958015,
+        "calibrated_p_over": 0.5161709904620607,
+        "conditional_p_over": 0.5010076006938475,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 30.843739258362383,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-22T06:00:53.897831+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-22T05:57:44+00:00",
+          "observed_at": "2026-09-22T06:00:53.355893+00:00",
+          "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Michael Penix Jr.",
+              "team": "ATL",
+              "opponent": "GB",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "22973",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T06:00:53.355893+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a51847d57fc9440daa14493fde0e30a9/offers-22038-1.json",
+              "proof_sha256": "91459a1723ed0b9901d8cde0b77e5fc0fcdf56a11a0a9c44666a4beab4398c83",
+              "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 30.5,
+              "side": "over",
+              "odds": -124,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_fd53e7638e9f1c49246cdfdbceaf9e76",
+              "provider_selection_id": "fd53e7638e9f1c49246cdfdbceaf9e76",
+              "book_line_id": "18_fd53e7638e9f1c49246cdfdbceaf9e76",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4345150513|0|append",
+              "source_updated_at": "2026-09-22T05:57:44+00:00",
+              "source_updated_at_raw": "2026-09-22 05:57:44",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Michael Penix Jr.",
+              "team": "ATL",
+              "opponent": "GB",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "22973",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T06:00:53.355893+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a51847d57fc9440daa14493fde0e30a9/offers-22038-1.json",
+              "proof_sha256": "91459a1723ed0b9901d8cde0b77e5fc0fcdf56a11a0a9c44666a4beab4398c83",
+              "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 30.5,
+              "side": "under",
+              "odds": -107,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_4b74b2248d32123f4ed2c4fc5e8e510c",
+              "provider_selection_id": "4b74b2248d32123f4ed2c4fc5e8e510c",
+              "book_line_id": "18_4b74b2248d32123f4ed2c4fc5e8e510c",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4345150514|0|append",
+              "source_updated_at": "2026-09-22T05:57:44+00:00",
+              "source_updated_at_raw": "2026-09-22 05:57:44",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+            "observed_at": "2026-09-22T06:00:53.355893+00:00",
+            "source_updated_at": "2026-09-22T05:57:44+00:00",
+            "provider_event_id": "22038",
+            "event_id": "22038"
+          }
+        },
+        "observed_at": "2026-09-22T06:00:53.355893+00:00",
+        "source_updated_at": "2026-09-22T05:57:44+00:00"
+      }
+    ],
+    "metrics": {
+      "fit_2022_2023": {
+        "market_only": {
+          "n": 485,
+          "brier": 0.2501658547828248,
+          "log_loss": 0.6934812310044569
+        },
+        "independent_model": {
+          "n": 485,
+          "brier": 0.2547173092689647,
+          "log_loss": 0.7030769690719386
+        },
+        "calibrated_blend": {
+          "n": 485,
+          "brier": 0.2500307921100574,
+          "log_loss": 0.6932177298383735
+        },
+        "conditional_distribution": {
+          "n": 485,
+          "brier": 0.2545453903673218,
+          "log_loss": 0.702699135779097
+        }
+      },
+      "validation_2024": {
+        "market_only": {
+          "n": 425,
+          "brier": 0.2491945254987633,
+          "log_loss": 0.6915349601900602
+        },
+        "independent_model": {
+          "n": 425,
+          "brier": 0.2558756223871351,
+          "log_loss": 0.7055782033030993
+        },
+        "calibrated_blend": {
+          "n": 425,
+          "brier": 0.2494428229483191,
+          "log_loss": 0.692037041748151
+        },
+        "conditional_distribution": {
+          "n": 425,
+          "brier": 0.2562233104932801,
+          "log_loss": 0.7063020896710854
+        }
+      },
+      "exposed_benchmark_2025": {
+        "market_only": {
+          "n": 1,
+          "brier": 0.260223901391598,
+          "log_loss": 0.7135977910312362
+        },
+        "independent_model": {
+          "n": 1,
+          "brier": 0.28450880673019097,
+          "log_loss": 0.7622693523271509
+        },
+        "calibrated_blend": {
+          "n": 1,
+          "brier": 0.26368107600337237,
+          "log_loss": 0.7205160276500313
+        },
+        "conditional_distribution": {
+          "n": 1,
+          "brier": 0.28982360855814177,
+          "log_loss": 0.7729540570398563
+        }
+      }
+    },
+    "diagnostics": {
+      "invalid_candidates": 0,
+      "training": {
+        "raw_offer_rows": 29632,
+        "timestamp_and_book_eligible_sides": 8101,
+        "paired_offers": 3916,
+        "exact_event_joined_offers": 3312,
+        "selected_qb_games": 911,
+        "excluded_unmatched_pairs": 604,
+        "join_policy": "exact_utc_scheduled_time_opponent_pair_normalized_player",
+        "quote_policy": "real_book_paired_sides_updated_strictly_before_kickoff_within_24h_other_book_same_line",
+        "raw_sides_by_season": {
+          "2022": 1736,
+          "2023": 7290,
+          "2024": 8748,
+          "2025": 11858
+        },
+        "eligible_sides_by_season": {
+          "2022": 986,
+          "2023": 3004,
+          "2024": 4088,
+          "2025": 23
+        },
+        "sources": {
+          "offers": {
+            "file": "offers.parquet",
+            "sha256": "9484249efb989c829552c06395cf9309772c912150b6d2e52345399fe9ee8d36"
+          },
+          "features": {
+            "file": "features.parquet",
+            "sha256": "10f7eb5e9b70e94887bce3e1309c8c8edb2ce1bd151de1ac6a43bb8330d0e938"
+          },
+          "oof": {
+            "file": "oof_predictions.csv",
+            "sha256": "6d7c019852c29bf318c5b7506bf578085cbd79d82311c830e16d35e9af3d8381"
+          }
+        },
+        "fit_rows": 485,
+        "validation_rows": 425,
+        "limitations": [
+          "Retrospectively downloaded closing-reference quotes; no verified executable morning archive",
+          "2024 and 2025 have previously been inspected; neither is an untouched holdout",
+          "Game spread/total features use historical closing references",
+          "Conditional tails include observed exits but do not estimate a separate exit hazard",
+          "One fixed kernel experiment; not a full within-game play-volume simulator"
+        ]
+      }
+    }
+  },
+  "claude": [
+    {
+      "game_id": "2026_03_ATL_GB",
+      "player_id": "00-0039917",
+      "player": "Michael Penix Jr.",
+      "team": "ATL",
+      "opponent": "GB",
+      "line": 31.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+      "observed_at": "2026-09-22T06:00:53.355893+00:00",
+      "source_updated_at": "2026-09-22T05:50:41+00:00",
+      "season": 2026,
+      "week": 3,
+      "kickoff": "2026-09-25T00:15:00+00:00",
+      "side": "Under",
+      "odds": -117,
+      "mean": 29.03907468581817,
+      "mu_model": 29.03907468581817,
+      "mu_market": 31.540983076910575,
+      "mu_final": 30.665315140028234,
+      "mean_market": 31.540983076910575,
+      "mean_final": 30.665315140028234,
+      "scale": 1.0,
+      "p_model": 0.6325015518896359,
+      "p_market": 0.5205341187146396,
+      "p_final": 0.560819819697311,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.04015299892578189,
+      "robust_ev": null,
+      "independent_model_ev": 0.17310116888932459,
+      "market_only_ev": -0.03456492511900178,
+      "fair_odds": -128,
+      "bet_to": -122,
+      "bet_to_target": 0.02,
+      "interval80": [
+        18.078601301900783,
+        39.324554814602344
+      ],
+      "expected_margin": -6.0,
+      "game_total": 44.5,
+      "implied_team_points": 19.25,
+      "game_market": {
+        "game_id": "2026_03_ATL_GB",
+        "event_id": "401872948",
+        "home_team": "GB",
+        "away_team": "ATL",
+        "kickoff": "2026-09-25T00:15:00+00:00",
+        "home_expected_margin": 6.0,
+        "total_line": 44.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 6.0,
+            "total_line": 44.5,
+            "home_spread_odds": -112,
+            "away_spread_odds": -108,
+            "over_odds": -102,
+            "under_odds": -118,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-22T06:00:54.526906+00:00",
+        "total_observed_at": "2026-09-22T06:00:54.526906+00:00",
+        "observed_at": "2026-09-22T06:00:54.526906+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260924&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 4,
+      "other_books": 3,
+      "reference_books": [
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanatics"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [
+        "Adapter: roster does not list active QB"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [
+        "Weekly roster status needs review; it is not final game-day participation evidence"
+      ],
+      "starting_status": {
+        "starter": "Michael Penix Jr.",
+        "espn_id": "4360423",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Beaux Collins",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T04:00:00+00:00"
+          },
+          {
+            "player": "Cameron Williams",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-12T20:59:00+00:00"
+          },
+          {
+            "player": "Jawaan Taylor",
+            "position": "RT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-22T00:59:00+00:00"
+          },
+          {
+            "player": "Storm Norton",
+            "position": "RT",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Nick Muse",
+            "position": "TE",
+            "depth": 4,
+            "status": "Questionable",
+            "date": "2026-09-21T23:21:00+00:00"
+          },
+          {
+            "player": "Brian Robinson Jr.",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-21T21:05:00+00:00"
+          },
+          {
+            "player": "Trey Sermon",
+            "position": "RB",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-22T06:00:54.175213+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/depthcharts",
+        "source_updated_at": "2026-09-22T06:00:14+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 12
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-09-22T06:00:53.897831+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-09-22T05:50:41+00:00",
+        "observed_at": "2026-09-22T06:00:53.355893+00:00",
+        "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Michael Penix Jr.",
+            "team": "ATL",
+            "opponent": "GB",
+            "home_team": "GB",
+            "away_team": "ATL",
+            "kickoff": "2026-09-25T00:15:00+00:00",
+            "game_id": "2026_03_ATL_GB",
+            "event_id": "22038",
+            "provider_event_id": "22038",
+            "provider_player_id": "22973",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+            "observed_at": "2026-09-22T06:00:53.355893+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a51847d57fc9440daa14493fde0e30a9/offers-22038-1.json",
+            "proof_sha256": "91459a1723ed0b9901d8cde0b77e5fc0fcdf56a11a0a9c44666a4beab4398c83",
+            "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 31.5,
+            "side": "over",
+            "odds": -109,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_fd53e7638e9f1c49246cdfdbceaf9e76",
+            "provider_selection_id": "fd53e7638e9f1c49246cdfdbceaf9e76",
+            "book_line_id": "12_fd53e7638e9f1c49246cdfdbceaf9e76",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118180?outcomes=0QA372037872%232293567636_13L88808Q1-986815955Q20",
+            "source_updated_at": "2026-09-22T05:50:41+00:00",
+            "source_updated_at_raw": "2026-09-22 05:50:41",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Michael Penix Jr.",
+            "team": "ATL",
+            "opponent": "GB",
+            "home_team": "GB",
+            "away_team": "ATL",
+            "kickoff": "2026-09-25T00:15:00+00:00",
+            "game_id": "2026_03_ATL_GB",
+            "event_id": "22038",
+            "provider_event_id": "22038",
+            "provider_player_id": "22973",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+            "observed_at": "2026-09-22T06:00:53.355893+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a51847d57fc9440daa14493fde0e30a9/offers-22038-1.json",
+            "proof_sha256": "91459a1723ed0b9901d8cde0b77e5fc0fcdf56a11a0a9c44666a4beab4398c83",
+            "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 31.5,
+            "side": "under",
+            "odds": -117,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_4b74b2248d32123f4ed2c4fc5e8e510c",
+            "provider_selection_id": "4b74b2248d32123f4ed2c4fc5e8e510c",
+            "book_line_id": "12_4b74b2248d32123f4ed2c4fc5e8e510c",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118180?outcomes=0QA372037872%232293567638_13L88808Q1-614028549Q20",
+            "source_updated_at": "2026-09-22T05:50:41+00:00",
+            "source_updated_at_raw": "2026-09-22 05:50:41",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+          "observed_at": "2026-09-22T06:00:53.355893+00:00",
+          "source_updated_at": "2026-09-22T05:50:41+00:00",
+          "provider_event_id": "22038",
+          "event_id": "22038"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/depthcharts",
+        "observed_at": "2026-09-22T06:00:54.175213+00:00",
+        "warnings": [
+          "Weekly roster status needs review; it is not final game-day participation evidence"
+        ]
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "held",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118180?outcomes=0QA372037872%232293567638_13L88808Q1-614028549Q20",
+      "paper_entry_status": "new_entry"
+    }
+  ]
+}
