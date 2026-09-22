@@ -1,0 +1,460 @@
+{
+  "generated_at": "2026-09-22T10:39:08.461561+00:00",
+  "run_id": "20260922T103908461561Z",
+  "entry_policy": {
+    "version": "verified_early_entry_v1",
+    "final_role_confirmation_required": false,
+    "max_open_per_model": 5,
+    "cohort": "Paper signals only; no wagers executed",
+    "note": "Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged."
+  },
+  "verified_recommendations": [],
+  "verified_performance": {
+    "champion": {
+      "bets": 6,
+      "settled": 5,
+      "wins": 2,
+      "losses": 3,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 1,
+      "units": -1.180327868852459,
+      "roi": -0.2360655737704918
+    },
+    "claude": {
+      "bets": 6,
+      "settled": 5,
+      "wins": 4,
+      "losses": 1,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 1,
+      "units": 2.4507758100773067,
+      "roi": 0.49015516201546133
+    }
+  },
+  "shadow": {
+    "version": "shadow-protocol-2026-09-14",
+    "generated_at": "2026-09-22T10:39:08.461561+00:00",
+    "status": "ok",
+    "shadow_only": true,
+    "promotion_allowed": false,
+    "predictions": [
+      {
+        "game_id": "2026_03_ATL_GB",
+        "player_id": "00-0036264",
+        "player": "Jordan Love",
+        "book": "betmgm",
+        "line": 31.5,
+        "kickoff": "2026-09-25T00:15:00+00:00",
+        "market_only_p_over": 0.480324745257228,
+        "independent_p_over": 0.5283025155297063,
+        "calibrated_p_over": 0.4872875595744384,
+        "conditional_p_over": 0.5330250022778091,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 32.624410259495264,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-22T10:39:07.377013+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-22T10:34:08+00:00",
+          "observed_at": "2026-09-22T10:39:06.159848+00:00",
+          "market_id": "469cdd226307d54942eb01168c9a3708",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Jordan Love",
+              "team": "GB",
+              "opponent": "ATL",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "19246",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T10:39:06.159848+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-ec301c1ce86e4ad3b1001b147f56f1d9/offers-22038-1.json",
+              "proof_sha256": "78c75609838c6b21d5823cbfd72c1c47ddf587d44b8708b9188f0a4828f6e8ca",
+              "market_id": "469cdd226307d54942eb01168c9a3708",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 31.5,
+              "side": "over",
+              "odds": -115,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_4d17677bf5759d7ad4cd607c88fad137",
+              "provider_selection_id": "4d17677bf5759d7ad4cd607c88fad137",
+              "book_line_id": "19_4d17677bf5759d7ad4cd607c88fad137",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43436-3667553-5822627",
+              "source_updated_at": "2026-09-22T10:34:08+00:00",
+              "source_updated_at_raw": "2026-09-22 10:34:08",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Jordan Love",
+              "team": "GB",
+              "opponent": "ATL",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "19246",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T10:39:06.159848+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-ec301c1ce86e4ad3b1001b147f56f1d9/offers-22038-1.json",
+              "proof_sha256": "78c75609838c6b21d5823cbfd72c1c47ddf587d44b8708b9188f0a4828f6e8ca",
+              "market_id": "469cdd226307d54942eb01168c9a3708",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 31.5,
+              "side": "under",
+              "odds": -115,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_f74eb0b68e1560a1786942420c49d195",
+              "provider_selection_id": "f74eb0b68e1560a1786942420c49d195",
+              "book_line_id": "19_f74eb0b68e1560a1786942420c49d195",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43436-3667553-5822628",
+              "source_updated_at": "2026-09-22T10:34:08+00:00",
+              "source_updated_at_raw": "2026-09-22 10:34:08",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+            "observed_at": "2026-09-22T10:39:06.159848+00:00",
+            "source_updated_at": "2026-09-22T10:34:08+00:00",
+            "provider_event_id": "22038",
+            "event_id": "22038"
+          }
+        },
+        "observed_at": "2026-09-22T10:39:06.159848+00:00",
+        "source_updated_at": "2026-09-22T10:34:08+00:00"
+      },
+      {
+        "game_id": "2026_03_ATL_GB",
+        "player_id": "00-0039917",
+        "player": "Michael Penix Jr.",
+        "book": "betmgm",
+        "line": 32.5,
+        "kickoff": "2026-09-25T00:15:00+00:00",
+        "market_only_p_over": 0.48987854251012153,
+        "independent_p_over": 0.4019747875396251,
+        "calibrated_p_over": 0.4771214360383306,
+        "conditional_p_over": 0.4113841673230817,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 30.84354244593406,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-22T10:39:07.377013+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-22T10:34:08+00:00",
+          "observed_at": "2026-09-22T10:39:06.159848+00:00",
+          "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Michael Penix Jr.",
+              "team": "ATL",
+              "opponent": "GB",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "22973",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T10:39:06.159848+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-ec301c1ce86e4ad3b1001b147f56f1d9/offers-22038-1.json",
+              "proof_sha256": "78c75609838c6b21d5823cbfd72c1c47ddf587d44b8708b9188f0a4828f6e8ca",
+              "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 32.5,
+              "side": "over",
+              "odds": 105,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_fd53e7638e9f1c49246cdfdbceaf9e76",
+              "provider_selection_id": "fd53e7638e9f1c49246cdfdbceaf9e76",
+              "book_line_id": "19_fd53e7638e9f1c49246cdfdbceaf9e76",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43436-3667558-5822637",
+              "source_updated_at": "2026-09-22T10:34:08+00:00",
+              "source_updated_at_raw": "2026-09-22 10:34:08",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Michael Penix Jr.",
+              "team": "ATL",
+              "opponent": "GB",
+              "home_team": "GB",
+              "away_team": "ATL",
+              "kickoff": "2026-09-25T00:15:00+00:00",
+              "game_id": "2026_03_ATL_GB",
+              "event_id": "22038",
+              "provider_event_id": "22038",
+              "provider_player_id": "22973",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+              "observed_at": "2026-09-22T10:39:06.159848+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-ec301c1ce86e4ad3b1001b147f56f1d9/offers-22038-1.json",
+              "proof_sha256": "78c75609838c6b21d5823cbfd72c1c47ddf587d44b8708b9188f0a4828f6e8ca",
+              "market_id": "cba425789fe796e8f52fd0aeb3c6afdc",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 32.5,
+              "side": "under",
+              "odds": -140,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_4b74b2248d32123f4ed2c4fc5e8e510c",
+              "provider_selection_id": "4b74b2248d32123f4ed2c4fc5e8e510c",
+              "book_line_id": "19_4b74b2248d32123f4ed2c4fc5e8e510c",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43436-3667558-5822638",
+              "source_updated_at": "2026-09-22T10:34:08+00:00",
+              "source_updated_at_raw": "2026-09-22 10:34:08",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22038&location=NY&live=false&page=1",
+            "observed_at": "2026-09-22T10:39:06.159848+00:00",
+            "source_updated_at": "2026-09-22T10:34:08+00:00",
+            "provider_event_id": "22038",
+            "event_id": "22038"
+          }
+        },
+        "observed_at": "2026-09-22T10:39:06.159848+00:00",
+        "source_updated_at": "2026-09-22T10:34:08+00:00"
+      },
+      {
+        "game_id": "2026_03_LAC_BUF",
+        "player_id": "00-0034857",
+        "player": "Josh Allen",
+        "book": "fanduel",
+        "line": 30.5,
+        "kickoff": "2026-09-27T17:00:00+00:00",
+        "market_only_p_over": 0.4718423169750603,
+        "independent_p_over": 0.421197303562288,
+        "calibrated_p_over": 0.4644924167507882,
+        "conditional_p_over": 0.4213023283281746,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 29.28296487864241,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-09-22T10:39:07.377013+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-09-22T10:39:05.022163+00:00",
+            "source_updated_at": "2026-09-22T06:04:34+00:00",
+            "provider_event_id": "nfl/35985500",
+            "event_id": "nfl/35985500"
+          }
+        },
+        "observed_at": "2026-09-22T10:39:05.022163+00:00",
+        "source_updated_at": "2026-09-22T06:04:34+00:00"
+      },
+      {
+        "game_id": "2026_03_LAC_BUF",
+        "player_id": "00-0036355",
+        "player": "Justin Herbert",
+        "book": "fanduel",
+        "line": 31.5,
+        "kickoff": "2026-09-27T17:00:00+00:00",
+        "market_only_p_over": 0.5,
+        "independent_p_over": 0.4206427541277349,
+        "calibrated_p_over": 0.48848321285887775,
+        "conditional_p_over": 0.43263016969620727,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 30.27041938254127,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-09-22T10:39:07.377013+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-09-22T10:39:05.120017+00:00",
+            "source_updated_at": "2026-09-22T06:04:36+00:00",
+            "provider_event_id": "nfl/35985500",
+            "event_id": "nfl/35985500"
+          }
+        },
+        "observed_at": "2026-09-22T10:39:05.120017+00:00",
+        "source_updated_at": "2026-09-22T06:04:36+00:00"
+      }
+    ],
+    "metrics": {
+      "fit_2022_2023": {
+        "market_only": {
+          "n": 485,
+          "brier": 0.2501658547828248,
+          "log_loss": 0.6934812310044569
+        },
+        "independent_model": {
+          "n": 485,
+          "brier": 0.2547173092689647,
+          "log_loss": 0.7030769690719386
+        },
+        "calibrated_blend": {
+          "n": 485,
+          "brier": 0.2500307921100574,
+          "log_loss": 0.6932177298383735
+        },
+        "conditional_distribution": {
+          "n": 485,
+          "brier": 0.2545453903673218,
+          "log_loss": 0.702699135779097
+        }
+      },
+      "validation_2024": {
+        "market_only": {
+          "n": 425,
+          "brier": 0.2491945254987633,
+          "log_loss": 0.6915349601900602
+        },
+        "independent_model": {
+          "n": 425,
+          "brier": 0.2558756223871351,
+          "log_loss": 0.7055782033030993
+        },
+        "calibrated_blend": {
+          "n": 425,
+          "brier": 0.2494428229483191,
+          "log_loss": 0.692037041748151
+        },
+        "conditional_distribution": {
+          "n": 425,
+          "brier": 0.2562233104932801,
+          "log_loss": 0.7063020896710854
+        }
+      },
+      "exposed_benchmark_2025": {
+        "market_only": {
+          "n": 1,
+          "brier": 0.260223901391598,
+          "log_loss": 0.7135977910312362
+        },
+        "independent_model": {
+          "n": 1,
+          "brier": 0.28450880673019097,
+          "log_loss": 0.7622693523271509
+        },
+        "calibrated_blend": {
+          "n": 1,
+          "brier": 0.26368107600337237,
+          "log_loss": 0.7205160276500313
+        },
+        "conditional_distribution": {
+          "n": 1,
+          "brier": 0.28982360855814177,
+          "log_loss": 0.7729540570398563
+        }
+      }
+    },
+    "diagnostics": {
+      "invalid_candidates": 0,
+      "training": {
+        "raw_offer_rows": 29632,
+        "timestamp_and_book_eligible_sides": 8101,
+        "paired_offers": 3916,
+        "exact_event_joined_offers": 3312,
+        "selected_qb_games": 911,
+        "excluded_unmatched_pairs": 604,
+        "join_policy": "exact_utc_scheduled_time_opponent_pair_normalized_player",
+        "quote_policy": "real_book_paired_sides_updated_strictly_before_kickoff_within_24h_other_book_same_line",
+        "raw_sides_by_season": {
+          "2022": 1736,
+          "2023": 7290,
+          "2024": 8748,
+          "2025": 11858
+        },
+        "eligible_sides_by_season": {
+          "2022": 986,
+          "2023": 3004,
+          "2024": 4088,
+          "2025": 23
+        },
+        "sources": {
+          "offers": {
+            "file": "offers.parquet",
+            "sha256": "9484249efb989c829552c06395cf9309772c912150b6d2e52345399fe9ee8d36"
+          },
+          "features": {
+            "file": "features.parquet",
+            "sha256": "10f7eb5e9b70e94887bce3e1309c8c8edb2ce1bd151de1ac6a43bb8330d0e938"
+          },
+          "oof": {
+            "file": "oof_predictions.csv",
+            "sha256": "6d7c019852c29bf318c5b7506bf578085cbd79d82311c830e16d35e9af3d8381"
+          }
+        },
+        "fit_rows": 485,
+        "validation_rows": 425,
+        "limitations": [
+          "Retrospectively downloaded closing-reference quotes; no verified executable morning archive",
+          "2024 and 2025 have previously been inspected; neither is an untouched holdout",
+          "Game spread/total features use historical closing references",
+          "Conditional tails include observed exits but do not estimate a separate exit hazard",
+          "One fixed kernel experiment; not a full within-game play-volume simulator"
+        ]
+      }
+    }
+  },
+  "claude": []
+}
