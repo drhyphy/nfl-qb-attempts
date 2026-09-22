@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-09-22T18:03:25.410819+00:00",
+  "run_id": "20260922T180325410819Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_03_BAL_DAL",
+      "player_id": "00-0033077",
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "opponent": "BAL",
+      "line": 36.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-22T18:03:21.190062+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-27T20:25:00+00:00",
+      "side": "Under",
+      "odds": -102,
+      "mean": 34.99469831713361,
+      "interval80": [
+        23.60817065825506,
+        45.48933767242998
+      ],
+      "p_model": 0.5914628483996858,
+      "p_market": 0.5101214574898785,
+      "p_final": 0.5507921529447821,
+      "p_push": 0.0,
+      "ev": 0.090784459753392,
+      "robust_ev": 0.05117661661613704,
+      "market_only_ev": 0.01024053346034759,
+      "fair_odds": -123,
+      "bet_to": -114,
+      "independent_model_ev": 0.17132838604643652,
+      "expected_margin": -3.0,
+      "game_total": 52.5,
+      "implied_team_points": 24.75,
+      "game_market": {
+        "game_id": "2026_03_BAL_DAL",
+        "event_id": "401872960",
+        "home_team": "DAL",
+        "away_team": "BAL",
+        "kickoff": "2026-09-27T20:25:00+00:00",
+        "home_expected_margin": -3.0,
+        "total_line": 52.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.0,
+            "total_line": 52.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -112,
+            "under_odds": -108,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-22T18:03:25.241254+00:00",
+        "total_observed_at": "2026-09-22T18:03:25.241254+00:00",
+        "observed_at": "2026-09-22T18:03:25.241254+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.10248727328084979,
+        "close": 0.6081723314903396,
+        "trailing": 0.2893403952288106
+      },
+      "scenario_means": {
+        "underdog_7": 34.392007445825755,
+        "pickem": 35.446716470614504,
+        "favorite_7": 35.56078948442426
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5210526315789473,
+        "neutral_pass12": 0.5889908256880734,
+        "trail_pass12": 0.7044619422572178
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5101214574898785,
+          "ev": 0.01024053346034759
+        },
+        "0.35": {
+          "p_win": 0.538590944308311,
+          "ev": 0.06662128186547867
+        },
+        "0.5": {
+          "p_win": 0.5507921529447821,
+          "ev": 0.090784459753392
+        },
+        "0.65": {
+          "p_win": 0.5629933615812532,
+          "ev": 0.11494763764130544
+        },
+        "1.0": {
+          "p_win": 0.5914628483996858,
+          "ev": 0.17132838604643652
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "bet365"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Dak Prescott",
+        "espn_id": "2577417",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Tyler Smith",
+            "position": "LG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-09T21:23:00+00:00"
+          },
+          {
+            "player": "Matt Hennessy",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Princeton Fant",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "DJ Rogers",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:59:00+00:00"
+          },
+          {
+            "player": "Malik Davis",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-12T18:20:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-22T18:03:24.456526+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/6/depthcharts",
+        "source_updated_at": "2026-09-22T18:01:15+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      }
+    }
+  ]
+}
