@@ -1,0 +1,323 @@
+{
+  "generated_at": "2026-09-23T00:16:09.769130+00:00",
+  "run_id": "20260923T001609769130Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_03_BAL_DAL",
+      "player_id": "00-0033077",
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "opponent": "BAL",
+      "line": 36.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-23T00:16:06.481379+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-27T20:25:00+00:00",
+      "side": "Under",
+      "odds": -102,
+      "mean": 34.91936195822013,
+      "interval80": [
+        23.532834299341577,
+        45.41400131351651
+      ],
+      "p_model": 0.5947406088178627,
+      "p_market": 0.5,
+      "p_final": 0.5473703044089313,
+      "p_push": 0.0,
+      "ev": 0.08400785775102082,
+      "robust_ev": 0.04440001461376586,
+      "market_only_ev": -0.009803921568627472,
+      "fair_odds": -121,
+      "bet_to": -113,
+      "independent_model_ev": 0.17781963707066928,
+      "expected_margin": -3.5,
+      "game_total": 52.5,
+      "implied_team_points": 24.5,
+      "game_market": {
+        "game_id": "2026_03_BAL_DAL",
+        "event_id": "401872960",
+        "home_team": "DAL",
+        "away_team": "BAL",
+        "kickoff": "2026-09-27T20:25:00+00:00",
+        "home_expected_margin": -3.5,
+        "total_line": 52.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.5,
+            "total_line": 52.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -112,
+            "under_odds": -108,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-23T00:16:09.654521+00:00",
+        "total_observed_at": "2026-09-23T00:16:09.654521+00:00",
+        "observed_at": "2026-09-23T00:16:09.654521+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.09770616010353189,
+        "close": 0.6034195547843109,
+        "trailing": 0.2988742851121573
+      },
+      "scenario_means": {
+        "underdog_7": 34.392007445825755,
+        "pickem": 35.446716470614504,
+        "favorite_7": 35.56078948442426
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5210526315789473,
+        "neutral_pass12": 0.5889908256880734,
+        "trail_pass12": 0.7044619422572178
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": -0.009803921568627472
+        },
+        "0.35": {
+          "p_win": 0.5331592130862519,
+          "ev": 0.055864323955126305
+        },
+        "0.5": {
+          "p_win": 0.5473703044089313,
+          "ev": 0.08400785775102082
+        },
+        "0.65": {
+          "p_win": 0.5615813957316107,
+          "ev": 0.11215139154691534
+        },
+        "1.0": {
+          "p_win": 0.5947406088178627,
+          "ev": 0.17781963707066928
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "bet365"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Dak Prescott",
+        "espn_id": "2577417",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Tyler Smith",
+            "position": "LG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-09T21:23:00+00:00"
+          },
+          {
+            "player": "Matt Hennessy",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Princeton Fant",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "DJ Rogers",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:59:00+00:00"
+          },
+          {
+            "player": "Malik Davis",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-12T18:20:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-23T00:16:09.233681+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/6/depthcharts",
+        "source_updated_at": "2026-09-23T00:16:05+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      }
+    },
+    {
+      "game_id": "2026_03_NE_JAX",
+      "player_id": "00-0036971",
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "opponent": "NE",
+      "line": 32.5,
+      "book": "draftkings",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-23T00:16:06.757553+00:00",
+      "source_updated_at": "2026-09-22T23:53:28+00:00",
+      "kickoff": "2026-09-27T17:00:00+00:00",
+      "side": "Under",
+      "odds": -102,
+      "mean": 31.430422649498578,
+      "interval80": [
+        20.043894990620025,
+        41.92506200479495
+      ],
+      "p_model": 0.5722630700338045,
+      "p_market": 0.48893805309734517,
+      "p_final": 0.5306005615655749,
+      "p_push": 0.0,
+      "ev": 0.050797190551432614,
+      "robust_ev": 0.011189347414177653,
+      "market_only_ev": -0.031710914454277206,
+      "fair_odds": -113,
+      "bet_to": -106,
+      "independent_model_ev": 0.1333052955571422,
+      "expected_margin": 3.0,
+      "game_total": 45.5,
+      "implied_team_points": 24.25,
+      "game_market": {
+        "game_id": "2026_03_NE_JAX",
+        "event_id": "401872957",
+        "home_team": "JAX",
+        "away_team": "NE",
+        "kickoff": "2026-09-27T17:00:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 45.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 45.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -115,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-23T00:16:09.654521+00:00",
+        "total_observed_at": "2026-09-23T00:16:09.654521+00:00",
+        "observed_at": "2026-09-23T00:16:09.654521+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.170445956616438,
+        "close": 0.659577027128124,
+        "trailing": 0.16997701625543807
+      },
+      "scenario_means": {
+        "underdog_7": 30.361646872093246,
+        "pickem": 31.39198071957068,
+        "favorite_7": 31.481678556069113
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5060532687651331,
+        "neutral_pass12": 0.591254752851711,
+        "trail_pass12": 0.7075757575757575
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.48893805309734517,
+          "ev": -0.031710914454277206
+        },
+        "0.35": {
+          "p_win": 0.5181018090251059,
+          "ev": 0.02604475904971959
+        },
+        "0.5": {
+          "p_win": 0.5306005615655749,
+          "ev": 0.050797190551432614
+        },
+        "0.65": {
+          "p_win": 0.5430993141060437,
+          "ev": 0.07554962205314542
+        },
+        "1.0": {
+          "p_win": 0.5722630700338045,
+          "ev": 0.1333052955571422
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "caesars"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Trevor Lawrence",
+        "espn_id": "4360310",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Garrett DiGiorgio",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Sam Mustipher",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:25:00+00:00"
+          },
+          {
+            "player": "Patrick Mekari",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:21:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-23T00:16:09.301929+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/30/depthcharts",
+        "source_updated_at": "2026-09-23T00:16:02+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      }
+    }
+  ]
+}
