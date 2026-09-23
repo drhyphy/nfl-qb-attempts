@@ -1,10 +1,10 @@
 {
-  "bets": 26,
+  "bets": 27,
   "settled": 23,
   "wins": 10,
   "losses": 13,
   "pushes": 0,
-  "unresolved": 3,
+  "unresolved": 4,
   "units": -3.67982541854847,
   "roi": -0.15999240950210739,
   "clv_bets": 7,
@@ -4647,6 +4647,197 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_03_LA_DEN",
+      "player_id": "00-0039732",
+      "player": "Bo Nix",
+      "team": "DEN",
+      "opponent": "LA",
+      "line": 33.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-23T18:22:30.562662+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-28T00:20:00+00:00",
+      "side": "under",
+      "odds": -112.0,
+      "mean": 32.32342423382998,
+      "interval80": [
+        20.93689657495143,
+        42.81806358912635
+      ],
+      "p_model": 0.5770122478430313,
+      "p_market": 0.5197288971671852,
+      "p_final": 0.5483705725051082,
+      "p_push": 0.0,
+      "ev": 0.037987155098954895,
+      "robust_ev": 0.00013001224181202753,
+      "market_only_ev": -0.01622744464782805,
+      "fair_odds": -121,
+      "bet_to": -113,
+      "independent_model_ev": 0.09220175484573778,
+      "expected_margin": -2.5,
+      "game_total": 45.5,
+      "implied_team_points": 21.5,
+      "game_market": {
+        "game_id": "2026_03_LA_DEN",
+        "event_id": "401872962",
+        "home_team": "DEN",
+        "away_team": "LA",
+        "kickoff": "2026-09-28T00:20:00+00:00",
+        "home_expected_margin": -2.5,
+        "total_line": 45.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -2.5,
+            "total_line": 45.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -115,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-23T18:22:36.106419+00:00",
+        "total_observed_at": "2026-09-23T18:22:36.106419+00:00",
+        "observed_at": "2026-09-23T18:22:36.106419+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.10623392746271638,
+        "close": 0.6378079364704864,
+        "trailing": 0.25595813606679724
+      },
+      "scenario_means": {
+        "underdog_7": 31.62256681328295,
+        "pickem": 32.712789467467225,
+        "favorite_7": 32.8623761106725
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.527027027027027,
+        "neutral_pass12": 0.6265432098765432,
+        "trail_pass12": 0.7134328358208955
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5197288971671852,
+          "ev": -0.01622744464782805
+        },
+        "0.35": {
+          "p_win": 0.5397780699037313,
+          "ev": 0.02172277517492005
+        },
+        "0.5": {
+          "p_win": 0.5483705725051082,
+          "ev": 0.037987155098954895
+        },
+        "0.65": {
+          "p_win": 0.5569630751064851,
+          "ev": 0.05425153502298974
+        },
+        "1.0": {
+          "p_win": 0.5770122478430313,
+          "ev": 0.09220175484573778
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanatics"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Bo Nix",
+        "espn_id": "4426338",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Marvin Mims Jr.",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-22T20:56:00+00:00"
+          },
+          {
+            "player": "Frank Crum",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:20:00+00:00"
+          },
+          {
+            "player": "Nick Gargiulo",
+            "position": "LG",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-08-31T23:24:00+00:00"
+          },
+          {
+            "player": "Michael Deiter",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Caleb Lohner",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T16:50:00+00:00"
+          },
+          {
+            "player": "J.K. Dobbins",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-21T17:00:00+00:00"
+          },
+          {
+            "player": "RJ Harvey",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-22T20:56:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-23T18:22:35.476075+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/7/depthcharts",
+        "source_updated_at": "2026-09-23T18:21:01+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      },
+      "generated_at": "2026-09-23T18:22:36.305649+00:00",
+      "snapshot": "20260923T182236305649Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -4655,12 +4846,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 26,
+      "bets": 27,
       "settled": 23,
       "wins": 10,
       "losses": 13,
       "pushes": 0,
-      "unresolved": 3,
+      "unresolved": 4,
       "units": -3.67982541854847,
       "roi": -0.15999240950210739,
       "clv_bets": 7,
