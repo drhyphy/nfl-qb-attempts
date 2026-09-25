@@ -1,10 +1,10 @@
 {
-  "bets": 35,
+  "bets": 36,
   "settled": 23,
   "wins": 10,
   "losses": 13,
   "pushes": 0,
-  "unresolved": 12,
+  "unresolved": 13,
   "units": -3.67982541854847,
   "roi": -0.15999240950210739,
   "clv_bets": 7,
@@ -6312,6 +6312,180 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_03_TEN_NYG",
+      "player_id": "00-0040676",
+      "player": "Cam Ward",
+      "team": "TEN",
+      "opponent": "NYG",
+      "line": 31.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-09-25T18:29:06.898537+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-09-27T17:00:00+00:00",
+      "side": "under",
+      "odds": -114.0,
+      "mean": 27.33063395161993,
+      "interval80": [
+        15.94410629274138,
+        37.825273306916316
+      ],
+      "p_model": 0.699524962282336,
+      "p_market": 0.511600490496388,
+      "p_final": 0.6055627263893619,
+      "p_push": 0.0,
+      "ev": 0.13675810041511793,
+      "robust_ev": 0.09921424076599517,
+      "market_only_ev": -0.03962714941906115,
+      "fair_odds": -154,
+      "bet_to": -142,
+      "independent_model_ev": 0.3131433502492973,
+      "expected_margin": -2.5,
+      "game_total": 38.5,
+      "implied_team_points": 18.0,
+      "game_market": {
+        "game_id": "2026_03_TEN_NYG",
+        "event_id": "401872956",
+        "home_team": "NYG",
+        "away_team": "TEN",
+        "kickoff": "2026-09-27T17:00:00+00:00",
+        "home_expected_margin": 2.5,
+        "total_line": 38.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 2.5,
+            "total_line": 38.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-25T18:29:11.623360+00:00",
+        "total_observed_at": "2026-09-25T18:29:11.623360+00:00",
+        "observed_at": "2026-09-25T18:29:11.623360+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.09842607512623044,
+        "close": 0.6617371398477502,
+        "trailing": 0.23983678502601943
+      },
+      "scenario_means": {
+        "underdog_7": 26.650320364288703,
+        "pickem": 27.708585944581724,
+        "favorite_7": 27.825447130990796
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4589041095890411,
+        "neutral_pass12": 0.5825242718446602,
+        "trail_pass12": 0.7297157622739018
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.511600490496388,
+          "ev": -0.03962714941906115
+        },
+        "0.35": {
+          "p_win": 0.5773740556214698,
+          "ev": 0.08384252546486437
+        },
+        "0.5": {
+          "p_win": 0.6055627263893619,
+          "ev": 0.13675810041511793
+        },
+        "0.65": {
+          "p_win": 0.6337513971572541,
+          "ev": 0.18967367536537183
+        },
+        "1.0": {
+          "p_win": 0.699524962282336,
+          "ev": 0.3131433502492973
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 6,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanatics",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Cam Ward",
+        "espn_id": "4688380",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Daniel Bellinger",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-25T01:08:00+00:00"
+          },
+          {
+            "player": "Jaren Kanak",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Tony Pollard",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-09-25T16:12:00+00:00"
+          },
+          {
+            "player": "Tyjae Spears",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-09-25T16:14:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-25T18:29:11.311008+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/10/depthcharts",
+        "source_updated_at": "2026-09-25T18:28:23+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 19,
+        "season_games": 2
+      },
+      "generated_at": "2026-09-25T18:29:11.916902+00:00",
+      "snapshot": "20260925T182911916902Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -6320,12 +6494,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 35,
+      "bets": 36,
       "settled": 23,
       "wins": 10,
       "losses": 13,
       "pushes": 0,
-      "unresolved": 12,
+      "unresolved": 13,
       "units": -3.67982541854847,
       "roi": -0.15999240950210739,
       "clv_bets": 7,
