@@ -1,10 +1,10 @@
 {
-  "bets": 34,
+  "bets": 35,
   "settled": 23,
   "wins": 10,
   "losses": 13,
   "pushes": 0,
-  "unresolved": 11,
+  "unresolved": 12,
   "units": -3.67982541854847,
   "roi": -0.15999240950210739,
   "clv_bets": 7,
@@ -6156,6 +6156,162 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_03_CIN_PIT",
+      "player_id": "00-0036442",
+      "player": "Joe Burrow",
+      "team": "CIN",
+      "opponent": "PIT",
+      "line": 35.5,
+      "book": "betrivers",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22047&location=NY&live=false&page=1",
+      "observed_at": "2026-09-25T06:04:25.370754+00:00",
+      "source_updated_at": "2026-09-25T05:55:56+00:00",
+      "kickoff": "2026-09-27T17:00:00+00:00",
+      "side": "under",
+      "odds": -113.0,
+      "mean": 33.58249850499675,
+      "interval80": [
+        22.1959708461182,
+        44.077137860293135
+      ],
+      "p_model": 0.6092179515150724,
+      "p_market": 0.5305324784980276,
+      "p_final": 0.56987521500655,
+      "p_push": 0.0,
+      "ev": 0.0741895645698687,
+      "robust_ev": 0.03649044952562086,
+      "market_only_ev": 3.02470803530408e-05,
+      "fair_odds": -132,
+      "bet_to": -123,
+      "independent_model_ev": 0.14834888205938435,
+      "expected_margin": 3.5,
+      "game_total": 42.5,
+      "implied_team_points": 23.0,
+      "game_market": {
+        "game_id": "2026_03_CIN_PIT",
+        "event_id": "401872950",
+        "home_team": "PIT",
+        "away_team": "CIN",
+        "kickoff": "2026-09-27T17:00:00+00:00",
+        "home_expected_margin": -3.5,
+        "total_line": 42.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.5,
+            "total_line": 42.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -115,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-25T06:04:28.540269+00:00",
+        "total_observed_at": "2026-09-25T06:04:28.540269+00:00",
+        "observed_at": "2026-09-25T06:04:28.540269+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.16871470793731194,
+        "close": 0.670989383352222,
+        "trailing": 0.16029590871046617
+      },
+      "scenario_means": {
+        "underdog_7": 32.41974316218876,
+        "pickem": 33.50845872772042,
+        "favorite_7": 33.656538282273075
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5056603773584906,
+        "neutral_pass12": 0.6282894736842105,
+        "trail_pass12": 0.7237668161434977
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5305324784980276,
+          "ev": 3.02470803530408e-05
+        },
+        "0.35": {
+          "p_win": 0.5580723940539933,
+          "ev": 0.05194176932301403
+        },
+        "0.5": {
+          "p_win": 0.56987521500655,
+          "ev": 0.0741895645698687
+        },
+        "0.65": {
+          "p_win": 0.5816780359591067,
+          "ev": 0.0964373598167233
+        },
+        "1.0": {
+          "p_win": 0.6092179515150724,
+          "ev": 0.14834888205938435
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "caesars",
+        "draftkings",
+        "fanatics",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Joe Burrow",
+        "espn_id": "3915511",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Andrei Iosivas",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-09-23T17:29:00+00:00"
+          },
+          {
+            "player": "Brian Parker II",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-25T06:04:27.757948+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/4/depthcharts",
+        "source_updated_at": "2026-09-25T06:02:33+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      },
+      "generated_at": "2026-09-25T06:04:28.687412+00:00",
+      "snapshot": "20260925T060428687412Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -6164,12 +6320,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 34,
+      "bets": 35,
       "settled": 23,
       "wins": 10,
       "losses": 13,
       "pushes": 0,
-      "unresolved": 11,
+      "unresolved": 12,
       "units": -3.67982541854847,
       "roi": -0.15999240950210739,
       "clv_bets": 7,
