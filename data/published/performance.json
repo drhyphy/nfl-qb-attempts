@@ -1,10 +1,10 @@
 {
-  "bets": 36,
+  "bets": 37,
   "settled": 23,
   "wins": 10,
   "losses": 13,
   "pushes": 0,
-  "unresolved": 13,
+  "unresolved": 14,
   "units": -3.67982541854847,
   "roi": -0.15999240950210739,
   "clv_bets": 7,
@@ -6486,6 +6486,179 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_03_CAR_CLE",
+      "player_id": "00-0033537",
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "opponent": "CAR",
+      "line": 29.5,
+      "book": "betmgm",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22040&location=NY&live=false&page=1",
+      "observed_at": "2026-09-26T06:03:09.738979+00:00",
+      "source_updated_at": "2026-09-26T05:46:18+00:00",
+      "kickoff": "2026-09-27T17:00:00+00:00",
+      "side": "under",
+      "odds": -110.0,
+      "mean": 26.7899096081557,
+      "interval80": [
+        15.403381949277149,
+        37.28454896345208
+      ],
+      "p_model": 0.6420414444566188,
+      "p_market": 0.5145711906744379,
+      "p_final": 0.5783063175655284,
+      "p_push": 0.0,
+      "ev": 0.10403933353419059,
+      "robust_ev": 0.06585751535237239,
+      "market_only_ev": -0.017636817803345806,
+      "fair_odds": -137,
+      "bet_to": -128,
+      "independent_model_ev": 0.22571548487172677,
+      "expected_margin": -2.5,
+      "game_total": 42.5,
+      "implied_team_points": 20.0,
+      "game_market": {
+        "game_id": "2026_03_CAR_CLE",
+        "event_id": "401872949",
+        "home_team": "CLE",
+        "away_team": "CAR",
+        "kickoff": "2026-09-27T17:00:00+00:00",
+        "home_expected_margin": -2.5,
+        "total_line": 42.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -2.5,
+            "total_line": 42.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-26T06:03:13.936234+00:00",
+        "total_observed_at": "2026-09-26T06:03:13.936234+00:00",
+        "observed_at": "2026-09-26T06:03:13.936234+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.10419067635557533,
+        "close": 0.6480221436972027,
+        "trailing": 0.24778717994722205
+      },
+      "scenario_means": {
+        "underdog_7": 26.17296294787034,
+        "pickem": 27.132657752758675,
+        "favorite_7": 27.15094816376306
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4968944099378882,
+        "neutral_pass12": 0.5722433460076045,
+        "trail_pass12": 0.7318885448916408
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5145711906744379,
+          "ev": -0.017636817803345806
+        },
+        "0.35": {
+          "p_win": 0.5591857794982013,
+          "ev": 0.06753648813292967
+        },
+        "0.5": {
+          "p_win": 0.5783063175655283,
+          "ev": 0.10403933353419037
+        },
+        "0.65": {
+          "p_win": 0.5974268556328555,
+          "ev": 0.1405421789354513
+        },
+        "1.0": {
+          "p_win": 0.6420414444566188,
+          "ev": 0.22571548487172677
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 7,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanatics",
+        "fanduel",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Deshaun Watson",
+        "espn_id": "3122840",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Kendrick Green",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Teven Jenkins",
+            "position": "RG",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-09-26T01:22:00+00:00"
+          },
+          {
+            "player": "Joe Royer",
+            "position": "TE",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-08-30T21:32:00+00:00"
+          },
+          {
+            "player": "Dylan Sampson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-15T19:33:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-26T06:03:13.332308+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
+        "source_updated_at": "2026-09-26T06:03:10+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      },
+      "generated_at": "2026-09-26T06:03:14.257220+00:00",
+      "snapshot": "20260926T060314257220Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -6494,12 +6667,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 36,
+      "bets": 37,
       "settled": 23,
       "wins": 10,
       "losses": 13,
       "pushes": 0,
-      "unresolved": 13,
+      "unresolved": 14,
       "units": -3.67982541854847,
       "roi": -0.15999240950210739,
       "clv_bets": 7,
