@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-09-28T00:30:55.295393+00:00",
+  "run_id": "20260928T003055295393Z",
+  "entry_policy": {
+    "version": "verified_early_entry_v1",
+    "final_role_confirmation_required": false,
+    "max_open_per_model": 5,
+    "cohort": "Paper signals only; no wagers executed",
+    "note": "Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged."
+  },
+  "verified_recommendations": [],
+  "verified_performance": {
+    "champion": {
+      "bets": 10,
+      "settled": 9,
+      "wins": 3,
+      "losses": 6,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 1,
+      "units": -3.190228858951469,
+      "roi": -0.3544698732168299
+    },
+    "claude": {
+      "bets": 11,
+      "settled": 11,
+      "wins": 8,
+      "losses": 3,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 0,
+      "units": 3.848464194893669,
+      "roi": 0.3498603813539699
+    }
+  },
+  "shadow": {
+    "version": "shadow-protocol-2026-09-14",
+    "generated_at": "2026-09-28T00:30:55.295393+00:00",
+    "status": "ok",
+    "shadow_only": true,
+    "promotion_allowed": false,
+    "predictions": [
+      {
+        "game_id": "2026_03_PHI_CHI",
+        "player_id": "00-0028986",
+        "player": "Case Keenum",
+        "book": "betrivers",
+        "line": 29.5,
+        "kickoff": "2026-09-29T00:15:00+00:00",
+        "market_only_p_over": 0.4677419354838709,
+        "independent_p_over": 0.45441285094889694,
+        "calibrated_p_over": 0.4658075408651059,
+        "conditional_p_over": 0.4615896133710319,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 29.024660250188326,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-28T00:30:54.889156+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-28T00:29:47+00:00",
+          "observed_at": "2026-09-28T00:30:54.305804+00:00",
+          "market_id": "cb0a02f7609209466f26884eb1edd929",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Case Keenum",
+              "team": "CHI",
+              "opponent": "PHI",
+              "home_team": "CHI",
+              "away_team": "PHI",
+              "kickoff": "2026-09-29T00:15:00+00:00",
+              "game_id": "2026_03_PHI_CHI",
+              "event_id": "22052",
+              "provider_event_id": "22052",
+              "provider_player_id": "11425",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
+              "observed_at": "2026-09-28T00:30:54.305804+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-46a37f9a47ee469287cd71f9628dc019/offers-22052-1.json",
+              "proof_sha256": "4e7dc1a4aa0bc28963c8df558630a430589502357b043996246660e40d264b1d",
+              "market_id": "cb0a02f7609209466f26884eb1edd929",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 29.5,
+              "side": "over",
+              "odds": 100,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_b1d01b35041eef8b913560cd8bb67abe",
+              "provider_selection_id": "b1d01b35041eef8b913560cd8bb67abe",
+              "book_line_id": "18_b1d01b35041eef8b913560cd8bb67abe",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4353335319|0|append",
+              "source_updated_at": "2026-09-28T00:29:47+00:00",
+              "source_updated_at_raw": "2026-09-28 00:29:47",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Case Keenum",
+              "team": "CHI",
+              "opponent": "PHI",
+              "home_team": "CHI",
+              "away_team": "PHI",
+              "kickoff": "2026-09-29T00:15:00+00:00",
+              "game_id": "2026_03_PHI_CHI",
+              "event_id": "22052",
+              "provider_event_id": "22052",
+              "provider_player_id": "11425",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
+              "observed_at": "2026-09-28T00:30:54.305804+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-46a37f9a47ee469287cd71f9628dc019/offers-22052-1.json",
+              "proof_sha256": "4e7dc1a4aa0bc28963c8df558630a430589502357b043996246660e40d264b1d",
+              "market_id": "cb0a02f7609209466f26884eb1edd929",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 29.5,
+              "side": "under",
+              "odds": -132,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_8332501cf5de4105f7872c5e74a78aef",
+              "provider_selection_id": "8332501cf5de4105f7872c5e74a78aef",
+              "book_line_id": "18_8332501cf5de4105f7872c5e74a78aef",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4353335320|0|append",
+              "source_updated_at": "2026-09-28T00:29:47+00:00",
+              "source_updated_at_raw": "2026-09-28 00:29:47",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
+            "observed_at": "2026-09-28T00:30:54.305804+00:00",
+            "source_updated_at": "2026-09-28T00:29:47+00:00",
+            "provider_event_id": "22052",
+            "event_id": "22052"
+          }
+        },
+        "observed_at": "2026-09-28T00:30:54.305804+00:00",
+        "source_updated_at": "2026-09-28T00:29:47+00:00"
+      },
+      {
+        "game_id": "2026_03_PHI_CHI",
+        "player_id": "00-0036389",
+        "player": "Jalen Hurts",
+        "book": "betrivers",
+        "line": 28.5,
+        "kickoff": "2026-09-29T00:15:00+00:00",
+        "market_only_p_over": 0.5,
+        "independent_p_over": 0.4946845452242997,
+        "calibrated_p_over": 0.4992285901490516,
+        "conditional_p_over": 0.49879685987103517,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 28.905715153853976,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-09-28T00:30:54.889156+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-09-28T00:29:47+00:00",
+          "observed_at": "2026-09-28T00:30:54.305804+00:00",
+          "market_id": "88232cffada1064983ffc0e289d60193",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Jalen Hurts",
+              "team": "PHI",
+              "opponent": "CHI",
+              "home_team": "CHI",
+              "away_team": "PHI",
+              "kickoff": "2026-09-29T00:15:00+00:00",
+              "game_id": "2026_03_PHI_CHI",
+              "event_id": "22052",
+              "provider_event_id": "22052",
+              "provider_player_id": "19275",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
+              "observed_at": "2026-09-28T00:30:54.305804+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-46a37f9a47ee469287cd71f9628dc019/offers-22052-1.json",
+              "proof_sha256": "4e7dc1a4aa0bc28963c8df558630a430589502357b043996246660e40d264b1d",
+              "market_id": "88232cffada1064983ffc0e289d60193",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 28.5,
+              "side": "over",
+              "odds": -103,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_d5b33dcaecdfd80371133d7f259e7e5b",
+              "provider_selection_id": "d5b33dcaecdfd80371133d7f259e7e5b",
+              "book_line_id": "18_d5b33dcaecdfd80371133d7f259e7e5b",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4348090485|0|append",
+              "source_updated_at": "2026-09-28T00:29:47+00:00",
+              "source_updated_at_raw": "2026-09-28 00:29:47",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Jalen Hurts",
+              "team": "PHI",
+              "opponent": "CHI",
+              "home_team": "CHI",
+              "away_team": "PHI",
+              "kickoff": "2026-09-29T00:15:00+00:00",
+              "game_id": "2026_03_PHI_CHI",
+              "event_id": "22052",
+              "provider_event_id": "22052",
+              "provider_player_id": "19275",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
+              "observed_at": "2026-09-28T00:30:54.305804+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-46a37f9a47ee469287cd71f9628dc019/offers-22052-1.json",
+              "proof_sha256": "4e7dc1a4aa0bc28963c8df558630a430589502357b043996246660e40d264b1d",
+              "market_id": "88232cffada1064983ffc0e289d60193",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betrivers",
+              "line": 28.5,
+              "side": "under",
+              "odds": -129,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "18_7db26e31d59442111d3c0b3483689c21",
+              "provider_selection_id": "7db26e31d59442111d3c0b3483689c21",
+              "book_line_id": "18_7db26e31d59442111d3c0b3483689c21",
+              "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4348090486|0|append",
+              "source_updated_at": "2026-09-28T00:29:47+00:00",
+              "source_updated_at_raw": "2026-09-28 00:29:47",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
+            "observed_at": "2026-09-28T00:30:54.305804+00:00",
+            "source_updated_at": "2026-09-28T00:29:47+00:00",
+            "provider_event_id": "22052",
+            "event_id": "22052"
+          }
+        },
+        "observed_at": "2026-09-28T00:30:54.305804+00:00",
+        "source_updated_at": "2026-09-28T00:29:47+00:00"
+      }
+    ],
+    "metrics": {
+      "fit_2022_2023": {
+        "market_only": {
+          "n": 485,
+          "brier": 0.2501658547828248,
+          "log_loss": 0.6934812310044569
+        },
+        "independent_model": {
+          "n": 485,
+          "brier": 0.2547173092689647,
+          "log_loss": 0.7030769690719386
+        },
+        "calibrated_blend": {
+          "n": 485,
+          "brier": 0.2500307921100574,
+          "log_loss": 0.6932177298383735
+        },
+        "conditional_distribution": {
+          "n": 485,
+          "brier": 0.2545453903673218,
+          "log_loss": 0.702699135779097
+        }
+      },
+      "validation_2024": {
+        "market_only": {
+          "n": 425,
+          "brier": 0.2491945254987633,
+          "log_loss": 0.6915349601900602
+        },
+        "independent_model": {
+          "n": 425,
+          "brier": 0.2558756223871351,
+          "log_loss": 0.7055782033030993
+        },
+        "calibrated_blend": {
+          "n": 425,
+          "brier": 0.2494428229483191,
+          "log_loss": 0.692037041748151
+        },
+        "conditional_distribution": {
+          "n": 425,
+          "brier": 0.2562233104932801,
+          "log_loss": 0.7063020896710854
+        }
+      },
+      "exposed_benchmark_2025": {
+        "market_only": {
+          "n": 1,
+          "brier": 0.260223901391598,
+          "log_loss": 0.7135977910312362
+        },
+        "independent_model": {
+          "n": 1,
+          "brier": 0.28450880673019097,
+          "log_loss": 0.7622693523271509
+        },
+        "calibrated_blend": {
+          "n": 1,
+          "brier": 0.26368107600337237,
+          "log_loss": 0.7205160276500313
+        },
+        "conditional_distribution": {
+          "n": 1,
+          "brier": 0.28982360855814177,
+          "log_loss": 0.7729540570398563
+        }
+      }
+    },
+    "diagnostics": {
+      "invalid_candidates": 0,
+      "training": {
+        "raw_offer_rows": 29632,
+        "timestamp_and_book_eligible_sides": 8101,
+        "paired_offers": 3916,
+        "exact_event_joined_offers": 3312,
+        "selected_qb_games": 911,
+        "excluded_unmatched_pairs": 604,
+        "join_policy": "exact_utc_scheduled_time_opponent_pair_normalized_player",
+        "quote_policy": "real_book_paired_sides_updated_strictly_before_kickoff_within_24h_other_book_same_line",
+        "raw_sides_by_season": {
+          "2022": 1736,
+          "2023": 7290,
+          "2024": 8748,
+          "2025": 11858
+        },
+        "eligible_sides_by_season": {
+          "2022": 986,
+          "2023": 3004,
+          "2024": 4088,
+          "2025": 23
+        },
+        "sources": {
+          "offers": {
+            "file": "offers.parquet",
+            "sha256": "9484249efb989c829552c06395cf9309772c912150b6d2e52345399fe9ee8d36"
+          },
+          "features": {
+            "file": "features.parquet",
+            "sha256": "10f7eb5e9b70e94887bce3e1309c8c8edb2ce1bd151de1ac6a43bb8330d0e938"
+          },
+          "oof": {
+            "file": "oof_predictions.csv",
+            "sha256": "6d7c019852c29bf318c5b7506bf578085cbd79d82311c830e16d35e9af3d8381"
+          }
+        },
+        "fit_rows": 485,
+        "validation_rows": 425,
+        "limitations": [
+          "Retrospectively downloaded closing-reference quotes; no verified executable morning archive",
+          "2024 and 2025 have previously been inspected; neither is an untouched holdout",
+          "Game spread/total features use historical closing references",
+          "Conditional tails include observed exits but do not estimate a separate exit hazard",
+          "One fixed kernel experiment; not a full within-game play-volume simulator"
+        ]
+      }
+    }
+  },
+  "claude": []
+}
