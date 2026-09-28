@@ -1,733 +1,43 @@
 [
   {
     "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 28.5,
-    "book": "fanduel",
-    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-    "observed_at": "2026-09-28T00:30:53.599883+00:00",
-    "source_updated_at": null,
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": -114,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.4946845452242997,
-    "p_market": 0.4869409731988589,
-    "p_final": 0.4908127592115793,
-    "p_push": 0.0,
-    "ev": -0.078649732708088,
-    "robust_ev": -0.11619359235721083,
-    "market_only_ev": -0.08591782224073863,
-    "fair_odds": 104,
-    "bet_to": 110,
-    "independent_model_ev": -0.07138164317543738,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.4869409731988589,
-        "ev": -0.08591782224073863
-      },
-      "0.35": {
-        "p_win": 0.4896512234077632,
-        "ev": -0.08083015956788314
-      },
-      "0.5": {
-        "p_win": 0.4908127592115793,
-        "ev": -0.078649732708088
-      },
-      "0.65": {
-        "p_win": 0.49197429501539547,
-        "ev": -0.07646930584829276
-      },
-      "1.0": {
-        "p_win": 0.4946845452242997,
-        "ev": -0.07138164317543738
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 2,
-    "reference_books": [
-      "bet365",
-      "betrivers"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 28.5,
-    "book": "fanduel",
-    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
-    "observed_at": "2026-09-28T00:30:53.599883+00:00",
-    "source_updated_at": null,
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -114,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.5053154547757003,
-    "p_market": 0.5130590268011411,
-    "p_final": 0.5091872407884207,
-    "p_push": 0.0,
-    "ev": -0.04415728483577169,
-    "robust_ev": -0.08170114448489452,
-    "market_only_ev": -0.03688919530312107,
-    "fair_odds": -104,
-    "bet_to": 103,
-    "independent_model_ev": -0.051425374368422316,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5130590268011411,
-        "ev": -0.03688919530312107
-      },
-      "0.35": {
-        "p_win": 0.5103487765922368,
-        "ev": -0.04197685797597661
-      },
-      "0.5": {
-        "p_win": 0.5091872407884207,
-        "ev": -0.04415728483577169
-      },
-      "0.65": {
-        "p_win": 0.5080257049846045,
-        "ev": -0.04633771169556694
-      },
-      "1.0": {
-        "p_win": 0.5053154547757003,
-        "ev": -0.051425374368422316
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 2,
-    "reference_books": [
-      "bet365",
-      "betrivers"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0028986",
-    "player": "Case Keenum",
-    "team": "CHI",
-    "opponent": "PHI",
-    "line": 29.5,
-    "book": "betrivers",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:29:47+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": 100,
-    "mean": 29.024660250188326,
-    "interval80": [
-      17.638132591309773,
-      39.519299605484704
-    ],
-    "p_model": 0.45441285094889694,
-    "p_market": 0.4677419354838709,
-    "p_final": 0.46307675589663,
-    "p_push": 0.0,
-    "ev": -0.07384648820674,
-    "robust_ev": -0.11384648820674004,
-    "market_only_ev": -0.06451612903225823,
-    "fair_odds": 116,
-    "bet_to": 123,
-    "independent_model_ev": -0.09117429810220612,
-    "expected_margin": -4.5,
-    "game_total": 41.5,
-    "implied_team_points": 18.5,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
-    },
-    "scenario_means": {
-      "underdog_7": 28.62449918233106,
-      "pickem": 29.744950172331404,
-      "favorite_7": 29.92399676844779
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.49767441860465117,
-      "neutral_pass12": 0.5612998522895125,
-      "trail_pass12": 0.7237668161434977
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.4677419354838709,
-        "ev": -0.06451612903225823
-      },
-      "0.35": {
-        "p_win": 0.46307675589663,
-        "ev": -0.07384648820674
-      },
-      "0.5": {
-        "p_win": 0.4610773932163839,
-        "ev": -0.07784521356723223
-      },
-      "0.65": {
-        "p_win": 0.4590780305361378,
-        "ev": -0.08184393892772435
-      },
-      "1.0": {
-        "p_win": 0.45441285094889694,
-        "ev": -0.09117429810220612
-      }
-    },
-    "model_weight": 0.35,
-    "other_books": 0,
-    "reference_books": [],
-    "status": "held",
-    "reasons": [
-      "No independent other book at this line",
-      "Starting role not independently verified",
-      "QB injury designation needs review",
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Caleb Williams",
-      "espn_id": "4431611",
-      "injuries": [
-        "Out"
-      ],
-      "offense_injuries": [
-        {
-          "player": "Nikola Kalinic",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-19T12:07:00+00:00"
-        },
-        {
-          "player": "Hayden Large",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-01T23:40:00+00:00"
-        },
-        {
-          "player": "Brittain Brown",
-          "position": "RB",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T16:21:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 1,
-      "qb_games": 32,
-      "season_games": 0
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0028986",
-    "player": "Case Keenum",
-    "team": "CHI",
-    "opponent": "PHI",
-    "line": 29.5,
-    "book": "betrivers",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:29:47+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -132,
-    "mean": 29.024660250188326,
-    "interval80": [
-      17.638132591309773,
-      39.519299605484704
-    ],
-    "p_model": 0.5455871490511031,
-    "p_market": 0.5322580645161291,
-    "p_final": 0.53692324410337,
-    "p_push": 0.0,
-    "ev": -0.05631672248498604,
-    "robust_ev": -0.09146823763650125,
-    "market_only_ev": -0.0645161290322579,
-    "fair_odds": -116,
-    "bet_to": -108,
-    "independent_model_ev": -0.04108925318290979,
-    "expected_margin": -4.5,
-    "game_total": 41.5,
-    "implied_team_points": 18.5,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
-    },
-    "scenario_means": {
-      "underdog_7": 28.62449918233106,
-      "pickem": 29.744950172331404,
-      "favorite_7": 29.92399676844779
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.49767441860465117,
-      "neutral_pass12": 0.5612998522895125,
-      "trail_pass12": 0.7237668161434977
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5322580645161291,
-        "ev": -0.0645161290322579
-      },
-      "0.35": {
-        "p_win": 0.53692324410337,
-        "ev": -0.05631672248498604
-      },
-      "0.5": {
-        "p_win": 0.5389226067836161,
-        "ev": -0.05280269110758373
-      },
-      "0.65": {
-        "p_win": 0.5409219694638622,
-        "ev": -0.04928865973018165
-      },
-      "1.0": {
-        "p_win": 0.5455871490511031,
-        "ev": -0.04108925318290979
-      }
-    },
-    "model_weight": 0.35,
-    "other_books": 0,
-    "reference_books": [],
-    "status": "held",
-    "reasons": [
-      "No independent other book at this line",
-      "Starting role not independently verified",
-      "QB injury designation needs review",
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Caleb Williams",
-      "espn_id": "4431611",
-      "injuries": [
-        "Out"
-      ],
-      "offense_injuries": [
-        {
-          "player": "Nikola Kalinic",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-19T12:07:00+00:00"
-        },
-        {
-          "player": "Hayden Large",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-01T23:40:00+00:00"
-        },
-        {
-          "player": "Brittain Brown",
-          "position": "RB",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T16:21:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 1,
-      "qb_games": 32,
-      "season_games": 0
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
     "player_id": "00-0028986",
     "player": "Case Keenum",
     "team": "CHI",
     "opponent": "PHI",
     "line": 28.5,
     "book": "caesars",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:39+00:00",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.790132+00:00",
+    "source_updated_at": null,
     "kickoff": "2026-09-29T00:15:00+00:00",
     "side": "Over",
     "odds": -128,
-    "mean": 29.024660250188326,
+    "mean": 29.184724677331232,
     "interval80": [
-      17.638132591309773,
-      39.519299605484704
+      17.79819701845268,
+      39.6793640326276
     ],
-    "p_model": 0.5001937111914715,
+    "p_model": 0.5076402786281244,
     "p_market": 0.5203045685279188,
-    "p_final": 0.5132657684601623,
+    "p_final": 0.5158720670629908,
     "p_push": 0.0,
-    "ev": -0.085745349930336,
-    "robust_ev": -0.12137034993033602,
+    "ev": -0.08110288054404757,
+    "robust_ev": -0.11672788054404765,
     "market_only_ev": -0.07320748730964455,
-    "fair_odds": -105,
-    "bet_to": 101,
-    "independent_model_ev": -0.10902995194019138,
-    "expected_margin": -4.5,
+    "fair_odds": -107,
+    "bet_to": -100,
+    "independent_model_ev": -0.09576575369365337,
+    "expected_margin": -3.5,
     "game_total": 41.5,
-    "implied_team_points": 18.5,
+    "implied_team_points": 19.0,
     "game_market": {
       "game_id": "2026_03_PHI_CHI",
       "event_id": "401872963",
       "home_team": "CHI",
       "away_team": "PHI",
       "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
+      "home_expected_margin": -3.5,
       "total_line": 41.5,
       "books": [
         "draftkings"
@@ -735,27 +45,27 @@
       "book_quotes": [
         {
           "book": "draftkings",
-          "home_expected_margin": -4.5,
+          "home_expected_margin": -3.5,
           "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
           "over_odds": -105,
           "under_odds": -115,
           "source_updated_at": null
         }
       ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
       "source": "espn",
       "source_type": "public_pregame_sportsbook",
       "source_updated_at": null
     },
     "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
+      "leading": 0.09438494187674314,
+      "close": 0.643369248172147,
+      "trailing": 0.26224580995110985
     },
     "scenario_means": {
       "underdog_7": 28.62449918233106,
@@ -774,29 +84,28 @@
         "ev": -0.07320748730964455
       },
       "0.35": {
-        "p_win": 0.5132657684601623,
-        "ev": -0.085745349930336
+        "p_win": 0.5158720670629908,
+        "ev": -0.08110288054404757
       },
       "0.5": {
-        "p_win": 0.5102491398596951,
-        "ev": -0.09111871962491808
+        "p_win": 0.5139724235780216,
+        "ev": -0.08448662050164896
       },
       "0.65": {
-        "p_win": 0.5072325112592281,
-        "ev": -0.09649208931949999
+        "p_win": 0.5120727800930525,
+        "ev": -0.08787036045925029
       },
       "1.0": {
-        "p_win": 0.5001937111914715,
-        "ev": -0.10902995194019138
+        "p_win": 0.5076402786281244,
+        "ev": -0.09576575369365337
       }
     },
     "model_weight": 0.35,
-    "other_books": 4,
+    "other_books": 3,
     "reference_books": [
       "bet365",
       "draftkings",
-      "fanatics",
-      "thescorebet"
+      "fanatics"
     ],
     "status": "held",
     "reasons": [
@@ -835,9 +144,9 @@
           "date": "2026-08-31T16:21:00+00:00"
         }
       ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
+      "observed_at": "2026-09-28T06:38:46.623710+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
       "available": true,
       "season": 2026,
       "issues": []
@@ -857,37 +166,37 @@
     "opponent": "PHI",
     "line": 28.5,
     "book": "caesars",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:39+00:00",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.790132+00:00",
+    "source_updated_at": null,
     "kickoff": "2026-09-29T00:15:00+00:00",
     "side": "Under",
     "odds": -102,
-    "mean": 29.024660250188326,
+    "mean": 29.184724677331232,
     "interval80": [
-      17.638132591309773,
-      39.519299605484704
+      17.79819701845268,
+      39.6793640326276
     ],
-    "p_model": 0.4998062888085285,
+    "p_model": 0.4923597213718756,
     "p_market": 0.47969543147208116,
-    "p_final": 0.48673423153983775,
+    "p_final": 0.4841279329370092,
     "p_push": 0.0,
-    "ev": -0.036075345381889945,
-    "robust_ev": -0.0756831885191449,
+    "ev": -0.04123683869337402,
+    "robust_ev": -0.08084468183062893,
     "market_only_ev": -0.0500149298298001,
-    "fair_odds": 105,
-    "bet_to": 112,
-    "independent_model_ev": -0.010187545692914135,
-    "expected_margin": -4.5,
+    "fair_odds": 107,
+    "bet_to": 113,
+    "independent_model_ev": -0.024934669440011104,
+    "expected_margin": -3.5,
     "game_total": 41.5,
-    "implied_team_points": 18.5,
+    "implied_team_points": 19.0,
     "game_market": {
       "game_id": "2026_03_PHI_CHI",
       "event_id": "401872963",
       "home_team": "CHI",
       "away_team": "PHI",
       "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
+      "home_expected_margin": -3.5,
       "total_line": 41.5,
       "books": [
         "draftkings"
@@ -895,27 +204,27 @@
       "book_quotes": [
         {
           "book": "draftkings",
-          "home_expected_margin": -4.5,
+          "home_expected_margin": -3.5,
           "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
           "over_odds": -105,
           "under_odds": -115,
           "source_updated_at": null
         }
       ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
       "source": "espn",
       "source_type": "public_pregame_sportsbook",
       "source_updated_at": null
     },
     "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
+      "leading": 0.09438494187674314,
+      "close": 0.643369248172147,
+      "trailing": 0.26224580995110985
     },
     "scenario_means": {
       "underdog_7": 28.62449918233106,
@@ -934,29 +243,28 @@
         "ev": -0.0500149298298001
       },
       "0.35": {
-        "p_win": 0.48673423153983775,
-        "ev": -0.036075345381889945
+        "p_win": 0.48412793293700923,
+        "ev": -0.04123683869337397
       },
       "0.5": {
-        "p_win": 0.48975086014030483,
-        "ev": -0.030101237761357036
+        "p_win": 0.48602757642197836,
+        "ev": -0.03747479963490563
       },
       "0.65": {
-        "p_win": 0.4927674887407719,
-        "ev": -0.024127130140824238
+        "p_win": 0.48792721990694754,
+        "ev": -0.03371276057643724
       },
       "1.0": {
-        "p_win": 0.4998062888085285,
-        "ev": -0.010187545692914135
+        "p_win": 0.4923597213718756,
+        "ev": -0.024934669440011104
       }
     },
     "model_weight": 0.35,
-    "other_books": 4,
+    "other_books": 3,
     "reference_books": [
       "bet365",
       "draftkings",
-      "fanatics",
-      "thescorebet"
+      "fanatics"
     ],
     "status": "held",
     "reasons": [
@@ -995,9 +303,9 @@
           "date": "2026-08-31T16:21:00+00:00"
         }
       ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
+      "observed_at": "2026-09-28T06:38:46.623710+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
       "available": true,
       "season": 2026,
       "issues": []
@@ -1017,37 +325,37 @@
     "opponent": "PHI",
     "line": 28.5,
     "book": "draftkings",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:29+00:00",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.790132+00:00",
+    "source_updated_at": "2026-09-27T20:43:50+00:00",
     "kickoff": "2026-09-29T00:15:00+00:00",
     "side": "Over",
     "odds": -124,
-    "mean": 29.024660250188326,
+    "mean": 29.184724677331232,
     "interval80": [
-      17.638132591309773,
-      39.519299605484704
+      17.79819701845268,
+      39.6793640326276
     ],
-    "p_model": 0.5001937111914715,
+    "p_model": 0.5076402786281244,
     "p_market": 0.5203045685279188,
-    "p_final": 0.5132657684601623,
+    "p_final": 0.5158720670629908,
     "p_push": 0.0,
-    "ev": -0.07281022471712628,
-    "robust_ev": -0.1089392569751908,
+    "ev": -0.06810207240233918,
+    "robust_ev": -0.10423110466040375,
     "market_only_ev": -0.060094972981824035,
-    "fair_odds": -105,
-    "bet_to": 101,
-    "independent_model_ev": -0.09642426365411605,
-    "expected_margin": -4.5,
+    "fair_odds": -107,
+    "bet_to": -100,
+    "independent_model_ev": -0.0829723998975817,
+    "expected_margin": -3.5,
     "game_total": 41.5,
-    "implied_team_points": 18.5,
+    "implied_team_points": 19.0,
     "game_market": {
       "game_id": "2026_03_PHI_CHI",
       "event_id": "401872963",
       "home_team": "CHI",
       "away_team": "PHI",
       "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
+      "home_expected_margin": -3.5,
       "total_line": 41.5,
       "books": [
         "draftkings"
@@ -1055,27 +363,27 @@
       "book_quotes": [
         {
           "book": "draftkings",
-          "home_expected_margin": -4.5,
+          "home_expected_margin": -3.5,
           "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
           "over_odds": -105,
           "under_odds": -115,
           "source_updated_at": null
         }
       ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
       "source": "espn",
       "source_type": "public_pregame_sportsbook",
       "source_updated_at": null
     },
     "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
+      "leading": 0.09438494187674314,
+      "close": 0.643369248172147,
+      "trailing": 0.26224580995110985
     },
     "scenario_means": {
       "underdog_7": 28.62449918233106,
@@ -1094,29 +402,28 @@
         "ev": -0.060094972981824035
       },
       "0.35": {
-        "p_win": 0.5132657684601623,
-        "ev": -0.07281022471712628
+        "p_win": 0.5158720670629908,
+        "ev": -0.06810207240233918
       },
       "0.5": {
-        "p_win": 0.5102491398596951,
-        "ev": -0.07825961831797013
+        "p_win": 0.5139724235780216,
+        "ev": -0.07153368643970287
       },
       "0.65": {
-        "p_win": 0.5072325112592281,
-        "ev": -0.0837090119188138
+        "p_win": 0.5120727800930525,
+        "ev": -0.07496530047706657
       },
       "1.0": {
-        "p_win": 0.5001937111914715,
-        "ev": -0.09642426365411605
+        "p_win": 0.5076402786281244,
+        "ev": -0.0829723998975817
       }
     },
     "model_weight": 0.35,
-    "other_books": 4,
+    "other_books": 3,
     "reference_books": [
       "bet365",
       "caesars",
-      "fanatics",
-      "thescorebet"
+      "fanatics"
     ],
     "status": "held",
     "reasons": [
@@ -1155,9 +462,9 @@
           "date": "2026-08-31T16:21:00+00:00"
         }
       ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
+      "observed_at": "2026-09-28T06:38:46.623710+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
       "available": true,
       "season": 2026,
       "issues": []
@@ -1177,37 +484,37 @@
     "opponent": "PHI",
     "line": 28.5,
     "book": "draftkings",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:29+00:00",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.790132+00:00",
+    "source_updated_at": "2026-09-27T20:43:50+00:00",
     "kickoff": "2026-09-29T00:15:00+00:00",
     "side": "Under",
     "odds": -103,
-    "mean": 29.024660250188326,
+    "mean": 29.184724677331232,
     "interval80": [
-      17.638132591309773,
-      39.519299605484704
+      17.79819701845268,
+      39.6793640326276
     ],
-    "p_model": 0.4998062888085285,
+    "p_model": 0.4923597213718756,
     "p_market": 0.47969543147208116,
-    "p_final": 0.48673423153983775,
+    "p_final": 0.4841279329370092,
     "p_push": 0.0,
-    "ev": -0.04070826211080519,
-    "robust_ev": -0.0801257378389606,
+    "ev": -0.045844947706671246,
+    "robust_ev": -0.0852624234348266,
     "market_only_ev": -0.05458084865211188,
-    "fair_odds": 105,
-    "bet_to": 112,
-    "independent_model_ev": -0.014944887105521498,
-    "expected_margin": -4.5,
+    "fair_odds": 107,
+    "bet_to": 113,
+    "independent_model_ev": -0.02962113166513841,
+    "expected_margin": -3.5,
     "game_total": 41.5,
-    "implied_team_points": 18.5,
+    "implied_team_points": 19.0,
     "game_market": {
       "game_id": "2026_03_PHI_CHI",
       "event_id": "401872963",
       "home_team": "CHI",
       "away_team": "PHI",
       "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
+      "home_expected_margin": -3.5,
       "total_line": 41.5,
       "books": [
         "draftkings"
@@ -1215,27 +522,27 @@
       "book_quotes": [
         {
           "book": "draftkings",
-          "home_expected_margin": -4.5,
+          "home_expected_margin": -3.5,
           "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
           "over_odds": -105,
           "under_odds": -115,
           "source_updated_at": null
         }
       ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
       "source": "espn",
       "source_type": "public_pregame_sportsbook",
       "source_updated_at": null
     },
     "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
+      "leading": 0.09438494187674314,
+      "close": 0.643369248172147,
+      "trailing": 0.26224580995110985
     },
     "scenario_means": {
       "underdog_7": 28.62449918233106,
@@ -1254,508 +561,27 @@
         "ev": -0.05458084865211188
       },
       "0.35": {
-        "p_win": 0.48673423153983775,
-        "ev": -0.04070826211080519
+        "p_win": 0.48412793293700923,
+        "ev": -0.04584494770667119
       },
       "0.5": {
-        "p_win": 0.48975086014030483,
-        "ev": -0.034762867878816606
+        "p_win": 0.48602757642197836,
+        "ev": -0.04210099015862517
       },
       "0.65": {
-        "p_win": 0.4927674887407719,
-        "ev": -0.02881747364682813
+        "p_win": 0.48792721990694754,
+        "ev": -0.0383570326105791
       },
       "1.0": {
-        "p_win": 0.4998062888085285,
-        "ev": -0.014944887105521498
+        "p_win": 0.4923597213718756,
+        "ev": -0.02962113166513841
       }
     },
     "model_weight": 0.35,
-    "other_books": 4,
+    "other_books": 3,
     "reference_books": [
       "bet365",
       "caesars",
-      "fanatics",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Starting role not independently verified",
-      "QB injury designation needs review",
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Caleb Williams",
-      "espn_id": "4431611",
-      "injuries": [
-        "Out"
-      ],
-      "offense_injuries": [
-        {
-          "player": "Nikola Kalinic",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-19T12:07:00+00:00"
-        },
-        {
-          "player": "Hayden Large",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-01T23:40:00+00:00"
-        },
-        {
-          "player": "Brittain Brown",
-          "position": "RB",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T16:21:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 1,
-      "qb_games": 32,
-      "season_games": 0
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0028986",
-    "player": "Case Keenum",
-    "team": "CHI",
-    "opponent": "PHI",
-    "line": 28.5,
-    "book": "fanatics",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:22:50+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": -125,
-    "mean": 29.024660250188326,
-    "interval80": [
-      17.638132591309773,
-      39.519299605484704
-    ],
-    "p_model": 0.5001937111914715,
-    "p_market": 0.521034466504238,
-    "p_final": 0.5137402021447698,
-    "p_push": 0.0,
-    "ev": -0.07526763613941434,
-    "robust_ev": -0.11126763613941437,
-    "market_only_ev": -0.062137960292371563,
-    "fair_odds": -106,
-    "bet_to": 101,
-    "independent_model_ev": -0.0996513198553513,
-    "expected_margin": -4.5,
-    "game_total": 41.5,
-    "implied_team_points": 18.5,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
-    },
-    "scenario_means": {
-      "underdog_7": 28.62449918233106,
-      "pickem": 29.744950172331404,
-      "favorite_7": 29.92399676844779
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.49767441860465117,
-      "neutral_pass12": 0.5612998522895125,
-      "trail_pass12": 0.7237668161434977
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.521034466504238,
-        "ev": -0.062137960292371563
-      },
-      "0.35": {
-        "p_win": 0.5137402021447697,
-        "ev": -0.07526763613941456
-      },
-      "0.5": {
-        "p_win": 0.5106140888478548,
-        "ev": -0.08089464007386143
-      },
-      "0.65": {
-        "p_win": 0.5074879755509398,
-        "ev": -0.08652164400830831
-      },
-      "1.0": {
-        "p_win": 0.5001937111914715,
-        "ev": -0.0996513198553513
-      }
-    },
-    "model_weight": 0.35,
-    "other_books": 4,
-    "reference_books": [
-      "bet365",
-      "caesars",
-      "draftkings",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Starting role not independently verified",
-      "QB injury designation needs review",
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Caleb Williams",
-      "espn_id": "4431611",
-      "injuries": [
-        "Out"
-      ],
-      "offense_injuries": [
-        {
-          "player": "Nikola Kalinic",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-19T12:07:00+00:00"
-        },
-        {
-          "player": "Hayden Large",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-01T23:40:00+00:00"
-        },
-        {
-          "player": "Brittain Brown",
-          "position": "RB",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T16:21:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 1,
-      "qb_games": 32,
-      "season_games": 0
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0028986",
-    "player": "Case Keenum",
-    "team": "CHI",
-    "opponent": "PHI",
-    "line": 28.5,
-    "book": "fanatics",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:22:50+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -105,
-    "mean": 29.024660250188326,
-    "interval80": [
-      17.638132591309773,
-      39.519299605484704
-    ],
-    "p_model": 0.4998062888085285,
-    "p_market": 0.478965533495762,
-    "p_final": 0.4862597978552302,
-    "p_push": 0.0,
-    "ev": -0.05063563275883626,
-    "robust_ev": -0.08968325180645537,
-    "market_only_ev": -0.06487681555589331,
-    "fair_odds": 106,
-    "bet_to": 112,
-    "independent_model_ev": -0.024187721850015775,
-    "expected_margin": -4.5,
-    "game_total": 41.5,
-    "implied_team_points": 18.5,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
-    },
-    "scenario_means": {
-      "underdog_7": 28.62449918233106,
-      "pickem": 29.744950172331404,
-      "favorite_7": 29.92399676844779
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.49767441860465117,
-      "neutral_pass12": 0.5612998522895125,
-      "trail_pass12": 0.7237668161434977
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.478965533495762,
-        "ev": -0.06487681555589331
-      },
-      "0.35": {
-        "p_win": 0.48625979785523027,
-        "ev": -0.05063563275883609
-      },
-      "0.5": {
-        "p_win": 0.48938591115214525,
-        "ev": -0.04453226870295457
-      },
-      "0.65": {
-        "p_win": 0.4925120244490602,
-        "ev": -0.03842890464707299
-      },
-      "1.0": {
-        "p_win": 0.4998062888085285,
-        "ev": -0.024187721850015775
-      }
-    },
-    "model_weight": 0.35,
-    "other_books": 4,
-    "reference_books": [
-      "bet365",
-      "caesars",
-      "draftkings",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Starting role not independently verified",
-      "QB injury designation needs review",
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Caleb Williams",
-      "espn_id": "4431611",
-      "injuries": [
-        "Out"
-      ],
-      "offense_injuries": [
-        {
-          "player": "Nikola Kalinic",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-19T12:07:00+00:00"
-        },
-        {
-          "player": "Hayden Large",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-01T23:40:00+00:00"
-        },
-        {
-          "player": "Brittain Brown",
-          "position": "RB",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T16:21:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 1,
-      "qb_games": 32,
-      "season_games": 0
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0028986",
-    "player": "Case Keenum",
-    "team": "CHI",
-    "opponent": "PHI",
-    "line": 28.5,
-    "book": "thescorebet",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:27:10+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": -125,
-    "mean": 29.024660250188326,
-    "interval80": [
-      17.638132591309773,
-      39.519299605484704
-    ],
-    "p_model": 0.5001937111914715,
-    "p_market": 0.521034466504238,
-    "p_final": 0.5137402021447698,
-    "p_push": 0.0,
-    "ev": -0.07526763613941434,
-    "robust_ev": -0.11126763613941437,
-    "market_only_ev": -0.062137960292371563,
-    "fair_odds": -106,
-    "bet_to": 101,
-    "independent_model_ev": -0.0996513198553513,
-    "expected_margin": -4.5,
-    "game_total": 41.5,
-    "implied_team_points": 18.5,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
-    },
-    "scenario_means": {
-      "underdog_7": 28.62449918233106,
-      "pickem": 29.744950172331404,
-      "favorite_7": 29.92399676844779
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.49767441860465117,
-      "neutral_pass12": 0.5612998522895125,
-      "trail_pass12": 0.7237668161434977
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.521034466504238,
-        "ev": -0.062137960292371563
-      },
-      "0.35": {
-        "p_win": 0.5137402021447697,
-        "ev": -0.07526763613941456
-      },
-      "0.5": {
-        "p_win": 0.5106140888478548,
-        "ev": -0.08089464007386143
-      },
-      "0.65": {
-        "p_win": 0.5074879755509398,
-        "ev": -0.08652164400830831
-      },
-      "1.0": {
-        "p_win": 0.5001937111914715,
-        "ev": -0.0996513198553513
-      }
-    },
-    "model_weight": 0.35,
-    "other_books": 4,
-    "reference_books": [
-      "bet365",
-      "caesars",
-      "draftkings",
       "fanatics"
     ],
     "status": "held",
@@ -1795,9 +621,9 @@
           "date": "2026-08-31T16:21:00+00:00"
         }
       ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
+      "observed_at": "2026-09-28T06:38:46.623710+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
       "available": true,
       "season": 2026,
       "issues": []
@@ -1816,38 +642,38 @@
     "team": "CHI",
     "opponent": "PHI",
     "line": 28.5,
-    "book": "thescorebet",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:27:10+00:00",
+    "book": "fanatics",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.790132+00:00",
+    "source_updated_at": null,
     "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -105,
-    "mean": 29.024660250188326,
+    "side": "Over",
+    "odds": -125,
+    "mean": 29.184724677331232,
     "interval80": [
-      17.638132591309773,
-      39.519299605484704
+      17.79819701845268,
+      39.6793640326276
     ],
-    "p_model": 0.4998062888085285,
-    "p_market": 0.478965533495762,
-    "p_final": 0.4862597978552302,
+    "p_model": 0.5076402786281244,
+    "p_market": 0.5217643644805572,
+    "p_final": 0.5168209344322057,
     "p_push": 0.0,
-    "ev": -0.05063563275883626,
-    "robust_ev": -0.08968325180645537,
-    "market_only_ev": -0.06487681555589331,
-    "fair_odds": 106,
-    "bet_to": 112,
-    "independent_model_ev": -0.024187721850015775,
-    "expected_margin": -4.5,
+    "ev": -0.06972231802202977,
+    "robust_ev": -0.1057223180220298,
+    "market_only_ev": -0.06082414393499702,
+    "fair_odds": -107,
+    "bet_to": -100,
+    "independent_model_ev": -0.08624749846937596,
+    "expected_margin": -3.5,
     "game_total": 41.5,
-    "implied_team_points": 18.5,
+    "implied_team_points": 19.0,
     "game_market": {
       "game_id": "2026_03_PHI_CHI",
       "event_id": "401872963",
       "home_team": "CHI",
       "away_team": "PHI",
       "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
+      "home_expected_margin": -3.5,
       "total_line": 41.5,
       "books": [
         "draftkings"
@@ -1855,27 +681,27 @@
       "book_quotes": [
         {
           "book": "draftkings",
-          "home_expected_margin": -4.5,
+          "home_expected_margin": -3.5,
           "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
           "over_odds": -105,
           "under_odds": -115,
           "source_updated_at": null
         }
       ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
       "source": "espn",
       "source_type": "public_pregame_sportsbook",
       "source_updated_at": null
     },
     "script_shares": {
-      "leading": 0.08588334538299558,
-      "close": 0.6340316338451085,
-      "trailing": 0.280085020771896
+      "leading": 0.09438494187674314,
+      "close": 0.643369248172147,
+      "trailing": 0.26224580995110985
     },
     "scenario_means": {
       "underdog_7": 28.62449918233106,
@@ -1890,33 +716,32 @@
     "warnings": [],
     "policy_sensitivity": {
       "0.0": {
-        "p_win": 0.478965533495762,
-        "ev": -0.06487681555589331
+        "p_win": 0.5217643644805572,
+        "ev": -0.06082414393499702
       },
       "0.35": {
-        "p_win": 0.48625979785523027,
-        "ev": -0.05063563275883609
+        "p_win": 0.5168209344322057,
+        "ev": -0.06972231802202977
       },
       "0.5": {
-        "p_win": 0.48938591115214525,
-        "ev": -0.04453226870295457
+        "p_win": 0.5147023215543408,
+        "ev": -0.07353582120218649
       },
       "0.65": {
-        "p_win": 0.4925120244490602,
-        "ev": -0.03842890464707299
+        "p_win": 0.512583708676476,
+        "ev": -0.07734932438234327
       },
       "1.0": {
-        "p_win": 0.4998062888085285,
-        "ev": -0.024187721850015775
+        "p_win": 0.5076402786281244,
+        "ev": -0.08624749846937596
       }
     },
     "model_weight": 0.35,
-    "other_books": 4,
+    "other_books": 3,
     "reference_books": [
       "bet365",
       "caesars",
-      "draftkings",
-      "fanatics"
+      "draftkings"
     ],
     "status": "held",
     "reasons": [
@@ -1955,9 +780,168 @@
           "date": "2026-08-31T16:21:00+00:00"
         }
       ],
-      "observed_at": "2026-09-28T00:30:54.938237+00:00",
+      "observed_at": "2026-09-28T06:38:46.623710+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 1,
+      "qb_games": 32,
+      "season_games": 0
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0028986",
+    "player": "Case Keenum",
+    "team": "CHI",
+    "opponent": "PHI",
+    "line": 28.5,
+    "book": "fanatics",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.790132+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Under",
+    "odds": -105,
+    "mean": 29.184724677331232,
+    "interval80": [
+      17.79819701845268,
+      39.6793640326276
+    ],
+    "p_model": 0.4923597213718756,
+    "p_market": 0.4782356355194428,
+    "p_final": 0.48317906556779433,
+    "p_push": 0.0,
+    "ev": -0.05665039579621112,
+    "robust_ev": -0.09569801484383017,
+    "market_only_ev": -0.06630185446204023,
+    "fair_odds": 107,
+    "bet_to": 114,
+    "independent_model_ev": -0.038726258273957204,
+    "expected_margin": -3.5,
+    "game_total": 41.5,
+    "implied_team_points": 19.0,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.09438494187674314,
+      "close": 0.643369248172147,
+      "trailing": 0.26224580995110985
+    },
+    "scenario_means": {
+      "underdog_7": 28.62449918233106,
+      "pickem": 29.744950172331404,
+      "favorite_7": 29.92399676844779
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.49767441860465117,
+      "neutral_pass12": 0.5612998522895125,
+      "trail_pass12": 0.7237668161434977
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.4782356355194428,
+        "ev": -0.06630185446204023
+      },
+      "0.35": {
+        "p_win": 0.4831790655677943,
+        "ev": -0.05665039579621117
+      },
+      "0.5": {
+        "p_win": 0.4852976784456592,
+        "ev": -0.052514056367998774
+      },
+      "0.65": {
+        "p_win": 0.48741629132352415,
+        "ev": -0.04837771693978621
+      },
+      "1.0": {
+        "p_win": 0.4923597213718756,
+        "ev": -0.038726258273957204
+      }
+    },
+    "model_weight": 0.35,
+    "other_books": 3,
+    "reference_books": [
+      "bet365",
+      "caesars",
+      "draftkings"
+    ],
+    "status": "held",
+    "reasons": [
+      "Starting role not independently verified",
+      "QB injury designation needs review",
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Caleb Williams",
+      "espn_id": "4431611",
+      "injuries": [
+        "Out"
+      ],
+      "offense_injuries": [
+        {
+          "player": "Nikola Kalinic",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-19T12:07:00+00:00"
+        },
+        {
+          "player": "Hayden Large",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-01T23:40:00+00:00"
+        },
+        {
+          "player": "Brittain Brown",
+          "position": "RB",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T16:21:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.623710+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
       "available": true,
       "season": 2026,
       "issues": []
@@ -1976,38 +960,38 @@
     "team": "PHI",
     "opponent": "CHI",
     "line": 28.5,
-    "book": "betrivers",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:29:47+00:00",
+    "book": "betmgm",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
     "kickoff": "2026-09-29T00:15:00+00:00",
     "side": "Over",
-    "odds": -103,
-    "mean": 28.905715153853976,
+    "odds": -120,
+    "mean": 28.89356429562667,
     "interval80": [
-      17.519187494975423,
-      39.40035450915035
+      17.50703663674812,
+      39.388203650923046
     ],
-    "p_model": 0.4946845452242997,
+    "p_model": 0.4941228782788175,
     "p_market": 0.5,
-    "p_final": 0.49734227261214986,
+    "p_final": 0.49706143913940876,
     "p_push": 0.0,
-    "ev": -0.01980115203624827,
-    "robust_ev": -0.05921862776440362,
-    "market_only_ev": -0.014563106796116498,
+    "ev": -0.08872069491108386,
+    "robust_ev": -0.1253873615777506,
+    "market_only_ev": -0.08333333333333331,
     "fair_odds": 101,
     "bet_to": 108,
-    "independent_model_ev": -0.025039197276380154,
-    "expected_margin": 4.5,
+    "independent_model_ev": -0.09410805648883452,
+    "expected_margin": 3.5,
     "game_total": 41.5,
-    "implied_team_points": 23.0,
+    "implied_team_points": 22.5,
     "game_market": {
       "game_id": "2026_03_PHI_CHI",
       "event_id": "401872963",
       "home_team": "CHI",
       "away_team": "PHI",
       "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
+      "home_expected_margin": -3.5,
       "total_line": 41.5,
       "books": [
         "draftkings"
@@ -2015,1731 +999,27 @@
       "book_quotes": [
         {
           "book": "draftkings",
-          "home_expected_margin": -4.5,
+          "home_expected_margin": -3.5,
           "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
           "over_odds": -105,
           "under_odds": -115,
           "source_updated_at": null
         }
       ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
       "source": "espn",
       "source_type": "public_pregame_sportsbook",
       "source_updated_at": null
     },
     "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5,
-        "ev": -0.014563106796116498
-      },
-      "0.35": {
-        "p_win": 0.4981395908285049,
-        "ev": -0.018229738464208778
-      },
-      "0.5": {
-        "p_win": 0.49734227261214986,
-        "ev": -0.01980115203624827
-      },
-      "0.65": {
-        "p_win": 0.4965449543957948,
-        "ev": -0.021372565608287875
-      },
-      "1.0": {
-        "p_win": 0.4946845452242997,
-        "ev": -0.025039197276380154
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 2,
-    "reference_books": [
-      "bet365",
-      "fanduel"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 28.5,
-    "book": "betrivers",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:29:47+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -129,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.5053154547757003,
-    "p_market": 0.5,
-    "p_final": 0.5026577273878501,
-    "p_push": 0.0,
-    "ev": -0.10768511959831262,
-    "robust_ev": -0.1431889955673049,
-    "market_only_ev": -0.11240310077519378,
-    "fair_odds": -101,
-    "bet_to": 105,
-    "independent_model_ev": -0.10296713842143129,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5,
-        "ev": -0.11240310077519378
-      },
-      "0.35": {
-        "p_win": 0.5018604091714951,
-        "ev": -0.10910051395137688
-      },
-      "0.5": {
-        "p_win": 0.5026577273878501,
-        "ev": -0.10768511959831262
-      },
-      "0.65": {
-        "p_win": 0.5034550456042052,
-        "ev": -0.10626972524524814
-      },
-      "1.0": {
-        "p_win": 0.5053154547757003,
-        "ev": -0.10296713842143129
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 2,
-    "reference_books": [
-      "bet365",
-      "fanduel"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "caesars",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:42+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": -117,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.5416799064711604,
-    "p_market": 0.4958445875753168,
-    "p_final": 0.5187622470232386,
-    "p_push": 0.0,
-    "ev": -0.03785121705946348,
-    "robust_ev": -0.07494523415348064,
-    "market_only_ev": -0.08035661962526713,
-    "fair_odds": -108,
-    "bet_to": -101,
-    "independent_model_ev": 0.004654185506340169,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.4958445875753168,
-        "ev": -0.08035661962526713
-      },
-      "0.35": {
-        "p_win": 0.511886949188862,
-        "ev": -0.05060283782920466
-      },
-      "0.5": {
-        "p_win": 0.5187622470232386,
-        "ev": -0.03785121705946348
-      },
-      "0.65": {
-        "p_win": 0.5256375448576152,
-        "ev": -0.02509959628972236
-      },
-      "1.0": {
-        "p_win": 0.5416799064711604,
-        "ev": 0.004654185506340169
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 3,
-    "reference_books": [
-      "draftkings",
-      "fanatics",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "caesars",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:42+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -113,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.45832009352883957,
-    "p_market": 0.5041554124246832,
-    "p_final": 0.4812377529767614,
-    "p_push": 0.0,
-    "ev": -0.09288812934468865,
-    "robust_ev": -0.13058724438893649,
-    "market_only_ev": -0.049689355341083874,
-    "fair_odds": 108,
-    "bet_to": 115,
-    "independent_model_ev": -0.1360869033482935,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5041554124246832,
-        "ev": -0.049689355341083874
-      },
-      "0.35": {
-        "p_win": 0.48811305081113787,
-        "ev": -0.07992849714360734
-      },
-      "0.5": {
-        "p_win": 0.4812377529767614,
-        "ev": -0.09288812934468865
-      },
-      "0.65": {
-        "p_win": 0.47436245514238484,
-        "ev": -0.10584776154577014
-      },
-      "1.0": {
-        "p_win": 0.45832009352883957,
-        "ev": -0.1360869033482935
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 3,
-    "reference_books": [
-      "draftkings",
-      "fanatics",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "draftkings",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:05+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": -111,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.5416799064711604,
-    "p_market": 0.5,
-    "p_final": 0.5208399532355802,
-    "p_push": 0.0,
-    "ev": -0.009934863669302518,
-    "robust_ev": -0.04795288168732059,
-    "market_only_ev": -0.04954954954954954,
-    "fair_odds": -109,
-    "bet_to": -102,
-    "independent_model_ev": 0.029679822210944506,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5,
-        "ev": -0.04954954954954954
-      },
-      "0.35": {
-        "p_win": 0.5145879672649061,
-        "ev": -0.021819269433376753
-      },
-      "0.5": {
-        "p_win": 0.5208399532355802,
-        "ev": -0.009934863669302518
-      },
-      "0.65": {
-        "p_win": 0.5270919392062543,
-        "ev": 0.0019495420947717168
-      },
-      "1.0": {
-        "p_win": 0.5416799064711604,
-        "ev": 0.029679822210944506
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 3,
-    "reference_books": [
-      "caesars",
-      "fanatics",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "draftkings",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:30:05+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -115,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.45832009352883957,
-    "p_market": 0.5,
-    "p_final": 0.4791600467644198,
-    "p_push": 0.0,
-    "ev": -0.10417904300564995,
-    "robust_ev": -0.14157034735347607,
-    "market_only_ev": -0.06521739130434784,
-    "fair_odds": 109,
-    "bet_to": 115,
-    "independent_model_ev": -0.14314069470695207,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5,
-        "ev": -0.06521739130434784
-      },
-      "0.35": {
-        "p_win": 0.4854120327350938,
-        "ev": -0.09249054749525942
-      },
-      "0.5": {
-        "p_win": 0.4791600467644198,
-        "ev": -0.10417904300564995
-      },
-      "0.65": {
-        "p_win": 0.4729080607937457,
-        "ev": -0.11586753851604065
-      },
-      "1.0": {
-        "p_win": 0.45832009352883957,
-        "ev": -0.14314069470695207
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 3,
-    "reference_books": [
-      "caesars",
-      "fanatics",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "fanatics",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:22:49+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": -115,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.5416799064711604,
-    "p_market": 0.4958445875753168,
-    "p_final": 0.5187622470232386,
-    "p_push": 0.0,
-    "ev": -0.03014014686959743,
-    "robust_ev": -0.06753145121742354,
-    "market_only_ev": -0.07298620583745119,
-    "fair_odds": -108,
-    "bet_to": -101,
-    "independent_model_ev": 0.012705912098256333,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.4958445875753168,
-        "ev": -0.07298620583745119
-      },
-      "0.35": {
-        "p_win": 0.511886949188862,
-        "ev": -0.042993964559953635
-      },
-      "0.5": {
-        "p_win": 0.5187622470232386,
-        "ev": -0.03014014686959743
-      },
-      "0.65": {
-        "p_win": 0.5256375448576152,
-        "ev": -0.017286329179241222
-      },
-      "1.0": {
-        "p_win": 0.5416799064711604,
-        "ev": 0.012705912098256333
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 3,
-    "reference_books": [
-      "caesars",
-      "draftkings",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "fanatics",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:22:49+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -115,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.45832009352883957,
-    "p_market": 0.5041554124246832,
-    "p_final": 0.4812377529767614,
-    "p_push": 0.0,
-    "ev": -0.10029463573909825,
-    "robust_ev": -0.13768594008692436,
-    "market_only_ev": -0.057448576771244486,
-    "fair_odds": 108,
-    "bet_to": 115,
-    "independent_model_ev": -0.14314069470695207,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5041554124246832,
-        "ev": -0.057448576771244486
-      },
-      "0.35": {
-        "p_win": 0.48811305081113787,
-        "ev": -0.08744081804874226
-      },
-      "0.5": {
-        "p_win": 0.4812377529767614,
-        "ev": -0.10029463573909825
-      },
-      "0.65": {
-        "p_win": 0.47436245514238484,
-        "ev": -0.11314845342945445
-      },
-      "1.0": {
-        "p_win": 0.45832009352883957,
-        "ev": -0.14314069470695207
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 3,
-    "reference_books": [
-      "caesars",
-      "draftkings",
-      "thescorebet"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test",
-      "Independent model does not support positive EV"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "thescorebet",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:27:10+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Over",
-    "odds": -110,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.5416799064711604,
-    "p_market": 0.5,
-    "p_final": 0.5208399532355802,
-    "p_push": 0.0,
-    "ev": -0.00566918018661966,
-    "robust_ev": -0.043850998368437866,
-    "market_only_ev": -0.04545454545454547,
-    "fair_odds": -109,
-    "bet_to": -102,
-    "independent_model_ev": 0.03411618508130615,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
-    },
-    "scenario_means": {
-      "underdog_7": 27.824575890356,
-      "pickem": 28.8510362918311,
-      "favorite_7": 28.936092299422242
-    },
-    "state_pass_rates": {
-      "lead_pass12": 0.4505928853754941,
-      "neutral_pass12": 0.5957767722473605,
-      "trail_pass12": 0.7420289855072463
-    },
-    "warnings": [],
-    "policy_sensitivity": {
-      "0.0": {
-        "p_win": 0.5,
-        "ev": -0.04545454545454547
-      },
-      "0.35": {
-        "p_win": 0.5145879672649061,
-        "ev": -0.01760478976699753
-      },
-      "0.5": {
-        "p_win": 0.5208399532355802,
-        "ev": -0.00566918018661966
-      },
-      "0.65": {
-        "p_win": 0.5270919392062543,
-        "ev": 0.0062664293937582105
-      },
-      "1.0": {
-        "p_win": 0.5416799064711604,
-        "ev": 0.03411618508130615
-      }
-    },
-    "model_weight": 0.5,
-    "other_books": 3,
-    "reference_books": [
-      "caesars",
-      "draftkings",
-      "fanatics"
-    ],
-    "status": "held",
-    "reasons": [
-      "Estimated EV below 3%",
-      "Edge fails probability stress test"
-    ],
-    "starting_status": {
-      "starter": "Jalen Hurts",
-      "espn_id": "4040715",
-      "injuries": [],
-      "offense_injuries": [
-        {
-          "player": "Hollywood Brown",
-          "position": "WR1",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T20:25:00+00:00"
-        },
-        {
-          "player": "Johnny Wilson",
-          "position": "WR2",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-08-22T21:59:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "LT",
-          "depth": 2,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Landon Dickerson",
-          "position": "LG",
-          "depth": 3,
-          "status": "Injured Reserve",
-          "date": "2026-09-16T00:56:00+00:00"
-        },
-        {
-          "player": "Fred Johnson",
-          "position": "RT",
-          "depth": 3,
-          "status": "Out",
-          "date": "2026-09-26T21:21:00+00:00"
-        },
-        {
-          "player": "Dallas Goedert",
-          "position": "TE",
-          "depth": 1,
-          "status": "Out",
-          "date": "2026-09-26T20:01:00+00:00"
-        },
-        {
-          "player": "Grant Calcaterra",
-          "position": "TE",
-          "depth": 4,
-          "status": "Injured Reserve",
-          "date": "2026-08-31T18:50:00+00:00"
-        },
-        {
-          "player": "Eli Stowers",
-          "position": "TE",
-          "depth": 5,
-          "status": "Injured Reserve",
-          "date": "2026-09-12T20:06:00+00:00"
-        }
-      ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
-      "available": true,
-      "season": 2026,
-      "issues": []
-    },
-    "feature_flags": {
-      "coach_change": 0,
-      "qb_team_change": 0,
-      "qb_games": 32,
-      "season_games": 2
-    }
-  },
-  {
-    "game_id": "2026_03_PHI_CHI",
-    "player_id": "00-0036389",
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "CHI",
-    "line": 27.5,
-    "book": "thescorebet",
-    "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22052&location=NY&live=false&page=1",
-    "observed_at": "2026-09-28T00:30:54.305804+00:00",
-    "source_updated_at": "2026-09-28T00:27:10+00:00",
-    "kickoff": "2026-09-29T00:15:00+00:00",
-    "side": "Under",
-    "odds": -120,
-    "mean": 28.905715153853976,
-    "interval80": [
-      17.519187494975423,
-      39.40035450915035
-    ],
-    "p_model": 0.45832009352883957,
-    "p_market": 0.5,
-    "p_final": 0.4791600467644198,
-    "p_push": 0.0,
-    "ev": -0.12153991426523031,
-    "robust_ev": -0.15820658093189705,
-    "market_only_ev": -0.08333333333333331,
-    "fair_odds": 109,
-    "bet_to": 115,
-    "independent_model_ev": -0.1597464951971274,
-    "expected_margin": 4.5,
-    "game_total": 41.5,
-    "implied_team_points": 23.0,
-    "game_market": {
-      "game_id": "2026_03_PHI_CHI",
-      "event_id": "401872963",
-      "home_team": "CHI",
-      "away_team": "PHI",
-      "kickoff": "2026-09-29T00:15:00+00:00",
-      "home_expected_margin": -4.5,
-      "total_line": 41.5,
-      "books": [
-        "draftkings"
-      ],
-      "book_quotes": [
-        {
-          "book": "draftkings",
-          "home_expected_margin": -4.5,
-          "total_line": 41.5,
-          "home_spread_odds": -120,
-          "away_spread_odds": 100,
-          "over_odds": -105,
-          "under_odds": -115,
-          "source_updated_at": null
-        }
-      ],
-      "spread_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "total_observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "observed_at": "2026-09-28T00:30:55.194903+00:00",
-      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
-      "source": "espn",
-      "source_type": "public_pregame_sportsbook",
-      "source_updated_at": null
-    },
-    "script_shares": {
-      "leading": 0.1812553749987227,
-      "close": 0.6728200041971775,
-      "trailing": 0.14592462080409976
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
     },
     "scenario_means": {
       "underdog_7": 27.824575890356,
@@ -3758,26 +1038,403 @@
         "ev": -0.08333333333333331
       },
       "0.35": {
-        "p_win": 0.4854120327350938,
-        "ev": -0.11007793998566134
+        "p_win": 0.4979430073975861,
+        "ev": -0.08710448643775875
       },
       "0.5": {
-        "p_win": 0.4791600467644198,
-        "ev": -0.12153991426523031
+        "p_win": 0.49706143913940876,
+        "ev": -0.08872069491108386
       },
       "0.65": {
-        "p_win": 0.4729080607937457,
-        "ev": -0.13300188854479955
+        "p_win": 0.4961798708812314,
+        "ev": -0.09033690338440908
       },
       "1.0": {
-        "p_win": 0.45832009352883957,
-        "ev": -0.1597464951971274
+        "p_win": 0.4941228782788175,
+        "ev": -0.09410805648883452
       }
     },
     "model_weight": 0.5,
-    "other_books": 3,
+    "other_books": 2,
     "reference_books": [
-      "caesars",
+      "bet365",
+      "fanduel"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 28.5,
+    "book": "betmgm",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Under",
+    "odds": -110,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.5058771217211825,
+    "p_market": 0.5,
+    "p_final": 0.5029385608605912,
+    "p_push": 0.0,
+    "ev": -0.03984456562978045,
+    "robust_ev": -0.07802638381159871,
+    "market_only_ev": -0.04545454545454547,
+    "fair_odds": -101,
+    "bet_to": 105,
+    "independent_model_ev": -0.03423458580501526,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.5,
+        "ev": -0.04545454545454547
+      },
+      "0.35": {
+        "p_win": 0.5020569926024139,
+        "ev": -0.04152755957720988
+      },
+      "0.5": {
+        "p_win": 0.5029385608605912,
+        "ev": -0.03984456562978045
+      },
+      "0.65": {
+        "p_win": 0.5038201291187686,
+        "ev": -0.03816157168235085
+      },
+      "1.0": {
+        "p_win": 0.5058771217211825,
+        "ev": -0.03423458580501526
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "bet365",
+      "fanduel"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 27.5,
+    "book": "caesars",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Over",
+    "odds": -124,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.5410997199675089,
+    "p_market": 0.5029830225325977,
+    "p_final": 0.5220413712500533,
+    "p_push": 0.0,
+    "ev": -0.0569575229031295,
+    "robust_ev": -0.09308655516119402,
+    "market_only_ev": -0.09138550768304926,
+    "fair_odds": -109,
+    "bet_to": -102,
+    "independent_model_ev": -0.02252953812320968,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.5029830225325977,
+        "ev": -0.09138550768304926
+      },
+      "0.35": {
+        "p_win": 0.5163238666348167,
+        "ev": -0.0672859183371054
+      },
+      "0.5": {
+        "p_win": 0.5220413712500533,
+        "ev": -0.0569575229031295
+      },
+      "0.65": {
+        "p_win": 0.52775887586529,
+        "ev": -0.04662912746915354
+      },
+      "1.0": {
+        "p_win": 0.5410997199675089,
+        "ev": -0.02252953812320968
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
       "draftkings",
       "fanatics"
     ],
@@ -3849,9 +1506,1331 @@
           "date": "2026-09-12T20:06:00+00:00"
         }
       ],
-      "observed_at": "2026-09-28T00:30:54.940895+00:00",
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
       "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
-      "source_updated_at": "2026-09-28T00:30:51+00:00",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 27.5,
+    "book": "caesars",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Under",
+    "odds": -107,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.4589002800324911,
+    "p_market": 0.49701697746740225,
+    "p_final": 0.47795862874994666,
+    "p_push": 0.0,
+    "ev": -0.07535106400711256,
+    "robust_ev": -0.1140426527921593,
+    "market_only_ev": -0.03848117443222182,
+    "fair_odds": 109,
+    "bet_to": 116,
+    "independent_model_ev": -0.11222095358200324,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.49701697746740225,
+        "ev": -0.03848117443222182
+      },
+      "0.35": {
+        "p_win": 0.48367613336518334,
+        "ev": -0.06429009713464534
+      },
+      "0.5": {
+        "p_win": 0.47795862874994666,
+        "ev": -0.07535106400711256
+      },
+      "0.65": {
+        "p_win": 0.47224112413471003,
+        "ev": -0.08641203087957972
+      },
+      "1.0": {
+        "p_win": 0.4589002800324911,
+        "ev": -0.11222095358200324
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "draftkings",
+      "fanatics"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 27.5,
+    "book": "draftkings",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": "2026-09-27T16:35:46+00:00",
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Over",
+    "odds": -111,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.5410997199675089,
+    "p_market": 0.5136230625349305,
+    "p_final": 0.5273613912512197,
+    "p_push": 0.0,
+    "ev": 0.002461743729796073,
+    "robust_ev": -0.035556274288222,
+    "market_only_ev": -0.02365345770387084,
+    "fair_odds": -112,
+    "bet_to": -104,
+    "independent_model_ev": 0.02857694516346293,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.5136230625349305,
+        "ev": -0.02365345770387084
+      },
+      "0.35": {
+        "p_win": 0.523239892636333,
+        "ev": -0.005372816700303984
+      },
+      "0.5": {
+        "p_win": 0.5273613912512197,
+        "ev": 0.002461743729796073
+      },
+      "0.65": {
+        "p_win": 0.5314828898661065,
+        "ev": 0.01029630415989613
+      },
+      "1.0": {
+        "p_win": 0.5410997199675089,
+        "ev": 0.02857694516346293
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "caesars",
+      "fanatics"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 27.5,
+    "book": "draftkings",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": "2026-09-27T16:35:46+00:00",
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Under",
+    "odds": -115,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.4589002800324911,
+    "p_market": 0.4863769374650695,
+    "p_final": 0.4726386087487803,
+    "p_push": 0.0,
+    "ev": -0.11637129668706298,
+    "robust_ev": -0.1537626010348891,
+    "market_only_ev": -0.09068659517400052,
+    "fair_odds": 112,
+    "bet_to": 118,
+    "independent_model_ev": -0.14205599820012538,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.4863769374650695,
+        "ev": -0.09068659517400052
+      },
+      "0.35": {
+        "p_win": 0.47676010736366703,
+        "ev": -0.10866588623314427
+      },
+      "0.5": {
+        "p_win": 0.4726386087487803,
+        "ev": -0.11637129668706298
+      },
+      "0.65": {
+        "p_win": 0.4685171101338936,
+        "ev": -0.12407670714098151
+      },
+      "1.0": {
+        "p_win": 0.4589002800324911,
+        "ev": -0.14205599820012538
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "caesars",
+      "fanatics"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 27.5,
+    "book": "fanatics",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Over",
+    "odds": -120,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.5410997199675089,
+    "p_market": 0.5064846275776496,
+    "p_final": 0.5237921737725793,
+    "p_push": 0.0,
+    "ev": -0.03971434808360469,
+    "robust_ev": -0.07638101475027137,
+    "market_only_ev": -0.07144484944097579,
+    "fair_odds": -110,
+    "bet_to": -103,
+    "independent_model_ev": -0.00798384672623359,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.5064846275776496,
+        "ev": -0.07144484944097579
+      },
+      "0.35": {
+        "p_win": 0.5185999099141003,
+        "ev": -0.04923349849081604
+      },
+      "0.5": {
+        "p_win": 0.5237921737725793,
+        "ev": -0.03971434808360469
+      },
+      "0.65": {
+        "p_win": 0.5289844376310582,
+        "ev": -0.030195197676393337
+      },
+      "1.0": {
+        "p_win": 0.5410997199675089,
+        "ev": -0.00798384672623359
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "caesars",
+      "draftkings"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 27.5,
+    "book": "fanatics",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Under",
+    "odds": -110,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.4589002800324911,
+    "p_market": 0.49351537242235044,
+    "p_final": 0.47620782622742075,
+    "p_push": 0.0,
+    "ev": -0.09087596811128767,
+    "robust_ev": -0.12905778629310588,
+    "market_only_ev": -0.05783428901187643,
+    "fair_odds": 110,
+    "bet_to": 117,
+    "independent_model_ev": -0.12391764721069887,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.49351537242235044,
+        "ev": -0.05783428901187643
+      },
+      "0.35": {
+        "p_win": 0.4814000900858997,
+        "ev": -0.08096346438146429
+      },
+      "0.5": {
+        "p_win": 0.47620782622742075,
+        "ev": -0.09087596811128767
+      },
+      "0.65": {
+        "p_win": 0.47101556236894193,
+        "ev": -0.1007884718411109
+      },
+      "1.0": {
+        "p_win": 0.4589002800324911,
+        "ev": -0.12391764721069887
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "caesars",
+      "draftkings"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 28.5,
+    "book": "fanduel",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Over",
+    "odds": -114,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.4941228782788175,
+    "p_market": 0.5050607287449393,
+    "p_final": 0.49959180351187843,
+    "p_push": 0.0,
+    "ev": -0.06216977235489485,
+    "robust_ev": -0.09971363200401767,
+    "market_only_ev": -0.05190354428581562,
+    "fair_odds": 100,
+    "bet_to": 107,
+    "independent_model_ev": -0.07243600042397419,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.5050607287449393,
+        "ev": -0.05190354428581562
+      },
+      "0.35": {
+        "p_win": 0.5012324810817967,
+        "ev": -0.05908990393417107
+      },
+      "0.5": {
+        "p_win": 0.49959180351187843,
+        "ev": -0.06216977235489485
+      },
+      "0.65": {
+        "p_win": 0.49795112594196017,
+        "ev": -0.06524964077561862
+      },
+      "1.0": {
+        "p_win": 0.4941228782788175,
+        "ev": -0.07243600042397419
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "bet365",
+      "betmgm"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
+      "available": true,
+      "season": 2026,
+      "issues": []
+    },
+    "feature_flags": {
+      "coach_change": 0,
+      "qb_team_change": 0,
+      "qb_games": 32,
+      "season_games": 2
+    }
+  },
+  {
+    "game_id": "2026_03_PHI_CHI",
+    "player_id": "00-0036389",
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "CHI",
+    "line": 28.5,
+    "book": "fanduel",
+    "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+    "observed_at": "2026-09-28T06:38:44.921340+00:00",
+    "source_updated_at": null,
+    "kickoff": "2026-09-29T00:15:00+00:00",
+    "side": "Under",
+    "odds": -114,
+    "mean": 28.89356429562667,
+    "interval80": [
+      17.50703663674812,
+      39.388203650923046
+    ],
+    "p_model": 0.5058771217211825,
+    "p_market": 0.49493927125506065,
+    "p_final": 0.5004081964881215,
+    "p_push": 0.0,
+    "ev": -0.060637245188964906,
+    "robust_ev": -0.09818110483808773,
+    "market_only_ev": -0.07090347325804408,
+    "fair_odds": -100,
+    "bet_to": 106,
+    "independent_model_ev": -0.05037101711988551,
+    "expected_margin": 3.5,
+    "game_total": 41.5,
+    "implied_team_points": 22.5,
+    "game_market": {
+      "game_id": "2026_03_PHI_CHI",
+      "event_id": "401872963",
+      "home_team": "CHI",
+      "away_team": "PHI",
+      "kickoff": "2026-09-29T00:15:00+00:00",
+      "home_expected_margin": -3.5,
+      "total_line": 41.5,
+      "books": [
+        "draftkings"
+      ],
+      "book_quotes": [
+        {
+          "book": "draftkings",
+          "home_expected_margin": -3.5,
+          "total_line": 41.5,
+          "home_spread_odds": -108,
+          "away_spread_odds": -112,
+          "over_odds": -105,
+          "under_odds": -115,
+          "source_updated_at": null
+        }
+      ],
+      "spread_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "total_observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "observed_at": "2026-09-28T06:38:46.894618+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260928&limit=100",
+      "source": "espn",
+      "source_type": "public_pregame_sportsbook",
+      "source_updated_at": null
+    },
+    "script_shares": {
+      "leading": 0.16763890681061122,
+      "close": 0.6739492730175048,
+      "trailing": 0.15841182017188404
+    },
+    "scenario_means": {
+      "underdog_7": 27.824575890356,
+      "pickem": 28.8510362918311,
+      "favorite_7": 28.936092299422242
+    },
+    "state_pass_rates": {
+      "lead_pass12": 0.4505928853754941,
+      "neutral_pass12": 0.5957767722473605,
+      "trail_pass12": 0.7420289855072463
+    },
+    "warnings": [],
+    "policy_sensitivity": {
+      "0.0": {
+        "p_win": 0.49493927125506065,
+        "ev": -0.07090347325804408
+      },
+      "0.35": {
+        "p_win": 0.4987675189182033,
+        "ev": -0.06371711360968862
+      },
+      "0.5": {
+        "p_win": 0.5004081964881215,
+        "ev": -0.060637245188964906
+      },
+      "0.65": {
+        "p_win": 0.5020488740580398,
+        "ev": -0.05755737676824113
+      },
+      "1.0": {
+        "p_win": 0.5058771217211825,
+        "ev": -0.05037101711988551
+      }
+    },
+    "model_weight": 0.5,
+    "other_books": 2,
+    "reference_books": [
+      "bet365",
+      "betmgm"
+    ],
+    "status": "held",
+    "reasons": [
+      "Estimated EV below 3%",
+      "Edge fails probability stress test",
+      "Independent model does not support positive EV"
+    ],
+    "starting_status": {
+      "starter": "Jalen Hurts",
+      "espn_id": "4040715",
+      "injuries": [],
+      "offense_injuries": [
+        {
+          "player": "Hollywood Brown",
+          "position": "WR1",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T20:25:00+00:00"
+        },
+        {
+          "player": "Johnny Wilson",
+          "position": "WR2",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-08-22T21:59:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "LT",
+          "depth": 2,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Landon Dickerson",
+          "position": "LG",
+          "depth": 3,
+          "status": "Injured Reserve",
+          "date": "2026-09-16T00:56:00+00:00"
+        },
+        {
+          "player": "Fred Johnson",
+          "position": "RT",
+          "depth": 3,
+          "status": "Out",
+          "date": "2026-09-26T21:21:00+00:00"
+        },
+        {
+          "player": "Dallas Goedert",
+          "position": "TE",
+          "depth": 1,
+          "status": "Out",
+          "date": "2026-09-26T20:01:00+00:00"
+        },
+        {
+          "player": "Grant Calcaterra",
+          "position": "TE",
+          "depth": 4,
+          "status": "Injured Reserve",
+          "date": "2026-08-31T18:50:00+00:00"
+        },
+        {
+          "player": "Eli Stowers",
+          "position": "TE",
+          "depth": 5,
+          "status": "Injured Reserve",
+          "date": "2026-09-12T20:06:00+00:00"
+        }
+      ],
+      "observed_at": "2026-09-28T06:38:46.604036+00:00",
+      "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/21/depthcharts",
+      "source_updated_at": "2026-09-28T06:38:38+00:00",
       "available": true,
       "season": 2026,
       "issues": []
