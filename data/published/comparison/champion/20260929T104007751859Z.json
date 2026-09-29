@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-09-29T10:40:07.751859+00:00",
+  "run_id": "20260929T104007751859Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_04_PIT_CLE",
+      "player_id": "00-0023459",
+      "player": "Aaron Rodgers",
+      "team": "PIT",
+      "opponent": "CLE",
+      "line": 34.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22053&location=NY&live=false&page=1",
+      "observed_at": "2026-09-29T10:40:06.170984+00:00",
+      "source_updated_at": "2026-09-29T10:32:27+00:00",
+      "kickoff": "2026-10-02T00:15:00+00:00",
+      "side": "Under",
+      "odds": -103,
+      "mean": 33.28569035724134,
+      "interval80": [
+        21.899162698362794,
+        43.78032971253772
+      ],
+      "p_model": 0.5786821822616773,
+      "p_market": 0.49849324975891995,
+      "p_final": 0.5385877160102986,
+      "p_push": 0.0,
+      "ev": 0.0614884111659284,
+      "robust_ev": 0.022070935437773054,
+      "market_only_ev": -0.01753272134892475,
+      "fair_odds": -117,
+      "bet_to": -109,
+      "independent_model_ev": 0.1405095436807815,
+      "expected_margin": 2.5,
+      "game_total": 38.5,
+      "implied_team_points": 20.5,
+      "game_market": {
+        "game_id": "2026_04_PIT_CLE",
+        "event_id": "401872964",
+        "home_team": "CLE",
+        "away_team": "PIT",
+        "kickoff": "2026-10-02T00:15:00+00:00",
+        "home_expected_margin": -2.5,
+        "total_line": 38.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -2.5,
+            "total_line": 38.5,
+            "home_spread_odds": 100,
+            "away_spread_odds": -120,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-09-29T10:40:07.648093+00:00",
+        "total_observed_at": "2026-09-29T10:40:07.648093+00:00",
+        "observed_at": "2026-09-29T10:40:07.648093+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261001&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.15050494366051742,
+        "close": 0.683641477061985,
+        "trailing": 0.16585357927749775
+      },
+      "scenario_means": {
+        "underdog_7": 31.929458796705624,
+        "pickem": 33.19567420343931,
+        "favorite_7": 33.447719434085016
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5149700598802395,
+        "neutral_pass12": 0.6030534351145038,
+        "trail_pass12": 0.6987551867219917
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.49849324975891995,
+          "ev": -0.01753272134892475
+        },
+        "0.35": {
+          "p_win": 0.526559376134885,
+          "ev": 0.037782071411472384
+        },
+        "0.5": {
+          "p_win": 0.5385877160102986,
+          "ev": 0.0614884111659284
+        },
+        "0.65": {
+          "p_win": 0.5506160558857123,
+          "ev": 0.08519475092038442
+        },
+        "1.0": {
+          "p_win": 0.5786821822616773,
+          "ev": 0.1405095436807815
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "betmgm",
+        "betrivers",
+        "caesars",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Aaron Rodgers",
+        "espn_id": "8439",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Cole Burgess",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Jack Driscoll",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T00:04:00+00:00"
+          },
+          {
+            "player": "Gennings Dunker",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-26T21:23:00+00:00"
+          },
+          {
+            "player": "Rico Dowdle",
+            "position": "RB",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-09-28T20:45:00+00:00"
+          }
+        ],
+        "observed_at": "2026-09-29T10:40:07.262732+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/23/depthcharts",
+        "source_updated_at": "2026-09-29T10:40:01+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 3
+      }
+    }
+  ]
+}
