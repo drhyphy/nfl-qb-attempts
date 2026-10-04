@@ -1,10 +1,10 @@
 {
-  "bets": 53,
+  "bets": 54,
   "settled": 40,
   "wins": 13,
   "losses": 27,
   "pushes": 0,
-  "unresolved": 13,
+  "unresolved": 14,
   "units": -14.967019882354691,
   "roi": -0.37417549705886727,
   "clv_bets": 17,
@@ -9723,6 +9723,182 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_04_DET_CAR",
+      "player_id": "00-0033106",
+      "player": "Jared Goff",
+      "team": "DET",
+      "opponent": "CAR",
+      "line": 33.5,
+      "book": "caesars",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22125&location=NY&live=false&page=1",
+      "observed_at": "2026-10-04T00:30:05.787681+00:00",
+      "source_updated_at": "2026-10-04T00:01:03+00:00",
+      "kickoff": "2026-10-05T00:20:00+00:00",
+      "side": "over",
+      "odds": 111.0,
+      "mean": 35.76755403547971,
+      "interval80": [
+        24.381026376601163,
+        46.26219339077609
+      ],
+      "p_model": 0.5831859607599974,
+      "p_market": 0.4949766918501849,
+      "p_final": 0.5390813263050911,
+      "p_push": 0.0,
+      "ev": 0.1374615985037423,
+      "robust_ev": 0.09526159850374216,
+      "market_only_ev": 0.04440081980389021,
+      "fair_odds": -117,
+      "bet_to": -109,
+      "independent_model_ev": 0.2305223772035946,
+      "expected_margin": 3.5,
+      "game_total": 50.5,
+      "implied_team_points": 27.0,
+      "game_market": {
+        "game_id": "2026_04_DET_CAR",
+        "event_id": "401872978",
+        "home_team": "CAR",
+        "away_team": "DET",
+        "kickoff": "2026-10-05T00:20:00+00:00",
+        "home_expected_margin": -3.5,
+        "total_line": 50.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.5,
+            "total_line": 50.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -122,
+            "under_odds": 102,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-04T00:30:08.958594+00:00",
+        "total_observed_at": "2026-10-04T00:30:08.958594+00:00",
+        "observed_at": "2026-10-04T00:30:08.958594+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261004&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1776149330064111,
+        "close": 0.6458004093689511,
+        "trailing": 0.1765846576246378
+      },
+      "scenario_means": {
+        "underdog_7": 34.60528384875655,
+        "pickem": 35.71983217850007,
+        "favorite_7": 35.81527589245936
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5398230088495575,
+        "neutral_pass12": 0.5912280701754385,
+        "trail_pass12": 0.7235294117647058
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.4949766918501849,
+          "ev": 0.04440081980389021
+        },
+        "0.35": {
+          "p_win": 0.5258499359686193,
+          "ev": 0.1095433648937868
+        },
+        "0.5": {
+          "p_win": 0.5390813263050911,
+          "ev": 0.1374615985037423
+        },
+        "0.65": {
+          "p_win": 0.552312716641563,
+          "ev": 0.165379832113698
+        },
+        "1.0": {
+          "p_win": 0.5831859607599974,
+          "ev": 0.2305223772035946
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "betrivers"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jared Goff",
+        "espn_id": "3046779",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Kendrick Law",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-06-17T20:34:00+00:00"
+          },
+          {
+            "player": "Giovanni Manu",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T23:13:00+00:00"
+          },
+          {
+            "player": "Ben Bartch",
+            "position": "LG",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-03T01:20:00+00:00"
+          },
+          {
+            "player": "Cade Mays",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-29T01:05:00+00:00"
+          },
+          {
+            "player": "Isiah Pacheco",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-14T21:35:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-04T00:30:08.118898+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/8/depthcharts",
+        "source_updated_at": "2026-10-04T00:30:00+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 3
+      },
+      "generated_at": "2026-10-04T00:30:09.771326+00:00",
+      "snapshot": "20261004T003009771326Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -9731,12 +9907,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 53,
+      "bets": 54,
       "settled": 40,
       "wins": 13,
       "losses": 27,
       "pushes": 0,
-      "unresolved": 13,
+      "unresolved": 14,
       "units": -14.967019882354691,
       "roi": -0.37417549705886727,
       "clv_bets": 17,
