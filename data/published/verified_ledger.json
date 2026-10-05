@@ -7819,11 +7819,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "loss",
+        "actual": 42,
+        "profit_1u": -1.0,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-05T00:44:20.131473+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872975"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-05T00:44:20.138353+00:00",
+          "grade": {
+            "result": "loss",
+            "actual": 42,
+            "profit_1u": -1.0,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-05T00:44:20.131473+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872975"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -8119,11 +8136,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 22,
+        "profit_1u": 0.8064516129032258,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-05T00:44:19.973041+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872977"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-05T00:44:20.138353+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 22,
+            "profit_1u": 0.8064516129032258,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-05T00:44:19.973041+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401872977"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -49045,6 +49079,60 @@
       "status": "observed",
       "reason": "research_observation",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_04_DEN_SF",
+      "player_id": "00-0039732",
+      "at": "2026-10-05T00:44:20.138353+00:00",
+      "status": "loss",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_04_LAC_SEA",
+      "player_id": "00-0034869",
+      "at": "2026-10-05T00:44:20.138353+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_04_ATL_NO",
+      "player_id": "00-0040743",
+      "at": "2026-10-05T00:43:40.156285+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_04_ATL_NO",
+      "player_id": "00-0039917",
+      "at": "2026-10-05T00:43:40.156285+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_04_ATL_NO",
+      "player_id": "00-0040743",
+      "at": "2026-10-05T00:43:40.156285+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_04_ATL_NO",
+      "player_id": "00-0039917",
+      "at": "2026-10-05T00:43:40.156285+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -49243,21 +49331,23 @@
     "champion:2026-10-04T18:05:50.350473+00:00",
     "claude:2026-10-04T18:05:50.350473+00:00",
     "champion:2026-10-04T21:17:47.926772+00:00",
-    "claude:2026-10-04T21:17:47.926772+00:00"
+    "claude:2026-10-04T21:17:47.926772+00:00",
+    "champion:2026-10-05T00:43:40.156285+00:00",
+    "claude:2026-10-05T00:43:40.156285+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-10-04T21:18:28.246084+00:00",
+  "updated_at": "2026-10-05T00:44:20.138353+00:00",
   "performance": {
     "champion": {
       "bets": 16,
-      "settled": 12,
-      "wins": 5,
-      "losses": 7,
+      "settled": 14,
+      "wins": 6,
+      "losses": 8,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 4,
-      "units": -2.187847906570517,
-      "roi": -0.18232065888087642
+      "unresolved": 2,
+      "units": -2.381396293667291,
+      "roi": -0.17009973526194935
     },
     "claude": {
       "bets": 17,
