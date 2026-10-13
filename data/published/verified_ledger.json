@@ -13951,6 +13951,835 @@
         "books": 0,
         "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
       }
+    },
+    {
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "player": "Jayden Daniels",
+      "team": "WAS",
+      "opponent": "SF",
+      "line": 30.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+      "observed_at": "2026-10-13T10:40:16.967040+00:00",
+      "source_updated_at": "2026-10-13T10:30:04+00:00",
+      "kickoff": "2026-10-20T00:15:00+00:00",
+      "side": "Under",
+      "odds": -122,
+      "mean": 26.02759768344243,
+      "interval80": [
+        14.641070024563879,
+        36.52223703873881
+      ],
+      "p_model": 0.7112786942382766,
+      "p_market": 0.5191395702574091,
+      "p_final": 0.6152091322478428,
+      "p_push": 0.0,
+      "ev": 0.11947891277886147,
+      "robust_ev": 0.08308547015591061,
+      "market_only_ev": -0.05533619182668181,
+      "fair_odds": -160,
+      "bet_to": -148,
+      "independent_model_ev": 0.29429401738440497,
+      "expected_margin": -7.5,
+      "game_total": 50.5,
+      "implied_team_points": 21.5,
+      "game_market": {
+        "game_id": "2026_06_WAS_SF",
+        "event_id": "401873008",
+        "home_team": "SF",
+        "away_team": "WAS",
+        "kickoff": "2026-10-20T00:15:00+00:00",
+        "home_expected_margin": 7.5,
+        "total_line": 50.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 7.5,
+            "total_line": 50.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -118,
+            "under_odds": -102,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-13T10:40:18.434936+00:00",
+        "total_observed_at": "2026-10-13T10:40:18.434936+00:00",
+        "observed_at": "2026-10-13T10:40:18.434936+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261019&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.06415940465585142,
+        "close": 0.5645561471767743,
+        "trailing": 0.3712844481673742
+      },
+      "scenario_means": {
+        "underdog_7": 26.102336105426247,
+        "pickem": 27.148674013199738,
+        "favorite_7": 27.190733519870264
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5033112582781457,
+        "neutral_pass12": 0.5635451505016722,
+        "trail_pass12": 0.6657627118644067
+      },
+      "warnings": [
+        "Large model\u2013market disagreement",
+        "Market consensus includes unverified comparison-feed prices",
+        "role_not_confirmed_at_entry"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5191395702574091,
+          "ev": -0.05533619182668181
+        },
+        "0.35": {
+          "p_win": 0.5863882636507127,
+          "ev": 0.06703438139719858
+        },
+        "0.5": {
+          "p_win": 0.6152091322478428,
+          "ev": 0.11947891277886147
+        },
+        "0.65": {
+          "p_win": 0.644030000844973,
+          "ev": 0.17192344416052463
+        },
+        "1.0": {
+          "p_win": 0.7112786942382766,
+          "ev": 0.29429401738440497
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 2,
+      "reference_books": [
+        "fanduel",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jayden Daniels",
+        "espn_id": "4426348",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jaylin Lane",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-06T23:14:00+00:00"
+          },
+          {
+            "player": "Stefon Diggs",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-10-12T19:48:00+00:00"
+          },
+          {
+            "player": "Laremy Tunsil",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:24:00+00:00"
+          },
+          {
+            "player": "Jeremy McNichols",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-11T01:00:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-13T10:40:18.041138+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+        "source_updated_at": "2026-10-13T10:38:52+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 24,
+        "season_games": 4
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-13T10:40:17.675044+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-13T10:30:04+00:00",
+        "observed_at": "2026-10-13T10:40:16.967040+00:00",
+        "market_id": "0542e3d843e4ba076182ff11fe6388da",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Jayden Daniels",
+            "team": "WAS",
+            "opponent": "SF",
+            "home_team": "SF",
+            "away_team": "WAS",
+            "kickoff": "2026-10-20T00:15:00+00:00",
+            "game_id": "2026_06_WAS_SF",
+            "event_id": "22066",
+            "provider_event_id": "22066",
+            "provider_player_id": "22902",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T10:40:16.967040+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a1b45db5d48b4b3aabcdaae650c1c9e2/offers-22066-1.json",
+            "proof_sha256": "59b33ceb5056a8d7e289d9d1b998c070da883ab29f18353c921241128cf73304",
+            "market_id": "0542e3d843e4ba076182ff11fe6388da",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 30.5,
+            "side": "over",
+            "odds": -104,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_cadf371baed8e2f42ac74cfcee03a24b",
+            "provider_selection_id": "cadf371baed8e2f42ac74cfcee03a24b",
+            "book_line_id": "12_cadf371baed8e2f42ac74cfcee03a24b",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118064?outcomes=0QA378215006%232317754964_13L88808Q1-1779018863Q20",
+            "source_updated_at": "2026-10-13T10:30:04+00:00",
+            "source_updated_at_raw": "2026-10-13 10:30:04",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Jayden Daniels",
+            "team": "WAS",
+            "opponent": "SF",
+            "home_team": "SF",
+            "away_team": "WAS",
+            "kickoff": "2026-10-20T00:15:00+00:00",
+            "game_id": "2026_06_WAS_SF",
+            "event_id": "22066",
+            "provider_event_id": "22066",
+            "provider_player_id": "22902",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T10:40:16.967040+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a1b45db5d48b4b3aabcdaae650c1c9e2/offers-22066-1.json",
+            "proof_sha256": "59b33ceb5056a8d7e289d9d1b998c070da883ab29f18353c921241128cf73304",
+            "market_id": "0542e3d843e4ba076182ff11fe6388da",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 30.5,
+            "side": "under",
+            "odds": -122,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_6b995b12b52a31033a9cf974b457815e",
+            "provider_selection_id": "6b995b12b52a31033a9cf974b457815e",
+            "book_line_id": "12_6b995b12b52a31033a9cf974b457815e",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118064?outcomes=0QA378215006%232317754970_13L88808Q1-1879748411Q20",
+            "source_updated_at": "2026-10-13T10:30:04+00:00",
+            "source_updated_at_raw": "2026-10-13 10:30:04",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+          "observed_at": "2026-10-13T10:40:16.967040+00:00",
+          "source_updated_at": "2026-10-13T10:30:04+00:00",
+          "provider_event_id": "22066",
+          "event_id": "22066"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+        "observed_at": "2026-10-13T10:40:18.041138+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118064?outcomes=0QA378215006%232317754970_13L88808Q1-1879748411Q20",
+      "paper_entry_status": "new_entry",
+      "entry_id": "a2daac59aaf2ce52f8c206c8",
+      "model": "champion",
+      "model_version": "attempts-v2.0",
+      "entry_at": "2026-10-13T10:40:18.439772+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "player": "Jayden Daniels",
+      "team": "WAS",
+      "opponent": "SF",
+      "line": 29.5,
+      "book": "betrivers",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+      "observed_at": "2026-10-13T10:40:16.967040+00:00",
+      "source_updated_at": "2026-10-13T10:37:33+00:00",
+      "season": 2026,
+      "week": 6,
+      "kickoff": "2026-10-20T00:15:00+00:00",
+      "side": "Under",
+      "odds": -103,
+      "mean": 25.67470738019569,
+      "mu_model": 25.67470738019569,
+      "mu_market": 30.57909481628221,
+      "mu_final": 28.86255921365193,
+      "mean_market": 30.57909481628221,
+      "mean_final": 28.86255921365193,
+      "scale": 1.0,
+      "p_model": 0.6897288528280421,
+      "p_market": 0.47140009678400024,
+      "p_final": 0.551853596711503,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.0876337876935448,
+      "robust_ev": null,
+      "independent_model_ev": 0.35936851576788875,
+      "market_only_ev": -0.07092990633832968,
+      "fair_odds": -123,
+      "bet_to": -117,
+      "bet_to_target": 0.02,
+      "interval80": [
+        14.7142339962783,
+        35.960187508979864
+      ],
+      "expected_margin": -7.5,
+      "game_total": 50.5,
+      "implied_team_points": 21.5,
+      "game_market": {
+        "game_id": "2026_06_WAS_SF",
+        "event_id": "401873008",
+        "home_team": "SF",
+        "away_team": "WAS",
+        "kickoff": "2026-10-20T00:15:00+00:00",
+        "home_expected_margin": 7.5,
+        "total_line": 50.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 7.5,
+            "total_line": 50.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -118,
+            "under_odds": -102,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-13T10:40:18.434936+00:00",
+        "total_observed_at": "2026-10-13T10:40:18.434936+00:00",
+        "observed_at": "2026-10-13T10:40:18.434936+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261019&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 4,
+      "other_books": 3,
+      "reference_books": [
+        "betrivers",
+        "draftkings",
+        "fanduel",
+        "hardrock"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [
+        "role_not_confirmed_at_entry"
+      ],
+      "starting_status": {
+        "starter": "Jayden Daniels",
+        "espn_id": "4426348",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jaylin Lane",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-06T23:14:00+00:00"
+          },
+          {
+            "player": "Stefon Diggs",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-10-12T19:48:00+00:00"
+          },
+          {
+            "player": "Laremy Tunsil",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:24:00+00:00"
+          },
+          {
+            "player": "Jeremy McNichols",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-11T01:00:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-13T10:40:18.041138+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+        "source_updated_at": "2026-10-13T10:38:52+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 21
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-13T10:40:17.675044+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-13T10:37:33+00:00",
+        "observed_at": "2026-10-13T10:40:16.967040+00:00",
+        "market_id": "0542e3d843e4ba076182ff11fe6388da",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Jayden Daniels",
+            "team": "WAS",
+            "opponent": "SF",
+            "home_team": "SF",
+            "away_team": "WAS",
+            "kickoff": "2026-10-20T00:15:00+00:00",
+            "game_id": "2026_06_WAS_SF",
+            "event_id": "22066",
+            "provider_event_id": "22066",
+            "provider_player_id": "22902",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T10:40:16.967040+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a1b45db5d48b4b3aabcdaae650c1c9e2/offers-22066-1.json",
+            "proof_sha256": "59b33ceb5056a8d7e289d9d1b998c070da883ab29f18353c921241128cf73304",
+            "market_id": "0542e3d843e4ba076182ff11fe6388da",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 29.5,
+            "side": "over",
+            "odds": -132,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_cadf371baed8e2f42ac74cfcee03a24b",
+            "provider_selection_id": "cadf371baed8e2f42ac74cfcee03a24b",
+            "book_line_id": "18_cadf371baed8e2f42ac74cfcee03a24b",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4372464374|0|append",
+            "source_updated_at": "2026-10-13T10:37:33+00:00",
+            "source_updated_at_raw": "2026-10-13 10:37:33",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Jayden Daniels",
+            "team": "WAS",
+            "opponent": "SF",
+            "home_team": "SF",
+            "away_team": "WAS",
+            "kickoff": "2026-10-20T00:15:00+00:00",
+            "game_id": "2026_06_WAS_SF",
+            "event_id": "22066",
+            "provider_event_id": "22066",
+            "provider_player_id": "22902",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T10:40:16.967040+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a1b45db5d48b4b3aabcdaae650c1c9e2/offers-22066-1.json",
+            "proof_sha256": "59b33ceb5056a8d7e289d9d1b998c070da883ab29f18353c921241128cf73304",
+            "market_id": "0542e3d843e4ba076182ff11fe6388da",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 29.5,
+            "side": "under",
+            "odds": -103,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_6b995b12b52a31033a9cf974b457815e",
+            "provider_selection_id": "6b995b12b52a31033a9cf974b457815e",
+            "book_line_id": "18_6b995b12b52a31033a9cf974b457815e",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4372464375|0|append",
+            "source_updated_at": "2026-10-13T10:37:33+00:00",
+            "source_updated_at_raw": "2026-10-13 10:37:33",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22066&location=NY&live=false&page=1",
+          "observed_at": "2026-10-13T10:40:16.967040+00:00",
+          "source_updated_at": "2026-10-13T10:37:33+00:00",
+          "provider_event_id": "22066",
+          "event_id": "22066"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+        "observed_at": "2026-10-13T10:40:18.041138+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4372464375|0|append",
+      "paper_entry_status": "new_entry",
+      "entry_id": "fd873a28e3dee23b3300fdfd",
+      "model": "claude",
+      "entry_at": "2026-10-13T10:40:18.439772+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "player": "C.J. Stroud",
+      "team": "HOU",
+      "opponent": "JAX",
+      "line": 35.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21914&location=NY&live=false&page=1",
+      "observed_at": "2026-10-13T10:40:16.747157+00:00",
+      "source_updated_at": "2026-10-13T10:29:57+00:00",
+      "season": 2026,
+      "week": 6,
+      "kickoff": "2026-10-18T13:30:00+00:00",
+      "side": "Under",
+      "odds": -108,
+      "mean": 31.714464871417587,
+      "mu_model": 31.714464871417587,
+      "mu_market": 36.22753086205396,
+      "mu_final": 34.64795776533123,
+      "mean_market": 36.22753086205396,
+      "mean_final": 34.64795776533123,
+      "scale": 1.0,
+      "p_model": 0.6880957498863797,
+      "p_market": 0.4881562466837174,
+      "p_final": 0.5616059183519874,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.08161139830753128,
+      "robust_ev": null,
+      "independent_model_ev": 0.32522144422562016,
+      "market_only_ev": -0.05984722860913688,
+      "fair_odds": -128,
+      "bet_to": -122,
+      "bet_to_target": 0.02,
+      "interval80": [
+        20.753991487500194,
+        41.99994500020176
+      ],
+      "expected_margin": -3.0,
+      "game_total": 42.5,
+      "implied_team_points": 19.75,
+      "game_market": {
+        "game_id": "2026_06_HOU_JAX",
+        "event_id": "401872996",
+        "home_team": "JAX",
+        "away_team": "HOU",
+        "kickoff": "2026-10-18T13:30:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 42.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 42.5,
+            "home_spread_odds": 100,
+            "away_spread_odds": -120,
+            "over_odds": -118,
+            "under_odds": -102,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-13T10:40:18.388865+00:00",
+        "total_observed_at": "2026-10-13T10:40:18.388865+00:00",
+        "observed_at": "2026-10-13T10:40:18.388865+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261018&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 5,
+      "other_books": 4,
+      "reference_books": [
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanduel",
+        "hardrock"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [
+        "role_not_confirmed_at_entry"
+      ],
+      "starting_status": {
+        "starter": "C.J. Stroud",
+        "espn_id": "4432577",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jayden Higgins",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Tank Dell",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-09T21:09:00+00:00"
+          },
+          {
+            "player": "Braden Smith",
+            "position": "RT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-11T03:19:00+00:00"
+          },
+          {
+            "player": "Sam Hagen",
+            "position": "RT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-02T00:13:00+00:00"
+          },
+          {
+            "player": "David Montgomery",
+            "position": "RB",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-10-12T16:33:00+00:00"
+          },
+          {
+            "player": "British Brooks",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-03T00:35:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-13T10:40:17.819427+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/34/depthcharts",
+        "source_updated_at": "2026-10-13T10:36:21+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 40
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-13T10:40:17.675044+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-13T10:29:57+00:00",
+        "observed_at": "2026-10-13T10:40:16.747157+00:00",
+        "market_id": "a58254a9c32923b136f89d9d5694ce58",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "C.J. Stroud",
+            "team": "HOU",
+            "opponent": "JAX",
+            "home_team": "JAX",
+            "away_team": "HOU",
+            "kickoff": "2026-10-18T13:30:00+00:00",
+            "game_id": "2026_06_HOU_JAX",
+            "event_id": "21914",
+            "provider_event_id": "21914",
+            "provider_player_id": "23071",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21914&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T10:40:16.747157+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a1b45db5d48b4b3aabcdaae650c1c9e2/offers-21914-1.json",
+            "proof_sha256": "1b9f329493972591d2d2bb9744ff86c6987bcdef16a1dd62216eb30880c55e6e",
+            "market_id": "a58254a9c32923b136f89d9d5694ce58",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "over",
+            "odds": -118,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_fe1263ef03fd5fc79a63c7b29f444b34",
+            "provider_selection_id": "fe1263ef03fd5fc79a63c7b29f444b34",
+            "book_line_id": "12_fe1263ef03fd5fc79a63c7b29f444b34",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118244?outcomes=0QA378199550%232317774143_13L88808Q1-1083900177Q20",
+            "source_updated_at": "2026-10-13T10:29:57+00:00",
+            "source_updated_at_raw": "2026-10-13 10:29:57",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "C.J. Stroud",
+            "team": "HOU",
+            "opponent": "JAX",
+            "home_team": "JAX",
+            "away_team": "HOU",
+            "kickoff": "2026-10-18T13:30:00+00:00",
+            "game_id": "2026_06_HOU_JAX",
+            "event_id": "21914",
+            "provider_event_id": "21914",
+            "provider_player_id": "23071",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21914&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T10:40:16.747157+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-a1b45db5d48b4b3aabcdaae650c1c9e2/offers-21914-1.json",
+            "proof_sha256": "1b9f329493972591d2d2bb9744ff86c6987bcdef16a1dd62216eb30880c55e6e",
+            "market_id": "a58254a9c32923b136f89d9d5694ce58",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "under",
+            "odds": -108,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_2c182fc17122c94b0f2af7aca091c956",
+            "provider_selection_id": "2c182fc17122c94b0f2af7aca091c956",
+            "book_line_id": "12_2c182fc17122c94b0f2af7aca091c956",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118244?outcomes=0QA378199550%232317774144_13L88808Q11389438358Q20",
+            "source_updated_at": "2026-10-13T10:29:57+00:00",
+            "source_updated_at_raw": "2026-10-13 10:29:57",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21914&location=NY&live=false&page=1",
+          "observed_at": "2026-10-13T10:40:16.747157+00:00",
+          "source_updated_at": "2026-10-13T10:29:57+00:00",
+          "provider_event_id": "21914",
+          "event_id": "21914"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/34/depthcharts",
+        "observed_at": "2026-10-13T10:40:17.819427+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118244?outcomes=0QA378199550%232317774144_13L88808Q11389438358Q20",
+      "paper_entry_status": "new_entry",
+      "entry_id": "84809961581678cc13085518",
+      "model": "claude",
+      "entry_at": "2026-10-13T10:40:18.439772+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
     }
   ],
   "events": [
@@ -65262,6 +66091,330 @@
       "status": "observed",
       "reason": "research_observation",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0039732",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0034869",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0036355",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0036971",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0037834",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0033077",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0033873",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0039732",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0039732",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_CAR_PHI",
+      "player_id": "00-0039150",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0036355",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_CAR_PHI",
+      "player_id": "00-0036389",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0037834",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0036971",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0034869",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0039732",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_BAL_CLE",
+      "player_id": "00-0033537",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0033873",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0033077",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NYJ_NE",
+      "player_id": "00-0039851",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0040743",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0031503",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T10:40:18.439772+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -65524,30 +66677,32 @@
     "champion:2026-10-12T22:04:32.636116+00:00",
     "claude:2026-10-12T22:04:32.636116+00:00",
     "champion:2026-10-13T03:00:43.178916+00:00",
-    "claude:2026-10-13T03:00:43.178916+00:00"
+    "claude:2026-10-13T03:00:43.178916+00:00",
+    "champion:2026-10-13T10:40:18.439772+00:00",
+    "claude:2026-10-13T10:40:18.439772+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-10-13T03:01:25.706473+00:00",
+  "updated_at": "2026-10-13T10:41:03.054408+00:00",
   "performance": {
     "champion": {
-      "bets": 22,
+      "bets": 23,
       "settled": 19,
       "wins": 9,
       "losses": 10,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
+      "unresolved": 4,
       "units": -1.6138741024899461,
       "roi": -0.08494074223631295
     },
     "claude": {
-      "bets": 23,
+      "bets": 25,
       "settled": 23,
       "wins": 17,
       "losses": 6,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 0,
+      "unresolved": 2,
       "units": 8.91097255150386,
       "roi": 0.38743358919582
     }
