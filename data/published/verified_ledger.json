@@ -14780,6 +14780,591 @@
         "books": 0,
         "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
       }
+    },
+    {
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0031503",
+      "player": "Jameis Winston",
+      "team": "NYG",
+      "opponent": "NO",
+      "line": 32.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+      "observed_at": "2026-10-13T20:11:23.060526+00:00",
+      "source_updated_at": "2026-10-13T20:00:53+00:00",
+      "kickoff": "2026-10-18T17:00:00+00:00",
+      "side": "Under",
+      "odds": -125,
+      "mean": 29.92458269140446,
+      "interval80": [
+        18.53805503252591,
+        40.41922204670084
+      ],
+      "p_model": 0.636581920480387,
+      "p_market": 0.5205622676579926,
+      "p_final": 0.5785720940691899,
+      "p_push": 0.0,
+      "ev": 0.04142976932454179,
+      "robust_ev": 0.0054297693245417555,
+      "market_only_ev": -0.06298791821561323,
+      "fair_odds": -137,
+      "bet_to": -128,
+      "independent_model_ev": 0.14584745686469658,
+      "expected_margin": -1.5,
+      "game_total": 45.5,
+      "implied_team_points": 22.0,
+      "game_market": {
+        "game_id": "2026_06_NO_NYG",
+        "event_id": "401873000",
+        "home_team": "NYG",
+        "away_team": "NO",
+        "kickoff": "2026-10-18T17:00:00+00:00",
+        "home_expected_margin": -1.5,
+        "total_line": 45.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -1.5,
+            "total_line": 45.5,
+            "home_spread_odds": -125,
+            "away_spread_odds": 105,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-13T20:11:25.794346+00:00",
+        "total_observed_at": "2026-10-13T20:11:25.794346+00:00",
+        "observed_at": "2026-10-13T20:11:25.794346+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261018&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.11597107725728452,
+        "close": 0.6466228743228584,
+        "trailing": 0.23740604841985724
+      },
+      "scenario_means": {
+        "underdog_7": 29.10319857949886,
+        "pickem": 30.148596540105988,
+        "favorite_7": 30.189716099610152
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.495,
+        "neutral_pass12": 0.5462184873949579,
+        "trail_pass12": 0.6668769716088327
+      },
+      "warnings": [
+        "Market consensus includes unverified comparison-feed prices",
+        "role_not_confirmed_at_entry"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5205622676579926,
+          "ev": -0.06298791821561323
+        },
+        "0.35": {
+          "p_win": 0.5611691461458307,
+          "ev": 0.01010446306249524
+        },
+        "0.5": {
+          "p_win": 0.5785720940691899,
+          "ev": 0.04142976932454179
+        },
+        "0.65": {
+          "p_win": 0.5959750419925489,
+          "ev": 0.07275507558658806
+        },
+        "1.0": {
+          "p_win": 0.636581920480387,
+          "ev": 0.14584745686469658
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 2,
+      "reference_books": [
+        "bet365",
+        "caesars"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jameis Winston",
+        "espn_id": "2969939",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Gunner Olszewski",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-06-02T00:10:00+00:00"
+          },
+          {
+            "player": "Calvin Austin III",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T22:48:00+00:00"
+          },
+          {
+            "player": "Braxton Berrios",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-07T23:25:00+00:00"
+          },
+          {
+            "player": "Jermaine Eluemunor",
+            "position": "RT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-13T20:02:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-13T20:11:25.159195+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "source_updated_at": "2026-10-13T20:10:12+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 3
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-13T20:11:24.448939+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-13T20:00:53+00:00",
+        "observed_at": "2026-10-13T20:11:23.060526+00:00",
+        "market_id": "7546d64a9941119442ee39d570aedf1b",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Jameis Winston",
+            "team": "NYG",
+            "opponent": "NO",
+            "home_team": "NYG",
+            "away_team": "NO",
+            "kickoff": "2026-10-18T17:00:00+00:00",
+            "game_id": "2026_06_NO_NYG",
+            "event_id": "22005",
+            "provider_event_id": "22005",
+            "provider_player_id": "13891",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T20:11:23.060526+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-2aa90424ecb647d197717e7033c0bfa1/offers-22005-1.json",
+            "proof_sha256": "4d3ac0ae7f2da61018e67d2492a1085cc093cf8ef4b2479011eb12ebbb1b12cb",
+            "market_id": "7546d64a9941119442ee39d570aedf1b",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 32.5,
+            "side": "over",
+            "odds": -102,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_4c0a45a3866e5c5df65abcee76d2ed9e",
+            "provider_selection_id": "4c0a45a3866e5c5df65abcee76d2ed9e",
+            "book_line_id": "12_4c0a45a3866e5c5df65abcee76d2ed9e",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118108?outcomes=0QA378208591%232320001935_13L88808Q1858555913Q20",
+            "source_updated_at": "2026-10-13T20:00:53+00:00",
+            "source_updated_at_raw": "2026-10-13 20:00:53",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Jameis Winston",
+            "team": "NYG",
+            "opponent": "NO",
+            "home_team": "NYG",
+            "away_team": "NO",
+            "kickoff": "2026-10-18T17:00:00+00:00",
+            "game_id": "2026_06_NO_NYG",
+            "event_id": "22005",
+            "provider_event_id": "22005",
+            "provider_player_id": "13891",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T20:11:23.060526+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-2aa90424ecb647d197717e7033c0bfa1/offers-22005-1.json",
+            "proof_sha256": "4d3ac0ae7f2da61018e67d2492a1085cc093cf8ef4b2479011eb12ebbb1b12cb",
+            "market_id": "7546d64a9941119442ee39d570aedf1b",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 32.5,
+            "side": "under",
+            "odds": -125,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_afd4b71107c88cf8d00daf9adfa75067",
+            "provider_selection_id": "afd4b71107c88cf8d00daf9adfa75067",
+            "book_line_id": "12_afd4b71107c88cf8d00daf9adfa75067",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118108?outcomes=0QA378208591%232320001936_13L88808Q12114476987Q20",
+            "source_updated_at": "2026-10-13T20:00:53+00:00",
+            "source_updated_at_raw": "2026-10-13 20:00:53",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+          "observed_at": "2026-10-13T20:11:23.060526+00:00",
+          "source_updated_at": "2026-10-13T20:00:53+00:00",
+          "provider_event_id": "22005",
+          "event_id": "22005"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "observed_at": "2026-10-13T20:11:25.159195+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118108?outcomes=0QA378208591%232320001936_13L88808Q12114476987Q20",
+      "paper_entry_status": "new_entry",
+      "entry_id": "a43b2817af34f0d919ceef7a",
+      "model": "champion",
+      "model_version": "attempts-v2.0",
+      "entry_at": "2026-10-13T20:11:25.973903+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0040743",
+      "player": "Tyler Shough",
+      "team": "NO",
+      "opponent": "NYG",
+      "line": 36.5,
+      "book": "betrivers",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+      "observed_at": "2026-10-13T20:11:23.060526+00:00",
+      "source_updated_at": "2026-10-13T20:06:20+00:00",
+      "season": 2026,
+      "week": 6,
+      "kickoff": "2026-10-18T17:00:00+00:00",
+      "side": "Under",
+      "odds": -121,
+      "mean": 33.83997999002126,
+      "mu_model": 33.83997999002126,
+      "mu_market": 36.1911927736127,
+      "mu_final": 35.3682682993557,
+      "mean_market": 36.1911927736127,
+      "mean_final": 35.3682682993557,
+      "scale": 1.0,
+      "p_model": 0.6410026904706251,
+      "p_market": 0.5367756177389144,
+      "p_final": 0.5742098677104378,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.04876347738848558,
+      "robust_ev": null,
+      "independent_model_ev": 0.17075698011576979,
+      "market_only_ev": -0.019608169253718388,
+      "fair_odds": -135,
+      "bet_to": -128,
+      "bet_to_target": 0.02,
+      "interval80": [
+        22.879506606103874,
+        44.125460118805435
+      ],
+      "expected_margin": 1.5,
+      "game_total": 45.5,
+      "implied_team_points": 23.5,
+      "game_market": {
+        "game_id": "2026_06_NO_NYG",
+        "event_id": "401873000",
+        "home_team": "NYG",
+        "away_team": "NO",
+        "kickoff": "2026-10-18T17:00:00+00:00",
+        "home_expected_margin": -1.5,
+        "total_line": 45.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -1.5,
+            "total_line": 45.5,
+            "home_spread_odds": -125,
+            "away_spread_odds": 105,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-13T20:11:25.794346+00:00",
+        "total_observed_at": "2026-10-13T20:11:25.794346+00:00",
+        "observed_at": "2026-10-13T20:11:25.794346+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261018&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanduel"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [
+        "role_not_confirmed_at_entry"
+      ],
+      "starting_status": {
+        "starter": "Tyler Shough",
+        "espn_id": "4360689",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jordyn Tyson",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-12T18:59:00+00:00"
+          },
+          {
+            "player": "Mason Tipton",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T18:40:00+00:00"
+          },
+          {
+            "player": "Kelvin Banks Jr.",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-26T00:47:00+00:00"
+          },
+          {
+            "player": "Dillon Radunz",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Jeremiah Wright",
+            "position": "RG",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-13T17:10:00+00:00"
+          },
+          {
+            "player": "Nick Saldiveri",
+            "position": "RG",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-05-14T00:10:00+00:00"
+          },
+          {
+            "player": "Moliki Matavao",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:41:00+00:00"
+          },
+          {
+            "player": "Travis Etienne Jr.",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-01T20:44:00+00:00"
+          },
+          {
+            "player": "Ty Chandler",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:39:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-13T20:11:25.159545+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "source_updated_at": "2026-10-13T20:10:25+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 14
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-13T20:11:24.448939+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-13T20:06:20+00:00",
+        "observed_at": "2026-10-13T20:11:23.060526+00:00",
+        "market_id": "93608da5cefcef9c9046d85b8c1feee2",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Tyler Shough",
+            "team": "NO",
+            "opponent": "NYG",
+            "home_team": "NYG",
+            "away_team": "NO",
+            "kickoff": "2026-10-18T17:00:00+00:00",
+            "game_id": "2026_06_NO_NYG",
+            "event_id": "22005",
+            "provider_event_id": "22005",
+            "provider_player_id": "23096",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T20:11:23.060526+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-2aa90424ecb647d197717e7033c0bfa1/offers-22005-1.json",
+            "proof_sha256": "4d3ac0ae7f2da61018e67d2492a1085cc093cf8ef4b2479011eb12ebbb1b12cb",
+            "market_id": "93608da5cefcef9c9046d85b8c1feee2",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 36.5,
+            "side": "over",
+            "odds": -110,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_35b9d977207e411ad8c4aaf47f0eeebb",
+            "provider_selection_id": "35b9d977207e411ad8c4aaf47f0eeebb",
+            "book_line_id": "18_35b9d977207e411ad8c4aaf47f0eeebb",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4373536836|0|append",
+            "source_updated_at": "2026-10-13T20:06:20+00:00",
+            "source_updated_at_raw": "2026-10-13 20:06:20",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Tyler Shough",
+            "team": "NO",
+            "opponent": "NYG",
+            "home_team": "NYG",
+            "away_team": "NO",
+            "kickoff": "2026-10-18T17:00:00+00:00",
+            "game_id": "2026_06_NO_NYG",
+            "event_id": "22005",
+            "provider_event_id": "22005",
+            "provider_player_id": "23096",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+            "observed_at": "2026-10-13T20:11:23.060526+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-2aa90424ecb647d197717e7033c0bfa1/offers-22005-1.json",
+            "proof_sha256": "4d3ac0ae7f2da61018e67d2492a1085cc093cf8ef4b2479011eb12ebbb1b12cb",
+            "market_id": "93608da5cefcef9c9046d85b8c1feee2",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 36.5,
+            "side": "under",
+            "odds": -121,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_08d6fe11efc9de6db7b6b049acd9c919",
+            "provider_selection_id": "08d6fe11efc9de6db7b6b049acd9c919",
+            "book_line_id": "18_08d6fe11efc9de6db7b6b049acd9c919",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4373536838|0|append",
+            "source_updated_at": "2026-10-13T20:06:20+00:00",
+            "source_updated_at_raw": "2026-10-13 20:06:20",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22005&location=NY&live=false&page=1",
+          "observed_at": "2026-10-13T20:11:23.060526+00:00",
+          "source_updated_at": "2026-10-13T20:06:20+00:00",
+          "provider_event_id": "22005",
+          "event_id": "22005"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "observed_at": "2026-10-13T20:11:25.159545+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4373536838|0|append",
+      "paper_entry_status": "new_entry",
+      "entry_id": "53455cef16cc228396361916",
+      "model": "claude",
+      "entry_at": "2026-10-13T20:11:25.973903+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
     }
   ],
   "events": [
@@ -66739,6 +67324,375 @@
       "status": "observed",
       "reason": "existing_game_exposure",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0039732",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0031503",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0034869",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0036355",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0033873",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0040743",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0033077",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0036971",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0037834",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0031503",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0031503",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0033873",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0040743",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_CAR_PHI",
+      "player_id": "00-0039150",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_CHI_ATL",
+      "player_id": "00-0039918",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_TEN_IND",
+      "player_id": "00-0040676",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0037834",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_LAC_KC",
+      "player_id": "00-0036355",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_CAR_PHI",
+      "player_id": "00-0036389",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0031503",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0036971",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0039732",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_SEA_DEN",
+      "player_id": "00-0034869",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_BAL_CLE",
+      "player_id": "00-0033537",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0033077",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_TEN_IND",
+      "player_id": "00-0035710",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NYJ_NE",
+      "player_id": "00-0039851",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0040743",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0040743",
+      "at": "2026-10-13T20:11:25.973903+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -67005,30 +67959,32 @@
     "champion:2026-10-13T10:40:18.439772+00:00",
     "claude:2026-10-13T10:40:18.439772+00:00",
     "champion:2026-10-13T11:40:18.642305+00:00",
-    "claude:2026-10-13T11:40:18.642305+00:00"
+    "claude:2026-10-13T11:40:18.642305+00:00",
+    "champion:2026-10-13T20:11:25.973903+00:00",
+    "claude:2026-10-13T20:11:25.973903+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-10-13T11:41:03.708011+00:00",
+  "updated_at": "2026-10-13T20:12:02.102626+00:00",
   "performance": {
     "champion": {
-      "bets": 23,
+      "bets": 24,
       "settled": 19,
       "wins": 9,
       "losses": 10,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 4,
+      "unresolved": 5,
       "units": -1.6138741024899461,
       "roi": -0.08494074223631295
     },
     "claude": {
-      "bets": 25,
+      "bets": 26,
       "settled": 23,
       "wins": 17,
       "losses": 6,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 2,
+      "unresolved": 3,
       "units": 8.91097255150386,
       "roi": 0.38743358919582
     }
