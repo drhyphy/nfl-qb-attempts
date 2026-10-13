@@ -1,10 +1,10 @@
 {
-  "bets": 66,
+  "bets": 67,
   "settled": 64,
   "wins": 26,
   "losses": 38,
   "pushes": 0,
-  "unresolved": 2,
+  "unresolved": 3,
   "units": -14.054180643707546,
   "roi": -0.21959657255793041,
   "clv_bets": 25,
@@ -12262,6 +12262,189 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_06_HOU_JAX",
+      "player_id": "00-0039163",
+      "player": "C.J. Stroud",
+      "team": "HOU",
+      "opponent": "JAX",
+      "line": 35.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21914&location=NY&live=false&page=1",
+      "observed_at": "2026-10-13T03:00:41.927592+00:00",
+      "source_updated_at": "2026-10-13T02:44:36+00:00",
+      "kickoff": "2026-10-18T13:30:00+00:00",
+      "side": "under",
+      "odds": -108.0,
+      "mean": 33.00585787251298,
+      "interval80": [
+        21.619330213634434,
+        43.50049722780936
+      ],
+      "p_model": 0.6332655516626343,
+      "p_market": 0.5121511604358217,
+      "p_final": 0.572708356049228,
+      "p_push": 0.0,
+      "ev": 0.10299387090962431,
+      "robust_ev": 0.06447535239110569,
+      "market_only_ev": -0.01363480212360274,
+      "fair_odds": -134,
+      "bet_to": -125,
+      "independent_model_ev": 0.2196225439428513,
+      "expected_margin": -3.0,
+      "game_total": 42.5,
+      "implied_team_points": 19.75,
+      "game_market": {
+        "game_id": "2026_06_HOU_JAX",
+        "event_id": "401872996",
+        "home_team": "JAX",
+        "away_team": "HOU",
+        "kickoff": "2026-10-18T13:30:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 42.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 42.5,
+            "home_spread_odds": 100,
+            "away_spread_odds": -120,
+            "over_odds": -118,
+            "under_odds": -102,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-13T03:00:43.083651+00:00",
+        "total_observed_at": "2026-10-13T03:00:43.083651+00:00",
+        "observed_at": "2026-10-13T03:00:43.083651+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261018&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.09548792604707207,
+        "close": 0.645131401314318,
+        "trailing": 0.25938067263861003
+      },
+      "scenario_means": {
+        "underdog_7": 32.312021399209065,
+        "pickem": 33.52623522749092,
+        "favorite_7": 33.738014694433716
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5310077519379846,
+        "neutral_pass12": 0.5752351097178683,
+        "trail_pass12": 0.745142857142857
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5121511604358217,
+          "ev": -0.01363480212360274
+        },
+        "0.35": {
+          "p_win": 0.5545411973652061,
+          "ev": 0.0680052689996562
+        },
+        "0.5": {
+          "p_win": 0.572708356049228,
+          "ev": 0.10299387090962431
+        },
+        "0.65": {
+          "p_win": 0.5908755147332498,
+          "ev": 0.1379824728195923
+        },
+        "1.0": {
+          "p_win": 0.6332655516626343,
+          "ev": 0.2196225439428513
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "betrivers"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "C.J. Stroud",
+        "espn_id": "4432577",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jayden Higgins",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Tank Dell",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-09T21:09:00+00:00"
+          },
+          {
+            "player": "Braden Smith",
+            "position": "RT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-11T03:19:00+00:00"
+          },
+          {
+            "player": "Sam Hagen",
+            "position": "RT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-02T00:13:00+00:00"
+          },
+          {
+            "player": "David Montgomery",
+            "position": "RB",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-10-12T16:33:00+00:00"
+          },
+          {
+            "player": "British Brooks",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-03T00:35:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-13T03:00:42.738870+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/34/depthcharts",
+        "source_updated_at": "2026-10-13T02:55:42+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 5
+      },
+      "generated_at": "2026-10-13T03:00:43.178916+00:00",
+      "snapshot": "20261013T030043178916Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -12270,12 +12453,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 66,
+      "bets": 67,
       "settled": 64,
       "wins": 26,
       "losses": 38,
       "pushes": 0,
-      "unresolved": 2,
+      "unresolved": 3,
       "units": -14.054180643707546,
       "roi": -0.21959657255793041,
       "clv_bets": 25,
