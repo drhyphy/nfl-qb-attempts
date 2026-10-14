@@ -1,10 +1,10 @@
 {
-  "bets": 73,
+  "bets": 74,
   "settled": 65,
   "wins": 27,
   "losses": 38,
   "pushes": 0,
-  "unresolved": 8,
+  "unresolved": 9,
   "units": -13.073788486844801,
   "roi": -0.20113520748992003,
   "clv_bets": 25,
@@ -13634,6 +13634,183 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_06_ARI_LA",
+      "player_id": "00-0026498",
+      "player": "Matthew Stafford",
+      "team": "LA",
+      "opponent": "ARI",
+      "line": 34.5,
+      "book": "betmgm",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22062&location=NY&live=false&page=1",
+      "observed_at": "2026-10-14T18:30:20.148674+00:00",
+      "source_updated_at": "2026-10-14T18:29:33+00:00",
+      "kickoff": "2026-10-18T20:05:00+00:00",
+      "side": "over",
+      "odds": -105.0,
+      "mean": 38.21431611832879,
+      "interval80": [
+        26.82778845945024,
+        48.70895547362517
+      ],
+      "p_model": 0.651750012495291,
+      "p_market": 0.5111363089628501,
+      "p_final": 0.5814431607290705,
+      "p_push": 0.0,
+      "ev": 0.13519855189961383,
+      "robust_ev": 0.09615093285199483,
+      "market_only_ev": -0.002067206310626013,
+      "fair_odds": -139,
+      "bet_to": -129,
+      "independent_model_ev": 0.2724643101098537,
+      "expected_margin": 12.5,
+      "game_total": 51.5,
+      "implied_team_points": 32.0,
+      "game_market": {
+        "game_id": "2026_06_ARI_LA",
+        "event_id": "401873004",
+        "home_team": "LA",
+        "away_team": "ARI",
+        "kickoff": "2026-10-18T20:05:00+00:00",
+        "home_expected_margin": 12.5,
+        "total_line": 51.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 12.5,
+            "total_line": 51.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -115,
+            "under_odds": -105,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-14T18:30:23.422653+00:00",
+        "total_observed_at": "2026-10-14T18:30:23.422653+00:00",
+        "observed_at": "2026-10-14T18:30:23.422653+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261018&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.3422567672495819,
+        "close": 0.581458457229626,
+        "trailing": 0.0762847755207922
+      },
+      "scenario_means": {
+        "underdog_7": 36.43127270550239,
+        "pickem": 37.71510777748043,
+        "favorite_7": 37.994664448355515
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5268456375838926,
+        "neutral_pass12": 0.6165289256198347,
+        "trail_pass12": 0.7147982062780268
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5111363089628501,
+          "ev": -0.002067206310626013
+        },
+        "0.35": {
+          "p_win": 0.5603511051992044,
+          "ev": 0.09401882443654186
+        },
+        "0.5": {
+          "p_win": 0.5814431607290705,
+          "ev": 0.13519855189961383
+        },
+        "0.65": {
+          "p_win": 0.6025352162589367,
+          "ev": 0.1763782793626859
+        },
+        "1.0": {
+          "p_win": 0.651750012495291,
+          "ev": 0.2724643101098537
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "caesars",
+        "draftkings",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Matthew Stafford",
+        "espn_id": "12483",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Alaric Jackson",
+            "position": "LT",
+            "depth": 1,
+            "status": "Suspension",
+            "date": "2026-10-14T02:29:00+00:00"
+          },
+          {
+            "player": "Justin Dedich",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:42:00+00:00"
+          },
+          {
+            "player": "Keagen Trost",
+            "position": "RT",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:31:00+00:00"
+          },
+          {
+            "player": "Terrance Ferguson",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-10-07T17:52:00+00:00"
+          },
+          {
+            "player": "Ronnie Rivers",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-24T00:22:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-14T18:30:22.559308+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/14/depthcharts",
+        "source_updated_at": "2026-10-14T18:29:05+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 5
+      },
+      "generated_at": "2026-10-14T18:30:23.755444+00:00",
+      "snapshot": "20261014T183023755444Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -13642,12 +13819,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 73,
+      "bets": 74,
       "settled": 65,
       "wins": 27,
       "losses": 38,
       "pushes": 0,
-      "unresolved": 8,
+      "unresolved": 9,
       "units": -13.073788486844801,
       "roi": -0.20113520748992003,
       "clv_bets": 25,
