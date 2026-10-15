@@ -1,10 +1,10 @@
 {
-  "bets": 74,
+  "bets": 75,
   "settled": 65,
   "wins": 27,
   "losses": 38,
   "pushes": 0,
-  "unresolved": 9,
+  "unresolved": 10,
   "units": -13.073788486844801,
   "roi": -0.20113520748992003,
   "clv_bets": 25,
@@ -13811,6 +13811,237 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_06_CAR_PHI",
+      "player_id": "00-0039150",
+      "player": "Bryce Young",
+      "team": "CAR",
+      "opponent": "PHI",
+      "line": 34.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-10-15T18:12:38.713848+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-10-18T17:00:00+00:00",
+      "side": "under",
+      "odds": -112.0,
+      "mean": 31.873708952164037,
+      "interval80": [
+        20.487181293285484,
+        42.36834830746041
+      ],
+      "p_model": 0.6386493844634827,
+      "p_market": 0.5130632895644015,
+      "p_final": 0.5758563370139421,
+      "p_push": 0.0,
+      "ev": 0.09001378077639044,
+      "robust_ev": 0.05215663791924757,
+      "market_only_ev": -0.02884448761024,
+      "fair_odds": -136,
+      "bet_to": -126,
+      "independent_model_ev": 0.20887204916302093,
+      "expected_margin": 3.5,
+      "game_total": 38.5,
+      "implied_team_points": 21.0,
+      "game_market": {
+        "game_id": "2026_06_CAR_PHI",
+        "event_id": "401872998",
+        "home_team": "PHI",
+        "away_team": "CAR",
+        "kickoff": "2026-10-18T17:00:00+00:00",
+        "home_expected_margin": -3.5,
+        "total_line": 38.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.5,
+            "total_line": 38.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -112,
+            "under_odds": -108,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-15T18:12:42.808321+00:00",
+        "total_observed_at": "2026-10-15T18:12:42.808321+00:00",
+        "observed_at": "2026-10-15T18:12:42.808321+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261018&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.16240088800027902,
+        "close": 0.6846549067835189,
+        "trailing": 0.15294420521620197
+      },
+      "scenario_means": {
+        "underdog_7": 30.43246700745386,
+        "pickem": 31.7280544376283,
+        "favorite_7": 32.01936346669977
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.536723163841808,
+        "neutral_pass12": 0.5961844197138315,
+        "trail_pass12": 0.7550660792951541
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5130632895644015,
+          "ev": -0.02884448761024
+        },
+        "0.35": {
+          "p_win": 0.55701842277908,
+          "ev": 0.05435630026040139
+        },
+        "0.5": {
+          "p_win": 0.5758563370139421,
+          "ev": 0.09001378077639044
+        },
+        "0.65": {
+          "p_win": 0.5946942512488043,
+          "ev": 0.1256712612923795
+        },
+        "1.0": {
+          "p_win": 0.6386493844634827,
+          "ev": 0.20887204916302093
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 2,
+      "reference_books": [
+        "betrivers",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Bryce Young",
+        "espn_id": "4685720",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Chris Brazzell II",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-07-31T18:57:00+00:00"
+          },
+          {
+            "player": "Xavier Legette",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-03T20:15:00+00:00"
+          },
+          {
+            "player": "Ikem Ekwonu",
+            "position": "LT",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-10-06T01:04:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "LT",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Damien Lewis",
+            "position": "LG",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-10-06T18:21:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Monroe Freeling",
+            "position": "RT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-06T00:42:00+00:00"
+          },
+          {
+            "player": "Taylor Moton",
+            "position": "RT",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-10-15T01:17:00+00:00"
+          },
+          {
+            "player": "Tommy Tremble",
+            "position": "TE",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-14T23:28:00+00:00"
+          },
+          {
+            "player": "Darren Waller",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-14T20:17:00+00:00"
+          },
+          {
+            "player": "AJ Dillon",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-14T23:17:00+00:00"
+          },
+          {
+            "player": "Trevor Etienne",
+            "position": "RB",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-14T23:23:00+00:00"
+          },
+          {
+            "player": "Jonathon Brooks",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-23T13:10:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-15T18:12:42.246545+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+        "source_updated_at": "2026-10-15T18:08:34+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 4
+      },
+      "generated_at": "2026-10-15T18:12:42.974338+00:00",
+      "snapshot": "20261015T181242974338Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -13819,12 +14050,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 74,
+      "bets": 75,
       "settled": 65,
       "wins": 27,
       "losses": 38,
       "pushes": 0,
-      "unresolved": 9,
+      "unresolved": 10,
       "units": -13.073788486844801,
       "roi": -0.20113520748992003,
       "clv_bets": 25,
