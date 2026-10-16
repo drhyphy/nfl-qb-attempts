@@ -1,10 +1,10 @@
 {
-  "bets": 76,
+  "bets": 77,
   "settled": 66,
   "wins": 28,
   "losses": 38,
   "pushes": 0,
-  "unresolved": 10,
+  "unresolved": 11,
   "units": -12.15635729418425,
   "roi": -0.1841872317300644,
   "clv_bets": 25,
@@ -14220,6 +14220,218 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_06_BAL_CLE",
+      "player_id": "00-0033537",
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "opponent": "BAL",
+      "line": 31.5,
+      "book": "draftkings",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-10-16T17:57:26.584001+00:00",
+      "source_updated_at": "2026-10-16T17:39:46+00:00",
+      "kickoff": "2026-10-18T17:00:00+00:00",
+      "side": "under",
+      "odds": -108.0,
+      "mean": 28.391287537732765,
+      "interval80": [
+        17.004759878854212,
+        38.885926893029136
+      ],
+      "p_model": 0.6579788478192836,
+      "p_market": 0.5105917021962667,
+      "p_final": 0.5842852750077752,
+      "p_push": 0.0,
+      "ev": 0.1252901592742337,
+      "robust_ev": 0.08677164075571508,
+      "market_only_ev": -0.01663820317756043,
+      "fair_odds": -141,
+      "bet_to": -131,
+      "independent_model_ev": 0.26721852172602767,
+      "expected_margin": -3.0,
+      "game_total": 40.5,
+      "implied_team_points": 18.75,
+      "game_market": {
+        "game_id": "2026_06_BAL_CLE",
+        "event_id": "401872997",
+        "home_team": "CLE",
+        "away_team": "BAL",
+        "kickoff": "2026-10-18T17:00:00+00:00",
+        "home_expected_margin": -3.0,
+        "total_line": 40.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.0,
+            "total_line": 40.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -102,
+            "under_odds": -118,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-16T17:57:32.821318+00:00",
+        "total_observed_at": "2026-10-16T17:57:32.821318+00:00",
+        "observed_at": "2026-10-16T17:57:32.821318+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261018&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.09804294897585544,
+        "close": 0.6527448122604341,
+        "trailing": 0.24921223876371046
+      },
+      "scenario_means": {
+        "underdog_7": 27.798130459281676,
+        "pickem": 28.836155346571083,
+        "favorite_7": 28.886329178478842
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.48633879781420764,
+        "neutral_pass12": 0.5985267034990792,
+        "trail_pass12": 0.7136842105263157
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5105917021962667,
+          "ev": -0.01663820317756043
+        },
+        "0.35": {
+          "p_win": 0.5621772031643226,
+          "ev": 0.08271165053869545
+        },
+        "0.5": {
+          "p_win": 0.5842852750077752,
+          "ev": 0.1252901592742337
+        },
+        "0.65": {
+          "p_win": 0.6063933468512277,
+          "ev": 0.16786866800977185
+        },
+        "1.0": {
+          "p_win": 0.6579788478192836,
+          "ev": 0.26721852172602767
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "betmgm",
+        "caesars",
+        "fanatics",
+        "hardrock"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Deshaun Watson",
+        "espn_id": "3122840",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Denzel Boston",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-15T20:56:00+00:00"
+          },
+          {
+            "player": "KC Concepcion",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-15T21:09:00+00:00"
+          },
+          {
+            "player": "Tylan Wallace",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-15T23:51:00+00:00"
+          },
+          {
+            "player": "Teven Jenkins",
+            "position": "RG",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-13T17:10:00+00:00"
+          },
+          {
+            "player": "Tytus Howard",
+            "position": "RT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-15T01:20:00+00:00"
+          },
+          {
+            "player": "Carsen Ryan",
+            "position": "TE",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-10-15T23:44:00+00:00"
+          },
+          {
+            "player": "Joe Royer",
+            "position": "TE",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-08-30T21:32:00+00:00"
+          },
+          {
+            "player": "Quinshon Judkins",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-16T16:18:00+00:00"
+          },
+          {
+            "player": "Dylan Sampson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-15T21:12:00+00:00"
+          },
+          {
+            "player": "Raheim Sanders",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-10-13T21:00:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-16T17:57:31.933523+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
+        "source_updated_at": "2026-10-16T17:56:30+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 5
+      },
+      "generated_at": "2026-10-16T17:57:33.344354+00:00",
+      "snapshot": "20261016T175733344354Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -14228,12 +14440,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 76,
+      "bets": 77,
       "settled": 66,
       "wins": 28,
       "losses": 38,
       "pushes": 0,
-      "unresolved": 10,
+      "unresolved": 11,
       "units": -12.15635729418425,
       "roi": -0.1841872317300644,
       "clv_bets": 25,
