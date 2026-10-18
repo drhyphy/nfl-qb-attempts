@@ -15106,11 +15106,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 26,
+        "profit_1u": 0.8,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-18T20:30:35.667564+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-18T20:30:35.744975+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 26,
+            "profit_1u": 0.8,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-18T20:30:35.667564+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -15406,11 +15423,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 30,
+        "profit_1u": 0.8264462809917356,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-18T20:30:35.667564+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-18T20:30:35.744975+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 30,
+            "profit_1u": 0.8264462809917356,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-18T20:30:35.667564+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873000"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -80147,6 +80181,78 @@
       "status": "observed",
       "reason": "research_observation",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0031503",
+      "at": "2026-10-18T20:30:35.744975+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_06_NO_NYG",
+      "player_id": "00-0040743",
+      "at": "2026-10-18T20:30:35.744975+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-18T20:29:50.318539+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0037834",
+      "at": "2026-10-18T20:29:50.318539+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0033077",
+      "at": "2026-10-18T20:29:50.318539+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_DAL_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-18T20:29:50.318539+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-18T20:29:50.318539+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_06_WAS_SF",
+      "player_id": "00-0039910",
+      "at": "2026-10-18T20:29:50.318539+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -80459,32 +80565,34 @@
     "champion:2026-10-18T10:37:21.901517+00:00",
     "claude:2026-10-18T10:37:21.901517+00:00",
     "champion:2026-10-18T17:15:33.934183+00:00",
-    "claude:2026-10-18T17:15:33.934183+00:00"
+    "claude:2026-10-18T17:15:33.934183+00:00",
+    "champion:2026-10-18T20:29:50.318539+00:00",
+    "claude:2026-10-18T20:29:50.318539+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-10-18T17:16:14.437137+00:00",
+  "updated_at": "2026-10-18T20:30:35.744975+00:00",
   "performance": {
     "champion": {
       "bets": 25,
-      "settled": 21,
-      "wins": 11,
+      "settled": 22,
+      "wins": 12,
       "losses": 10,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 4,
-      "units": 0.22948301609653032,
-      "roi": 0.01092776267126335
+      "unresolved": 3,
+      "units": 1.0294830160965303,
+      "roi": 0.04679468254984229
     },
     "claude": {
       "bets": 28,
-      "settled": 24,
-      "wins": 18,
+      "settled": 25,
+      "wins": 19,
       "losses": 6,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 4,
-      "units": 9.836898477429786,
-      "roi": 0.40987076989290777
+      "unresolved": 3,
+      "units": 10.663344758421522,
+      "roi": 0.42653379033686084
     }
   }
 }
