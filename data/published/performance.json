@@ -1,10 +1,10 @@
 {
-  "bets": 81,
+  "bets": 83,
   "settled": 76,
   "wins": 33,
   "losses": 43,
   "pushes": 0,
-  "unresolved": 5,
+  "unresolved": 7,
   "units": -12.455324777617754,
   "roi": -0.16388585233707573,
   "clv_bets": 25,
@@ -15179,6 +15179,393 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_07_SF_ATL",
+      "player_id": "00-0037834",
+      "player": "Brock Purdy",
+      "team": "SF",
+      "opponent": "ATL",
+      "line": 30.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22073&location=NY&live=false&page=1",
+      "observed_at": "2026-10-21T05:54:53.309854+00:00",
+      "source_updated_at": "2026-10-21T05:34:54+00:00",
+      "kickoff": "2026-10-25T17:00:00+00:00",
+      "side": "over",
+      "odds": -106.0,
+      "mean": 33.288191359772426,
+      "interval80": [
+        21.901663700893874,
+        43.7828307150688
+      ],
+      "p_model": 0.6082697041415723,
+      "p_market": 0.5281576830249397,
+      "p_final": 0.568213693583256,
+      "p_push": 0.0,
+      "ev": 0.1042643479070825,
+      "robust_ev": 0.06539642337878049,
+      "market_only_ev": 0.02641964814280734,
+      "fair_odds": -132,
+      "bet_to": -123,
+      "independent_model_ev": 0.1821090476713576,
+      "expected_margin": 3.0,
+      "game_total": 50.5,
+      "implied_team_points": 26.75,
+      "game_market": {
+        "game_id": "2026_07_SF_ATL",
+        "event_id": "401873017",
+        "home_team": "ATL",
+        "away_team": "SF",
+        "kickoff": "2026-10-25T17:00:00+00:00",
+        "home_expected_margin": -3.0,
+        "total_line": 50.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.0,
+            "total_line": 50.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -115,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-21T05:54:55.985204+00:00",
+        "total_observed_at": "2026-10-21T05:54:55.985204+00:00",
+        "observed_at": "2026-10-21T05:54:55.985204+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261025&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1697783492722757,
+        "close": 0.6472403346843069,
+        "trailing": 0.18298131604341744
+      },
+      "scenario_means": {
+        "underdog_7": 32.30598493880655,
+        "pickem": 33.301692930385755,
+        "favorite_7": 33.270189265621326
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4806451612903226,
+        "neutral_pass12": 0.5912052117263844,
+        "trail_pass12": 0.7294964028776978
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5281576830249397,
+          "ev": 0.02641964814280734
+        },
+        "0.35": {
+          "p_win": 0.5561968904157611,
+          "ev": 0.08091093797780002
+        },
+        "0.5": {
+          "p_win": 0.568213693583256,
+          "ev": 0.1042643479070825
+        },
+        "0.65": {
+          "p_win": 0.5802304967507509,
+          "ev": 0.12761775783636498
+        },
+        "1.0": {
+          "p_win": 0.6082697041415723,
+          "ev": 0.1821090476713576
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Brock Purdy",
+        "espn_id": "4361741",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Mike Evans",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-20T14:09:00+00:00"
+          },
+          {
+            "player": "Demarcus Robinson",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-15T19:50:00+00:00"
+          },
+          {
+            "player": "Brandon Aiyuk",
+            "position": "WR1",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-09-21T15:27:00+00:00"
+          },
+          {
+            "player": "Deebo Samuel Sr.",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-10-20T16:04:00+00:00"
+          },
+          {
+            "player": "De'Zhaun Stribling",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-19T21:14:00+00:00"
+          },
+          {
+            "player": "Christian Kirk",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-19T20:47:00+00:00"
+          },
+          {
+            "player": "Ricky Pearsall",
+            "position": "WR3",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-13T15:11:00+00:00"
+          },
+          {
+            "player": "Austen Pleasants",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T00:01:00+00:00"
+          },
+          {
+            "player": "Nick Zakelj",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T00:10:00+00:00"
+          },
+          {
+            "player": "Jake Tonges",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-16T20:04:00+00:00"
+          },
+          {
+            "player": "Isaac Guerendo",
+            "position": "RB",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-08-30T21:10:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-21T05:54:55.493507+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/25/depthcharts",
+        "source_updated_at": "2026-10-21T05:51:59+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 6
+      },
+      "generated_at": "2026-10-21T05:54:56.296847+00:00",
+      "snapshot": "20261021T055456296847Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_07_LA_LV",
+      "player_id": "00-0026498",
+      "player": "Matthew Stafford",
+      "team": "LA",
+      "opponent": "LV",
+      "line": 34.5,
+      "book": "fanduel",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-10-21T05:54:51.329948+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-10-25T20:25:00+00:00",
+      "side": "over",
+      "odds": -114.0,
+      "mean": 38.02668316214212,
+      "interval80": [
+        26.640155503263568,
+        48.52132251743849
+      ],
+      "p_model": 0.6431095263266815,
+      "p_market": 0.5062344139650873,
+      "p_final": 0.5746719701458844,
+      "p_push": 0.0,
+      "ev": 0.0787701895720988,
+      "robust_ev": 0.041226329922976035,
+      "market_only_ev": -0.04970031062694147,
+      "fair_odds": -135,
+      "bet_to": -126,
+      "independent_model_ev": 0.20724068977113896,
+      "expected_margin": 4.5,
+      "game_total": 48.5,
+      "implied_team_points": 26.5,
+      "game_market": {
+        "game_id": "2026_07_LA_LV",
+        "event_id": "401873021",
+        "home_team": "LV",
+        "away_team": "LA",
+        "kickoff": "2026-10-25T20:25:00+00:00",
+        "home_expected_margin": -4.5,
+        "total_line": 48.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -4.5,
+            "total_line": 48.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-21T05:54:55.985204+00:00",
+        "total_observed_at": "2026-10-21T05:54:55.985204+00:00",
+        "observed_at": "2026-10-21T05:54:55.985204+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261025&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1885416695900884,
+        "close": 0.6530441476094935,
+        "trailing": 0.1584141828004181
+      },
+      "scenario_means": {
+        "underdog_7": 36.51337195414315,
+        "pickem": 37.83647029410308,
+        "favorite_7": 38.132356977719375
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5138339920948617,
+        "neutral_pass12": 0.6120556414219475,
+        "trail_pass12": 0.7147982062780268
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5062344139650873,
+          "ev": -0.04970031062694147
+        },
+        "0.35": {
+          "p_win": 0.5541407032916452,
+          "ev": 0.0402290395123866
+        },
+        "0.5": {
+          "p_win": 0.5746719701458844,
+          "ev": 0.0787701895720988
+        },
+        "0.65": {
+          "p_win": 0.5952032370001236,
+          "ev": 0.11731133963181084
+        },
+        "1.0": {
+          "p_win": 0.6431095263266815,
+          "ev": 0.20724068977113896
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "draftkings"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Matthew Stafford",
+        "espn_id": "12483",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Davante Adams",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-20T21:36:00+00:00"
+          },
+          {
+            "player": "Justin Dedich",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:42:00+00:00"
+          },
+          {
+            "player": "Terrance Ferguson",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-10-20T22:14:00+00:00"
+          },
+          {
+            "player": "Ronnie Rivers",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-24T00:22:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-21T05:54:55.201604+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/14/depthcharts",
+        "source_updated_at": "2026-10-21T05:51:59+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 6
+      },
+      "generated_at": "2026-10-21T05:54:56.296847+00:00",
+      "snapshot": "20261021T055456296847Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -15187,12 +15574,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 81,
+      "bets": 83,
       "settled": 76,
       "wins": 33,
       "losses": 43,
       "pushes": 0,
-      "unresolved": 5,
+      "unresolved": 7,
       "units": -12.455324777617754,
       "roi": -0.16388585233707573,
       "clv_bets": 25,
