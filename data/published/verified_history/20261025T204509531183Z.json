@@ -1,0 +1,739 @@
+{
+  "generated_at": "2026-10-25T20:45:09.531183+00:00",
+  "run_id": "20261025T204509531183Z",
+  "entry_policy": {
+    "version": "verified_early_entry_v1",
+    "final_role_confirmation_required": false,
+    "max_open_per_model": 5,
+    "cohort": "Paper signals only; no wagers executed",
+    "note": "Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged."
+  },
+  "verified_recommendations": [
+    {
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "player": "Dak Prescott",
+      "team": "DAL",
+      "opponent": "PHI",
+      "line": 37.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+      "observed_at": "2026-10-25T20:45:07.222268+00:00",
+      "source_updated_at": "2026-10-25T20:39:42+00:00",
+      "kickoff": "2026-10-27T00:15:00+00:00",
+      "side": "Under",
+      "odds": -116,
+      "mean": 36.00413284620511,
+      "interval80": [
+        24.617605187326557,
+        46.49877220150148
+      ],
+      "p_model": 0.5910514084075448,
+      "p_market": 0.5251136868657119,
+      "p_final": 0.5580825476366283,
+      "p_push": 0.0,
+      "ev": 0.039188192150963086,
+      "robust_ev": 0.0019468128406182617,
+      "market_only_ev": -0.022202100319019202,
+      "fair_odds": -126,
+      "bet_to": -118,
+      "independent_model_ev": 0.10057848462094543,
+      "expected_margin": 4.5,
+      "game_total": 43.5,
+      "implied_team_points": 24.0,
+      "game_market": {
+        "game_id": "2026_07_DAL_PHI",
+        "event_id": "401873009",
+        "home_team": "PHI",
+        "away_team": "DAL",
+        "kickoff": "2026-10-27T00:15:00+00:00",
+        "home_expected_margin": -4.5,
+        "total_line": 43.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -4.5,
+            "total_line": 43.5,
+            "home_spread_odds": -112,
+            "away_spread_odds": -108,
+            "over_odds": -118,
+            "under_odds": -102,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-25T20:45:09.013121+00:00",
+        "total_observed_at": "2026-10-25T20:45:09.013121+00:00",
+        "observed_at": "2026-10-25T20:45:09.013121+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261026&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1819418142391162,
+        "close": 0.6684494908635222,
+        "trailing": 0.1496086948973616
+      },
+      "scenario_means": {
+        "underdog_7": 34.409956349194566,
+        "pickem": 35.78200980174104,
+        "favorite_7": 36.127534537574036
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5220125786163522,
+        "neutral_pass12": 0.604133545310016,
+        "trail_pass12": 0.7412844036697247
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5251136868657119,
+          "ev": -0.022202100319019202
+        },
+        "0.35": {
+          "p_win": 0.5481918894053535,
+          "ev": 0.02077110440996849
+        },
+        "0.5": {
+          "p_win": 0.5580825476366283,
+          "ev": 0.039188192150963086
+        },
+        "0.65": {
+          "p_win": 0.5679732058679033,
+          "ev": 0.057605279891957906
+        },
+        "1.0": {
+          "p_win": 0.5910514084075448,
+          "ev": 0.10057848462094543
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 2,
+      "reference_books": [
+        "betmgm",
+        "caesars"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Dak Prescott",
+        "espn_id": "2577417",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "KaVontae Turpin",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-24T23:08:00+00:00"
+          },
+          {
+            "player": "Drew Shelton",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-25T00:36:00+00:00"
+          },
+          {
+            "player": "Matt Hennessy",
+            "position": "C",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Princeton Fant",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "DJ Rogers",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T22:59:00+00:00"
+          },
+          {
+            "player": "Malik Davis",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-12T18:20:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-25T20:45:08.517177+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/6/depthcharts",
+        "source_updated_at": "2026-10-25T20:40:09+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 6
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-25T20:45:08.281655+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-25T20:39:42+00:00",
+        "observed_at": "2026-10-25T20:45:07.222268+00:00",
+        "market_id": "35f84d553141307b1260b4e281f83655",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Dak Prescott",
+            "team": "DAL",
+            "opponent": "PHI",
+            "home_team": "PHI",
+            "away_team": "DAL",
+            "kickoff": "2026-10-27T00:15:00+00:00",
+            "game_id": "2026_07_DAL_PHI",
+            "event_id": "22079",
+            "provider_event_id": "22079",
+            "provider_player_id": "15600",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+            "observed_at": "2026-10-25T20:45:07.222268+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-e7f3c63832414702b13932373e3bf4a1/offers-22079-1.json",
+            "proof_sha256": "d26ef5cea327ce128d95fbb7f0dc64162e08851255394f9c1467c73b3abba6ad",
+            "market_id": "35f84d553141307b1260b4e281f83655",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 37.5,
+            "side": "over",
+            "odds": -109,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_71209581030880c22c99c37262a36de3",
+            "provider_selection_id": "71209581030880c22c99c37262a36de3",
+            "book_line_id": "12_71209581030880c22c99c37262a36de3",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118071?outcomes=0QA380447747%232328698015_13L88808Q11996377578Q20",
+            "source_updated_at": "2026-10-25T20:39:42+00:00",
+            "source_updated_at_raw": "2026-10-25 20:39:42",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Dak Prescott",
+            "team": "DAL",
+            "opponent": "PHI",
+            "home_team": "PHI",
+            "away_team": "DAL",
+            "kickoff": "2026-10-27T00:15:00+00:00",
+            "game_id": "2026_07_DAL_PHI",
+            "event_id": "22079",
+            "provider_event_id": "22079",
+            "provider_player_id": "15600",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+            "observed_at": "2026-10-25T20:45:07.222268+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-e7f3c63832414702b13932373e3bf4a1/offers-22079-1.json",
+            "proof_sha256": "d26ef5cea327ce128d95fbb7f0dc64162e08851255394f9c1467c73b3abba6ad",
+            "market_id": "35f84d553141307b1260b4e281f83655",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 37.5,
+            "side": "under",
+            "odds": -116,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_66c3406c0526e268d4e1874b8fbed707",
+            "provider_selection_id": "66c3406c0526e268d4e1874b8fbed707",
+            "book_line_id": "12_66c3406c0526e268d4e1874b8fbed707",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118071?outcomes=0QA380447747%232328698016_13L88808Q1-1266036599Q20",
+            "source_updated_at": "2026-10-25T20:39:42+00:00",
+            "source_updated_at_raw": "2026-10-25 20:39:42",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+          "observed_at": "2026-10-25T20:45:07.222268+00:00",
+          "source_updated_at": "2026-10-25T20:39:42+00:00",
+          "provider_event_id": "22079",
+          "event_id": "22079"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/6/depthcharts",
+        "observed_at": "2026-10-25T20:45:08.517177+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118071?outcomes=0QA380447747%232328698016_13L88808Q1-1266036599Q20",
+      "paper_entry_status": "existing_entry_no_additional_stake"
+    }
+  ],
+  "verified_performance": {
+    "champion": {
+      "bets": 30,
+      "settled": 27,
+      "wins": 14,
+      "losses": 13,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 3,
+      "units": -0.26939725952793125,
+      "roi": -0.009977676278812268
+    },
+    "claude": {
+      "bets": 33,
+      "settled": 30,
+      "wins": 22,
+      "losses": 8,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 3,
+      "units": 11.443666288743051,
+      "roi": 0.3814555429581017
+    }
+  },
+  "shadow": {
+    "version": "shadow-protocol-2026-09-14",
+    "generated_at": "2026-10-25T20:45:09.531183+00:00",
+    "status": "ok",
+    "shadow_only": true,
+    "promotion_allowed": false,
+    "predictions": [
+      {
+        "game_id": "2026_07_DAL_PHI",
+        "player_id": "00-0033077",
+        "player": "Dak Prescott",
+        "book": "betmgm",
+        "line": 37.5,
+        "kickoff": "2026-10-27T00:15:00+00:00",
+        "market_only_p_over": 0.4747887511044774,
+        "independent_p_over": 0.4089485915924552,
+        "calibrated_p_over": 0.4652336425053456,
+        "conditional_p_over": 0.41211290345692286,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 36.00413284620511,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-10-25T20:45:08.281655+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-10-25T20:39:32+00:00",
+          "observed_at": "2026-10-25T20:45:07.222268+00:00",
+          "market_id": "35f84d553141307b1260b4e281f83655",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Dak Prescott",
+              "team": "DAL",
+              "opponent": "PHI",
+              "home_team": "PHI",
+              "away_team": "DAL",
+              "kickoff": "2026-10-27T00:15:00+00:00",
+              "game_id": "2026_07_DAL_PHI",
+              "event_id": "22079",
+              "provider_event_id": "22079",
+              "provider_player_id": "15600",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+              "observed_at": "2026-10-25T20:45:07.222268+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-e7f3c63832414702b13932373e3bf4a1/offers-22079-1.json",
+              "proof_sha256": "d26ef5cea327ce128d95fbb7f0dc64162e08851255394f9c1467c73b3abba6ad",
+              "market_id": "35f84d553141307b1260b4e281f83655",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 37.5,
+              "side": "over",
+              "odds": -111,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_71209581030880c22c99c37262a36de3",
+              "provider_selection_id": "71209581030880c22c99c37262a36de3",
+              "book_line_id": "19_71209581030880c22c99c37262a36de3",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43685-4142530-6680026",
+              "source_updated_at": "2026-10-25T20:39:32+00:00",
+              "source_updated_at_raw": "2026-10-25 20:39:32",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Dak Prescott",
+              "team": "DAL",
+              "opponent": "PHI",
+              "home_team": "PHI",
+              "away_team": "DAL",
+              "kickoff": "2026-10-27T00:15:00+00:00",
+              "game_id": "2026_07_DAL_PHI",
+              "event_id": "22079",
+              "provider_event_id": "22079",
+              "provider_player_id": "15600",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+              "observed_at": "2026-10-25T20:45:07.222268+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-e7f3c63832414702b13932373e3bf4a1/offers-22079-1.json",
+              "proof_sha256": "d26ef5cea327ce128d95fbb7f0dc64162e08851255394f9c1467c73b3abba6ad",
+              "market_id": "35f84d553141307b1260b4e281f83655",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 37.5,
+              "side": "under",
+              "odds": -118,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_66c3406c0526e268d4e1874b8fbed707",
+              "provider_selection_id": "66c3406c0526e268d4e1874b8fbed707",
+              "book_line_id": "19_66c3406c0526e268d4e1874b8fbed707",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43685-4142530-6680027",
+              "source_updated_at": "2026-10-25T20:39:32+00:00",
+              "source_updated_at_raw": "2026-10-25 20:39:32",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+            "observed_at": "2026-10-25T20:45:07.222268+00:00",
+            "source_updated_at": "2026-10-25T20:39:32+00:00",
+            "provider_event_id": "22079",
+            "event_id": "22079"
+          }
+        },
+        "observed_at": "2026-10-25T20:45:07.222268+00:00",
+        "source_updated_at": "2026-10-25T20:39:32+00:00"
+      },
+      {
+        "game_id": "2026_07_DAL_PHI",
+        "player_id": "00-0038400",
+        "player": "Tanner McKee",
+        "book": "betmgm",
+        "line": 33.5,
+        "kickoff": "2026-10-27T00:15:00+00:00",
+        "market_only_p_over": 0.509218214297677,
+        "independent_p_over": 0.49395822788953037,
+        "calibrated_p_over": 0.5070035959183808,
+        "conditional_p_over": 0.5013619495017049,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 33.8900014861465,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-10-25T20:45:08.281655+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-10-25T20:39:32+00:00",
+          "observed_at": "2026-10-25T20:45:07.222268+00:00",
+          "market_id": "69ab0e0951277cf429b7f080715a71b9",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Tanner McKee",
+              "team": "PHI",
+              "opponent": "DAL",
+              "home_team": "PHI",
+              "away_team": "DAL",
+              "kickoff": "2026-10-27T00:15:00+00:00",
+              "game_id": "2026_07_DAL_PHI",
+              "event_id": "22079",
+              "provider_event_id": "22079",
+              "provider_player_id": "24740",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+              "observed_at": "2026-10-25T20:45:07.222268+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-e7f3c63832414702b13932373e3bf4a1/offers-22079-1.json",
+              "proof_sha256": "d26ef5cea327ce128d95fbb7f0dc64162e08851255394f9c1467c73b3abba6ad",
+              "market_id": "69ab0e0951277cf429b7f080715a71b9",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 33.5,
+              "side": "over",
+              "odds": -120,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_e75268e6a1d8fce4ea546885eabd2eff",
+              "provider_selection_id": "e75268e6a1d8fce4ea546885eabd2eff",
+              "book_line_id": "19_e75268e6a1d8fce4ea546885eabd2eff",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43685-4187886-6763440",
+              "source_updated_at": "2026-10-25T20:39:32+00:00",
+              "source_updated_at_raw": "2026-10-25 20:39:32",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Tanner McKee",
+              "team": "PHI",
+              "opponent": "DAL",
+              "home_team": "PHI",
+              "away_team": "DAL",
+              "kickoff": "2026-10-27T00:15:00+00:00",
+              "game_id": "2026_07_DAL_PHI",
+              "event_id": "22079",
+              "provider_event_id": "22079",
+              "provider_player_id": "24740",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+              "observed_at": "2026-10-25T20:45:07.222268+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-e7f3c63832414702b13932373e3bf4a1/offers-22079-1.json",
+              "proof_sha256": "d26ef5cea327ce128d95fbb7f0dc64162e08851255394f9c1467c73b3abba6ad",
+              "market_id": "69ab0e0951277cf429b7f080715a71b9",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 33.5,
+              "side": "under",
+              "odds": -110,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_48f97d18fe9d1bb5817e06549001cfd9",
+              "provider_selection_id": "48f97d18fe9d1bb5817e06549001cfd9",
+              "book_line_id": "19_48f97d18fe9d1bb5817e06549001cfd9",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:43685-4187886-6763441",
+              "source_updated_at": "2026-10-25T20:39:32+00:00",
+              "source_updated_at_raw": "2026-10-25 20:39:32",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22079&location=NY&live=false&page=1",
+            "observed_at": "2026-10-25T20:45:07.222268+00:00",
+            "source_updated_at": "2026-10-25T20:39:32+00:00",
+            "provider_event_id": "22079",
+            "event_id": "22079"
+          }
+        },
+        "observed_at": "2026-10-25T20:45:07.222268+00:00",
+        "source_updated_at": "2026-10-25T20:39:32+00:00"
+      },
+      {
+        "game_id": "2026_07_KC_SEA",
+        "player_id": "00-0033873",
+        "player": "Patrick Mahomes",
+        "book": "caesars",
+        "line": 32.5,
+        "kickoff": "2026-10-26T00:20:00+00:00",
+        "market_only_p_over": 0.48090600722179666,
+        "independent_p_over": 0.4119920316914104,
+        "calibrated_p_over": 0.47090480848426153,
+        "conditional_p_over": 0.4186474634913798,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 31.073773894334888,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-10-25T20:45:08.281655+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-10-25T20:45:05.967042+00:00",
+            "source_updated_at": null,
+            "provider_event_id": "nfl/35986830",
+            "event_id": "nfl/35986830"
+          }
+        },
+        "observed_at": "2026-10-25T20:45:05.967042+00:00",
+        "source_updated_at": null
+      },
+      {
+        "game_id": "2026_07_KC_SEA",
+        "player_id": "00-0034869",
+        "player": "Sam Darnold",
+        "book": "caesars",
+        "line": 31.5,
+        "kickoff": "2026-10-26T00:20:00+00:00",
+        "market_only_p_over": 0.5,
+        "independent_p_over": 0.3466717078252862,
+        "calibrated_p_over": 0.47774810246653066,
+        "conditional_p_over": 0.34692617291618544,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 28.508355930200512,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-10-25T20:45:08.281655+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-10-25T20:45:06.508363+00:00",
+            "source_updated_at": null,
+            "provider_event_id": "nfl/35986830",
+            "event_id": "nfl/35986830"
+          }
+        },
+        "observed_at": "2026-10-25T20:45:06.508363+00:00",
+        "source_updated_at": null
+      }
+    ],
+    "metrics": {
+      "fit_2022_2023": {
+        "market_only": {
+          "n": 485,
+          "brier": 0.2501658547828248,
+          "log_loss": 0.6934812310044569
+        },
+        "independent_model": {
+          "n": 485,
+          "brier": 0.2547173092689647,
+          "log_loss": 0.7030769690719386
+        },
+        "calibrated_blend": {
+          "n": 485,
+          "brier": 0.2500307921100574,
+          "log_loss": 0.6932177298383735
+        },
+        "conditional_distribution": {
+          "n": 485,
+          "brier": 0.2545453903673218,
+          "log_loss": 0.702699135779097
+        }
+      },
+      "validation_2024": {
+        "market_only": {
+          "n": 425,
+          "brier": 0.2491945254987633,
+          "log_loss": 0.6915349601900602
+        },
+        "independent_model": {
+          "n": 425,
+          "brier": 0.2558756223871351,
+          "log_loss": 0.7055782033030993
+        },
+        "calibrated_blend": {
+          "n": 425,
+          "brier": 0.2494428229483191,
+          "log_loss": 0.692037041748151
+        },
+        "conditional_distribution": {
+          "n": 425,
+          "brier": 0.2562233104932801,
+          "log_loss": 0.7063020896710854
+        }
+      },
+      "exposed_benchmark_2025": {
+        "market_only": {
+          "n": 1,
+          "brier": 0.260223901391598,
+          "log_loss": 0.7135977910312362
+        },
+        "independent_model": {
+          "n": 1,
+          "brier": 0.28450880673019097,
+          "log_loss": 0.7622693523271509
+        },
+        "calibrated_blend": {
+          "n": 1,
+          "brier": 0.26368107600337237,
+          "log_loss": 0.7205160276500313
+        },
+        "conditional_distribution": {
+          "n": 1,
+          "brier": 0.28982360855814177,
+          "log_loss": 0.7729540570398563
+        }
+      }
+    },
+    "diagnostics": {
+      "invalid_candidates": 0,
+      "training": {
+        "raw_offer_rows": 29632,
+        "timestamp_and_book_eligible_sides": 8101,
+        "paired_offers": 3916,
+        "exact_event_joined_offers": 3312,
+        "selected_qb_games": 911,
+        "excluded_unmatched_pairs": 604,
+        "join_policy": "exact_utc_scheduled_time_opponent_pair_normalized_player",
+        "quote_policy": "real_book_paired_sides_updated_strictly_before_kickoff_within_24h_other_book_same_line",
+        "raw_sides_by_season": {
+          "2022": 1736,
+          "2023": 7290,
+          "2024": 8748,
+          "2025": 11858
+        },
+        "eligible_sides_by_season": {
+          "2022": 986,
+          "2023": 3004,
+          "2024": 4088,
+          "2025": 23
+        },
+        "sources": {
+          "offers": {
+            "file": "offers.parquet",
+            "sha256": "9484249efb989c829552c06395cf9309772c912150b6d2e52345399fe9ee8d36"
+          },
+          "features": {
+            "file": "features.parquet",
+            "sha256": "10f7eb5e9b70e94887bce3e1309c8c8edb2ce1bd151de1ac6a43bb8330d0e938"
+          },
+          "oof": {
+            "file": "oof_predictions.csv",
+            "sha256": "6d7c019852c29bf318c5b7506bf578085cbd79d82311c830e16d35e9af3d8381"
+          }
+        },
+        "fit_rows": 485,
+        "validation_rows": 425,
+        "limitations": [
+          "Retrospectively downloaded closing-reference quotes; no verified executable morning archive",
+          "2024 and 2025 have previously been inspected; neither is an untouched holdout",
+          "Game spread/total features use historical closing references",
+          "Conditional tails include observed exits but do not estimate a separate exit hazard",
+          "One fixed kernel experiment; not a full within-game play-volume simulator"
+        ]
+      }
+    }
+  },
+  "claude": []
+}
