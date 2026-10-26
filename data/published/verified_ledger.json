@@ -17079,11 +17079,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 28,
+        "profit_1u": 0.9433962264150944,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-26T06:00:16.419005+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873022"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-26T06:00:16.423768+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 28,
+            "profit_1u": 0.9433962264150944,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-26T06:00:16.419005+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873022"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -19516,6 +19533,667 @@
       "model": "champion",
       "model_version": "attempts-v2.0",
       "entry_at": "2026-10-25T17:35:49.491048+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "player": "Bryce Young",
+      "team": "CAR",
+      "opponent": "GB",
+      "line": 35.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+      "observed_at": "2026-10-26T05:59:38.083390+00:00",
+      "source_updated_at": "2026-10-26T05:52:48+00:00",
+      "kickoff": "2026-10-30T00:15:00+00:00",
+      "side": "Under",
+      "odds": -107,
+      "mean": 34.09583667312078,
+      "interval80": [
+        22.709309014242226,
+        44.59047602841716
+      ],
+      "p_model": 0.5870414891517352,
+      "p_market": 0.4949766918501849,
+      "p_final": 0.54100909050096,
+      "p_push": 0.0,
+      "ev": 0.04662506293176383,
+      "robust_ev": 0.007933474146717023,
+      "market_only_ev": -0.042428269037492805,
+      "fair_odds": -118,
+      "bet_to": -110,
+      "independent_model_ev": 0.1356783949010203,
+      "expected_margin": -3.5,
+      "game_total": 47.5,
+      "implied_team_points": 22.0,
+      "game_market": {
+        "game_id": "2026_08_CAR_GB",
+        "event_id": "401873023",
+        "home_team": "GB",
+        "away_team": "CAR",
+        "kickoff": "2026-10-30T00:15:00+00:00",
+        "home_expected_margin": 3.5,
+        "total_line": 47.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.5,
+            "total_line": 47.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -112,
+            "under_odds": -108,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-26T05:59:39.651596+00:00",
+        "total_observed_at": "2026-10-26T05:59:39.651596+00:00",
+        "observed_at": "2026-10-26T05:59:39.651596+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261029&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.09390010756960479,
+        "close": 0.6228508544362441,
+        "trailing": 0.283249037994151
+      },
+      "scenario_means": {
+        "underdog_7": 33.49170594615538,
+        "pickem": 34.69996740008618,
+        "favorite_7": 34.8817001373035
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5217391304347826,
+        "neutral_pass12": 0.6,
+        "trail_pass12": 0.7534883720930232
+      },
+      "warnings": [
+        "role_not_confirmed_at_entry"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.4949766918501849,
+          "ev": -0.042428269037492805
+        },
+        "0.35": {
+          "p_win": 0.5271993709057274,
+          "ev": 0.019909063340986743
+        },
+        "0.5": {
+          "p_win": 0.54100909050096,
+          "ev": 0.04662506293176383
+        },
+        "0.65": {
+          "p_win": 0.5548188100961926,
+          "ev": 0.0733410625225408
+        },
+        "1.0": {
+          "p_win": 0.5870414891517352,
+          "ev": 0.1356783949010203
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 3,
+      "reference_books": [
+        "betrivers",
+        "caesars",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Bryce Young",
+        "espn_id": "4685720",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Chris Brazzell II",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-07-31T18:57:00+00:00"
+          },
+          {
+            "player": "Xavier Legette",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-03T20:15:00+00:00"
+          },
+          {
+            "player": "Stone Forsythe",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "Ikem Ekwonu",
+            "position": "LT",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-10-06T01:04:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Sam Hecht",
+            "position": "C",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Stone Forsythe",
+            "position": "RT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "Taylor Moton",
+            "position": "RT",
+            "depth": 3,
+            "status": "Doubtful",
+            "date": "2026-10-25T22:30:00+00:00"
+          },
+          {
+            "player": "Ja'Tavion Sanders",
+            "position": "TE",
+            "depth": 5,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "AJ Dillon",
+            "position": "RB",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-10-25T15:47:00+00:00"
+          },
+          {
+            "player": "Jonathon Brooks",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-10-15T18:28:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-26T05:59:39.209944+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+        "source_updated_at": "2026-10-26T05:57:27+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 6
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-26T05:59:38.874936+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-26T05:52:48+00:00",
+        "observed_at": "2026-10-26T05:59:38.083390+00:00",
+        "market_id": "ea72eb4717c2953e655e3d4df6b0f2ee",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Bryce Young",
+            "team": "CAR",
+            "opponent": "GB",
+            "home_team": "GB",
+            "away_team": "CAR",
+            "kickoff": "2026-10-30T00:15:00+00:00",
+            "game_id": "2026_08_CAR_GB",
+            "event_id": "22127",
+            "provider_event_id": "22127",
+            "provider_player_id": "22900",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+            "observed_at": "2026-10-26T05:59:38.083390+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-22d379e1e76d4062a7b6a008e8cf76c1/offers-22127-1.json",
+            "proof_sha256": "aa410f15b7e8a3747dc845f349af22a1b265886a6236304e59fbad2e453f7b0f",
+            "market_id": "ea72eb4717c2953e655e3d4df6b0f2ee",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "over",
+            "odds": -119,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_da2e70d7cc98da8a542dc5d1244b8e12",
+            "provider_selection_id": "da2e70d7cc98da8a542dc5d1244b8e12",
+            "book_line_id": "12_da2e70d7cc98da8a542dc5d1244b8e12",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118182?outcomes=0QA382675344%232336144919_13L88808Q1-1083900177Q20",
+            "source_updated_at": "2026-10-26T05:52:48+00:00",
+            "source_updated_at_raw": "2026-10-26 05:52:48",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Bryce Young",
+            "team": "CAR",
+            "opponent": "GB",
+            "home_team": "GB",
+            "away_team": "CAR",
+            "kickoff": "2026-10-30T00:15:00+00:00",
+            "game_id": "2026_08_CAR_GB",
+            "event_id": "22127",
+            "provider_event_id": "22127",
+            "provider_player_id": "22900",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+            "observed_at": "2026-10-26T05:59:38.083390+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-22d379e1e76d4062a7b6a008e8cf76c1/offers-22127-1.json",
+            "proof_sha256": "aa410f15b7e8a3747dc845f349af22a1b265886a6236304e59fbad2e453f7b0f",
+            "market_id": "ea72eb4717c2953e655e3d4df6b0f2ee",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "under",
+            "odds": -107,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_0731fff67247eb1e6f1288ede542f046",
+            "provider_selection_id": "0731fff67247eb1e6f1288ede542f046",
+            "book_line_id": "12_0731fff67247eb1e6f1288ede542f046",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118182?outcomes=0QA382675344%232336144920_13L88808Q11389438358Q20",
+            "source_updated_at": "2026-10-26T05:52:48+00:00",
+            "source_updated_at_raw": "2026-10-26 05:52:48",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+          "observed_at": "2026-10-26T05:59:38.083390+00:00",
+          "source_updated_at": "2026-10-26T05:52:48+00:00",
+          "provider_event_id": "22127",
+          "event_id": "22127"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+        "observed_at": "2026-10-26T05:59:39.209944+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118182?outcomes=0QA382675344%232336144920_13L88808Q11389438358Q20",
+      "paper_entry_status": "new_entry",
+      "entry_id": "6ed67d59163f61ab894cd7cf",
+      "model": "champion",
+      "model_version": "attempts-v2.0",
+      "entry_at": "2026-10-26T05:59:39.973927+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "player": "Bryce Young",
+      "team": "CAR",
+      "opponent": "GB",
+      "line": 35.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+      "observed_at": "2026-10-26T05:59:38.083390+00:00",
+      "source_updated_at": "2026-10-26T05:52:48+00:00",
+      "season": 2026,
+      "week": 8,
+      "kickoff": "2026-10-30T00:15:00+00:00",
+      "side": "Under",
+      "odds": -107,
+      "mean": 33.50010324229319,
+      "mu_model": 33.50010324229319,
+      "mu_market": 36.147444906187154,
+      "mu_final": 35.220875323824266,
+      "mean_market": 36.147444906187154,
+      "mean_final": 35.220875323824266,
+      "scale": 1.0,
+      "p_model": 0.612589590837142,
+      "p_market": 0.49196023228418967,
+      "p_final": 0.5354051216613351,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.03578374003641471,
+      "robust_ev": null,
+      "independent_model_ev": 0.18510322713353644,
+      "market_only_ev": -0.04826384969320324,
+      "fair_odds": -115,
+      "bet_to": -110,
+      "bet_to_target": 0.02,
+      "interval80": [
+        22.539629858375804,
+        43.785583371077365
+      ],
+      "expected_margin": -3.5,
+      "game_total": 47.5,
+      "implied_team_points": 22.0,
+      "game_market": {
+        "game_id": "2026_08_CAR_GB",
+        "event_id": "401873023",
+        "home_team": "GB",
+        "away_team": "CAR",
+        "kickoff": "2026-10-30T00:15:00+00:00",
+        "home_expected_margin": 3.5,
+        "total_line": 47.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.5,
+            "total_line": 47.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -112,
+            "under_odds": -108,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-10-26T05:59:39.651596+00:00",
+        "total_observed_at": "2026-10-26T05:59:39.651596+00:00",
+        "observed_at": "2026-10-26T05:59:39.651596+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261029&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 4,
+      "other_books": 3,
+      "reference_books": [
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanduel"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [
+        "role_not_confirmed_at_entry"
+      ],
+      "starting_status": {
+        "starter": "Bryce Young",
+        "espn_id": "4685720",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Chris Brazzell II",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-07-31T18:57:00+00:00"
+          },
+          {
+            "player": "Xavier Legette",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-03T20:15:00+00:00"
+          },
+          {
+            "player": "Stone Forsythe",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "Ikem Ekwonu",
+            "position": "LT",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-10-06T01:04:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Sam Hecht",
+            "position": "C",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:48:00+00:00"
+          },
+          {
+            "player": "Stone Forsythe",
+            "position": "RT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "Taylor Moton",
+            "position": "RT",
+            "depth": 3,
+            "status": "Doubtful",
+            "date": "2026-10-25T22:30:00+00:00"
+          },
+          {
+            "player": "Ja'Tavion Sanders",
+            "position": "TE",
+            "depth": 5,
+            "status": "Out",
+            "date": "2026-10-25T15:37:00+00:00"
+          },
+          {
+            "player": "AJ Dillon",
+            "position": "RB",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-10-25T15:47:00+00:00"
+          },
+          {
+            "player": "Jonathon Brooks",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-10-15T18:28:00+00:00"
+          }
+        ],
+        "observed_at": "2026-10-26T05:59:39.209944+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+        "source_updated_at": "2026-10-26T05:57:27+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 40
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-10-26T05:59:38.874936+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-10-26T05:52:48+00:00",
+        "observed_at": "2026-10-26T05:59:38.083390+00:00",
+        "market_id": "ea72eb4717c2953e655e3d4df6b0f2ee",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Bryce Young",
+            "team": "CAR",
+            "opponent": "GB",
+            "home_team": "GB",
+            "away_team": "CAR",
+            "kickoff": "2026-10-30T00:15:00+00:00",
+            "game_id": "2026_08_CAR_GB",
+            "event_id": "22127",
+            "provider_event_id": "22127",
+            "provider_player_id": "22900",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+            "observed_at": "2026-10-26T05:59:38.083390+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-22d379e1e76d4062a7b6a008e8cf76c1/offers-22127-1.json",
+            "proof_sha256": "aa410f15b7e8a3747dc845f349af22a1b265886a6236304e59fbad2e453f7b0f",
+            "market_id": "ea72eb4717c2953e655e3d4df6b0f2ee",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "over",
+            "odds": -119,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_da2e70d7cc98da8a542dc5d1244b8e12",
+            "provider_selection_id": "da2e70d7cc98da8a542dc5d1244b8e12",
+            "book_line_id": "12_da2e70d7cc98da8a542dc5d1244b8e12",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118182?outcomes=0QA382675344%232336144919_13L88808Q1-1083900177Q20",
+            "source_updated_at": "2026-10-26T05:52:48+00:00",
+            "source_updated_at_raw": "2026-10-26 05:52:48",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Bryce Young",
+            "team": "CAR",
+            "opponent": "GB",
+            "home_team": "GB",
+            "away_team": "CAR",
+            "kickoff": "2026-10-30T00:15:00+00:00",
+            "game_id": "2026_08_CAR_GB",
+            "event_id": "22127",
+            "provider_event_id": "22127",
+            "provider_player_id": "22900",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+            "observed_at": "2026-10-26T05:59:38.083390+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-22d379e1e76d4062a7b6a008e8cf76c1/offers-22127-1.json",
+            "proof_sha256": "aa410f15b7e8a3747dc845f349af22a1b265886a6236304e59fbad2e453f7b0f",
+            "market_id": "ea72eb4717c2953e655e3d4df6b0f2ee",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "under",
+            "odds": -107,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_0731fff67247eb1e6f1288ede542f046",
+            "provider_selection_id": "0731fff67247eb1e6f1288ede542f046",
+            "book_line_id": "12_0731fff67247eb1e6f1288ede542f046",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118182?outcomes=0QA382675344%232336144920_13L88808Q11389438358Q20",
+            "source_updated_at": "2026-10-26T05:52:48+00:00",
+            "source_updated_at_raw": "2026-10-26 05:52:48",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22127&location=NY&live=false&page=1",
+          "observed_at": "2026-10-26T05:59:38.083390+00:00",
+          "source_updated_at": "2026-10-26T05:52:48+00:00",
+          "provider_event_id": "22127",
+          "event_id": "22127"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+        "observed_at": "2026-10-26T05:59:39.209944+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118182?outcomes=0QA382675344%232336144920_13L88808Q11389438358Q20",
+      "paper_entry_status": "new_entry",
+      "entry_id": "4e1074aa6e455e661d4f1059",
+      "model": "claude",
+      "entry_at": "2026-10-26T05:59:39.973927+00:00",
       "cohort": "verified_paper_entry_v1",
       "actual_wager": false,
       "stake_units": 1.0,
@@ -95141,6 +95819,123 @@
       "status": "observed",
       "reason": "existing_game_exposure",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_KC_SEA",
+      "player_id": "00-0034869",
+      "at": "2026-10-26T06:00:16.423768+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0038400",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0038400",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-26T05:59:39.973927+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -95517,30 +96312,32 @@
     "champion:2026-10-25T20:45:09.531183+00:00",
     "claude:2026-10-25T20:45:09.531183+00:00",
     "champion:2026-10-26T00:06:27.143936+00:00",
-    "claude:2026-10-26T00:06:27.143936+00:00"
+    "claude:2026-10-26T00:06:27.143936+00:00",
+    "champion:2026-10-26T05:59:39.973927+00:00",
+    "claude:2026-10-26T05:59:39.973927+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-10-26T00:07:20.627041+00:00",
+  "updated_at": "2026-10-26T06:00:16.423768+00:00",
   "performance": {
     "champion": {
-      "bets": 30,
-      "settled": 27,
-      "wins": 14,
+      "bets": 31,
+      "settled": 28,
+      "wins": 15,
       "losses": 13,
       "pushes": 0,
       "voids": 0,
       "unresolved": 3,
-      "units": -0.26939725952793125,
-      "roi": -0.009977676278812268
+      "units": 0.6739989668871632,
+      "roi": 0.02407139167454154
     },
     "claude": {
-      "bets": 33,
+      "bets": 34,
       "settled": 31,
       "wins": 22,
       "losses": 9,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 2,
+      "unresolved": 3,
       "units": 10.443666288743051,
       "roi": 0.3368924609271952
     }
