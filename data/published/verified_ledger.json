@@ -19205,11 +19205,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "loss",
+        "actual": 48,
+        "profit_1u": -1.0,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-26T00:07:20.443369+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873019"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-26T00:07:20.627041+00:00",
+          "grade": {
+            "result": "loss",
+            "actual": 48,
+            "profit_1u": -1.0,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-26T00:07:20.443369+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873019"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -95007,6 +95024,123 @@
       "status": "observed",
       "reason": "existing_game_exposure",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DEN_ARI",
+      "player_id": "00-0033119",
+      "at": "2026-10-26T00:07:20.627041+00:00",
+      "status": "loss",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_KC_SEA",
+      "player_id": "00-0034869",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_KC_SEA",
+      "player_id": "00-0033873",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0038400",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_KC_SEA",
+      "player_id": "00-0034869",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0038400",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_KC_SEA",
+      "player_id": "00-0033873",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-26T00:06:27.143936+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -95381,10 +95515,12 @@
     "champion:2026-10-25T17:35:49.491048+00:00",
     "claude:2026-10-25T17:35:49.491048+00:00",
     "champion:2026-10-25T20:45:09.531183+00:00",
-    "claude:2026-10-25T20:45:09.531183+00:00"
+    "claude:2026-10-25T20:45:09.531183+00:00",
+    "champion:2026-10-26T00:06:27.143936+00:00",
+    "claude:2026-10-26T00:06:27.143936+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-10-25T20:45:52.968872+00:00",
+  "updated_at": "2026-10-26T00:07:20.627041+00:00",
   "performance": {
     "champion": {
       "bets": 30,
@@ -95399,14 +95535,14 @@
     },
     "claude": {
       "bets": 33,
-      "settled": 30,
+      "settled": 31,
       "wins": 22,
-      "losses": 8,
+      "losses": 9,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
-      "units": 11.443666288743051,
-      "roi": 0.3814555429581017
+      "unresolved": 2,
+      "units": 10.443666288743051,
+      "roi": 0.3368924609271952
     }
   }
 }
