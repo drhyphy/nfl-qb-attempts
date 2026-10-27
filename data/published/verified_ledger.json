@@ -17715,11 +17715,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 27,
+        "profit_1u": 0.8928571428571429,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-27T09:47:32.722482+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873009"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-27T09:47:32.729204+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 27,
+            "profit_1u": 0.8928571428571429,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-27T09:47:32.722482+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873009"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -19537,11 +19554,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 27,
+        "profit_1u": 0.8620689655172413,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-10-27T09:47:32.722482+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873009"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-10-27T09:47:32.729204+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 27,
+            "profit_1u": 0.8620689655172413,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-10-27T09:47:32.722482+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873009"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -96224,6 +96258,132 @@
       "status": "observed",
       "reason": "existing_game_exposure",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-27T09:47:32.729204+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_07_DAL_PHI",
+      "player_id": "00-0033077",
+      "at": "2026-10-27T09:47:32.729204+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_MIN_DET",
+      "player_id": "00-0035228",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_MIN_DET",
+      "player_id": "00-0033106",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_MIN_DET",
+      "player_id": "00-0035228",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0036264",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_MIN_DET",
+      "player_id": "00-0033106",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CAR_GB",
+      "player_id": "00-0039150",
+      "at": "2026-10-27T09:46:40.240053+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -96608,32 +96768,34 @@
     "champion:2026-10-26T19:52:39.502470+00:00",
     "claude:2026-10-26T19:52:39.502470+00:00",
     "champion:2026-10-27T01:24:53.044864+00:00",
-    "claude:2026-10-27T01:24:53.044864+00:00"
+    "claude:2026-10-27T01:24:53.044864+00:00",
+    "champion:2026-10-27T09:46:40.240053+00:00",
+    "claude:2026-10-27T09:46:40.240053+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-10-27T01:25:45.627494+00:00",
+  "updated_at": "2026-10-27T09:47:32.729204+00:00",
   "performance": {
     "champion": {
       "bets": 31,
-      "settled": 28,
-      "wins": 15,
+      "settled": 29,
+      "wins": 16,
       "losses": 13,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
-      "units": 0.6739989668871632,
-      "roi": 0.02407139167454154
+      "unresolved": 2,
+      "units": 1.5360679324044044,
+      "roi": 0.05296785973808291
     },
     "claude": {
       "bets": 34,
-      "settled": 31,
-      "wins": 22,
+      "settled": 32,
+      "wins": 23,
       "losses": 9,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
-      "units": 10.443666288743051,
-      "roi": 0.3368924609271952
+      "unresolved": 2,
+      "units": 11.336523431600193,
+      "roi": 0.35426635723750605
     }
   }
 }
