@@ -1,10 +1,10 @@
 {
-  "bets": 101,
+  "bets": 102,
   "settled": 91,
   "wins": 40,
   "losses": 51,
   "pushes": 0,
-  "unresolved": 10,
+  "unresolved": 11,
   "units": -14.231308668649328,
   "roi": -0.15638800734779482,
   "clv_bets": 28,
@@ -19046,6 +19046,197 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_08_LAC_LA",
+      "player_id": "00-0026498",
+      "player": "Matthew Stafford",
+      "team": "LA",
+      "opponent": "LAC",
+      "line": 33.5,
+      "book": "fanatics",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-11-01T00:58:33.192226+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-11-01T21:05:00+00:00",
+      "side": "over",
+      "odds": -105.0,
+      "mean": 36.68610170916012,
+      "interval80": [
+        25.299574050281567,
+        47.1807410644565
+      ],
+      "p_model": 0.6271926777710999,
+      "p_market": 0.5,
+      "p_final": 0.5635963388855499,
+      "p_push": 0.0,
+      "ev": 0.10035475687178796,
+      "robust_ev": 0.061307137824168856,
+      "market_only_ev": -0.023809523809523836,
+      "fair_odds": -129,
+      "bet_to": -120,
+      "independent_model_ev": 0.22451903755309977,
+      "expected_margin": 6.5,
+      "game_total": 45.5,
+      "implied_team_points": 26.0,
+      "game_market": {
+        "game_id": "2026_08_LAC_LA",
+        "event_id": "401873032",
+        "home_team": "LA",
+        "away_team": "LAC",
+        "kickoff": "2026-11-01T21:05:00+00:00",
+        "home_expected_margin": 6.5,
+        "total_line": 45.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 6.5,
+            "total_line": 45.5,
+            "home_spread_odds": -112,
+            "away_spread_odds": -108,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-01T00:58:38.583786+00:00",
+        "total_observed_at": "2026-11-01T00:58:38.583786+00:00",
+        "observed_at": "2026-11-01T00:58:38.583786+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261101&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.22162291951045252,
+        "close": 0.6523722689896634,
+        "trailing": 0.12600481149988413
+      },
+      "scenario_means": {
+        "underdog_7": 35.188612819695344,
+        "pickem": 36.46966171331721,
+        "favorite_7": 36.70275093960957
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4915254237288136,
+        "neutral_pass12": 0.614516129032258,
+        "trail_pass12": 0.7147982062780268
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": -0.023809523809523836
+        },
+        "0.35": {
+          "p_win": 0.544517437219885,
+          "ev": 0.06310547266739452
+        },
+        "0.5": {
+          "p_win": 0.5635963388855499,
+          "ev": 0.10035475687178796
+        },
+        "0.65": {
+          "p_win": 0.582675240551215,
+          "ev": 0.13760404107618163
+        },
+        "1.0": {
+          "p_win": 0.6271926777710999,
+          "ev": 0.22451903755309977
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "caesars",
+        "draftkings"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Matthew Stafford",
+        "espn_id": "12483",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Davante Adams",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-28T20:59:00+00:00"
+          },
+          {
+            "player": "Jordan Whittington",
+            "position": "WR3",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-30T21:38:00+00:00"
+          },
+          {
+            "player": "Coleman Shelton",
+            "position": "C",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-10-28T23:32:00+00:00"
+          },
+          {
+            "player": "Justin Dedich",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:42:00+00:00"
+          },
+          {
+            "player": "Colby Parkinson",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-30T18:39:00+00:00"
+          },
+          {
+            "player": "Terrance Ferguson",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-10-28T21:12:00+00:00"
+          },
+          {
+            "player": "Ronnie Rivers",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-24T00:22:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-01T00:58:37.871769+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/14/depthcharts",
+        "source_updated_at": "2026-11-01T00:54:12+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 7
+      },
+      "generated_at": "2026-11-01T00:58:39.133674+00:00",
+      "snapshot": "20261101T005839133674Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -19054,12 +19245,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 101,
+      "bets": 102,
       "settled": 91,
       "wins": 40,
       "losses": 51,
       "pushes": 0,
-      "unresolved": 10,
+      "unresolved": 11,
       "units": -14.231308668649328,
       "roi": -0.15638800734779482,
       "clv_bets": 28,
