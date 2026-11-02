@@ -1,0 +1,201 @@
+{
+  "generated_at": "2026-11-02T01:28:02.492522+00:00",
+  "run_id": "20261102T012802492522Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0034869",
+      "player": "Sam Darnold",
+      "team": "SEA",
+      "opponent": "CHI",
+      "line": 30.5,
+      "book": "betrivers",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+      "observed_at": "2026-11-02T01:28:00.374709+00:00",
+      "source_updated_at": "2026-11-02T01:22:07+00:00",
+      "kickoff": "2026-11-03T01:15:00+00:00",
+      "side": "Under",
+      "odds": -105,
+      "mean": 28.798526741262577,
+      "interval80": [
+        17.411999082384025,
+        39.29316609655895
+      ],
+      "p_model": 0.599968390017739,
+      "p_market": 0.5,
+      "p_final": 0.5499841950088695,
+      "p_push": 0.0,
+      "ev": 0.07377866644588804,
+      "robust_ev": 0.034731047398269044,
+      "market_only_ev": -0.023809523809523836,
+      "fair_odds": -122,
+      "bet_to": -114,
+      "independent_model_ev": 0.17136685670130003,
+      "expected_margin": 3.0,
+      "game_total": 46.5,
+      "implied_team_points": 24.75,
+      "game_market": {
+        "game_id": "2026_08_CHI_SEA",
+        "event_id": "401873036",
+        "home_team": "SEA",
+        "away_team": "CHI",
+        "kickoff": "2026-11-03T01:15:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 46.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 46.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "total_observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261102&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.17104720075961535,
+        "close": 0.6577717362506281,
+        "trailing": 0.1711810629897565
+      },
+      "scenario_means": {
+        "underdog_7": 27.67883492621001,
+        "pickem": 28.77700709694566,
+        "favorite_7": 28.827219600351807
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.42857142857142855,
+        "neutral_pass12": 0.5700325732899023,
+        "trail_pass12": 0.7212669683257917
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": -0.023809523809523836
+        },
+        "0.35": {
+          "p_win": 0.5349889365062086,
+          "ev": 0.04450220936926441
+        },
+        "0.5": {
+          "p_win": 0.5499841950088695,
+          "ev": 0.07377866644588804
+        },
+        "0.65": {
+          "p_win": 0.5649794535115304,
+          "ev": 0.10305512352251178
+        },
+        "1.0": {
+          "p_win": 0.599968390017739,
+          "ev": 0.17136685670130003
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "caesars",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Sam Darnold",
+        "espn_id": "3912547",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Rashid Shaheed",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-10-31T20:53:00+00:00"
+          },
+          {
+            "player": "Jake Bobo",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-22T17:45:00+00:00"
+          },
+          {
+            "player": "Charles Cross",
+            "position": "LT",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-01T03:18:00+00:00"
+          },
+          {
+            "player": "Mason Richman",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-26T00:13:00+00:00"
+          },
+          {
+            "player": "Anthony Bradford",
+            "position": "RG",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-29T23:22:00+00:00"
+          },
+          {
+            "player": "Elijah Arroyo",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-23T21:48:00+00:00"
+          },
+          {
+            "player": "Jadarian Price",
+            "position": "RB",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-31T20:50:00+00:00"
+          },
+          {
+            "player": "Velus Jones Jr.",
+            "position": "RB",
+            "depth": 5,
+            "status": "Out",
+            "date": "2026-11-01T01:38:00+00:00"
+          },
+          {
+            "player": "Robbie Ouzts",
+            "position": "FB",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-02T01:28:01.508182+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/26/depthcharts",
+        "source_updated_at": "2026-11-02T01:23:08+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      }
+    }
+  ]
+}

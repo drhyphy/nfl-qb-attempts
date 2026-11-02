@@ -1,0 +1,950 @@
+{
+  "generated_at": "2026-11-02T01:28:02.492522+00:00",
+  "run_id": "20261102T012802492522Z",
+  "entry_policy": {
+    "version": "verified_early_entry_v1",
+    "final_role_confirmation_required": false,
+    "max_open_per_model": 5,
+    "cohort": "Paper signals only; no wagers executed",
+    "note": "Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged."
+  },
+  "verified_recommendations": [
+    {
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0034869",
+      "player": "Sam Darnold",
+      "team": "SEA",
+      "opponent": "CHI",
+      "line": 30.5,
+      "book": "betrivers",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+      "observed_at": "2026-11-02T01:28:00.374709+00:00",
+      "source_updated_at": "2026-11-02T01:22:07+00:00",
+      "kickoff": "2026-11-03T01:15:00+00:00",
+      "side": "Under",
+      "odds": -105,
+      "mean": 28.798526741262577,
+      "interval80": [
+        17.411999082384025,
+        39.29316609655895
+      ],
+      "p_model": 0.599968390017739,
+      "p_market": 0.5,
+      "p_final": 0.5499841950088695,
+      "p_push": 0.0,
+      "ev": 0.07377866644588804,
+      "robust_ev": 0.034731047398269044,
+      "market_only_ev": -0.023809523809523836,
+      "fair_odds": -122,
+      "bet_to": -114,
+      "independent_model_ev": 0.17136685670130003,
+      "expected_margin": 3.0,
+      "game_total": 46.5,
+      "implied_team_points": 24.75,
+      "game_market": {
+        "game_id": "2026_08_CHI_SEA",
+        "event_id": "401873036",
+        "home_team": "SEA",
+        "away_team": "CHI",
+        "kickoff": "2026-11-03T01:15:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 46.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 46.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "total_observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261102&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.17104720075961535,
+        "close": 0.6577717362506281,
+        "trailing": 0.1711810629897565
+      },
+      "scenario_means": {
+        "underdog_7": 27.67883492621001,
+        "pickem": 28.77700709694566,
+        "favorite_7": 28.827219600351807
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.42857142857142855,
+        "neutral_pass12": 0.5700325732899023,
+        "trail_pass12": 0.7212669683257917
+      },
+      "warnings": [
+        "Market consensus includes unverified comparison-feed prices"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": -0.023809523809523836
+        },
+        "0.35": {
+          "p_win": 0.5349889365062086,
+          "ev": 0.04450220936926441
+        },
+        "0.5": {
+          "p_win": 0.5499841950088695,
+          "ev": 0.07377866644588804
+        },
+        "0.65": {
+          "p_win": 0.5649794535115304,
+          "ev": 0.10305512352251178
+        },
+        "1.0": {
+          "p_win": 0.599968390017739,
+          "ev": 0.17136685670130003
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "caesars",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Sam Darnold",
+        "espn_id": "3912547",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Rashid Shaheed",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-10-31T20:53:00+00:00"
+          },
+          {
+            "player": "Jake Bobo",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-22T17:45:00+00:00"
+          },
+          {
+            "player": "Charles Cross",
+            "position": "LT",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-01T03:18:00+00:00"
+          },
+          {
+            "player": "Mason Richman",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-26T00:13:00+00:00"
+          },
+          {
+            "player": "Anthony Bradford",
+            "position": "RG",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-10-29T23:22:00+00:00"
+          },
+          {
+            "player": "Elijah Arroyo",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-23T21:48:00+00:00"
+          },
+          {
+            "player": "Jadarian Price",
+            "position": "RB",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-31T20:50:00+00:00"
+          },
+          {
+            "player": "Velus Jones Jr.",
+            "position": "RB",
+            "depth": 5,
+            "status": "Out",
+            "date": "2026-11-01T01:38:00+00:00"
+          },
+          {
+            "player": "Robbie Ouzts",
+            "position": "FB",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-02T01:28:01.508182+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/26/depthcharts",
+        "source_updated_at": "2026-11-02T01:23:08+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 2
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-02T01:28:01.248092+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-02T01:22:07+00:00",
+        "observed_at": "2026-11-02T01:28:00.374709+00:00",
+        "market_id": "ed8c517ab31f1b000bf704c1727d62d1",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Sam Darnold",
+            "team": "SEA",
+            "opponent": "CHI",
+            "home_team": "SEA",
+            "away_team": "CHI",
+            "kickoff": "2026-11-03T01:15:00+00:00",
+            "game_id": "2026_08_CHI_SEA",
+            "event_id": "22140",
+            "provider_event_id": "22140",
+            "provider_player_id": "17236",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+            "observed_at": "2026-11-02T01:28:00.374709+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+            "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+            "market_id": "ed8c517ab31f1b000bf704c1727d62d1",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 30.5,
+            "side": "over",
+            "odds": -127,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_a81abb9b08e94579c5ae4a85ad96cdf1",
+            "provider_selection_id": "a81abb9b08e94579c5ae4a85ad96cdf1",
+            "book_line_id": "18_a81abb9b08e94579c5ae4a85ad96cdf1",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4392207608|0|append",
+            "source_updated_at": "2026-11-02T01:22:07+00:00",
+            "source_updated_at_raw": "2026-11-02 01:22:07",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Sam Darnold",
+            "team": "SEA",
+            "opponent": "CHI",
+            "home_team": "SEA",
+            "away_team": "CHI",
+            "kickoff": "2026-11-03T01:15:00+00:00",
+            "game_id": "2026_08_CHI_SEA",
+            "event_id": "22140",
+            "provider_event_id": "22140",
+            "provider_player_id": "17236",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+            "observed_at": "2026-11-02T01:28:00.374709+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+            "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+            "market_id": "ed8c517ab31f1b000bf704c1727d62d1",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 30.5,
+            "side": "under",
+            "odds": -105,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_bdce3eaa0ae8be80c3d1e687868b9ba1",
+            "provider_selection_id": "bdce3eaa0ae8be80c3d1e687868b9ba1",
+            "book_line_id": "18_bdce3eaa0ae8be80c3d1e687868b9ba1",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4392207609|0|append",
+            "source_updated_at": "2026-11-02T01:22:07+00:00",
+            "source_updated_at_raw": "2026-11-02 01:22:07",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+          "observed_at": "2026-11-02T01:28:00.374709+00:00",
+          "source_updated_at": "2026-11-02T01:22:07+00:00",
+          "provider_event_id": "22140",
+          "event_id": "22140"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/26/depthcharts",
+        "observed_at": "2026-11-02T01:28:01.508182+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4392207609|0|append",
+      "paper_entry_status": "existing_entry_no_additional_stake"
+    }
+  ],
+  "verified_performance": {
+    "champion": {
+      "bets": 35,
+      "settled": 32,
+      "wins": 18,
+      "losses": 14,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 3,
+      "units": 2.232933046008086,
+      "roi": 0.06977915768775268
+    },
+    "claude": {
+      "bets": 38,
+      "settled": 35,
+      "wins": 23,
+      "losses": 12,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 3,
+      "units": 8.336523431600193,
+      "roi": 0.23818638376000553
+    }
+  },
+  "shadow": {
+    "version": "shadow-protocol-2026-09-14",
+    "generated_at": "2026-11-02T01:28:02.492522+00:00",
+    "status": "ok",
+    "shadow_only": true,
+    "promotion_allowed": false,
+    "predictions": [
+      {
+        "game_id": "2026_08_CHI_SEA",
+        "player_id": "00-0034869",
+        "player": "Sam Darnold",
+        "book": "betmgm",
+        "line": 30.5,
+        "kickoff": "2026-11-03T01:15:00+00:00",
+        "market_only_p_over": 0.507091911168747,
+        "independent_p_over": 0.40003160998226095,
+        "calibrated_p_over": 0.4915546947939015,
+        "conditional_p_over": 0.40274598976572484,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 28.798526741262577,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-11-02T01:28:01.248092+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-11-02T01:23:51+00:00",
+          "observed_at": "2026-11-02T01:28:00.374709+00:00",
+          "market_id": "ed8c517ab31f1b000bf704c1727d62d1",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Sam Darnold",
+              "team": "SEA",
+              "opponent": "CHI",
+              "home_team": "SEA",
+              "away_team": "CHI",
+              "kickoff": "2026-11-03T01:15:00+00:00",
+              "game_id": "2026_08_CHI_SEA",
+              "event_id": "22140",
+              "provider_event_id": "22140",
+              "provider_player_id": "17236",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+              "observed_at": "2026-11-02T01:28:00.374709+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+              "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+              "market_id": "ed8c517ab31f1b000bf704c1727d62d1",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 30.5,
+              "side": "over",
+              "odds": -115,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_a81abb9b08e94579c5ae4a85ad96cdf1",
+              "provider_selection_id": "a81abb9b08e94579c5ae4a85ad96cdf1",
+              "book_line_id": "19_a81abb9b08e94579c5ae4a85ad96cdf1",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:48493-4306754-6977543",
+              "source_updated_at": "2026-11-02T01:23:51+00:00",
+              "source_updated_at_raw": "2026-11-02 01:23:51",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Sam Darnold",
+              "team": "SEA",
+              "opponent": "CHI",
+              "home_team": "SEA",
+              "away_team": "CHI",
+              "kickoff": "2026-11-03T01:15:00+00:00",
+              "game_id": "2026_08_CHI_SEA",
+              "event_id": "22140",
+              "provider_event_id": "22140",
+              "provider_player_id": "17236",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+              "observed_at": "2026-11-02T01:28:00.374709+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+              "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+              "market_id": "ed8c517ab31f1b000bf704c1727d62d1",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 30.5,
+              "side": "under",
+              "odds": -115,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_bdce3eaa0ae8be80c3d1e687868b9ba1",
+              "provider_selection_id": "bdce3eaa0ae8be80c3d1e687868b9ba1",
+              "book_line_id": "19_bdce3eaa0ae8be80c3d1e687868b9ba1",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:48493-4306754-6977544",
+              "source_updated_at": "2026-11-02T01:23:51+00:00",
+              "source_updated_at_raw": "2026-11-02 01:23:51",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+            "observed_at": "2026-11-02T01:28:00.374709+00:00",
+            "source_updated_at": "2026-11-02T01:23:51+00:00",
+            "provider_event_id": "22140",
+            "event_id": "22140"
+          }
+        },
+        "observed_at": "2026-11-02T01:28:00.374709+00:00",
+        "source_updated_at": "2026-11-02T01:23:51+00:00"
+      },
+      {
+        "game_id": "2026_08_CHI_SEA",
+        "player_id": "00-0039918",
+        "player": "Caleb Williams",
+        "book": "betmgm",
+        "line": 32.5,
+        "kickoff": "2026-11-03T01:15:00+00:00",
+        "market_only_p_over": 0.5113021467951202,
+        "independent_p_over": 0.4337181519898795,
+        "calibrated_p_over": 0.5000427042085149,
+        "conditional_p_over": 0.44181767437521646,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 31.56457862791256,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-11-02T01:28:01.248092+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-11-02T01:23:50+00:00",
+          "observed_at": "2026-11-02T01:28:00.374709+00:00",
+          "market_id": "650138671f8b71499e2a04147abeedb5",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Caleb Williams",
+              "team": "CHI",
+              "opponent": "SEA",
+              "home_team": "SEA",
+              "away_team": "CHI",
+              "kickoff": "2026-11-03T01:15:00+00:00",
+              "game_id": "2026_08_CHI_SEA",
+              "event_id": "22140",
+              "provider_event_id": "22140",
+              "provider_player_id": "23084",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+              "observed_at": "2026-11-02T01:28:00.374709+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+              "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+              "market_id": "650138671f8b71499e2a04147abeedb5",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 32.5,
+              "side": "over",
+              "odds": -115,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_bcb2fe5c4cce5fd5782d5adfd5ddde8a",
+              "provider_selection_id": "bcb2fe5c4cce5fd5782d5adfd5ddde8a",
+              "book_line_id": "19_bcb2fe5c4cce5fd5782d5adfd5ddde8a",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:48493-4242328-6871356",
+              "source_updated_at": "2026-11-02T01:23:50+00:00",
+              "source_updated_at_raw": "2026-11-02 01:23:50",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Caleb Williams",
+              "team": "CHI",
+              "opponent": "SEA",
+              "home_team": "SEA",
+              "away_team": "CHI",
+              "kickoff": "2026-11-03T01:15:00+00:00",
+              "game_id": "2026_08_CHI_SEA",
+              "event_id": "22140",
+              "provider_event_id": "22140",
+              "provider_player_id": "23084",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+              "observed_at": "2026-11-02T01:28:00.374709+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+              "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+              "market_id": "650138671f8b71499e2a04147abeedb5",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "betmgm",
+              "line": 32.5,
+              "side": "under",
+              "odds": -115,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "19_26284835262c1bd527b283b7c5038cdf",
+              "provider_selection_id": "26284835262c1bd527b283b7c5038cdf",
+              "book_line_id": "19_26284835262c1bd527b283b7c5038cdf",
+              "sportsbook_url": "https://sports.NY.betmgm.com/en/sports?wm=7133260&options=6:48493-4242328-6871357",
+              "source_updated_at": "2026-11-02T01:23:50+00:00",
+              "source_updated_at_raw": "2026-11-02 01:23:50",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+            "observed_at": "2026-11-02T01:28:00.374709+00:00",
+            "source_updated_at": "2026-11-02T01:23:50+00:00",
+            "provider_event_id": "22140",
+            "event_id": "22140"
+          }
+        },
+        "observed_at": "2026-11-02T01:28:00.374709+00:00",
+        "source_updated_at": "2026-11-02T01:23:50+00:00"
+      }
+    ],
+    "metrics": {
+      "fit_2022_2023": {
+        "market_only": {
+          "n": 485,
+          "brier": 0.2501658547828248,
+          "log_loss": 0.6934812310044569
+        },
+        "independent_model": {
+          "n": 485,
+          "brier": 0.2547173092689647,
+          "log_loss": 0.7030769690719386
+        },
+        "calibrated_blend": {
+          "n": 485,
+          "brier": 0.2500307921100574,
+          "log_loss": 0.6932177298383735
+        },
+        "conditional_distribution": {
+          "n": 485,
+          "brier": 0.2545453903673218,
+          "log_loss": 0.702699135779097
+        }
+      },
+      "validation_2024": {
+        "market_only": {
+          "n": 425,
+          "brier": 0.2491945254987633,
+          "log_loss": 0.6915349601900602
+        },
+        "independent_model": {
+          "n": 425,
+          "brier": 0.2558756223871351,
+          "log_loss": 0.7055782033030993
+        },
+        "calibrated_blend": {
+          "n": 425,
+          "brier": 0.2494428229483191,
+          "log_loss": 0.692037041748151
+        },
+        "conditional_distribution": {
+          "n": 425,
+          "brier": 0.2562233104932801,
+          "log_loss": 0.7063020896710854
+        }
+      },
+      "exposed_benchmark_2025": {
+        "market_only": {
+          "n": 1,
+          "brier": 0.260223901391598,
+          "log_loss": 0.7135977910312362
+        },
+        "independent_model": {
+          "n": 1,
+          "brier": 0.28450880673019097,
+          "log_loss": 0.7622693523271509
+        },
+        "calibrated_blend": {
+          "n": 1,
+          "brier": 0.26368107600337237,
+          "log_loss": 0.7205160276500313
+        },
+        "conditional_distribution": {
+          "n": 1,
+          "brier": 0.28982360855814177,
+          "log_loss": 0.7729540570398563
+        }
+      }
+    },
+    "diagnostics": {
+      "invalid_candidates": 0,
+      "training": {
+        "raw_offer_rows": 29632,
+        "timestamp_and_book_eligible_sides": 8101,
+        "paired_offers": 3916,
+        "exact_event_joined_offers": 3312,
+        "selected_qb_games": 911,
+        "excluded_unmatched_pairs": 604,
+        "join_policy": "exact_utc_scheduled_time_opponent_pair_normalized_player",
+        "quote_policy": "real_book_paired_sides_updated_strictly_before_kickoff_within_24h_other_book_same_line",
+        "raw_sides_by_season": {
+          "2022": 1736,
+          "2023": 7290,
+          "2024": 8748,
+          "2025": 11858
+        },
+        "eligible_sides_by_season": {
+          "2022": 986,
+          "2023": 3004,
+          "2024": 4088,
+          "2025": 23
+        },
+        "sources": {
+          "offers": {
+            "file": "offers.parquet",
+            "sha256": "9484249efb989c829552c06395cf9309772c912150b6d2e52345399fe9ee8d36"
+          },
+          "features": {
+            "file": "features.parquet",
+            "sha256": "10f7eb5e9b70e94887bce3e1309c8c8edb2ce1bd151de1ac6a43bb8330d0e938"
+          },
+          "oof": {
+            "file": "oof_predictions.csv",
+            "sha256": "6d7c019852c29bf318c5b7506bf578085cbd79d82311c830e16d35e9af3d8381"
+          }
+        },
+        "fit_rows": 485,
+        "validation_rows": 425,
+        "limitations": [
+          "Retrospectively downloaded closing-reference quotes; no verified executable morning archive",
+          "2024 and 2025 have previously been inspected; neither is an untouched holdout",
+          "Game spread/total features use historical closing references",
+          "Conditional tails include observed exits but do not estimate a separate exit hazard",
+          "One fixed kernel experiment; not a full within-game play-volume simulator"
+        ]
+      }
+    }
+  },
+  "claude": [
+    {
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0039918",
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "opponent": "SEA",
+      "line": 31.5,
+      "book": "betrivers",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+      "observed_at": "2026-11-02T01:28:00.374709+00:00",
+      "source_updated_at": "2026-11-02T01:22:07+00:00",
+      "season": 2026,
+      "week": 8,
+      "kickoff": "2026-11-03T01:15:00+00:00",
+      "side": "Over",
+      "odds": -125,
+      "mean": 35.03913334241728,
+      "mu_model": 35.03913334241728,
+      "mu_market": 33.14854863811317,
+      "mu_final": 33.810253284619606,
+      "mean_market": 33.14854863811317,
+      "mean_final": 33.810253284619606,
+      "scale": 1.0,
+      "p_model": 0.64743480174134,
+      "p_market": 0.5558814106840201,
+      "p_final": 0.5877867069774965,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.05801607255949365,
+      "robust_ev": null,
+      "independent_model_ev": 0.1653826431344121,
+      "market_only_ev": 0.0005865392312361939,
+      "fair_odds": -143,
+      "bet_to": -135,
+      "bet_to_target": 0.02,
+      "interval80": [
+        24.07865995849989,
+        45.32461347120145
+      ],
+      "expected_margin": -3.0,
+      "game_total": 46.5,
+      "implied_team_points": 21.75,
+      "game_market": {
+        "game_id": "2026_08_CHI_SEA",
+        "event_id": "401873036",
+        "home_team": "SEA",
+        "away_team": "CHI",
+        "kickoff": "2026-11-03T01:15:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 46.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 46.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -110,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "total_observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "observed_at": "2026-11-02T01:28:01.789398+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261102&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 8,
+      "other_books": 7,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanatics",
+        "fanduel",
+        "thescorebet"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [],
+      "starting_status": {
+        "starter": "Caleb Williams",
+        "espn_id": "4431611",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Braxton Jones",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-04T01:02:00+00:00"
+          },
+          {
+            "player": "Hayden Large",
+            "position": "TE",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:40:00+00:00"
+          },
+          {
+            "player": "Cole Kmet",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-23T21:36:00+00:00"
+          },
+          {
+            "player": "Nikola Kalinic",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Kyle Monangai",
+            "position": "RB",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-10-31T16:55:00+00:00"
+          },
+          {
+            "player": "Brittain Brown",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T16:21:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-02T01:28:01.507995+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+        "source_updated_at": "2026-11-02T01:23:05+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 38
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-02T01:28:01.248092+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-02T01:22:07+00:00",
+        "observed_at": "2026-11-02T01:28:00.374709+00:00",
+        "market_id": "650138671f8b71499e2a04147abeedb5",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Caleb Williams",
+            "team": "CHI",
+            "opponent": "SEA",
+            "home_team": "SEA",
+            "away_team": "CHI",
+            "kickoff": "2026-11-03T01:15:00+00:00",
+            "game_id": "2026_08_CHI_SEA",
+            "event_id": "22140",
+            "provider_event_id": "22140",
+            "provider_player_id": "23084",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+            "observed_at": "2026-11-02T01:28:00.374709+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+            "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+            "market_id": "650138671f8b71499e2a04147abeedb5",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 31.5,
+            "side": "over",
+            "odds": -125,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_bcb2fe5c4cce5fd5782d5adfd5ddde8a",
+            "provider_selection_id": "bcb2fe5c4cce5fd5782d5adfd5ddde8a",
+            "book_line_id": "18_bcb2fe5c4cce5fd5782d5adfd5ddde8a",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4392208017|0|append",
+            "source_updated_at": "2026-11-02T01:22:07+00:00",
+            "source_updated_at_raw": "2026-11-02 01:22:07",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Caleb Williams",
+            "team": "CHI",
+            "opponent": "SEA",
+            "home_team": "SEA",
+            "away_team": "CHI",
+            "kickoff": "2026-11-03T01:15:00+00:00",
+            "game_id": "2026_08_CHI_SEA",
+            "event_id": "22140",
+            "provider_event_id": "22140",
+            "provider_player_id": "23084",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+            "observed_at": "2026-11-02T01:28:00.374709+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0eb083418f774e55a19bf8098afafe05/offers-22140-1.json",
+            "proof_sha256": "d51b64e5ffdb6c779bd03b315964fbc3dc7207d267fc04ab52db5f364b0c03b7",
+            "market_id": "650138671f8b71499e2a04147abeedb5",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "betrivers",
+            "line": 31.5,
+            "side": "under",
+            "odds": -106,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "18_26284835262c1bd527b283b7c5038cdf",
+            "provider_selection_id": "26284835262c1bd527b283b7c5038cdf",
+            "book_line_id": "18_26284835262c1bd527b283b7c5038cdf",
+            "sportsbook_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4392208018|0|append",
+            "source_updated_at": "2026-11-02T01:22:07+00:00",
+            "source_updated_at_raw": "2026-11-02 01:22:07",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22140&location=NY&live=false&page=1",
+          "observed_at": "2026-11-02T01:28:00.374709+00:00",
+          "source_updated_at": "2026-11-02T01:22:07+00:00",
+          "provider_event_id": "22140",
+          "event_id": "22140"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+        "observed_at": "2026-11-02T01:28:01.507995+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://ny.betrivers.com/?InvalidReason=Ad+inactive.&OriginUrl=%2FC.ashx&btag=a_937b_1038c_&affid=332&siteid=937&adid=1038&c=&AutoR=1&page=sportsbook#home?coupon=combination|4392208017|0|append",
+      "paper_entry_status": "existing_entry_no_additional_stake"
+    }
+  ]
+}
