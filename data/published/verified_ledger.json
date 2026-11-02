@@ -22370,11 +22370,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 29,
+        "profit_1u": 0.9259259259259259,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-11-02T11:39:43.237735+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873035"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-11-02T11:39:43.244679+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 29,
+            "profit_1u": 0.9259259259259259,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-11-02T11:39:43.237735+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873035"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -22666,11 +22683,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 29,
+        "profit_1u": 0.8695652173913043,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-11-02T11:39:43.237735+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873035"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-11-02T11:39:43.244679+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 29,
+            "profit_1u": 0.8695652173913043,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-11-02T11:39:43.237735+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873035"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -108142,6 +108176,96 @@
       "status": "observed",
       "reason": "existing_game_exposure",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_PHI_WAS",
+      "player_id": "00-0039910",
+      "at": "2026-11-02T11:39:43.244679+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_PHI_WAS",
+      "player_id": "00-0039910",
+      "at": "2026-11-02T11:39:43.244679+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0034869",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0039918",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0040981",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0036971",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0039918",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0034869",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0040981",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0036971",
+      "at": "2026-11-02T11:38:50.383126+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -108568,32 +108692,34 @@
     "champion:2026-11-01T18:53:34.942972+00:00",
     "claude:2026-11-01T18:53:34.942972+00:00",
     "champion:2026-11-02T01:28:02.492522+00:00",
-    "claude:2026-11-02T01:28:02.492522+00:00"
+    "claude:2026-11-02T01:28:02.492522+00:00",
+    "champion:2026-11-02T11:38:50.383126+00:00",
+    "claude:2026-11-02T11:38:50.383126+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-11-02T01:28:48.798495+00:00",
+  "updated_at": "2026-11-02T11:39:43.244679+00:00",
   "performance": {
     "champion": {
       "bets": 35,
-      "settled": 32,
-      "wins": 18,
+      "settled": 33,
+      "wins": 19,
       "losses": 14,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
-      "units": 2.232933046008086,
-      "roi": 0.06977915768775268
+      "unresolved": 2,
+      "units": 3.158858971934012,
+      "roi": 0.09572299914951551
     },
     "claude": {
       "bets": 38,
-      "settled": 35,
-      "wins": 23,
+      "settled": 36,
+      "wins": 24,
       "losses": 12,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
-      "units": 8.336523431600193,
-      "roi": 0.23818638376000553
+      "unresolved": 2,
+      "units": 9.206088648991498,
+      "roi": 0.2557246846942083
     }
   }
 }
