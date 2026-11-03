@@ -20585,11 +20585,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "loss",
+        "actual": 34,
+        "profit_1u": -1.0,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-11-03T07:50:50.956363+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873036"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-11-03T07:50:50.964096+00:00",
+          "grade": {
+            "result": "loss",
+            "actual": 34,
+            "profit_1u": -1.0,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-11-03T07:50:50.956363+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873036"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -21444,11 +21461,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 34,
+        "profit_1u": 0.8264462809917356,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-11-03T07:50:50.956363+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873036"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-11-03T07:50:50.964096+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 34,
+            "profit_1u": 0.8264462809917356,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-11-03T07:50:50.956363+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873036"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -23413,6 +23447,298 @@
       "entry_id": "d483948cd987bbc863c88463",
       "model": "claude",
       "entry_at": "2026-11-02T22:43:50.050796+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0036971",
+      "player": "Trevor Lawrence",
+      "team": "JAX",
+      "opponent": "BAL",
+      "line": 30.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22141&location=NY&live=false&page=1",
+      "observed_at": "2026-11-03T07:49:52.629975+00:00",
+      "source_updated_at": "2026-11-03T07:34:44+00:00",
+      "season": 2026,
+      "week": 9,
+      "kickoff": "2026-11-06T01:15:00+00:00",
+      "side": "Over",
+      "odds": -102,
+      "mean": 30.881979637709716,
+      "mu_model": 30.881979637709716,
+      "mu_market": 31.636695901343035,
+      "mu_final": 31.636695901343035,
+      "mean_market": 31.636695901343035,
+      "mean_final": 31.636695901343035,
+      "scale": 1.0,
+      "p_model": 0.49547611654855694,
+      "p_market": 0.5313525385094557,
+      "p_final": 0.5313525385094557,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.052286399793235905,
+      "robust_ev": null,
+      "independent_model_ev": -0.018762984874426458,
+      "market_only_ev": 0.052286399793235905,
+      "fair_odds": -113,
+      "bet_to": -108,
+      "bet_to_target": 0.02,
+      "interval80": [
+        19.921506253792323,
+        41.16745976649389
+      ],
+      "expected_margin": 8.5,
+      "game_total": 42.5,
+      "implied_team_points": 25.5,
+      "game_market": {
+        "game_id": "2026_09_JAX_BAL",
+        "event_id": "401873037",
+        "home_team": "BAL",
+        "away_team": "JAX",
+        "kickoff": "2026-11-06T01:15:00+00:00",
+        "home_expected_margin": -8.5,
+        "total_line": 42.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -8.5,
+            "total_line": 42.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -115,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-03T07:49:53.775327+00:00",
+        "total_observed_at": "2026-11-03T07:49:53.775327+00:00",
+        "observed_at": "2026-11-03T07:49:53.775327+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261105&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.0,
+      "n_books": 4,
+      "other_books": 3,
+      "reference_books": [
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanduel"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [
+        "role_not_confirmed_at_entry"
+      ],
+      "starting_status": {
+        "starter": "Trevor Lawrence",
+        "espn_id": "4360310",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Jakobi Meyers",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-03T00:19:00+00:00"
+          },
+          {
+            "player": "Anton Harrison",
+            "position": "LT",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-24T01:25:00+00:00"
+          },
+          {
+            "player": "Garrett DiGiorgio",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-19T12:07:00+00:00"
+          },
+          {
+            "player": "Sam Mustipher",
+            "position": "C",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:25:00+00:00"
+          },
+          {
+            "player": "Ezra Cleveland",
+            "position": "RG",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-01T19:05:00+00:00"
+          },
+          {
+            "player": "Patrick Mekari",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:21:00+00:00"
+          },
+          {
+            "player": "Bhayshul Tuten",
+            "position": "RB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-03T00:43:00+00:00"
+          },
+          {
+            "player": "Chris Rodriguez Jr.",
+            "position": "RB",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-03T00:48:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-03T07:49:53.512061+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/30/depthcharts",
+        "source_updated_at": "2026-11-03T07:48:09+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 40
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-03T07:49:53.420382+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-03T07:34:44+00:00",
+        "observed_at": "2026-11-03T07:49:52.629975+00:00",
+        "market_id": "4bfc178d245ce42f295f4cdf42cd9006",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Trevor Lawrence",
+            "team": "JAX",
+            "opponent": "BAL",
+            "home_team": "BAL",
+            "away_team": "JAX",
+            "kickoff": "2026-11-06T01:15:00+00:00",
+            "game_id": "2026_09_JAX_BAL",
+            "event_id": "22141",
+            "provider_event_id": "22141",
+            "provider_player_id": "19780",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22141&location=NY&live=false&page=1",
+            "observed_at": "2026-11-03T07:49:52.629975+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0402310c693544b0b76a8ddc058c7b80/offers-22141-1.json",
+            "proof_sha256": "e82cb65d1ed67fe49d95e8e47018d564e93e71a7bc2480c5b8740e2c1d20fe55",
+            "market_id": "4bfc178d245ce42f295f4cdf42cd9006",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanduel",
+            "line": 30.5,
+            "side": "over",
+            "odds": -102,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "10_bb67ebdab358cebca750b381030fd36e",
+            "provider_selection_id": "bb67ebdab358cebca750b381030fd36e",
+            "book_line_id": "10_bb67ebdab358cebca750b381030fd36e",
+            "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.621857704&selectionId=22336735",
+            "source_updated_at": "2026-11-03T07:34:44+00:00",
+            "source_updated_at_raw": "2026-11-03 07:34:44",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Trevor Lawrence",
+            "team": "JAX",
+            "opponent": "BAL",
+            "home_team": "BAL",
+            "away_team": "JAX",
+            "kickoff": "2026-11-06T01:15:00+00:00",
+            "game_id": "2026_09_JAX_BAL",
+            "event_id": "22141",
+            "provider_event_id": "22141",
+            "provider_player_id": "19780",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22141&location=NY&live=false&page=1",
+            "observed_at": "2026-11-03T07:49:52.629975+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-0402310c693544b0b76a8ddc058c7b80/offers-22141-1.json",
+            "proof_sha256": "e82cb65d1ed67fe49d95e8e47018d564e93e71a7bc2480c5b8740e2c1d20fe55",
+            "market_id": "4bfc178d245ce42f295f4cdf42cd9006",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanduel",
+            "line": 30.5,
+            "side": "under",
+            "odds": -130,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "10_75667ffedddf23bddcb23b4bf3d5553a",
+            "provider_selection_id": "75667ffedddf23bddcb23b4bf3d5553a",
+            "book_line_id": "10_75667ffedddf23bddcb23b4bf3d5553a",
+            "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.621857704&selectionId=22336736",
+            "source_updated_at": "2026-11-03T07:34:44+00:00",
+            "source_updated_at_raw": "2026-11-03 07:34:44",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22141&location=NY&live=false&page=1",
+          "observed_at": "2026-11-03T07:49:52.629975+00:00",
+          "source_updated_at": "2026-11-03T07:34:44+00:00",
+          "provider_event_id": "22141",
+          "event_id": "22141"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/30/depthcharts",
+        "observed_at": "2026-11-03T07:49:53.512061+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.621857704&selectionId=22336735",
+      "paper_entry_status": "new_entry",
+      "entry_id": "5d4a16c064bb726e11399450",
+      "model": "claude",
+      "entry_at": "2026-11-03T07:49:53.949967+00:00",
       "cohort": "verified_paper_entry_v1",
       "actual_wager": false,
       "stake_units": 1.0,
@@ -109235,6 +109561,168 @@
       "status": "paper_entry",
       "reason": "first_verified_published_quote",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0034869",
+      "at": "2026-11-03T07:50:50.964096+00:00",
+      "status": "loss",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_08_CHI_SEA",
+      "player_id": "00-0039918",
+      "at": "2026-11-03T07:50:50.964096+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0036264",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_CIN_ATL",
+      "player_id": "00-0039917",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_CIN_ATL",
+      "player_id": "00-0036442",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0036971",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0039851",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0036264",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0036264",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0036264",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0036971",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_CIN_ATL",
+      "player_id": "00-0039917",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0039851",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_CIN_ATL",
+      "player_id": "00-0036442",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0036264",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_GB_NE",
+      "player_id": "00-0036264",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0036971",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_09_JAX_BAL",
+      "player_id": "00-0036971",
+      "at": "2026-11-03T07:49:53.949967+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -109667,32 +110155,34 @@
     "champion:2026-11-02T12:16:35.505257+00:00",
     "claude:2026-11-02T12:16:35.505257+00:00",
     "champion:2026-11-02T22:43:50.050796+00:00",
-    "claude:2026-11-02T22:43:50.050796+00:00"
+    "claude:2026-11-02T22:43:50.050796+00:00",
+    "champion:2026-11-03T07:49:53.949967+00:00",
+    "claude:2026-11-03T07:49:53.949967+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-11-02T22:44:46.017270+00:00",
+  "updated_at": "2026-11-03T07:50:50.964096+00:00",
   "performance": {
     "champion": {
       "bets": 36,
-      "settled": 33,
+      "settled": 34,
       "wins": 19,
-      "losses": 14,
+      "losses": 15,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
-      "units": 3.158858971934012,
-      "roi": 0.09572299914951551
+      "unresolved": 2,
+      "units": 2.158858971934012,
+      "roi": 0.06349585211570623
     },
     "claude": {
-      "bets": 39,
-      "settled": 36,
-      "wins": 24,
+      "bets": 40,
+      "settled": 37,
+      "wins": 25,
       "losses": 12,
       "pushes": 0,
       "voids": 0,
       "unresolved": 3,
-      "units": 9.206088648991498,
-      "roi": 0.2557246846942083
+      "units": 10.032534929983234,
+      "roi": 0.27114959270224953
     }
   }
 }
