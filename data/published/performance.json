@@ -1,10 +1,10 @@
 {
-  "bets": 110,
+  "bets": 111,
   "settled": 101,
   "wins": 43,
   "losses": 58,
   "pushes": 0,
-  "unresolved": 9,
+  "unresolved": 10,
   "units": -18.694107420591866,
   "roi": -0.1850901724811076,
   "clv_bets": 32,
@@ -20810,6 +20810,183 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_09_LA_WAS",
+      "player_id": "00-0039910",
+      "player": "Jayden Daniels",
+      "team": "WAS",
+      "opponent": "LA",
+      "line": 31.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22143&location=NY&live=false&page=1",
+      "observed_at": "2026-11-04T12:02:00.605159+00:00",
+      "source_updated_at": "2026-11-04T11:44:29+00:00",
+      "kickoff": "2026-11-08T18:00:00+00:00",
+      "side": "under",
+      "odds": -115.0,
+      "mean": 25.68936170204398,
+      "interval80": [
+        14.302834043165428,
+        36.18400105734036
+      ],
+      "p_model": 0.7616394092611397,
+      "p_market": 0.5050233081498151,
+      "p_final": 0.6333313587054774,
+      "p_push": 0.0,
+      "ev": 0.18405427931893603,
+      "robust_ev": 0.14666297497110992,
+      "market_only_ev": -0.055825989111215224,
+      "fair_odds": -173,
+      "bet_to": -159,
+      "independent_model_ev": 0.42393454774908723,
+      "expected_margin": -5.5,
+      "game_total": 47.5,
+      "implied_team_points": 21.0,
+      "game_market": {
+        "game_id": "2026_09_LA_WAS",
+        "event_id": "401873043",
+        "home_team": "WAS",
+        "away_team": "LA",
+        "kickoff": "2026-11-08T18:00:00+00:00",
+        "home_expected_margin": -5.5,
+        "total_line": 47.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -5.5,
+            "total_line": 47.5,
+            "home_spread_odds": -102,
+            "away_spread_odds": -118,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-04T12:02:02.108911+00:00",
+        "total_observed_at": "2026-11-04T12:02:02.108911+00:00",
+        "observed_at": "2026-11-04T12:02:02.108911+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261108&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.08060531588766155,
+        "close": 0.6033866901192803,
+        "trailing": 0.3160079939930582
+      },
+      "scenario_means": {
+        "underdog_7": 25.456389244486253,
+        "pickem": 26.543594046422307,
+        "favorite_7": 26.6195887684908
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4935064935064935,
+        "neutral_pass12": 0.5746691871455577,
+        "trail_pass12": 0.6756598240469207
+      },
+      "warnings": [
+        "Large model\u2013market disagreement",
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5050233081498151,
+          "ev": -0.055825989111215224
+        },
+        "0.35": {
+          "p_win": 0.5948389435387788,
+          "ev": 0.11209019878989068
+        },
+        "0.5": {
+          "p_win": 0.6333313587054774,
+          "ev": 0.18405427931893603
+        },
+        "0.65": {
+          "p_win": 0.6718237738721761,
+          "ev": 0.2560183598479814
+        },
+        "1.0": {
+          "p_win": 0.7616394092611397,
+          "ev": 0.42393454774908723
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "caesars"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jayden Daniels",
+        "espn_id": "4426348",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Terry McLaurin",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-30T17:12:00+00:00"
+          },
+          {
+            "player": "Jaylin Lane",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-22T00:47:00+00:00"
+          },
+          {
+            "player": "Laremy Tunsil",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-29T01:29:00+00:00"
+          },
+          {
+            "player": "Jacory Croskey-Merritt",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-19T20:28:00+00:00"
+          },
+          {
+            "player": "Jeremy McNichols",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-03T21:27:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-04T12:02:01.723396+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/28/depthcharts",
+        "source_updated_at": "2026-11-04T12:00:58+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 26,
+        "season_games": 6
+      },
+      "generated_at": "2026-11-04T12:02:02.275968+00:00",
+      "snapshot": "20261104T120202275968Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -20818,12 +20995,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 110,
+      "bets": 111,
       "settled": 101,
       "wins": 43,
       "losses": 58,
       "pushes": 0,
-      "unresolved": 9,
+      "unresolved": 10,
       "units": -18.694107420591866,
       "roi": -0.1850901724811076,
       "clv_bets": 32,
