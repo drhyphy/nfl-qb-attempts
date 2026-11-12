@@ -1,10 +1,10 @@
 {
-  "bets": 122,
+  "bets": 123,
   "settled": 113,
   "wins": 48,
   "losses": 65,
   "pushes": 0,
-  "unresolved": 9,
+  "unresolved": 10,
   "units": -20.927100077113934,
   "roi": -0.18519557590366315,
   "clv_bets": 36,
@@ -23173,6 +23173,198 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_10_CAR_NO",
+      "player_id": "00-0039150",
+      "player": "Bryce Young",
+      "team": "CAR",
+      "opponent": "NO",
+      "line": 36.5,
+      "book": "betmgm",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21948&location=NY&live=false&page=1",
+      "observed_at": "2026-11-12T11:44:54.489438+00:00",
+      "source_updated_at": "2026-11-12T11:33:58+00:00",
+      "kickoff": "2026-11-15T18:00:00+00:00",
+      "side": "under",
+      "odds": -110.0,
+      "mean": 34.92214789948537,
+      "interval80": [
+        23.535620240606818,
+        45.41678725478175
+      ],
+      "p_model": 0.5946196435237143,
+      "p_market": 0.517591059602649,
+      "p_final": 0.5561053515631816,
+      "p_push": 0.0,
+      "ev": 0.061655671166074066,
+      "robust_ev": 0.023473852984255805,
+      "market_only_ev": -0.011871613485852028,
+      "fair_odds": -125,
+      "bet_to": -117,
+      "independent_model_ev": 0.1351829558180001,
+      "expected_margin": -2.5,
+      "game_total": 48.5,
+      "implied_team_points": 23.0,
+      "game_market": {
+        "game_id": "2026_10_CAR_NO",
+        "event_id": "401873055",
+        "home_team": "NO",
+        "away_team": "CAR",
+        "kickoff": "2026-11-15T18:00:00+00:00",
+        "home_expected_margin": 2.5,
+        "total_line": 48.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 2.5,
+            "total_line": 48.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -115,
+            "under_odds": -105,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-12T11:44:57.875548+00:00",
+        "total_observed_at": "2026-11-12T11:44:57.875548+00:00",
+        "observed_at": "2026-11-12T11:44:57.875548+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.10360974485252103,
+        "close": 0.6290227615675418,
+        "trailing": 0.26736749357993717
+      },
+      "scenario_means": {
+        "underdog_7": 34.16883535401939,
+        "pickem": 35.34065486918868,
+        "favorite_7": 35.48423790293851
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5217391304347826,
+        "neutral_pass12": 0.6192982456140351,
+        "trail_pass12": 0.7314285714285713
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.517591059602649,
+          "ev": -0.011871613485852028
+        },
+        "0.35": {
+          "p_win": 0.5445510639750218,
+          "ev": 0.03959748577049621
+        },
+        "0.5": {
+          "p_win": 0.5561053515631816,
+          "ev": 0.061655671166074066
+        },
+        "0.65": {
+          "p_win": 0.5676596391513414,
+          "ev": 0.08371385656165176
+        },
+        "1.0": {
+          "p_win": 0.5946196435237143,
+          "ev": 0.1351829558180001
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 5,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanatics"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Bryce Young",
+        "espn_id": "4685720",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Xavier Legette",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-11-11T17:38:00+00:00"
+          },
+          {
+            "player": "Ikem Ekwonu",
+            "position": "LT",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-10-06T01:04:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "LT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-11-08T03:32:00+00:00"
+          },
+          {
+            "player": "Damien Lewis",
+            "position": "LG",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-12T01:23:00+00:00"
+          },
+          {
+            "player": "Brady Christensen",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-08T03:32:00+00:00"
+          },
+          {
+            "player": "Taylor Moton",
+            "position": "RT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-26T23:15:00+00:00"
+          },
+          {
+            "player": "Jonathon Brooks",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-11T19:59:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-12T11:44:56.971489+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/29/depthcharts",
+        "source_updated_at": "2026-11-12T11:40:08+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 8
+      },
+      "generated_at": "2026-11-12T11:44:58.066473+00:00",
+      "snapshot": "20261112T114458066473Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -23181,12 +23373,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 122,
+      "bets": 123,
       "settled": 113,
       "wins": 48,
       "losses": 65,
       "pushes": 0,
-      "unresolved": 9,
+      "unresolved": 10,
       "units": -20.927100077113934,
       "roi": -0.18519557590366315,
       "clv_bets": 36,
