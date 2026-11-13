@@ -1,14 +1,14 @@
 {
-  "bets": 123,
+  "bets": 124,
   "settled": 113,
   "wins": 48,
   "losses": 65,
   "pushes": 0,
-  "unresolved": 10,
+  "unresolved": 11,
   "units": -20.927100077113934,
   "roi": -0.18519557590366315,
-  "clv_bets": 36,
-  "mean_clv": -0.0302058118220635,
+  "clv_bets": 37,
+  "mean_clv": -0.030728615544427986,
   "results": [
     {
       "game_id": "2026_01_ATL_PIT",
@@ -21789,10 +21789,10 @@
       "result": "unresolved",
       "profit_1u": null,
       "settlement_reason": "official_final_score_unavailable",
-      "clv": null,
-      "closing_probability": null,
-      "closing_books": 0,
-      "closing_observed_at": null
+      "clv": -0.04954954954954949,
+      "closing_probability": 0.5,
+      "closing_books": 5,
+      "closing_observed_at": "2026-11-13T01:02:16.025865+00:00"
     },
     {
       "game_id": "2026_10_MIN_GB",
@@ -23365,6 +23365,218 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_10_HOU_CLE",
+      "player_id": "00-0033537",
+      "player": "Deshaun Watson",
+      "team": "CLE",
+      "opponent": "HOU",
+      "line": 31.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21952&location=NY&live=false&page=1",
+      "observed_at": "2026-11-13T02:33:39.707137+00:00",
+      "source_updated_at": "2026-11-13T02:26:59+00:00",
+      "kickoff": "2026-11-15T18:00:00+00:00",
+      "side": "under",
+      "odds": -108.0,
+      "mean": 29.565116659544838,
+      "interval80": [
+        18.178589000666285,
+        40.05975601484122
+      ],
+      "p_model": 0.6099565735064053,
+      "p_market": 0.5146373416481651,
+      "p_final": 0.5622969575772852,
+      "p_push": 0.0,
+      "ev": 0.08294228866736397,
+      "robust_ev": 0.044423770148845465,
+      "market_only_ev": -0.008846601270200538,
+      "fair_odds": -128,
+      "bet_to": -120,
+      "independent_model_ev": 0.1747311786049287,
+      "expected_margin": -4.5,
+      "game_total": 40.5,
+      "implied_team_points": 18.0,
+      "game_market": {
+        "game_id": "2026_10_HOU_CLE",
+        "event_id": "401873056",
+        "home_team": "CLE",
+        "away_team": "HOU",
+        "kickoff": "2026-11-15T18:00:00+00:00",
+        "home_expected_margin": -4.5,
+        "total_line": 40.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -4.5,
+            "total_line": 40.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -108,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-13T02:33:42.025435+00:00",
+        "total_observed_at": "2026-11-13T02:33:42.025435+00:00",
+        "observed_at": "2026-11-13T02:33:42.025435+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261115&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.08469329545886967,
+        "close": 0.6386564950356362,
+        "trailing": 0.27665020950549407
+      },
+      "scenario_means": {
+        "underdog_7": 29.1907447117287,
+        "pickem": 30.238986165613884,
+        "favorite_7": 30.25899113807961
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5033557046979866,
+        "neutral_pass12": 0.6067796610169491,
+        "trail_pass12": 0.691814946619217
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5146373416481651,
+          "ev": -0.008846601270200538
+        },
+        "0.35": {
+          "p_win": 0.5479990727985492,
+          "ev": 0.05540562168609475
+        },
+        "0.5": {
+          "p_win": 0.5622969575772852,
+          "ev": 0.08294228866736397
+        },
+        "0.65": {
+          "p_win": 0.5765948423560212,
+          "ev": 0.11047895564863341
+        },
+        "1.0": {
+          "p_win": 0.6099565735064053,
+          "ev": 0.1747311786049287
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "caesars",
+        "draftkings",
+        "fanatics"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Deshaun Watson",
+        "espn_id": "3122840",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Denzel Boston",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-12T18:15:00+00:00"
+          },
+          {
+            "player": "Elgton Jenkins",
+            "position": "C",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-11T23:35:00+00:00"
+          },
+          {
+            "player": "Austin Barber",
+            "position": "RG",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-11T23:35:00+00:00"
+          },
+          {
+            "player": "Teven Jenkins",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-10-24T18:50:00+00:00"
+          },
+          {
+            "player": "Tytus Howard",
+            "position": "RT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-11T23:36:00+00:00"
+          },
+          {
+            "player": "Austin Barber",
+            "position": "RT",
+            "depth": 3,
+            "status": "Questionable",
+            "date": "2026-11-11T23:35:00+00:00"
+          },
+          {
+            "player": "Harold Fannin Jr.",
+            "position": "TE",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-12T22:41:00+00:00"
+          },
+          {
+            "player": "Joe Royer",
+            "position": "TE",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-08-30T21:32:00+00:00"
+          },
+          {
+            "player": "Raheim Sanders",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-13T21:00:00+00:00"
+          },
+          {
+            "player": "Michael Burton",
+            "position": "FB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-12T01:52:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-13T02:33:41.714952+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/5/depthcharts",
+        "source_updated_at": "2026-11-13T02:31:37+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 8
+      },
+      "generated_at": "2026-11-13T02:33:42.127697+00:00",
+      "snapshot": "20261113T023342127697Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -23373,16 +23585,16 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 123,
+      "bets": 124,
       "settled": 113,
       "wins": 48,
       "losses": 65,
       "pushes": 0,
-      "unresolved": 10,
+      "unresolved": 11,
       "units": -20.927100077113934,
       "roi": -0.18519557590366315,
-      "clv_bets": 36,
-      "mean_clv": -0.0302058118220635
+      "clv_bets": 37,
+      "mean_clv": -0.030728615544427986
     }
   }
 }
