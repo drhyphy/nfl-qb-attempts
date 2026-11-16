@@ -27167,11 +27167,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 29,
+        "profit_1u": 0.8771929824561403,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-11-16T11:39:47.203491+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873064"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-11-16T11:39:47.207890+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 29,
+            "profit_1u": 0.8771929824561403,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-11-16T11:39:47.203491+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873064"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -27845,11 +27862,28 @@
       "actual_wager": false,
       "stake_units": 1.0,
       "settlement": {
-        "result": "pending",
-        "actual": null,
-        "profit_1u": null
+        "result": "win",
+        "actual": 29,
+        "profit_1u": 0.9345794392523364,
+        "settlement_reason": "final_participating_player_stat",
+        "actual_wager": false,
+        "evidence_observed_at": "2026-11-16T11:39:47.203491+00:00",
+        "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873064"
       },
-      "settlement_history": [],
+      "settlement_history": [
+        {
+          "at": "2026-11-16T11:39:47.207890+00:00",
+          "grade": {
+            "result": "win",
+            "actual": 29,
+            "profit_1u": 0.9345794392523364,
+            "settlement_reason": "final_participating_player_stat",
+            "actual_wager": false,
+            "evidence_observed_at": "2026-11-16T11:39:47.203491+00:00",
+            "evidence_source": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=401873064"
+          }
+        }
+      ],
       "verified_clv": {
         "value": null,
         "books": 0,
@@ -29551,6 +29585,311 @@
       "model": "champion",
       "model_version": "attempts-v2.0",
       "entry_at": "2026-11-16T01:51:06.349294+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "player": "Daniel Jones",
+      "team": "IND",
+      "opponent": "HOU",
+      "line": 31.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22008&location=NY&live=false&page=1",
+      "observed_at": "2026-11-16T11:38:58.527960+00:00",
+      "source_updated_at": "2026-11-16T11:34:04+00:00",
+      "kickoff": "2026-11-20T01:15:00+00:00",
+      "side": "Under",
+      "odds": -101,
+      "mean": 30.43384997235546,
+      "interval80": [
+        19.047322313476908,
+        40.92848932765183
+      ],
+      "p_model": 0.5721106220497557,
+      "p_market": 0.4959548561951378,
+      "p_final": 0.5340327391224468,
+      "p_push": 0.0,
+      "ev": 0.06277802538229504,
+      "robust_ev": 0.022976045184275207,
+      "market_only_ev": -0.01300073173046834,
+      "fair_odds": -115,
+      "bet_to": -107,
+      "independent_model_ev": 0.13855678249505843,
+      "expected_margin": -10.5,
+      "game_total": 44.5,
+      "implied_team_points": 17.0,
+      "game_market": {
+        "game_id": "2026_11_IND_HOU",
+        "event_id": "401873066",
+        "home_team": "HOU",
+        "away_team": "IND",
+        "kickoff": "2026-11-20T01:15:00+00:00",
+        "home_expected_margin": 10.5,
+        "total_line": 44.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 10.5,
+            "total_line": 44.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-16T11:38:59.839856+00:00",
+        "total_observed_at": "2026-11-16T11:38:59.839856+00:00",
+        "observed_at": "2026-11-16T11:38:59.839856+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261119&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.044819664345271945,
+        "close": 0.5415383876514158,
+        "trailing": 0.4136419480033121
+      },
+      "scenario_means": {
+        "underdog_7": 30.920361430759822,
+        "pickem": 31.89338434756855,
+        "favorite_7": 31.800439027918436
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5136986301369864,
+        "neutral_pass12": 0.5634441087613293,
+        "trail_pass12": 0.6833333333333332
+      },
+      "warnings": [
+        "Only one reference book",
+        "role_not_confirmed_at_entry"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.4959548561951378,
+          "ev": -0.01300073173046834
+        },
+        "0.35": {
+          "p_win": 0.522609374244254,
+          "ev": 0.04004439824846595
+        },
+        "0.5": {
+          "p_win": 0.5340327391224468,
+          "ev": 0.06277802538229504
+        },
+        "0.65": {
+          "p_win": 0.5454561040006395,
+          "ev": 0.08551165251612414
+        },
+        "1.0": {
+          "p_win": 0.5721106220497557,
+          "ev": 0.13855678249505843
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "caesars"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Daniel Jones",
+        "espn_id": "3917792",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Alec Pierce",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-11T17:38:00+00:00"
+          },
+          {
+            "player": "D.J. Montgomery",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:16:00+00:00"
+          },
+          {
+            "player": "Bernhard Raimann",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-15T18:52:00+00:00"
+          },
+          {
+            "player": "Jalen Travis",
+            "position": "RT",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-15T16:36:00+00:00"
+          },
+          {
+            "player": "Will Mallory",
+            "position": "TE",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-14T17:22:00+00:00"
+          },
+          {
+            "player": "Mo Alie-Cox",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-14T17:24:00+00:00"
+          },
+          {
+            "player": "Carson Towt",
+            "position": "TE",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-16T11:38:59.392076+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/11/depthcharts",
+        "source_updated_at": "2026-11-16T11:38:00+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 10
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-16T11:38:59.184060+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-16T11:34:04+00:00",
+        "observed_at": "2026-11-16T11:38:58.527960+00:00",
+        "market_id": "c894ed249b367b23a5f609650fdb64b7",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Daniel Jones",
+            "team": "IND",
+            "opponent": "HOU",
+            "home_team": "HOU",
+            "away_team": "IND",
+            "kickoff": "2026-11-20T01:15:00+00:00",
+            "game_id": "2026_11_IND_HOU",
+            "event_id": "22008",
+            "provider_event_id": "22008",
+            "provider_player_id": "18232",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22008&location=NY&live=false&page=1",
+            "observed_at": "2026-11-16T11:38:58.527960+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-df30eb5ce6a94ed4a1916c9cab0bba2a/offers-22008-1.json",
+            "proof_sha256": "51f7ee19bb9cb2f4d14275b6a86cae58acc12bb92c08037faa3aabaea666a397",
+            "market_id": "c894ed249b367b23a5f609650fdb64b7",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 31.5,
+            "side": "over",
+            "odds": -127,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_a84eaa331ac178ba26ad0be78d2c4941",
+            "provider_selection_id": "a84eaa331ac178ba26ad0be78d2c4941",
+            "book_line_id": "12_a84eaa331ac178ba26ad0be78d2c4941",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118011?outcomes=0QA389628449%232367296065_13L88808Q1-986815955Q20",
+            "source_updated_at": "2026-11-16T11:34:04+00:00",
+            "source_updated_at_raw": "2026-11-16 11:34:04",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Daniel Jones",
+            "team": "IND",
+            "opponent": "HOU",
+            "home_team": "HOU",
+            "away_team": "IND",
+            "kickoff": "2026-11-20T01:15:00+00:00",
+            "game_id": "2026_11_IND_HOU",
+            "event_id": "22008",
+            "provider_event_id": "22008",
+            "provider_player_id": "18232",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22008&location=NY&live=false&page=1",
+            "observed_at": "2026-11-16T11:38:58.527960+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-df30eb5ce6a94ed4a1916c9cab0bba2a/offers-22008-1.json",
+            "proof_sha256": "51f7ee19bb9cb2f4d14275b6a86cae58acc12bb92c08037faa3aabaea666a397",
+            "market_id": "c894ed249b367b23a5f609650fdb64b7",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 31.5,
+            "side": "under",
+            "odds": -101,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_9023bb27258a03af7f8deb050d27bb68",
+            "provider_selection_id": "9023bb27258a03af7f8deb050d27bb68",
+            "book_line_id": "12_9023bb27258a03af7f8deb050d27bb68",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118011?outcomes=0QA389628449%232367296066_13L88808Q1-614028549Q20",
+            "source_updated_at": "2026-11-16T11:34:04+00:00",
+            "source_updated_at_raw": "2026-11-16 11:34:04",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22008&location=NY&live=false&page=1",
+          "observed_at": "2026-11-16T11:38:58.527960+00:00",
+          "source_updated_at": "2026-11-16T11:34:04+00:00",
+          "provider_event_id": "22008",
+          "event_id": "22008"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/11/depthcharts",
+        "observed_at": "2026-11-16T11:38:59.392076+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118011?outcomes=0QA389628449%232367296066_13L88808Q1-614028549Q20",
+      "paper_entry_status": "new_entry",
+      "entry_id": "707c9f3acbc5c1d3e867e1bb",
+      "model": "champion",
+      "model_version": "attempts-v2.0",
+      "entry_at": "2026-11-16T11:39:00.329454+00:00",
       "cohort": "verified_paper_entry_v1",
       "actual_wager": false,
       "stake_units": 1.0,
@@ -137954,6 +138293,114 @@
       "status": "observed",
       "reason": "existing_game_exposure",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_10_PIT_CIN",
+      "player_id": "00-0023459",
+      "at": "2026-11-16T11:39:47.207890+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_10_PIT_CIN",
+      "player_id": "00-0023459",
+      "at": "2026-11-16T11:39:47.207890+00:00",
+      "status": "win",
+      "reason": "final_participating_player_stat",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_10_LAC_BAL",
+      "player_id": "00-0036355",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0039163",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_10_LAC_BAL",
+      "player_id": "00-0033119",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_10_LAC_BAL",
+      "player_id": "00-0036355",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0039163",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_10_LAC_BAL",
+      "player_id": "00-0033119",
+      "at": "2026-11-16T11:39:00.329454+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -138488,32 +138935,34 @@
     "champion:2026-11-15T19:43:15.344173+00:00",
     "claude:2026-11-15T19:43:15.344173+00:00",
     "champion:2026-11-16T01:51:06.349294+00:00",
-    "claude:2026-11-16T01:51:06.349294+00:00"
+    "claude:2026-11-16T01:51:06.349294+00:00",
+    "champion:2026-11-16T11:39:00.329454+00:00",
+    "claude:2026-11-16T11:39:00.329454+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-11-16T01:52:00.904191+00:00",
+  "updated_at": "2026-11-16T11:39:47.207890+00:00",
   "performance": {
     "champion": {
-      "bets": 46,
-      "settled": 43,
-      "wins": 22,
+      "bets": 47,
+      "settled": 44,
+      "wins": 23,
       "losses": 21,
       "pushes": 0,
       "voids": 0,
       "unresolved": 3,
-      "units": -1.0935376819097933,
-      "roi": -0.0254311088816231
+      "units": -0.15895824265745684,
+      "roi": -0.003612687333124019
     },
     "claude": {
       "bets": 48,
-      "settled": 44,
-      "wins": 27,
+      "settled": 45,
+      "wins": 28,
       "losses": 17,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 4,
-      "units": 6.846260420179313,
-      "roi": 0.155596827731348
+      "unresolved": 3,
+      "units": 7.723453402635453,
+      "roi": 0.1716322978363434
     }
   }
 }
