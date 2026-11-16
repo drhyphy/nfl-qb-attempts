@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-11-16T12:40:14.105985+00:00",
+  "run_id": "20261116T124014105985Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "player": "Daniel Jones",
+      "team": "IND",
+      "opponent": "HOU",
+      "line": 31.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22008&location=NY&live=false&page=1",
+      "observed_at": "2026-11-16T12:40:13.054880+00:00",
+      "source_updated_at": "2026-11-16T12:39:54+00:00",
+      "kickoff": "2026-11-20T01:15:00+00:00",
+      "side": "Under",
+      "odds": -101,
+      "mean": 30.43384997235546,
+      "interval80": [
+        19.047322313476908,
+        40.92848932765183
+      ],
+      "p_model": 0.5721106220497557,
+      "p_market": 0.4959548561951378,
+      "p_final": 0.5340327391224468,
+      "p_push": 0.0,
+      "ev": 0.06277802538229504,
+      "robust_ev": 0.022976045184275207,
+      "market_only_ev": -0.01300073173046834,
+      "fair_odds": -115,
+      "bet_to": -107,
+      "independent_model_ev": 0.13855678249505843,
+      "expected_margin": -10.5,
+      "game_total": 44.5,
+      "implied_team_points": 17.0,
+      "game_market": {
+        "game_id": "2026_11_IND_HOU",
+        "event_id": "401873066",
+        "home_team": "HOU",
+        "away_team": "IND",
+        "kickoff": "2026-11-20T01:15:00+00:00",
+        "home_expected_margin": 10.5,
+        "total_line": 44.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 10.5,
+            "total_line": 44.5,
+            "home_spread_odds": -108,
+            "away_spread_odds": -112,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-16T12:40:13.979534+00:00",
+        "total_observed_at": "2026-11-16T12:40:13.979534+00:00",
+        "observed_at": "2026-11-16T12:40:13.979534+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261119&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.044819664345271945,
+        "close": 0.5415383876514158,
+        "trailing": 0.4136419480033121
+      },
+      "scenario_means": {
+        "underdog_7": 30.920361430759822,
+        "pickem": 31.89338434756855,
+        "favorite_7": 31.800439027918436
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5136986301369864,
+        "neutral_pass12": 0.5634441087613293,
+        "trail_pass12": 0.6833333333333332
+      },
+      "warnings": [
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.4959548561951378,
+          "ev": -0.01300073173046834
+        },
+        "0.35": {
+          "p_win": 0.522609374244254,
+          "ev": 0.04004439824846595
+        },
+        "0.5": {
+          "p_win": 0.5340327391224468,
+          "ev": 0.06277802538229504
+        },
+        "0.65": {
+          "p_win": 0.5454561040006395,
+          "ev": 0.08551165251612414
+        },
+        "1.0": {
+          "p_win": 0.5721106220497557,
+          "ev": 0.13855678249505843
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "caesars"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Daniel Jones",
+        "espn_id": "3917792",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Alec Pierce",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-11T17:38:00+00:00"
+          },
+          {
+            "player": "D.J. Montgomery",
+            "position": "WR2",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T17:16:00+00:00"
+          },
+          {
+            "player": "Bernhard Raimann",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-15T18:52:00+00:00"
+          },
+          {
+            "player": "Jalen Travis",
+            "position": "RT",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-15T16:36:00+00:00"
+          },
+          {
+            "player": "Will Mallory",
+            "position": "TE",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-14T17:22:00+00:00"
+          },
+          {
+            "player": "Mo Alie-Cox",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-14T17:24:00+00:00"
+          },
+          {
+            "player": "Carson Towt",
+            "position": "TE",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-16T12:40:13.679827+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/11/depthcharts",
+        "source_updated_at": "2026-11-16T12:38:21+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 10
+      }
+    }
+  ]
+}
