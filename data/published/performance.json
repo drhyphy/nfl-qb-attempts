@@ -1,10 +1,10 @@
 {
-  "bets": 129,
+  "bets": 130,
   "settled": 126,
   "wins": 54,
   "losses": 72,
   "pushes": 0,
-  "unresolved": 3,
+  "unresolved": 4,
   "units": -22.263706490287724,
   "roi": -0.17669608325625177,
   "clv_bets": 37,
@@ -24634,6 +24634,211 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "player": "Tyler Shough",
+      "team": "NO",
+      "opponent": "CHI",
+      "line": 38.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+      "observed_at": "2026-11-17T22:13:09.607193+00:00",
+      "source_updated_at": "2026-11-17T22:10:58+00:00",
+      "kickoff": "2026-11-22T18:00:00+00:00",
+      "side": "under",
+      "odds": -122.0,
+      "mean": 33.23305003625335,
+      "interval80": [
+        21.8465223773748,
+        43.72768939154973
+      ],
+      "p_model": 0.7415878471450119,
+      "p_market": 0.5191532258064516,
+      "p_final": 0.6303705364757317,
+      "p_push": 0.0,
+      "ev": 0.14706769752141347,
+      "robust_ev": 0.11067425489846261,
+      "market_only_ev": -0.055311343204653585,
+      "fair_odds": -171,
+      "bet_to": -157,
+      "independent_model_ev": 0.34944673824748074,
+      "expected_margin": -11.5,
+      "game_total": 49.5,
+      "implied_team_points": 19.0,
+      "game_market": {
+        "game_id": "2026_11_NO_CHI",
+        "event_id": "401873071",
+        "home_team": "CHI",
+        "away_team": "NO",
+        "kickoff": "2026-11-22T18:00:00+00:00",
+        "home_expected_margin": 11.5,
+        "total_line": 49.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 11.5,
+            "total_line": 49.5,
+            "home_spread_odds": -112,
+            "away_spread_odds": -108,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "total_observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261122&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.040920089424894376,
+        "close": 0.5049373847977779,
+        "trailing": 0.4541425257773277
+      },
+      "scenario_means": {
+        "underdog_7": 33.949960621621976,
+        "pickem": 35.065154865528726,
+        "favorite_7": 35.122924061523015
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5031847133757962,
+        "neutral_pass12": 0.6298507462686567,
+        "trail_pass12": 0.7212765957446807
+      },
+      "warnings": [
+        "Large model\u2013market disagreement",
+        "Only one reference book"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5191532258064516,
+          "ev": -0.055311343204653585
+        },
+        "0.35": {
+          "p_win": 0.5970053432749477,
+          "ev": 0.08635398530359334
+        },
+        "0.5": {
+          "p_win": 0.6303705364757317,
+          "ev": 0.14706769752141347
+        },
+        "0.65": {
+          "p_win": 0.6637357296765158,
+          "ev": 0.20778140973923376
+        },
+        "1.0": {
+          "p_win": 0.7415878471450119,
+          "ev": 0.34944673824748074
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "betrivers"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Tyler Shough",
+        "espn_id": "4360689",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Mason Tipton",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T18:40:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-17T00:38:00+00:00"
+          },
+          {
+            "player": "Dillon Radunz",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Erik McCoy",
+            "position": "C",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Taliese Fuaga",
+            "position": "RT",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "RT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-17T00:38:00+00:00"
+          },
+          {
+            "player": "Moliki Matavao",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:41:00+00:00"
+          },
+          {
+            "player": "CJ Donaldson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Questionable",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Ty Chandler",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:39:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-17T22:13:11.814164+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "source_updated_at": "2026-11-17T22:10:22+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 18,
+        "season_games": 9
+      },
+      "generated_at": "2026-11-17T22:13:13.033547+00:00",
+      "snapshot": "20261117T221313033547Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -24642,12 +24847,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 129,
+      "bets": 130,
       "settled": 126,
       "wins": 54,
       "losses": 72,
       "pushes": 0,
-      "unresolved": 3,
+      "unresolved": 4,
       "units": -22.263706490287724,
       "roi": -0.17669608325625177,
       "clv_bets": 37,

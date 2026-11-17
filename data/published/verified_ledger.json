@@ -30831,6 +30831,626 @@
         "books": 0,
         "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
       }
+    },
+    {
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "player": "Tyler Shough",
+      "team": "NO",
+      "opponent": "CHI",
+      "line": 38.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+      "observed_at": "2026-11-17T22:13:09.607193+00:00",
+      "source_updated_at": "2026-11-17T22:10:58+00:00",
+      "kickoff": "2026-11-22T18:00:00+00:00",
+      "side": "Under",
+      "odds": -122,
+      "mean": 33.23305003625335,
+      "interval80": [
+        21.8465223773748,
+        43.72768939154973
+      ],
+      "p_model": 0.7415878471450119,
+      "p_market": 0.5191532258064516,
+      "p_final": 0.6303705364757317,
+      "p_push": 0.0,
+      "ev": 0.14706769752141347,
+      "robust_ev": 0.11067425489846261,
+      "market_only_ev": -0.055311343204653585,
+      "fair_odds": -171,
+      "bet_to": -157,
+      "independent_model_ev": 0.34944673824748074,
+      "expected_margin": -11.5,
+      "game_total": 49.5,
+      "implied_team_points": 19.0,
+      "game_market": {
+        "game_id": "2026_11_NO_CHI",
+        "event_id": "401873071",
+        "home_team": "CHI",
+        "away_team": "NO",
+        "kickoff": "2026-11-22T18:00:00+00:00",
+        "home_expected_margin": 11.5,
+        "total_line": 49.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 11.5,
+            "total_line": 49.5,
+            "home_spread_odds": -112,
+            "away_spread_odds": -108,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "total_observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261122&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.040920089424894376,
+        "close": 0.5049373847977779,
+        "trailing": 0.4541425257773277
+      },
+      "scenario_means": {
+        "underdog_7": 33.949960621621976,
+        "pickem": 35.065154865528726,
+        "favorite_7": 35.122924061523015
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5031847133757962,
+        "neutral_pass12": 0.6298507462686567,
+        "trail_pass12": 0.7212765957446807
+      },
+      "warnings": [
+        "Large model\u2013market disagreement",
+        "Only one reference book",
+        "role_not_confirmed_at_entry"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5191532258064516,
+          "ev": -0.055311343204653585
+        },
+        "0.35": {
+          "p_win": 0.5970053432749477,
+          "ev": 0.08635398530359334
+        },
+        "0.5": {
+          "p_win": 0.6303705364757317,
+          "ev": 0.14706769752141347
+        },
+        "0.65": {
+          "p_win": 0.6637357296765158,
+          "ev": 0.20778140973923376
+        },
+        "1.0": {
+          "p_win": 0.7415878471450119,
+          "ev": 0.34944673824748074
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 1,
+      "reference_books": [
+        "betrivers"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Tyler Shough",
+        "espn_id": "4360689",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Mason Tipton",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T18:40:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-17T00:38:00+00:00"
+          },
+          {
+            "player": "Dillon Radunz",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Erik McCoy",
+            "position": "C",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Taliese Fuaga",
+            "position": "RT",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "RT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-17T00:38:00+00:00"
+          },
+          {
+            "player": "Moliki Matavao",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:41:00+00:00"
+          },
+          {
+            "player": "CJ Donaldson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Questionable",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Ty Chandler",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:39:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-17T22:13:11.814164+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "source_updated_at": "2026-11-17T22:10:22+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 18,
+        "season_games": 9
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-17T22:13:11.226717+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-17T22:10:58+00:00",
+        "observed_at": "2026-11-17T22:13:09.607193+00:00",
+        "market_id": "115e8201d8be5612691317882728c083",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Tyler Shough",
+            "team": "NO",
+            "opponent": "CHI",
+            "home_team": "CHI",
+            "away_team": "NO",
+            "kickoff": "2026-11-22T18:00:00+00:00",
+            "game_id": "2026_11_NO_CHI",
+            "event_id": "22010",
+            "provider_event_id": "22010",
+            "provider_player_id": "23096",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+            "observed_at": "2026-11-17T22:13:09.607193+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-3b66a50154af4f79a5fbb7a122fa4c80/offers-22010-1.json",
+            "proof_sha256": "b3d90e02fbf31622a14ac2024d260062734b5ecdeaccdcbe6282224e6b702915",
+            "market_id": "115e8201d8be5612691317882728c083",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanduel",
+            "line": 38.5,
+            "side": "over",
+            "odds": -108,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "10_dc1edb1e6da5a0f323a89d5ef95cae2a",
+            "provider_selection_id": "dc1edb1e6da5a0f323a89d5ef95cae2a",
+            "book_line_id": "10_dc1edb1e6da5a0f323a89d5ef95cae2a",
+            "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.626331786&selectionId=41066836",
+            "source_updated_at": "2026-11-17T22:10:58+00:00",
+            "source_updated_at_raw": "2026-11-17 22:10:58",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Tyler Shough",
+            "team": "NO",
+            "opponent": "CHI",
+            "home_team": "CHI",
+            "away_team": "NO",
+            "kickoff": "2026-11-22T18:00:00+00:00",
+            "game_id": "2026_11_NO_CHI",
+            "event_id": "22010",
+            "provider_event_id": "22010",
+            "provider_player_id": "23096",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+            "observed_at": "2026-11-17T22:13:09.607193+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-3b66a50154af4f79a5fbb7a122fa4c80/offers-22010-1.json",
+            "proof_sha256": "b3d90e02fbf31622a14ac2024d260062734b5ecdeaccdcbe6282224e6b702915",
+            "market_id": "115e8201d8be5612691317882728c083",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanduel",
+            "line": 38.5,
+            "side": "under",
+            "odds": -122,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "10_ac69c02de35ac5ffc71dc37519976cbb",
+            "provider_selection_id": "ac69c02de35ac5ffc71dc37519976cbb",
+            "book_line_id": "10_ac69c02de35ac5ffc71dc37519976cbb",
+            "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.626331786&selectionId=41066844",
+            "source_updated_at": "2026-11-17T22:10:58+00:00",
+            "source_updated_at_raw": "2026-11-17 22:10:58",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+          "observed_at": "2026-11-17T22:13:09.607193+00:00",
+          "source_updated_at": "2026-11-17T22:10:58+00:00",
+          "provider_event_id": "22010",
+          "event_id": "22010"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "observed_at": "2026-11-17T22:13:11.814164+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.626331786&selectionId=41066844",
+      "paper_entry_status": "new_entry",
+      "entry_id": "4b822189317ee8a6bb0ea778",
+      "model": "champion",
+      "model_version": "attempts-v2.0",
+      "entry_at": "2026-11-17T22:13:13.033547+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
+    },
+    {
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "player": "Tyler Shough",
+      "team": "NO",
+      "opponent": "CHI",
+      "line": 38.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+      "observed_at": "2026-11-17T22:13:09.607193+00:00",
+      "source_updated_at": "2026-11-17T22:10:58+00:00",
+      "season": 2026,
+      "week": 11,
+      "kickoff": "2026-11-22T18:00:00+00:00",
+      "side": "Under",
+      "odds": -122,
+      "mean": 34.06055651594316,
+      "mu_model": 34.06055651594316,
+      "mu_market": 38.1911927736127,
+      "mu_final": 36.74547008342836,
+      "mean_market": 38.1911927736127,
+      "mean_final": 36.74547008342836,
+      "scale": 1.0,
+      "p_model": 0.7146292739911605,
+      "p_market": 0.5367756177389144,
+      "p_final": 0.6018579846173833,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.09518420151687779,
+      "robust_ev": null,
+      "independent_model_ev": 0.300390973983915,
+      "market_only_ev": -0.02324436772099192,
+      "fair_odds": -151,
+      "bet_to": -143,
+      "bet_to_target": 0.02,
+      "interval80": [
+        23.100083132025773,
+        44.346036644727334
+      ],
+      "expected_margin": -11.5,
+      "game_total": 49.5,
+      "implied_team_points": 19.0,
+      "game_market": {
+        "game_id": "2026_11_NO_CHI",
+        "event_id": "401873071",
+        "home_team": "CHI",
+        "away_team": "NO",
+        "kickoff": "2026-11-22T18:00:00+00:00",
+        "home_expected_margin": 11.5,
+        "total_line": 49.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 11.5,
+            "total_line": 49.5,
+            "home_spread_odds": -112,
+            "away_spread_odds": -108,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "total_observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "observed_at": "2026-11-17T22:13:12.509048+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261122&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanduel"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [
+        "role_not_confirmed_at_entry"
+      ],
+      "starting_status": {
+        "starter": "Tyler Shough",
+        "espn_id": "4360689",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Mason Tipton",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T18:40:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-17T00:38:00+00:00"
+          },
+          {
+            "player": "Dillon Radunz",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Erik McCoy",
+            "position": "C",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Taliese Fuaga",
+            "position": "RT",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "RT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-17T00:38:00+00:00"
+          },
+          {
+            "player": "Moliki Matavao",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:41:00+00:00"
+          },
+          {
+            "player": "CJ Donaldson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Questionable",
+            "date": "2026-11-17T12:19:00+00:00"
+          },
+          {
+            "player": "Ty Chandler",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-25T22:39:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-17T22:13:11.814164+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "source_updated_at": "2026-11-17T22:10:22+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 18
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-17T22:13:11.226717+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-17T22:10:58+00:00",
+        "observed_at": "2026-11-17T22:13:09.607193+00:00",
+        "market_id": "115e8201d8be5612691317882728c083",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Tyler Shough",
+            "team": "NO",
+            "opponent": "CHI",
+            "home_team": "CHI",
+            "away_team": "NO",
+            "kickoff": "2026-11-22T18:00:00+00:00",
+            "game_id": "2026_11_NO_CHI",
+            "event_id": "22010",
+            "provider_event_id": "22010",
+            "provider_player_id": "23096",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+            "observed_at": "2026-11-17T22:13:09.607193+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-3b66a50154af4f79a5fbb7a122fa4c80/offers-22010-1.json",
+            "proof_sha256": "b3d90e02fbf31622a14ac2024d260062734b5ecdeaccdcbe6282224e6b702915",
+            "market_id": "115e8201d8be5612691317882728c083",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanduel",
+            "line": 38.5,
+            "side": "over",
+            "odds": -108,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "10_dc1edb1e6da5a0f323a89d5ef95cae2a",
+            "provider_selection_id": "dc1edb1e6da5a0f323a89d5ef95cae2a",
+            "book_line_id": "10_dc1edb1e6da5a0f323a89d5ef95cae2a",
+            "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.626331786&selectionId=41066836",
+            "source_updated_at": "2026-11-17T22:10:58+00:00",
+            "source_updated_at_raw": "2026-11-17 22:10:58",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Tyler Shough",
+            "team": "NO",
+            "opponent": "CHI",
+            "home_team": "CHI",
+            "away_team": "NO",
+            "kickoff": "2026-11-22T18:00:00+00:00",
+            "game_id": "2026_11_NO_CHI",
+            "event_id": "22010",
+            "provider_event_id": "22010",
+            "provider_player_id": "23096",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+            "observed_at": "2026-11-17T22:13:09.607193+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-3b66a50154af4f79a5fbb7a122fa4c80/offers-22010-1.json",
+            "proof_sha256": "b3d90e02fbf31622a14ac2024d260062734b5ecdeaccdcbe6282224e6b702915",
+            "market_id": "115e8201d8be5612691317882728c083",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "fanduel",
+            "line": 38.5,
+            "side": "under",
+            "odds": -122,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "10_ac69c02de35ac5ffc71dc37519976cbb",
+            "provider_selection_id": "ac69c02de35ac5ffc71dc37519976cbb",
+            "book_line_id": "10_ac69c02de35ac5ffc71dc37519976cbb",
+            "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.626331786&selectionId=41066844",
+            "source_updated_at": "2026-11-17T22:10:58+00:00",
+            "source_updated_at_raw": "2026-11-17 22:10:58",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+          "observed_at": "2026-11-17T22:13:09.607193+00:00",
+          "source_updated_at": "2026-11-17T22:10:58+00:00",
+          "provider_event_id": "22010",
+          "event_id": "22010"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "observed_at": "2026-11-17T22:13:11.814164+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.626331786&selectionId=41066844",
+      "paper_entry_status": "new_entry",
+      "entry_id": "e571651f9f547ae16631f5fa",
+      "model": "claude",
+      "entry_at": "2026-11-17T22:13:13.033547+00:00",
+      "cohort": "verified_paper_entry_v1",
+      "actual_wager": false,
+      "stake_units": 1.0,
+      "settlement": {
+        "result": "pending",
+        "actual": null,
+        "profit_1u": null
+      },
+      "settlement_history": [],
+      "verified_clv": {
+        "value": null,
+        "books": 0,
+        "definition": "verified_paired_probability_times_entry_decimal_minus_one_conditional_on_no_push"
+      }
     }
   ],
   "events": [
@@ -140066,6 +140686,366 @@
       "status": "observed",
       "reason": "existing_game_exposure",
       "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_CIN_WAS",
+      "player_id": "00-0039910",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_TEN_DAL",
+      "player_id": "00-0040676",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_MIA_BUF",
+      "player_id": "00-0040014",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_MIN_SF",
+      "player_id": "00-0029604",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_MIN_SF",
+      "player_id": "00-0037834",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0039918",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_CIN_WAS",
+      "player_id": "00-0036442",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0039163",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_MIA_BUF",
+      "player_id": "00-0034857",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_TEN_DAL",
+      "player_id": "00-0033077",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_CIN_WAS",
+      "player_id": "00-0039910",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "champion",
+      "game_id": "2026_11_CIN_WAS",
+      "player_id": "00-0039910",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_MIA_BUF",
+      "player_id": "00-0040014",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_CIN_WAS",
+      "player_id": "00-0039910",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0039918",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_TEN_DAL",
+      "player_id": "00-0033077",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_NYJ_LAC",
+      "player_id": "00-0030565",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_LV_DEN",
+      "player_id": "00-0041562",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_BAL_CAR",
+      "player_id": "00-0033119",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0039163",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_TB_DET",
+      "player_id": "00-0033106",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_TEN_DAL",
+      "player_id": "00-0040676",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_CIN_WAS",
+      "player_id": "00-0036442",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_MIN_SF",
+      "player_id": "00-0037834",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_ARI_KC",
+      "player_id": "00-0041561",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_MIA_BUF",
+      "player_id": "00-0034857",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_MIN_SF",
+      "player_id": "00-0029604",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_NYJ_LAC",
+      "player_id": "00-0036355",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_BAL_CAR",
+      "player_id": "00-0039150",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_LV_DEN",
+      "player_id": "00-0039732",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "research_observation",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0040743",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "paper_entry",
+      "reason": "first_verified_published_quote",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "eligible",
+      "reason": "verified_price_early_entry_allowed",
+      "version": "verified_paper_entry_v1"
+    },
+    {
+      "model": "claude",
+      "game_id": "2026_11_IND_HOU",
+      "player_id": "00-0035710",
+      "at": "2026-11-17T22:13:13.033547+00:00",
+      "status": "observed",
+      "reason": "existing_game_exposure",
+      "version": "verified_paper_entry_v1"
     }
   ],
   "processed_boards": [
@@ -140610,30 +141590,32 @@
     "champion:2026-11-17T09:02:30.757181+00:00",
     "claude:2026-11-17T09:02:30.757181+00:00",
     "champion:2026-11-17T11:41:51.129153+00:00",
-    "claude:2026-11-17T11:41:51.129153+00:00"
+    "claude:2026-11-17T11:41:51.129153+00:00",
+    "champion:2026-11-17T22:13:13.033547+00:00",
+    "claude:2026-11-17T22:13:13.033547+00:00"
   ],
   "note": "Flat one-unit paper signals at first verified published prices; no wagers executed.",
-  "updated_at": "2026-11-17T11:42:49.443632+00:00",
+  "updated_at": "2026-11-17T22:14:00.827806+00:00",
   "performance": {
     "champion": {
-      "bets": 48,
+      "bets": 49,
       "settled": 45,
       "wins": 24,
       "losses": 21,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 3,
+      "unresolved": 4,
       "units": 0.7584729500030937,
       "roi": 0.016854954444513192
     },
     "claude": {
-      "bets": 50,
+      "bets": 51,
       "settled": 46,
       "wins": 29,
       "losses": 17,
       "pushes": 0,
       "voids": 0,
-      "unresolved": 4,
+      "unresolved": 5,
       "units": 8.69432718904322,
       "roi": 0.1890071128052874
     }
