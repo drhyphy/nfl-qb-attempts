@@ -1,10 +1,10 @@
 {
-  "bets": 135,
+  "bets": 136,
   "settled": 127,
   "wins": 55,
   "losses": 72,
   "pushes": 0,
-  "unresolved": 8,
+  "unresolved": 9,
   "units": -21.273607480386733,
   "roi": -0.16750872031800576,
   "clv_bets": 37,
@@ -25769,6 +25769,191 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_11_NO_CHI",
+      "player_id": "00-0039918",
+      "player": "Caleb Williams",
+      "team": "CHI",
+      "opponent": "NO",
+      "line": 30.5,
+      "book": "caesars",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22010&location=NY&live=false&page=1",
+      "observed_at": "2026-11-21T20:30:03.320626+00:00",
+      "source_updated_at": "2026-11-21T20:03:06+00:00",
+      "kickoff": "2026-11-22T18:00:00+00:00",
+      "side": "over",
+      "odds": 112.0,
+      "mean": 33.26216439895767,
+      "interval80": [
+        21.87563674007912,
+        43.75680375425405
+      ],
+      "p_model": 0.6070223280205649,
+      "p_market": 0.5,
+      "p_final": 0.5535111640102824,
+      "p_push": 0.0,
+      "ev": 0.17344366770179886,
+      "robust_ev": 0.13104366770179876,
+      "market_only_ev": 0.06000000000000005,
+      "fair_odds": -124,
+      "bet_to": -116,
+      "independent_model_ev": 0.28688733540359757,
+      "expected_margin": 11.5,
+      "game_total": 48.5,
+      "implied_team_points": 30.0,
+      "game_market": {
+        "game_id": "2026_11_NO_CHI",
+        "event_id": "401873071",
+        "home_team": "CHI",
+        "away_team": "NO",
+        "kickoff": "2026-11-22T18:00:00+00:00",
+        "home_expected_margin": 11.5,
+        "total_line": 48.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 11.5,
+            "total_line": 48.5,
+            "home_spread_odds": -107,
+            "away_spread_odds": -112,
+            "over_odds": -107,
+            "under_odds": -113,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-21T20:30:05.380982+00:00",
+        "total_observed_at": "2026-11-21T20:30:05.380982+00:00",
+        "observed_at": "2026-11-21T20:30:05.380982+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261122&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.3177849882022305,
+        "close": 0.6012955379407571,
+        "trailing": 0.08091947385701243
+      },
+      "scenario_means": {
+        "underdog_7": 32.10432103335708,
+        "pickem": 33.20967595502879,
+        "favorite_7": 33.24162544263768
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4797047970479705,
+        "neutral_pass12": 0.5864297253634895,
+        "trail_pass12": 0.7038297872340424
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": 0.06000000000000005
+        },
+        "0.35": {
+          "p_win": 0.5374578148071977,
+          "ev": 0.13941056739125912
+        },
+        "0.5": {
+          "p_win": 0.5535111640102824,
+          "ev": 0.17344366770179886
+        },
+        "0.65": {
+          "p_win": 0.5695645132133671,
+          "ev": 0.20747676801233828
+        },
+        "1.0": {
+          "p_win": 0.6070223280205649,
+          "ev": 0.28688733540359757
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 5,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "draftkings",
+        "fanatics",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Caleb Williams",
+        "espn_id": "4431611",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Zavion Thomas",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-20T20:43:00+00:00"
+          },
+          {
+            "player": "Braxton Jones",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-05T03:40:00+00:00"
+          },
+          {
+            "player": "Hayden Large",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-01T23:40:00+00:00"
+          },
+          {
+            "player": "Cole Kmet",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-10-23T21:36:00+00:00"
+          },
+          {
+            "player": "Zavier Scott",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-11-05T21:19:00+00:00"
+          },
+          {
+            "player": "Brittain Brown",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T16:21:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-21T20:30:05.021580+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/3/depthcharts",
+        "source_updated_at": "2026-11-21T20:30:04+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 6
+      },
+      "generated_at": "2026-11-21T20:30:05.542573+00:00",
+      "snapshot": "20261121T203005542573Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -25777,12 +25962,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 135,
+      "bets": 136,
       "settled": 127,
       "wins": 55,
       "losses": 72,
       "pushes": 0,
-      "unresolved": 8,
+      "unresolved": 9,
       "units": -21.273607480386733,
       "roi": -0.16750872031800576,
       "clv_bets": 37,
