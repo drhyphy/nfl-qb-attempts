@@ -1,10 +1,10 @@
 {
-  "bets": 136,
+  "bets": 137,
   "settled": 127,
   "wins": 55,
   "losses": 72,
   "pushes": 0,
-  "unresolved": 9,
+  "unresolved": 10,
   "units": -21.273607480386733,
   "roi": -0.16750872031800576,
   "clv_bets": 37,
@@ -25954,6 +25954,199 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_11_JAX_NYG",
+      "player_id": "00-0039923",
+      "player": "J.J. McCarthy",
+      "team": "NYG",
+      "opponent": "JAX",
+      "line": 31.5,
+      "book": "draftkings",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-11-22T20:42:54.811509+00:00",
+      "source_updated_at": "2026-11-22T20:30:04+00:00",
+      "kickoff": "2026-11-22T21:25:00+00:00",
+      "side": "under",
+      "odds": -101.0,
+      "mean": 27.26208447833732,
+      "interval80": [
+        15.87555681945877,
+        37.7567238336337
+      ],
+      "p_model": 0.7021890282824486,
+      "p_market": 0.5055309734513275,
+      "p_final": 0.603860000866888,
+      "p_push": 0.0,
+      "ev": 0.2017411898440048,
+      "robust_ev": 0.16193920964598496,
+      "market_only_ev": 0.006056689739770471,
+      "fair_odds": -152,
+      "bet_to": -141,
+      "independent_model_ev": 0.39742568994823924,
+      "expected_margin": -6.0,
+      "game_total": 45.5,
+      "implied_team_points": 19.75,
+      "game_market": {
+        "game_id": "2026_11_JAX_NYG",
+        "event_id": "401873069",
+        "home_team": "NYG",
+        "away_team": "JAX",
+        "kickoff": "2026-11-22T21:25:00+00:00",
+        "home_expected_margin": -6.0,
+        "total_line": 45.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -6.0,
+            "total_line": 45.5,
+            "home_spread_odds": -110,
+            "away_spread_odds": -110,
+            "over_odds": -107,
+            "under_odds": -112,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-22T20:42:58.025190+00:00",
+        "total_observed_at": "2026-11-22T20:42:58.025190+00:00",
+        "observed_at": "2026-11-22T20:42:58.025190+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261122&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.07474359420671922,
+        "close": 0.6034215571900944,
+        "trailing": 0.3218348486031864
+      },
+      "scenario_means": {
+        "underdog_7": 27.099021093796107,
+        "pickem": 28.240464785584596,
+        "favorite_7": 28.30850304331026
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4876847290640394,
+        "neutral_pass12": 0.5611620795107034,
+        "trail_pass12": 0.7165289256198346
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5055309734513275,
+          "ev": 0.006056689739770471
+        },
+        "0.35": {
+          "p_win": 0.5743612926422199,
+          "ev": 0.1430358398127347
+        },
+        "0.5": {
+          "p_win": 0.603860000866888,
+          "ev": 0.2017411898440048
+        },
+        "0.65": {
+          "p_win": 0.6333587090915562,
+          "ev": 0.2604465398752752
+        },
+        "1.0": {
+          "p_win": 0.7021890282824486,
+          "ev": 0.39742568994823924
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "caesars",
+        "fanatics"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "J.J. McCarthy",
+        "espn_id": "4433970",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Braxton Berrios",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-14T21:17:00+00:00"
+          },
+          {
+            "player": "Calvin Austin III",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-08-27T22:48:00+00:00"
+          },
+          {
+            "player": "J.C. Davis",
+            "position": "LT",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-22T20:05:00+00:00"
+          },
+          {
+            "player": "Josh Sills",
+            "position": "LG",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-11-22T20:05:00+00:00"
+          },
+          {
+            "player": "Thomas Fidone II",
+            "position": "TE",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-11-22T20:05:00+00:00"
+          },
+          {
+            "player": "Greg Desrosiers Jr.",
+            "position": "RB",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-11-22T20:05:00+00:00"
+          },
+          {
+            "player": "Tyrone Tracy Jr.",
+            "position": "RB",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-18T20:16:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-22T20:42:57.754611+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/19/depthcharts",
+        "source_updated_at": "2026-11-22T20:37:17+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 13,
+        "season_games": 3
+      },
+      "generated_at": "2026-11-22T20:42:58.582535+00:00",
+      "snapshot": "20261122T204258582535Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -25962,12 +26155,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 136,
+      "bets": 137,
       "settled": 127,
       "wins": 55,
       "losses": 72,
       "pushes": 0,
-      "unresolved": 9,
+      "unresolved": 10,
       "units": -21.273607480386733,
       "roi": -0.16750872031800576,
       "clv_bets": 37,
