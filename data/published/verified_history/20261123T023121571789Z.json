@@ -1,0 +1,1302 @@
+{
+  "generated_at": "2026-11-23T02:31:21.571789+00:00",
+  "run_id": "20261123T023121571789Z",
+  "entry_policy": {
+    "version": "verified_early_entry_v1",
+    "final_role_confirmation_required": false,
+    "max_open_per_model": 5,
+    "cohort": "Paper signals only; no wagers executed",
+    "note": "Early entry allowed at verified prices. Unknown/questionable roles warn; explicit current unavailability withdraws. Original research policies and forecasts remain unchanged."
+  },
+  "verified_recommendations": [
+    {
+      "game_id": "2026_12_GB_LA",
+      "player_id": "00-0036264",
+      "player": "Jordan Love",
+      "team": "GB",
+      "opponent": "LA",
+      "line": 35.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+      "observed_at": "2026-11-23T02:31:19.127904+00:00",
+      "source_updated_at": "2026-11-23T02:26:30+00:00",
+      "kickoff": "2026-11-26T01:00:00+00:00",
+      "side": "Under",
+      "odds": -104,
+      "mean": 32.87189398210141,
+      "interval80": [
+        21.485366323222863,
+        43.3665333373978
+      ],
+      "p_model": 0.6387230269788825,
+      "p_market": 0.5091144830711781,
+      "p_final": 0.5739187550250303,
+      "p_push": 0.0,
+      "ev": 0.12576371177986712,
+      "robust_ev": 0.08653294254909794,
+      "market_only_ev": -0.0013523601296121512,
+      "fair_odds": -135,
+      "bet_to": -125,
+      "independent_model_ev": 0.2528797836893465,
+      "expected_margin": -3.0,
+      "game_total": 44.5,
+      "implied_team_points": 20.75,
+      "game_market": {
+        "game_id": "2026_12_GB_LA",
+        "event_id": "401873079",
+        "home_team": "LA",
+        "away_team": "GB",
+        "kickoff": "2026-11-26T01:00:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 44.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 44.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -114,
+            "over_odds": -114,
+            "under_odds": -105,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-23T02:31:20.731426+00:00",
+        "total_observed_at": "2026-11-23T02:31:20.731426+00:00",
+        "observed_at": "2026-11-23T02:31:20.731426+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261125&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.09666757118965634,
+        "close": 0.6388189467282245,
+        "trailing": 0.2645134820821192
+      },
+      "scenario_means": {
+        "underdog_7": 32.18349124375559,
+        "pickem": 33.38819603586077,
+        "favorite_7": 33.51949539390313
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5514950166112956,
+        "neutral_pass12": 0.6056644880174292,
+        "trail_pass12": 0.7335593220338982
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5091144830711781,
+          "ev": -0.0013523601296121512
+        },
+        "0.35": {
+          "p_win": 0.5544774734388747,
+          "ev": 0.08762889020702336
+        },
+        "0.5": {
+          "p_win": 0.5739187550250303,
+          "ev": 0.12576371177986712
+        },
+        "0.65": {
+          "p_win": 0.593360036611186,
+          "ev": 0.16389853335271098
+        },
+        "1.0": {
+          "p_win": 0.6387230269788825,
+          "ev": 0.2528797836893465
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 2,
+      "reference_books": [
+        "caesars",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Jordan Love",
+        "espn_id": "4036378",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Skyy Moore",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-22T21:39:00+00:00"
+          },
+          {
+            "player": "Jayden Reed",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-30T15:55:00+00:00"
+          },
+          {
+            "player": "Bo Melton",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-22T21:38:00+00:00"
+          },
+          {
+            "player": "Sean Rhyan",
+            "position": "C",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-22T21:43:00+00:00"
+          },
+          {
+            "player": "Jacob Monk",
+            "position": "C",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-26T21:52:00+00:00"
+          },
+          {
+            "player": "Kevin Zeitler",
+            "position": "RG",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-17T12:21:00+00:00"
+          },
+          {
+            "player": "Jacob Monk",
+            "position": "RG",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-10-26T21:52:00+00:00"
+          },
+          {
+            "player": "Zach Bako-Bewele",
+            "position": "RT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-29T00:26:00+00:00"
+          },
+          {
+            "player": "Luke Musgrave",
+            "position": "TE",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-11-22T14:06:00+00:00"
+          },
+          {
+            "player": "Josh Whyle",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-14T22:35:00+00:00"
+          },
+          {
+            "player": "Thomas Yassmin",
+            "position": "TE",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:12:00+00:00"
+          },
+          {
+            "player": "Josh Jacobs",
+            "position": "RB",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-22T21:43:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-23T02:31:20.210185+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/9/depthcharts",
+        "source_updated_at": "2026-11-23T02:30:34+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 10
+      },
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-23T02:31:19.916154+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-23T02:26:30+00:00",
+        "observed_at": "2026-11-23T02:31:19.127904+00:00",
+        "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Jordan Love",
+            "team": "GB",
+            "opponent": "LA",
+            "home_team": "LA",
+            "away_team": "GB",
+            "kickoff": "2026-11-26T01:00:00+00:00",
+            "game_id": "2026_12_GB_LA",
+            "event_id": "21918",
+            "provider_event_id": "21918",
+            "provider_player_id": "19246",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.127904+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+            "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+            "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "over",
+            "odds": -122,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_9117e4e2dfdfaa02b554a3e96b8fbb7b",
+            "provider_selection_id": "9117e4e2dfdfaa02b554a3e96b8fbb7b",
+            "book_line_id": "12_9117e4e2dfdfaa02b554a3e96b8fbb7b",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118092?outcomes=0QA391615846%232376384371_13L88808Q1-1083900177Q20",
+            "source_updated_at": "2026-11-23T02:26:30+00:00",
+            "source_updated_at_raw": "2026-11-23 02:26:30",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Jordan Love",
+            "team": "GB",
+            "opponent": "LA",
+            "home_team": "LA",
+            "away_team": "GB",
+            "kickoff": "2026-11-26T01:00:00+00:00",
+            "game_id": "2026_12_GB_LA",
+            "event_id": "21918",
+            "provider_event_id": "21918",
+            "provider_player_id": "19246",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.127904+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+            "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+            "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "under",
+            "odds": -104,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_810f08cafd7306a8bbf3836cf83b8665",
+            "provider_selection_id": "810f08cafd7306a8bbf3836cf83b8665",
+            "book_line_id": "12_810f08cafd7306a8bbf3836cf83b8665",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118092?outcomes=0QA391615846%232376384378_13L88808Q11389438358Q20",
+            "source_updated_at": "2026-11-23T02:26:30+00:00",
+            "source_updated_at_raw": "2026-11-23 02:26:30",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+          "observed_at": "2026-11-23T02:31:19.127904+00:00",
+          "source_updated_at": "2026-11-23T02:26:30+00:00",
+          "provider_event_id": "21918",
+          "event_id": "21918"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/9/depthcharts",
+        "observed_at": "2026-11-23T02:31:20.210185+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118092?outcomes=0QA391615846%232376384378_13L88808Q11389438358Q20",
+      "paper_entry_status": "new_entry"
+    }
+  ],
+  "verified_performance": {
+    "champion": {
+      "bets": 52,
+      "settled": 48,
+      "wins": 25,
+      "losses": 23,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 4,
+      "units": -0.2514280400959161,
+      "roi": -0.005238084168664919
+    },
+    "claude": {
+      "bets": 53,
+      "settled": 50,
+      "wins": 30,
+      "losses": 20,
+      "pushes": 0,
+      "voids": 0,
+      "unresolved": 3,
+      "units": 6.541784816161863,
+      "roi": 0.13083569632323727
+    }
+  },
+  "shadow": {
+    "version": "shadow-protocol-2026-09-14",
+    "generated_at": "2026-11-23T02:31:21.571789+00:00",
+    "status": "ok",
+    "shadow_only": true,
+    "promotion_allowed": false,
+    "predictions": [
+      {
+        "game_id": "2026_11_CIN_WAS",
+        "player_id": "00-0036442",
+        "player": "Joe Burrow",
+        "book": "betmgm",
+        "line": 37.5,
+        "kickoff": "2026-11-24T01:15:00+00:00",
+        "market_only_p_over": 0.5121511604358217,
+        "independent_p_over": 0.49083300738186975,
+        "calibrated_p_over": 0.5090573455199233,
+        "conditional_p_over": 0.4919640266212886,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 37.82230511146827,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-11-23T02:31:19.916154+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-11-23T02:31:18.422226+00:00",
+            "source_updated_at": null,
+            "provider_event_id": "nfl/35986020",
+            "event_id": "nfl/35986020"
+          }
+        },
+        "observed_at": "2026-11-23T02:31:18.422226+00:00",
+        "source_updated_at": null
+      },
+      {
+        "game_id": "2026_11_CIN_WAS",
+        "player_id": "00-0039910",
+        "player": "Jayden Daniels",
+        "book": "betmgm",
+        "line": 31.5,
+        "kickoff": "2026-11-24T01:15:00+00:00",
+        "market_only_p_over": 0.4808467741935484,
+        "independent_p_over": 0.38560316191490374,
+        "calibrated_p_over": 0.4670244647483552,
+        "conditional_p_over": 0.3963283081845481,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 29.460197242139394,
+        "quote_verification": {
+          "status": "unverified",
+          "checked_at": "2026-11-23T02:31:19.916154+00:00",
+          "reason": "matching_paired_market_not_found",
+          "evidence_level": null,
+          "source": null,
+          "jurisdiction": null,
+          "source_updated_at": null,
+          "observed_at": null,
+          "market_id": null,
+          "observed_candidates": [],
+          "sides": {},
+          "original_provenance": {
+            "source": "scoresandodds",
+            "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+            "observed_at": "2026-11-23T02:31:18.442019+00:00",
+            "source_updated_at": null,
+            "provider_event_id": "nfl/35986020",
+            "event_id": "nfl/35986020"
+          }
+        },
+        "observed_at": "2026-11-23T02:31:18.442019+00:00",
+        "source_updated_at": null
+      },
+      {
+        "game_id": "2026_12_CHI_DET",
+        "player_id": "00-0033106",
+        "player": "Jared Goff",
+        "book": "fanduel",
+        "line": 34.5,
+        "kickoff": "2026-11-26T18:00:00+00:00",
+        "market_only_p_over": 0.5,
+        "independent_p_over": 0.49510798459713934,
+        "calibrated_p_over": 0.4992900421446515,
+        "conditional_p_over": 0.5028699872845972,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 34.914872735256814,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-11-23T02:31:19.916154+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-11-23T02:28:54+00:00",
+          "observed_at": "2026-11-23T02:31:19.068562+00:00",
+          "market_id": "b0b92606f4a98d161d63bbd0a8c1c32a",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Jared Goff",
+              "team": "DET",
+              "opponent": "CHI",
+              "home_team": "DET",
+              "away_team": "CHI",
+              "kickoff": "2026-11-26T18:00:00+00:00",
+              "game_id": "2026_12_CHI_DET",
+              "event_id": "21919",
+              "provider_event_id": "21919",
+              "provider_player_id": "15501",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21919&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.068562+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21919-1.json",
+              "proof_sha256": "d15d9d5abac676862629227e9816bb53469b9ec518bbf9f21688c8e0caa53503",
+              "market_id": "b0b92606f4a98d161d63bbd0a8c1c32a",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "fanduel",
+              "line": 34.5,
+              "side": "over",
+              "odds": -114,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "10_407a06e91179279c645eced45fd2bf10",
+              "provider_selection_id": "407a06e91179279c645eced45fd2bf10",
+              "book_line_id": "10_407a06e91179279c645eced45fd2bf10",
+              "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.627938604&selectionId=12135315",
+              "source_updated_at": "2026-11-23T02:28:54+00:00",
+              "source_updated_at_raw": "2026-11-23 02:28:54",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Jared Goff",
+              "team": "DET",
+              "opponent": "CHI",
+              "home_team": "DET",
+              "away_team": "CHI",
+              "kickoff": "2026-11-26T18:00:00+00:00",
+              "game_id": "2026_12_CHI_DET",
+              "event_id": "21919",
+              "provider_event_id": "21919",
+              "provider_player_id": "15501",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21919&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.068562+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21919-1.json",
+              "proof_sha256": "d15d9d5abac676862629227e9816bb53469b9ec518bbf9f21688c8e0caa53503",
+              "market_id": "b0b92606f4a98d161d63bbd0a8c1c32a",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "fanduel",
+              "line": 34.5,
+              "side": "under",
+              "odds": -114,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "10_3515f1ebbb781a77d3f14abf73e96f1d",
+              "provider_selection_id": "3515f1ebbb781a77d3f14abf73e96f1d",
+              "book_line_id": "10_3515f1ebbb781a77d3f14abf73e96f1d",
+              "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.627938604&selectionId=12135314",
+              "source_updated_at": "2026-11-23T02:28:54+00:00",
+              "source_updated_at_raw": "2026-11-23 02:28:54",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21919&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.068562+00:00",
+            "source_updated_at": "2026-11-23T02:28:54+00:00",
+            "provider_event_id": "21919",
+            "event_id": "21919"
+          }
+        },
+        "observed_at": "2026-11-23T02:31:19.068562+00:00",
+        "source_updated_at": "2026-11-23T02:28:54+00:00"
+      },
+      {
+        "game_id": "2026_12_CHI_DET",
+        "player_id": "00-0039918",
+        "player": "Caleb Williams",
+        "book": "fanduel",
+        "line": 32.5,
+        "kickoff": "2026-11-26T18:00:00+00:00",
+        "market_only_p_over": 0.5141838223374939,
+        "independent_p_over": 0.6251110565334583,
+        "calibrated_p_over": 0.5302822306220337,
+        "conditional_p_over": 0.635557847751401,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 35.641999118537434,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-11-23T02:31:19.916154+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-11-23T02:28:54+00:00",
+          "observed_at": "2026-11-23T02:31:19.068562+00:00",
+          "market_id": "659fe3b26b5af475b99fcd82096b0cad",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Caleb Williams",
+              "team": "CHI",
+              "opponent": "DET",
+              "home_team": "DET",
+              "away_team": "CHI",
+              "kickoff": "2026-11-26T18:00:00+00:00",
+              "game_id": "2026_12_CHI_DET",
+              "event_id": "21919",
+              "provider_event_id": "21919",
+              "provider_player_id": "23084",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21919&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.068562+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21919-1.json",
+              "proof_sha256": "d15d9d5abac676862629227e9816bb53469b9ec518bbf9f21688c8e0caa53503",
+              "market_id": "659fe3b26b5af475b99fcd82096b0cad",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "fanduel",
+              "line": 32.5,
+              "side": "over",
+              "odds": -122,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "10_7a7b9266b214cfd51204119ad721b8ca",
+              "provider_selection_id": "7a7b9266b214cfd51204119ad721b8ca",
+              "book_line_id": "10_7a7b9266b214cfd51204119ad721b8ca",
+              "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.627938605&selectionId=41519457",
+              "source_updated_at": "2026-11-23T02:28:54+00:00",
+              "source_updated_at_raw": "2026-11-23 02:28:54",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Caleb Williams",
+              "team": "CHI",
+              "opponent": "DET",
+              "home_team": "DET",
+              "away_team": "CHI",
+              "kickoff": "2026-11-26T18:00:00+00:00",
+              "game_id": "2026_12_CHI_DET",
+              "event_id": "21919",
+              "provider_event_id": "21919",
+              "provider_player_id": "23084",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21919&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.068562+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21919-1.json",
+              "proof_sha256": "d15d9d5abac676862629227e9816bb53469b9ec518bbf9f21688c8e0caa53503",
+              "market_id": "659fe3b26b5af475b99fcd82096b0cad",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "fanduel",
+              "line": 32.5,
+              "side": "under",
+              "odds": -108,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "10_771bcb9feac7b34a3abead7df7973b63",
+              "provider_selection_id": "771bcb9feac7b34a3abead7df7973b63",
+              "book_line_id": "10_771bcb9feac7b34a3abead7df7973b63",
+              "sportsbook_url": "https://account.sportsbook.fanduel.com/sportsbook/addToBetslip?marketId=42.627938605&selectionId=41519458",
+              "source_updated_at": "2026-11-23T02:28:54+00:00",
+              "source_updated_at_raw": "2026-11-23 02:28:54",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21919&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.068562+00:00",
+            "source_updated_at": "2026-11-23T02:28:54+00:00",
+            "provider_event_id": "21919",
+            "event_id": "21919"
+          }
+        },
+        "observed_at": "2026-11-23T02:31:19.068562+00:00",
+        "source_updated_at": "2026-11-23T02:28:54+00:00"
+      },
+      {
+        "game_id": "2026_12_GB_LA",
+        "player_id": "00-0026498",
+        "player": "Matthew Stafford",
+        "book": "caesars",
+        "line": 33.5,
+        "kickoff": "2026-11-26T01:00:00+00:00",
+        "market_only_p_over": 0.5109616345299262,
+        "independent_p_over": 0.5226591138133301,
+        "calibrated_p_over": 0.5126592410624348,
+        "conditional_p_over": 0.5281934467616133,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 34.50497004929727,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-11-23T02:31:19.916154+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-11-23T02:31:12+00:00",
+          "observed_at": "2026-11-23T02:31:19.127904+00:00",
+          "market_id": "0491617e82b6d4297ce26b843a64ea35",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Matthew Stafford",
+              "team": "LA",
+              "opponent": "GB",
+              "home_team": "LA",
+              "away_team": "GB",
+              "kickoff": "2026-11-26T01:00:00+00:00",
+              "game_id": "2026_12_GB_LA",
+              "event_id": "21918",
+              "provider_event_id": "21918",
+              "provider_player_id": "9451",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.127904+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+              "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+              "market_id": "0491617e82b6d4297ce26b843a64ea35",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "caesars",
+              "line": 33.5,
+              "side": "over",
+              "odds": -109,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "13_41e9753d6c7821cbb8b43db8bcdd589c",
+              "provider_selection_id": "41e9753d6c7821cbb8b43db8bcdd589c",
+              "book_line_id": "13_41e9753d6c7821cbb8b43db8bcdd589c",
+              "sportsbook_url": "https://sportsbook.caesars.com/us/ny/bet/betslip?selectionIds=e3925aa6-e076-3fce-9bfd-aa57fe800b93",
+              "source_updated_at": "2026-11-23T02:31:12+00:00",
+              "source_updated_at_raw": "2026-11-23 02:31:12",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Matthew Stafford",
+              "team": "LA",
+              "opponent": "GB",
+              "home_team": "LA",
+              "away_team": "GB",
+              "kickoff": "2026-11-26T01:00:00+00:00",
+              "game_id": "2026_12_GB_LA",
+              "event_id": "21918",
+              "provider_event_id": "21918",
+              "provider_player_id": "9451",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.127904+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+              "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+              "market_id": "0491617e82b6d4297ce26b843a64ea35",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "caesars",
+              "line": 33.5,
+              "side": "under",
+              "odds": -121,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "13_0e7553702dc3489209654ad756a9b511",
+              "provider_selection_id": "0e7553702dc3489209654ad756a9b511",
+              "book_line_id": "13_0e7553702dc3489209654ad756a9b511",
+              "sportsbook_url": "https://sportsbook.caesars.com/us/ny/bet/betslip?selectionIds=4be07715-e39e-3ae5-840f-d99dca2763fc",
+              "source_updated_at": "2026-11-23T02:31:12+00:00",
+              "source_updated_at_raw": "2026-11-23 02:31:12",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.127904+00:00",
+            "source_updated_at": "2026-11-23T02:31:12+00:00",
+            "provider_event_id": "21918",
+            "event_id": "21918"
+          }
+        },
+        "observed_at": "2026-11-23T02:31:19.127904+00:00",
+        "source_updated_at": "2026-11-23T02:31:12+00:00"
+      },
+      {
+        "game_id": "2026_12_GB_LA",
+        "player_id": "00-0036264",
+        "player": "Jordan Love",
+        "book": "caesars",
+        "line": 35.5,
+        "kickoff": "2026-11-26T01:00:00+00:00",
+        "market_only_p_over": 0.5022877786761755,
+        "independent_p_over": 0.3612769730211175,
+        "calibrated_p_over": 0.48182346674753995,
+        "conditional_p_over": 0.3679602362180271,
+        "conditional_p_push": 0.0,
+        "production_p_push": 0.0,
+        "model_weight": 0.1451258421903889,
+        "mean": 32.87189398210141,
+        "quote_verification": {
+          "status": "verified",
+          "checked_at": "2026-11-23T02:31:19.916154+00:00",
+          "reason": "exact_open_paired_quote",
+          "evidence_level": "timestamped_comparison",
+          "source": "bettingpros",
+          "jurisdiction": "US-NY",
+          "source_updated_at": "2026-11-23T02:31:10+00:00",
+          "observed_at": "2026-11-23T02:31:19.127904+00:00",
+          "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+          "observed_candidates": [],
+          "sides": {
+            "over": {
+              "player": "Jordan Love",
+              "team": "GB",
+              "opponent": "LA",
+              "home_team": "LA",
+              "away_team": "GB",
+              "kickoff": "2026-11-26T01:00:00+00:00",
+              "game_id": "2026_12_GB_LA",
+              "event_id": "21918",
+              "provider_event_id": "21918",
+              "provider_player_id": "19246",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.127904+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+              "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+              "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "caesars",
+              "line": 35.5,
+              "side": "over",
+              "odds": -113,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "13_9117e4e2dfdfaa02b554a3e96b8fbb7b",
+              "provider_selection_id": "9117e4e2dfdfaa02b554a3e96b8fbb7b",
+              "book_line_id": "13_9117e4e2dfdfaa02b554a3e96b8fbb7b",
+              "sportsbook_url": "https://sportsbook.caesars.com/us/ny/bet/betslip?selectionIds=7be5ce83-6ac2-3aaf-ad66-24010295e869",
+              "source_updated_at": "2026-11-23T02:31:10+00:00",
+              "source_updated_at_raw": "2026-11-23 02:31:10",
+              "timestamp_timezone": "UTC"
+            },
+            "under": {
+              "player": "Jordan Love",
+              "team": "GB",
+              "opponent": "LA",
+              "home_team": "LA",
+              "away_team": "GB",
+              "kickoff": "2026-11-26T01:00:00+00:00",
+              "game_id": "2026_12_GB_LA",
+              "event_id": "21918",
+              "provider_event_id": "21918",
+              "provider_player_id": "19246",
+              "source": "bettingpros",
+              "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+              "observed_at": "2026-11-23T02:31:19.127904+00:00",
+              "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+              "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+              "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+              "id_namespace": "bettingpros_provider",
+              "evidence_level": "timestamped_comparison",
+              "jurisdiction": "US-NY",
+              "book": "caesars",
+              "line": 35.5,
+              "side": "under",
+              "odds": -117,
+              "available": true,
+              "market_status": "active",
+              "runner_status": "active",
+              "selection_id": "13_810f08cafd7306a8bbf3836cf83b8665",
+              "provider_selection_id": "810f08cafd7306a8bbf3836cf83b8665",
+              "book_line_id": "13_810f08cafd7306a8bbf3836cf83b8665",
+              "sportsbook_url": "https://sportsbook.caesars.com/us/ny/bet/betslip?selectionIds=00141dc1-7b7c-3151-9d6f-2f8d38b9b14e",
+              "source_updated_at": "2026-11-23T02:31:10+00:00",
+              "source_updated_at_raw": "2026-11-23 02:31:10",
+              "timestamp_timezone": "UTC"
+            }
+          },
+          "original_provenance": {
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.127904+00:00",
+            "source_updated_at": "2026-11-23T02:31:10+00:00",
+            "provider_event_id": "21918",
+            "event_id": "21918"
+          }
+        },
+        "observed_at": "2026-11-23T02:31:19.127904+00:00",
+        "source_updated_at": "2026-11-23T02:31:10+00:00"
+      }
+    ],
+    "metrics": {
+      "fit_2022_2023": {
+        "market_only": {
+          "n": 485,
+          "brier": 0.2501658547828248,
+          "log_loss": 0.6934812310044569
+        },
+        "independent_model": {
+          "n": 485,
+          "brier": 0.2547173092689647,
+          "log_loss": 0.7030769690719386
+        },
+        "calibrated_blend": {
+          "n": 485,
+          "brier": 0.2500307921100574,
+          "log_loss": 0.6932177298383735
+        },
+        "conditional_distribution": {
+          "n": 485,
+          "brier": 0.2545453903673218,
+          "log_loss": 0.702699135779097
+        }
+      },
+      "validation_2024": {
+        "market_only": {
+          "n": 425,
+          "brier": 0.2491945254987633,
+          "log_loss": 0.6915349601900602
+        },
+        "independent_model": {
+          "n": 425,
+          "brier": 0.2558756223871351,
+          "log_loss": 0.7055782033030993
+        },
+        "calibrated_blend": {
+          "n": 425,
+          "brier": 0.2494428229483191,
+          "log_loss": 0.692037041748151
+        },
+        "conditional_distribution": {
+          "n": 425,
+          "brier": 0.2562233104932801,
+          "log_loss": 0.7063020896710854
+        }
+      },
+      "exposed_benchmark_2025": {
+        "market_only": {
+          "n": 1,
+          "brier": 0.260223901391598,
+          "log_loss": 0.7135977910312362
+        },
+        "independent_model": {
+          "n": 1,
+          "brier": 0.28450880673019097,
+          "log_loss": 0.7622693523271509
+        },
+        "calibrated_blend": {
+          "n": 1,
+          "brier": 0.26368107600337237,
+          "log_loss": 0.7205160276500313
+        },
+        "conditional_distribution": {
+          "n": 1,
+          "brier": 0.28982360855814177,
+          "log_loss": 0.7729540570398563
+        }
+      }
+    },
+    "diagnostics": {
+      "invalid_candidates": 0,
+      "training": {
+        "raw_offer_rows": 29632,
+        "timestamp_and_book_eligible_sides": 8101,
+        "paired_offers": 3916,
+        "exact_event_joined_offers": 3312,
+        "selected_qb_games": 911,
+        "excluded_unmatched_pairs": 604,
+        "join_policy": "exact_utc_scheduled_time_opponent_pair_normalized_player",
+        "quote_policy": "real_book_paired_sides_updated_strictly_before_kickoff_within_24h_other_book_same_line",
+        "raw_sides_by_season": {
+          "2022": 1736,
+          "2023": 7290,
+          "2024": 8748,
+          "2025": 11858
+        },
+        "eligible_sides_by_season": {
+          "2022": 986,
+          "2023": 3004,
+          "2024": 4088,
+          "2025": 23
+        },
+        "sources": {
+          "offers": {
+            "file": "offers.parquet",
+            "sha256": "9484249efb989c829552c06395cf9309772c912150b6d2e52345399fe9ee8d36"
+          },
+          "features": {
+            "file": "features.parquet",
+            "sha256": "10f7eb5e9b70e94887bce3e1309c8c8edb2ce1bd151de1ac6a43bb8330d0e938"
+          },
+          "oof": {
+            "file": "oof_predictions.csv",
+            "sha256": "6d7c019852c29bf318c5b7506bf578085cbd79d82311c830e16d35e9af3d8381"
+          }
+        },
+        "fit_rows": 485,
+        "validation_rows": 425,
+        "limitations": [
+          "Retrospectively downloaded closing-reference quotes; no verified executable morning archive",
+          "2024 and 2025 have previously been inspected; neither is an untouched holdout",
+          "Game spread/total features use historical closing references",
+          "Conditional tails include observed exits but do not estimate a separate exit hazard",
+          "One fixed kernel experiment; not a full within-game play-volume simulator"
+        ]
+      }
+    }
+  },
+  "claude": [
+    {
+      "game_id": "2026_12_GB_LA",
+      "player_id": "00-0036264",
+      "player": "Jordan Love",
+      "team": "GB",
+      "opponent": "LA",
+      "line": 35.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+      "observed_at": "2026-11-23T02:31:19.127904+00:00",
+      "source_updated_at": "2026-11-23T02:26:30+00:00",
+      "season": 2026,
+      "week": 12,
+      "kickoff": "2026-11-26T01:00:00+00:00",
+      "side": "Under",
+      "odds": -104,
+      "mean": 33.30761146846058,
+      "mu_model": 33.30761146846058,
+      "mu_market": 35.892130688859986,
+      "mu_final": 34.987548961720194,
+      "mean_market": 35.892130688859986,
+      "mean_final": 34.987548961720194,
+      "scale": 1.0,
+      "p_model": 0.6209429764535267,
+      "p_market": 0.5040448797586807,
+      "p_final": 0.546139697594484,
+      "p_push": 0.0,
+      "model_p_push": 0.0,
+      "market_p_push": 0.0,
+      "ev": 0.0712740222045648,
+      "robust_ev": null,
+      "independent_model_ev": 0.21800353073576395,
+      "market_only_ev": -0.011296582011818546,
+      "fair_odds": -120,
+      "bet_to": -115,
+      "bet_to_target": 0.02,
+      "interval80": [
+        22.34713808454319,
+        43.59309159724475
+      ],
+      "expected_margin": -3.0,
+      "game_total": 44.5,
+      "implied_team_points": 20.75,
+      "game_market": {
+        "game_id": "2026_12_GB_LA",
+        "event_id": "401873079",
+        "home_team": "LA",
+        "away_team": "GB",
+        "kickoff": "2026-11-26T01:00:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 44.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 44.5,
+            "home_spread_odds": -105,
+            "away_spread_odds": -114,
+            "over_odds": -114,
+            "under_odds": -105,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-23T02:31:20.731426+00:00",
+        "total_observed_at": "2026-11-23T02:31:20.731426+00:00",
+        "observed_at": "2026-11-23T02:31:20.731426+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261125&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "model_weight": 0.35,
+      "n_books": 3,
+      "other_books": 2,
+      "reference_books": [
+        "caesars",
+        "draftkings",
+        "fanduel"
+      ],
+      "native_status": "qualified",
+      "native_reasons": [],
+      "shared_safety_reasons": [],
+      "status": "qualified",
+      "reasons": [],
+      "warnings": [],
+      "starting_status": {
+        "starter": "Jordan Love",
+        "espn_id": "4036378",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Skyy Moore",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-22T21:39:00+00:00"
+          },
+          {
+            "player": "Jayden Reed",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-30T15:55:00+00:00"
+          },
+          {
+            "player": "Bo Melton",
+            "position": "WR2",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-22T21:38:00+00:00"
+          },
+          {
+            "player": "Sean Rhyan",
+            "position": "C",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-22T21:43:00+00:00"
+          },
+          {
+            "player": "Jacob Monk",
+            "position": "C",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-26T21:52:00+00:00"
+          },
+          {
+            "player": "Kevin Zeitler",
+            "position": "RG",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-17T12:21:00+00:00"
+          },
+          {
+            "player": "Jacob Monk",
+            "position": "RG",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-10-26T21:52:00+00:00"
+          },
+          {
+            "player": "Zach Bako-Bewele",
+            "position": "RT",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-29T00:26:00+00:00"
+          },
+          {
+            "player": "Luke Musgrave",
+            "position": "TE",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-11-22T14:06:00+00:00"
+          },
+          {
+            "player": "Josh Whyle",
+            "position": "TE",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-14T22:35:00+00:00"
+          },
+          {
+            "player": "Thomas Yassmin",
+            "position": "TE",
+            "depth": 6,
+            "status": "Injured Reserve",
+            "date": "2026-08-31T23:12:00+00:00"
+          },
+          {
+            "player": "Josh Jacobs",
+            "position": "RB",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-22T21:43:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-23T02:31:20.210185+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/9/depthcharts",
+        "source_updated_at": "2026-11-23T02:30:34+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 40
+      },
+      "model_version": "claude-qbatt-v1.0-adapter1",
+      "policy_version": "market-center-v1",
+      "quote_verification": {
+        "status": "verified",
+        "checked_at": "2026-11-23T02:31:19.916154+00:00",
+        "reason": "exact_open_paired_quote",
+        "evidence_level": "timestamped_comparison",
+        "source": "bettingpros",
+        "jurisdiction": "US-NY",
+        "source_updated_at": "2026-11-23T02:26:30+00:00",
+        "observed_at": "2026-11-23T02:31:19.127904+00:00",
+        "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+        "observed_candidates": [],
+        "sides": {
+          "over": {
+            "player": "Jordan Love",
+            "team": "GB",
+            "opponent": "LA",
+            "home_team": "LA",
+            "away_team": "GB",
+            "kickoff": "2026-11-26T01:00:00+00:00",
+            "game_id": "2026_12_GB_LA",
+            "event_id": "21918",
+            "provider_event_id": "21918",
+            "provider_player_id": "19246",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.127904+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+            "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+            "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "over",
+            "odds": -122,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_9117e4e2dfdfaa02b554a3e96b8fbb7b",
+            "provider_selection_id": "9117e4e2dfdfaa02b554a3e96b8fbb7b",
+            "book_line_id": "12_9117e4e2dfdfaa02b554a3e96b8fbb7b",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118092?outcomes=0QA391615846%232376384371_13L88808Q1-1083900177Q20",
+            "source_updated_at": "2026-11-23T02:26:30+00:00",
+            "source_updated_at_raw": "2026-11-23 02:26:30",
+            "timestamp_timezone": "UTC"
+          },
+          "under": {
+            "player": "Jordan Love",
+            "team": "GB",
+            "opponent": "LA",
+            "home_team": "LA",
+            "away_team": "GB",
+            "kickoff": "2026-11-26T01:00:00+00:00",
+            "game_id": "2026_12_GB_LA",
+            "event_id": "21918",
+            "provider_event_id": "21918",
+            "provider_player_id": "19246",
+            "source": "bettingpros",
+            "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+            "observed_at": "2026-11-23T02:31:19.127904+00:00",
+            "proof_path": "/home/runner/work/nfl-qb-attempts/nfl-qb-attempts/data/raw/bettingpros/bettingpros-448f05f5cf044fcfa0d33445fe623072/offers-21918-1.json",
+            "proof_sha256": "d6eebf86d3da0ad609a85e79763b8504d2aa90cc4b1570cb37a0ba1849489ce9",
+            "market_id": "9d793dc5c1299ac1de83703c7dbf4d79",
+            "id_namespace": "bettingpros_provider",
+            "evidence_level": "timestamped_comparison",
+            "jurisdiction": "US-NY",
+            "book": "draftkings",
+            "line": 35.5,
+            "side": "under",
+            "odds": -104,
+            "available": true,
+            "market_status": "active",
+            "runner_status": "active",
+            "selection_id": "12_810f08cafd7306a8bbf3836cf83b8665",
+            "provider_selection_id": "810f08cafd7306a8bbf3836cf83b8665",
+            "book_line_id": "12_810f08cafd7306a8bbf3836cf83b8665",
+            "sportsbook_url": "https://sportsbook.draftkings.com/event/34118092?outcomes=0QA391615846%232376384378_13L88808Q11389438358Q20",
+            "source_updated_at": "2026-11-23T02:26:30+00:00",
+            "source_updated_at_raw": "2026-11-23 02:26:30",
+            "timestamp_timezone": "UTC"
+          }
+        },
+        "original_provenance": {
+          "source": "bettingpros",
+          "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=21918&location=NY&live=false&page=1",
+          "observed_at": "2026-11-23T02:31:19.127904+00:00",
+          "source_updated_at": "2026-11-23T02:26:30+00:00",
+          "provider_event_id": "21918",
+          "event_id": "21918"
+        }
+      },
+      "role_evidence": {
+        "status": "expected_starter",
+        "reliable": true,
+        "confirmed": false,
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/9/depthcharts",
+        "observed_at": "2026-11-23T02:31:20.210185+00:00",
+        "warnings": []
+      },
+      "model_reasons": [],
+      "model_status": "qualifies",
+      "price_status": "verified",
+      "research_status": "qualified",
+      "source": "bettingpros",
+      "bet_url": "https://sportsbook.draftkings.com/event/34118092?outcomes=0QA391615846%232376384378_13L88808Q11389438358Q20",
+      "paper_entry_status": "new_entry"
+    }
+  ]
+}
