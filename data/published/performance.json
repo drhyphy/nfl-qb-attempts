@@ -1,10 +1,10 @@
 {
-  "bets": 141,
+  "bets": 142,
   "settled": 135,
   "wins": 57,
   "losses": 78,
   "pushes": 0,
-  "unresolved": 6,
+  "unresolved": 7,
   "units": -25.471220535513794,
   "roi": -0.18867570767047254,
   "clv_bets": 38,
@@ -26971,6 +26971,184 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_12_KC_BUF",
+      "player_id": "00-0034857",
+      "player": "Josh Allen",
+      "team": "BUF",
+      "opponent": "KC",
+      "line": 29.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22080&location=NY&live=false&page=1",
+      "observed_at": "2026-11-24T03:59:12.477646+00:00",
+      "source_updated_at": "2026-11-24T03:57:47+00:00",
+      "kickoff": "2026-11-27T01:20:00+00:00",
+      "side": "over",
+      "odds": -114.0,
+      "mean": 32.0526027366536,
+      "interval80": [
+        20.666075077775044,
+        42.54724209194997
+      ],
+      "p_model": 0.5969477905854526,
+      "p_market": 0.5203045685279188,
+      "p_final": 0.5586261795566857,
+      "p_push": 0.0,
+      "ev": 0.04864914408009419,
+      "robust_ev": 0.011105284430971363,
+      "market_only_ev": -0.023287915219520783,
+      "fair_odds": -127,
+      "bet_to": -118,
+      "independent_model_ev": 0.12058620337970916,
+      "expected_margin": 3.0,
+      "game_total": 48.5,
+      "implied_team_points": 25.75,
+      "game_market": {
+        "game_id": "2026_12_KC_BUF",
+        "event_id": "401873082",
+        "home_team": "BUF",
+        "away_team": "KC",
+        "kickoff": "2026-11-27T01:20:00+00:00",
+        "home_expected_margin": 3.0,
+        "total_line": 48.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 3.0,
+            "total_line": 48.5,
+            "home_spread_odds": 100,
+            "away_spread_odds": -120,
+            "over_odds": -104,
+            "under_odds": -116,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-24T03:59:14.471546+00:00",
+        "total_observed_at": "2026-11-24T03:59:14.471546+00:00",
+        "observed_at": "2026-11-24T03:59:14.471546+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261126&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.17374071985784126,
+        "close": 0.6513557750381449,
+        "trailing": 0.1749035051040139
+      },
+      "scenario_means": {
+        "underdog_7": 31.1500446907712,
+        "pickem": 32.073742538605444,
+        "favorite_7": 32.02441633405113
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5151515151515151,
+        "neutral_pass12": 0.5514018691588785,
+        "trail_pass12": 0.6769230769230768
+      },
+      "warnings": [],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5203045685279188,
+          "ev": -0.023287915219520783
+        },
+        "0.35": {
+          "p_win": 0.5471296962480556,
+          "ev": 0.027068026290209657
+        },
+        "0.5": {
+          "p_win": 0.5586261795566857,
+          "ev": 0.04864914408009419
+        },
+        "0.65": {
+          "p_win": 0.5701226628653158,
+          "ev": 0.07023026186997872
+        },
+        "1.0": {
+          "p_win": 0.5969477905854526,
+          "ev": 0.12058620337970916
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 5,
+      "reference_books": [
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "fanatics",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Josh Allen",
+        "espn_id": "3918298",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Joshua Palmer",
+            "position": "WR1",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-09T22:24:00+00:00"
+          },
+          {
+            "player": "O'Cyrus Torrence",
+            "position": "RG",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-23T23:11:00+00:00"
+          },
+          {
+            "player": "Ar'maj Reed-Adams",
+            "position": "RG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-11-18T01:37:00+00:00"
+          },
+          {
+            "player": "Spencer Brown",
+            "position": "RT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-23T23:12:00+00:00"
+          },
+          {
+            "player": "Dalton Kincaid",
+            "position": "TE",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-23T22:53:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-24T03:59:13.947054+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/2/depthcharts",
+        "source_updated_at": "2026-11-24T03:55:11+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 10
+      },
+      "generated_at": "2026-11-24T03:59:14.772838+00:00",
+      "snapshot": "20261124T035914772838Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -26979,12 +27157,12 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 141,
+      "bets": 142,
       "settled": 135,
       "wins": 57,
       "losses": 78,
       "pushes": 0,
-      "unresolved": 6,
+      "unresolved": 7,
       "units": -25.471220535513794,
       "roi": -0.18867570767047254,
       "clv_bets": 38,
