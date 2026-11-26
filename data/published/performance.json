@@ -1,12 +1,12 @@
 {
-  "bets": 152,
-  "settled": 136,
-  "wins": 57,
+  "bets": 153,
+  "settled": 137,
+  "wins": 58,
   "losses": 79,
   "pushes": 0,
   "unresolved": 16,
-  "units": -26.471220535513794,
-  "roi": -0.19464132746701318,
+  "units": -25.509682073975334,
+  "roi": -0.18620205893412653,
   "clv_bets": 38,
   "mean_clv": -0.03002650942473124,
   "results": [
@@ -26363,10 +26363,10 @@
       "generated_at": "2026-11-23T02:31:21.571789+00:00",
       "snapshot": "20261123T023121571789Z.json",
       "model_version": "attempts-v2.0",
-      "actual": null,
-      "result": "unresolved",
-      "profit_1u": null,
-      "settlement_reason": "official_final_score_unavailable",
+      "actual": 29.0,
+      "result": "win",
+      "profit_1u": 0.9615384615384617,
+      "settlement_reason": "official_player_stat",
       "clv": null,
       "closing_probability": null,
       "closing_books": 0,
@@ -28956,6 +28956,198 @@
       "closing_probability": null,
       "closing_books": 0,
       "closing_observed_at": null
+    },
+    {
+      "game_id": "2026_12_NE_LAC",
+      "player_id": "00-0038476",
+      "player": "Tommy DeVito",
+      "team": "NE",
+      "opponent": "LAC",
+      "line": 27.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22091&location=NY&live=false&page=1",
+      "observed_at": "2026-11-26T11:43:41.859457+00:00",
+      "source_updated_at": "2026-11-26T11:42:27+00:00",
+      "kickoff": "2026-11-29T21:05:00+00:00",
+      "side": "under",
+      "odds": -106.0,
+      "mean": 20.45593364639508,
+      "interval80": [
+        9.069405987516529,
+        30.950573001691456
+      ],
+      "p_model": 0.8044298852572584,
+      "p_market": 0.5,
+      "p_final": 0.6065504598400404,
+      "p_push": 0.0,
+      "ev": 0.17876787478347478,
+      "robust_ev": 0.13989995025517288,
+      "market_only_ev": -0.028301886792452824,
+      "fair_odds": -154,
+      "bet_to": -143,
+      "independent_model_ev": 0.5633260034244834,
+      "expected_margin": 1.5,
+      "game_total": 35.5,
+      "implied_team_points": 18.5,
+      "game_market": {
+        "game_id": "2026_12_NE_LAC",
+        "event_id": "401873093",
+        "home_team": "LAC",
+        "away_team": "NE",
+        "kickoff": "2026-11-29T21:05:00+00:00",
+        "home_expected_margin": -1.5,
+        "total_line": 35.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -1.5,
+            "total_line": 35.5,
+            "home_spread_odds": -118,
+            "away_spread_odds": -101,
+            "over_odds": -109,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-26T11:43:45.029633+00:00",
+        "total_observed_at": "2026-11-26T11:43:45.029633+00:00",
+        "observed_at": "2026-11-26T11:43:45.029633+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261129&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.13495410492126386,
+        "close": 0.693021894672931,
+        "trailing": 0.17202400040580515
+      },
+      "scenario_means": {
+        "underdog_7": 19.424362559784136,
+        "pickem": 20.44404892337016,
+        "favorite_7": 20.49951096415313
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5177865612648221,
+        "neutral_pass12": 0.5678294573643411,
+        "trail_pass12": 0.7097222222222221
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": -0.028301886792452824
+        },
+        "0.35": {
+          "p_win": 0.6065504598400404,
+          "ev": 0.17876787478347478
+        },
+        "0.5": {
+          "p_win": 0.6522149426286292,
+          "ev": 0.2675120583160153
+        },
+        "0.65": {
+          "p_win": 0.697879425417218,
+          "ev": 0.35625624184855587
+        },
+        "1.0": {
+          "p_win": 0.8044298852572584,
+          "ev": 0.5633260034244834
+        }
+      },
+      "model_weight": 0.35,
+      "other_books": 3,
+      "reference_books": [
+        "bet365",
+        "caesars",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Tommy DeVito",
+        "espn_id": "4240391",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "A.J. Brown",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Doubtful",
+            "date": "2026-11-25T19:47:00+00:00"
+          },
+          {
+            "player": "Romeo Doubs",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-11-25T23:47:00+00:00"
+          },
+          {
+            "player": "Walter Rouse",
+            "position": "LG",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-26T03:41:00+00:00"
+          },
+          {
+            "player": "Alijah Vera-Tucker",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-24T01:00:00+00:00"
+          },
+          {
+            "player": "Mike Onwenu",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-23T00:27:00+00:00"
+          },
+          {
+            "player": "TreVeyon Henderson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-11-14T21:14:00+00:00"
+          },
+          {
+            "player": "Reggie Gilliam",
+            "position": "FB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-26T00:12:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-26T11:43:44.435175+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/17/depthcharts",
+        "source_updated_at": "2026-11-26T11:40:33+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 1,
+        "qb_games": 11,
+        "season_games": 0
+      },
+      "generated_at": "2026-11-26T11:43:45.272064+00:00",
+      "snapshot": "20261126T114345272064Z.json",
+      "model_version": "attempts-v2.0",
+      "actual": null,
+      "result": "unresolved",
+      "profit_1u": null,
+      "settlement_reason": "official_final_score_unavailable",
+      "clv": null,
+      "closing_probability": null,
+      "closing_books": 0,
+      "closing_observed_at": null
     }
   ],
   "diagnostics": [],
@@ -28964,14 +29156,14 @@
   "clv_definition": "median_paired_fair_probability_times_bet_decimal_minus_one_conditional_on_no_push",
   "by_model_version": {
     "attempts-v2.0": {
-      "bets": 152,
-      "settled": 136,
-      "wins": 57,
+      "bets": 153,
+      "settled": 137,
+      "wins": 58,
       "losses": 79,
       "pushes": 0,
       "unresolved": 16,
-      "units": -26.471220535513794,
-      "roi": -0.19464132746701318,
+      "units": -25.509682073975334,
+      "roi": -0.18620205893412653,
       "clv_bets": 38,
       "mean_clv": -0.03002650942473124
     }
