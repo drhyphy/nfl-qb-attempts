@@ -1,0 +1,896 @@
+{
+  "generated_at": "2026-11-28T18:25:33.225879+00:00",
+  "run_id": "20261128T182533225879Z",
+  "model_version": "attempts-v2.0",
+  "recommendations": [
+    {
+      "game_id": "2026_12_TEN_JAX",
+      "player_id": "00-0040676",
+      "player": "Cam Ward",
+      "team": "TEN",
+      "opponent": "JAX",
+      "line": 36.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22088&location=NY&live=false&page=1",
+      "observed_at": "2026-11-28T18:25:30.992893+00:00",
+      "source_updated_at": "2026-11-28T18:25:25+00:00",
+      "kickoff": "2026-11-29T18:00:00+00:00",
+      "side": "Under",
+      "odds": -114,
+      "mean": 29.62268725761936,
+      "interval80": [
+        18.23615959874081,
+        40.11732661291573
+      ],
+      "p_model": 0.798905873906108,
+      "p_market": 0.5124828361003619,
+      "p_final": 0.655694355003235,
+      "p_push": 0.0,
+      "ev": 0.23086484184817802,
+      "robust_ev": 0.19332098219905514,
+      "market_only_ev": -0.03797081644318023,
+      "fair_odds": -190,
+      "bet_to": -175,
+      "independent_model_ev": 0.49970050013953604,
+      "expected_margin": -14.0,
+      "game_total": 48.5,
+      "implied_team_points": 17.25,
+      "game_market": {
+        "game_id": "2026_12_TEN_JAX",
+        "event_id": "401873090",
+        "home_team": "JAX",
+        "away_team": "TEN",
+        "kickoff": "2026-11-29T18:00:00+00:00",
+        "home_expected_margin": 14.0,
+        "total_line": 48.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 14.0,
+            "total_line": 48.5,
+            "home_spread_odds": -107,
+            "away_spread_odds": -112,
+            "over_odds": -105,
+            "under_odds": -115,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "total_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261129&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.03012780987131483,
+        "close": 0.46311028006084815,
+        "trailing": 0.5067619100678371
+      },
+      "scenario_means": {
+        "underdog_7": 30.703310367759705,
+        "pickem": 31.78393347790005,
+        "favorite_7": 31.89781261140544
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5263157894736842,
+        "neutral_pass12": 0.5783132530120482,
+        "trail_pass12": 0.7034999999999999
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5124828361003619,
+          "ev": -0.03797081644318023
+        },
+        "0.35": {
+          "p_win": 0.612730899332373,
+          "ev": 0.1502141443607704
+        },
+        "0.5": {
+          "p_win": 0.655694355003235,
+          "ev": 0.23086484184817802
+        },
+        "0.65": {
+          "p_win": 0.6986578106740968,
+          "ev": 0.3115155393355852
+        },
+        "1.0": {
+          "p_win": 0.798905873906108,
+          "ev": 0.49970050013953604
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 5,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "caesars",
+        "draftkings",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Cam Ward",
+        "espn_id": "4688380",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Wan'Dale Robinson",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-11-18T17:29:00+00:00"
+          },
+          {
+            "player": "Dan Moore Jr.",
+            "position": "LT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-22T20:34:00+00:00"
+          },
+          {
+            "player": "Peter Skoronski",
+            "position": "LG",
+            "depth": 5,
+            "status": "Injured Reserve",
+            "date": "2026-11-14T21:52:00+00:00"
+          },
+          {
+            "player": "Fernando Carmona",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-18T21:49:00+00:00"
+          },
+          {
+            "player": "Jackson Slater",
+            "position": "RG",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-30T01:02:00+00:00"
+          },
+          {
+            "player": "Tyjae Spears",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-11-21T18:44:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-28T18:25:32.765786+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/10/depthcharts",
+        "source_updated_at": "2026-11-28T18:25:17+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 27,
+        "season_games": 10
+      }
+    },
+    {
+      "game_id": "2026_12_NE_LAC",
+      "player_id": "00-0038476",
+      "player": "Tommy DeVito",
+      "team": "NE",
+      "opponent": "LAC",
+      "line": 27.5,
+      "book": "fanduel",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22091&location=NY&live=false&page=1",
+      "observed_at": "2026-11-28T18:25:30.995124+00:00",
+      "source_updated_at": "2026-11-28T18:17:22+00:00",
+      "kickoff": "2026-11-29T21:05:00+00:00",
+      "side": "Under",
+      "odds": -108,
+      "mean": 20.462749590995532,
+      "interval80": [
+        9.07622193211698,
+        30.957388946291907
+      ],
+      "p_model": 0.8042060197799795,
+      "p_market": 0.5203045685279188,
+      "p_final": 0.61967007646614,
+      "p_push": 0.0,
+      "ev": 0.19343866578664004,
+      "robust_ev": 0.15492014726812153,
+      "market_only_ev": 0.0020680579056214787,
+      "fair_odds": -163,
+      "bet_to": -151,
+      "independent_model_ev": 0.5488412232799605,
+      "expected_margin": 3.0,
+      "game_total": 35.5,
+      "implied_team_points": 19.25,
+      "game_market": {
+        "game_id": "2026_12_NE_LAC",
+        "event_id": "401873093",
+        "home_team": "LAC",
+        "away_team": "NE",
+        "kickoff": "2026-11-29T21:05:00+00:00",
+        "home_expected_margin": -3.0,
+        "total_line": 35.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -3.0,
+            "total_line": 35.5,
+            "home_spread_odds": -117,
+            "away_spread_odds": -102,
+            "over_odds": -104,
+            "under_odds": -116,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "total_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261129&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.1531342267739824,
+        "close": 0.6936187563437014,
+        "trailing": 0.15324701688231618
+      },
+      "scenario_means": {
+        "underdog_7": 19.413696468150153,
+        "pickem": 20.438056847132405,
+        "favorite_7": 20.4956732494797
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.5177865612648221,
+        "neutral_pass12": 0.5678294573643411,
+        "trail_pass12": 0.7097222222222221
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5203045685279188,
+          "ev": 0.0020680579056214787
+        },
+        "0.35": {
+          "p_win": 0.61967007646614,
+          "ev": 0.19343866578664004
+        },
+        "0.5": {
+          "p_win": 0.6622552941539492,
+          "ev": 0.2754546405927911
+        },
+        "0.65": {
+          "p_win": 0.7048405118417582,
+          "ev": 0.35747061539894176
+        },
+        "1.0": {
+          "p_win": 0.8042060197799795,
+          "ev": 0.5488412232799605
+        }
+      },
+      "model_weight": 0.35,
+      "other_books": 6,
+      "reference_books": [
+        "bet365",
+        "betmgm",
+        "caesars",
+        "draftkings",
+        "fanatics",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Tommy DeVito",
+        "espn_id": "4240391",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "A.J. Brown",
+            "position": "WR1",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-27T18:18:00+00:00"
+          },
+          {
+            "player": "Romeo Doubs",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-11-27T19:43:00+00:00"
+          },
+          {
+            "player": "Walter Rouse",
+            "position": "LG",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-28T02:29:00+00:00"
+          },
+          {
+            "player": "Alijah Vera-Tucker",
+            "position": "LG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-24T01:00:00+00:00"
+          },
+          {
+            "player": "Mike Onwenu",
+            "position": "RG",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-09-23T00:27:00+00:00"
+          },
+          {
+            "player": "TreVeyon Henderson",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-11-14T21:14:00+00:00"
+          },
+          {
+            "player": "Reggie Gilliam",
+            "position": "FB",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-28T00:46:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-28T18:25:32.720109+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/17/depthcharts",
+        "source_updated_at": "2026-11-28T18:25:15+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 1,
+        "qb_games": 11,
+        "season_games": 0
+      }
+    },
+    {
+      "game_id": "2026_12_SEA_SF",
+      "player_id": "00-0034869",
+      "player": "Sam Darnold",
+      "team": "SEA",
+      "opponent": "SF",
+      "line": 31.5,
+      "book": "draftkings",
+      "source_url": "https://api.bettingpros.com/v3/offers?sport=NFL&market_id=333&event_id=22089&location=NY&live=false&page=1",
+      "observed_at": "2026-11-28T18:25:31.010520+00:00",
+      "source_updated_at": "2026-11-28T18:14:52+00:00",
+      "kickoff": "2026-11-29T21:25:00+00:00",
+      "side": "Under",
+      "odds": -111,
+      "mean": 26.50791394426259,
+      "interval80": [
+        15.121386285384038,
+        37.00255329955897
+      ],
+      "p_model": 0.7312164715811394,
+      "p_market": 0.5,
+      "p_final": 0.6156082357905697,
+      "p_push": 0.0,
+      "ev": 0.17021025001630807,
+      "robust_ev": 0.1321922319982901,
+      "market_only_ev": -0.04954954954954954,
+      "fair_odds": -160,
+      "bet_to": -148,
+      "independent_model_ev": 0.38997004958216597,
+      "expected_margin": 1.5,
+      "game_total": 42.5,
+      "implied_team_points": 22.0,
+      "game_market": {
+        "game_id": "2026_12_SEA_SF",
+        "event_id": "401873091",
+        "home_team": "SF",
+        "away_team": "SEA",
+        "kickoff": "2026-11-29T21:25:00+00:00",
+        "home_expected_margin": -1.5,
+        "total_line": 42.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": -1.5,
+            "total_line": 42.5,
+            "home_spread_odds": -111,
+            "away_spread_odds": -108,
+            "over_odds": -109,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "total_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261129&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.14224126912940338,
+        "close": 0.670325310678936,
+        "trailing": 0.1874334201916607
+      },
+      "scenario_means": {
+        "underdog_7": 25.55036554030789,
+        "pickem": 26.509536692382635,
+        "favorite_7": 26.501963867822425
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.4166666666666667,
+        "neutral_pass12": 0.5607638888888888,
+        "trail_pass12": 0.7172413793103447
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": -0.04954954954954954
+        },
+        "0.35": {
+          "p_win": 0.5809257650533988,
+          "ev": 0.10428231014655087
+        },
+        "0.5": {
+          "p_win": 0.6156082357905697,
+          "ev": 0.17021025001630807
+        },
+        "0.65": {
+          "p_win": 0.6502907065277406,
+          "ev": 0.23613818988606539
+        },
+        "1.0": {
+          "p_win": 0.7312164715811394,
+          "ev": 0.38997004958216597
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 4,
+      "reference_books": [
+        "bet365",
+        "caesars",
+        "fanatics",
+        "fanduel"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Sam Darnold",
+        "espn_id": "3912547",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Quenton Nelson",
+            "position": "LG",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-11-26T00:47:00+00:00"
+          },
+          {
+            "player": "Abraham Lucas",
+            "position": "RT",
+            "depth": 3,
+            "status": "Out",
+            "date": "2026-11-26T00:44:00+00:00"
+          },
+          {
+            "player": "Elijah Arroyo",
+            "position": "TE",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-10-23T21:48:00+00:00"
+          },
+          {
+            "player": "George Holani",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-11-23T23:11:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-28T18:25:32.735170+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/26/depthcharts",
+        "source_updated_at": "2026-11-28T18:25:16+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 32,
+        "season_games": 4
+      }
+    },
+    {
+      "game_id": "2026_12_NO_CIN",
+      "player_id": "00-0040743",
+      "player": "Tyler Shough",
+      "team": "NO",
+      "opponent": "CIN",
+      "line": 36.5,
+      "book": "draftkings",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-11-28T18:25:28.844276+00:00",
+      "source_updated_at": "2026-11-27T20:26:29+00:00",
+      "kickoff": "2026-11-29T18:00:00+00:00",
+      "side": "Under",
+      "odds": -101,
+      "mean": 33.41450661297986,
+      "interval80": [
+        22.027978954101304,
+        43.909145968276235
+      ],
+      "p_model": 0.6570581658155054,
+      "p_market": 0.5,
+      "p_final": 0.5785290829077527,
+      "p_push": 0.0,
+      "ev": 0.15133015509364656,
+      "robust_ev": 0.11152817489562672,
+      "market_only_ev": -0.004950495049504955,
+      "fair_odds": -137,
+      "bet_to": -128,
+      "independent_model_ev": 0.30761080523679774,
+      "expected_margin": -9.5,
+      "game_total": 48.5,
+      "implied_team_points": 19.5,
+      "game_market": {
+        "game_id": "2026_12_NO_CIN",
+        "event_id": "401873087",
+        "home_team": "CIN",
+        "away_team": "NO",
+        "kickoff": "2026-11-29T18:00:00+00:00",
+        "home_expected_margin": 9.5,
+        "total_line": 48.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 9.5,
+            "total_line": 48.5,
+            "home_spread_odds": -115,
+            "away_spread_odds": -105,
+            "over_odds": -109,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "total_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261129&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.050556957858388006,
+        "close": 0.5402771061818674,
+        "trailing": 0.4091659359597446
+      },
+      "scenario_means": {
+        "underdog_7": 33.80328850669217,
+        "pickem": 34.89187780908664,
+        "favorite_7": 35.013723134846146
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.48936170212765956,
+        "neutral_pass12": 0.6193548387096774,
+        "trail_pass12": 0.7284457478005865
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.5,
+          "ev": -0.004950495049504955
+        },
+        "0.35": {
+          "p_win": 0.5549703580354268,
+          "ev": 0.10444596005070095
+        },
+        "0.5": {
+          "p_win": 0.5785290829077527,
+          "ev": 0.15133015509364656
+        },
+        "0.65": {
+          "p_win": 0.6020878077800784,
+          "ev": 0.19821435013659172
+        },
+        "1.0": {
+          "p_win": 0.6570581658155054,
+          "ev": 0.30761080523679774
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 3,
+      "reference_books": [
+        "bet365",
+        "betrivers",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Tyler Shough",
+        "espn_id": "4360689",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Mason Tipton",
+            "position": "WR3",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-08-31T18:40:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "LT",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-28T02:15:00+00:00"
+          },
+          {
+            "player": "Dillon Radunz",
+            "position": "LG",
+            "depth": 2,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Taliese Fuaga",
+            "position": "RT",
+            "depth": 1,
+            "status": "Questionable",
+            "date": "2026-11-28T02:13:00+00:00"
+          },
+          {
+            "player": "Asim Richards",
+            "position": "RT",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-28T02:15:00+00:00"
+          },
+          {
+            "player": "Juwan Johnson",
+            "position": "TE",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-27T19:55:00+00:00"
+          },
+          {
+            "player": "Noah Fant",
+            "position": "TE",
+            "depth": 2,
+            "status": "Questionable",
+            "date": "2026-11-27T20:45:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-28T18:25:32.720213+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/18/depthcharts",
+        "source_updated_at": "2026-11-28T18:25:18+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 19,
+        "season_games": 10
+      }
+    },
+    {
+      "game_id": "2026_12_ATL_MIN",
+      "player_id": "00-0039917",
+      "player": "Michael Penix",
+      "team": "ATL",
+      "opponent": "MIN",
+      "line": 30.5,
+      "book": "fanatics",
+      "source_url": "https://www.scoresandodds.com/nfl/props/pass-attempts",
+      "observed_at": "2026-11-28T18:25:29.180325+00:00",
+      "source_updated_at": null,
+      "kickoff": "2026-11-29T18:00:00+00:00",
+      "side": "Under",
+      "odds": 100,
+      "mean": 27.76869181107667,
+      "interval80": [
+        16.38216415219812,
+        38.26333116637305
+      ],
+      "p_model": 0.6428977433031013,
+      "p_market": 0.48478698699110123,
+      "p_final": 0.5638423651471013,
+      "p_push": 0.0,
+      "ev": 0.12768473029420258,
+      "robust_ev": 0.08768473029420254,
+      "market_only_ev": -0.030426026017797536,
+      "fair_odds": -129,
+      "bet_to": -120,
+      "independent_model_ev": 0.2857954866062027,
+      "expected_margin": -7.0,
+      "game_total": 41.5,
+      "implied_team_points": 17.25,
+      "game_market": {
+        "game_id": "2026_12_ATL_MIN",
+        "event_id": "401873084",
+        "home_team": "MIN",
+        "away_team": "ATL",
+        "kickoff": "2026-11-29T18:00:00+00:00",
+        "home_expected_margin": 7.0,
+        "total_line": 41.5,
+        "books": [
+          "draftkings"
+        ],
+        "book_quotes": [
+          {
+            "book": "draftkings",
+            "home_expected_margin": 7.0,
+            "total_line": 41.5,
+            "home_spread_odds": -101,
+            "away_spread_odds": -119,
+            "over_odds": -109,
+            "under_odds": -110,
+            "source_updated_at": null
+          }
+        ],
+        "spread_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "total_observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "observed_at": "2026-11-28T18:25:32.966195+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20261129&limit=100",
+        "source": "espn",
+        "source_type": "public_pregame_sportsbook",
+        "source_updated_at": null
+      },
+      "script_shares": {
+        "leading": 0.06370136736335154,
+        "close": 0.6035152212332405,
+        "trailing": 0.3327834114034079
+      },
+      "scenario_means": {
+        "underdog_7": 27.76869181107667,
+        "pickem": 28.917882312871626,
+        "favorite_7": 29.10032883803163
+      },
+      "state_pass_rates": {
+        "lead_pass12": 0.43455497382198954,
+        "neutral_pass12": 0.5590551181102362,
+        "trail_pass12": 0.6697142857142856
+      },
+      "warnings": [
+        "Large model\u2013market disagreement"
+      ],
+      "policy_sensitivity": {
+        "0.0": {
+          "p_win": 0.48478698699110123,
+          "ev": -0.030426026017797536
+        },
+        "0.35": {
+          "p_win": 0.5401257517003013,
+          "ev": 0.08025150340060261
+        },
+        "0.5": {
+          "p_win": 0.5638423651471013,
+          "ev": 0.12768473029420258
+        },
+        "0.65": {
+          "p_win": 0.5875589785939013,
+          "ev": 0.17511795718780254
+        },
+        "1.0": {
+          "p_win": 0.6428977433031013,
+          "ev": 0.2857954866062027
+        }
+      },
+      "model_weight": 0.5,
+      "other_books": 2,
+      "reference_books": [
+        "betmgm",
+        "thescorebet"
+      ],
+      "status": "qualified",
+      "reasons": [],
+      "starting_status": {
+        "starter": "Michael Penix Jr.",
+        "espn_id": "4360423",
+        "injuries": [],
+        "offense_injuries": [
+          {
+            "player": "Zachariah Branch",
+            "position": "WR1",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-27T19:39:00+00:00"
+          },
+          {
+            "player": "Jahan Dotson",
+            "position": "WR2",
+            "depth": 1,
+            "status": "Out",
+            "date": "2026-11-27T17:51:00+00:00"
+          },
+          {
+            "player": "Michael Jerrell",
+            "position": "LT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-24T23:44:00+00:00"
+          },
+          {
+            "player": "Matthew Bergeron",
+            "position": "LG",
+            "depth": 2,
+            "status": "Out",
+            "date": "2026-11-28T02:04:00+00:00"
+          },
+          {
+            "player": "Michael Jerrell",
+            "position": "RT",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-10-24T23:44:00+00:00"
+          },
+          {
+            "player": "Storm Norton",
+            "position": "RT",
+            "depth": 4,
+            "status": "Out",
+            "date": "2026-09-08T20:42:00+00:00"
+          },
+          {
+            "player": "Brian Robinson Jr.",
+            "position": "RB",
+            "depth": 3,
+            "status": "Injured Reserve",
+            "date": "2026-11-07T21:13:00+00:00"
+          },
+          {
+            "player": "Trey Sermon",
+            "position": "RB",
+            "depth": 4,
+            "status": "Injured Reserve",
+            "date": "2026-09-08T20:42:00+00:00"
+          }
+        ],
+        "observed_at": "2026-11-28T18:25:32.623015+00:00",
+        "source_url": "https://site.web.api.espn.com/apis/site/v2/sports/football/nfl/teams/1/depthcharts",
+        "source_updated_at": "2026-11-28T18:25:15+00:00",
+        "available": true,
+        "season": 2026,
+        "issues": []
+      },
+      "feature_flags": {
+        "coach_change": 0,
+        "qb_team_change": 0,
+        "qb_games": 20,
+        "season_games": 8
+      }
+    }
+  ]
+}
